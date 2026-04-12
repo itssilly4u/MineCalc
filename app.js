@@ -306,6 +306,7 @@ function handleImport(event) {
     const file = event.target.files[0];
     if (!file) return;
 
+    // Reject massively oversized files immediately
     if (file.size > 15360) {
         alert("❌ File is too large. Valid loadouts are very small files.");
         event.target.value = ""; 
@@ -314,52 +315,65 @@ function handleImport(event) {
 
     const reader = new FileReader();
     reader.onload = (e) => {
+        let data;
+        
+        // STEP 1: Safely isolate the JSON parsing
+        // If it fails here, it is actually a broken file.
         try {
-            // 1. CLEAN THE TEXT: Strip out invisible non-breaking spaces that crash JSON parsers
-            let rawText = e.target.result.replace(/\u00A0/g, " ");
-            
-            const data = JSON.parse(rawText);
-            
-            // 2. FORGIVING HASH CHECK: Warning instead of a hard lock
-            let hashValid = false;
-            if (data._hash) {
+            data = JSON.parse(e.target.result);
+        } catch (err) {
+            alert("❌ Invalid JSON file format! Make sure the file is not corrupted.");
+            event.target.value = ""; 
+            return;
+        }
+
+        // STEP 2: Process the loadout
+        // If a minor error happens here, it won't trigger a fake JSON alert.
+        try {
+            // Check security hash ONLY if it exists (allows your old legacy saves to load!)
+            if (data._hash !== undefined) {
                 const providedHash = data._hash;
                 delete data._hash; 
-                if (providedHash === generateHash(JSON.stringify(data))) {
-                    hashValid = true;
-                }
-            }
-
-            if (!hashValid) {
-                let force = confirm("⚠️ Warning: This file is from an older version or was modified manually. It might not load perfectly.\n\nDo you want to force import it anyway?");
-                if (!force) {
-                    event.target.value = "";
+                if (providedHash !== generateHash(JSON.stringify(data))) {
+                    alert("❌ Corrupted File: The contents have been modified or tampered with.");
+                    event.target.value = ""; 
                     return;
                 }
             }
 
-            // 3. AUTO-DETECT FLEET VS SHIP
+            // AUTO-DETECT: Look at the file's type, or guess based on if it contains multiple ships
             let dataType = data.type || (data.ships ? 'FLEET' : 'SHIP');
 
             if (dataType === 'FLEET' && data.ships) {
                 if (data.ships.length > 20) {
                     alert("❌ Import failed: Fleet exceeds the maximum limit of 20 ships.");
+                    event.target.value = ""; 
                     return;
                 }
+                
+                // Safety warning only triggers if it's a fleet!
                 if (confirm("Importing a Fleet will overwrite your current setup. Continue?")) {
                     document.getElementById('fleet-container').innerHTML = '';
-                    data.ships.forEach(s => addShip(s.shipType || s.type, s.operators, s.customName));
+                    data.ships.forEach(s => {
+                        let type = s.shipType || s.type;
+                        if (type === 'SHIP' || !type) type = (s.operators && s.operators.length > 1 ? 'MOLE' : 'PROSPECTOR');
+                        addShip(type, s.operators, s.customName);
+                    });
                 }
-            } else if (dataType === 'SHIP') {
-                let t = data.shipType || (data.operators && data.operators.length > 1 ? 'MOLE' : 'PROSPECTOR');
-                addShip(t, data.operators, data.customName);
+            } else if (dataType === 'SHIP' || data.operators) {
+                let type = data.shipType || data.type;
+                if (type === 'SHIP' || !type) type = (data.operators && data.operators.length > 1 ? 'MOLE' : 'PROSPECTOR');
+                
+                // No warning, just adds the ship to the current fleet seamlessly
+                addShip(type, data.operators, data.customName);
             } else {
-                alert("❌ Unrecognized file format. Is this a Minecalc export?");
+                alert("❌ Unrecognized file format. Are you sure this is a Minecalc save?");
             }
         } catch (err) { 
-            console.error("JSON Parse Error:", err);
-            alert("❌ Invalid JSON file format! Ensure the file hasn't been corrupted."); 
+            console.error("Interface Error:", err);
+            // If something does go wrong, it logs it to the console quietly instead of breaking the app.
         }
+        
         event.target.value = ""; 
     };
     reader.readAsText(file);
