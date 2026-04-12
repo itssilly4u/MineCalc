@@ -132,7 +132,11 @@ function initUI() {
     addShip('MOLE');
 }
 
-function generateId() { return Math.random().toString(36).substr(2, 9); }
+let globalIdCounter = 0;
+function generateId() { 
+    globalIdCounter++;
+    return 'uid_' + globalIdCounter + '_' + Math.random().toString(36).substr(2, 5); 
+}
 
 function createOperatorHtml(opId, seatName, laserOptions) {
     return `
@@ -203,8 +207,10 @@ function addShip(type, loadConfig = null, customName = null) {
         <div class="setups-grid">${operatorsHtml}</div>
     `;
 
+    // Append to DOM immediately
     container.appendChild(shipDiv);
 
+    // Establish Default Loadouts if needed
     if (!loadConfig) {
         let defaultLaser = "None";
         if (type === 'MOLE') {
@@ -226,8 +232,15 @@ function addShip(type, loadConfig = null, customName = null) {
         }
     }
 
-    if (loadConfig) { applyShipConfig(operatorIds, loadConfig); }
-    calculate();
+    // SAFEGUARD: Apply config only after the browser paints the new HTML to the screen
+    if (loadConfig) { 
+        setTimeout(() => {
+            applyShipConfig(operatorIds, loadConfig);
+            calculate();
+        }, 10);
+    } else {
+        calculate();
+    }
 }
 
 function clearFleet() {
@@ -397,16 +410,22 @@ function applyShipConfig(operatorIds, opConfigs) {
         if (!conf) return;
 
         if (conf.enabled === false) {
-            document.getElementById(`card-${opId}`).querySelector('.switch input').checked = false;
-            toggleOperator(opId, false);
+            const cardToggle = document.getElementById(`card-${opId}`);
+            if (cardToggle) {
+                cardToggle.querySelector('.switch input').checked = false;
+                toggleOperator(opId, false);
+            }
         }
 
         const setSelect = (elId, nameToFind, list) => {
             let idx = list.findIndex(i => i.name === nameToFind);
             if (idx > 0) {
                 let el = document.getElementById(elId);
-                el.dataset.value = idx;
-                el.querySelector('.cs-display').innerText = list[idx].name;
+                // Added a safety check here to ensure the element exists before modifying it
+                if (el) {
+                    el.dataset.value = idx;
+                    el.querySelector('.cs-display').innerText = list[idx].name;
+                }
             }
         };
 
