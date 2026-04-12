@@ -693,6 +693,43 @@ function getMaxMulti(rarity) {
     return 1;
 }
 
+window.showSignatureTip = (baseSig, rarity) => {
+    const max = getMaxMulti(rarity);
+    let html = `<div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">`;
+    for(let i=1; i<=max; i++) {
+        html += `<span style="background:var(--bg-color); border:1px solid var(--border); padding:4px 8px; border-radius:4px; font-size:0.9em; color:var(--text-main);">${i}x: <span style="color:var(--accent); font-weight:bold;">${baseSig * i}</span></span>`;
+    }
+    html += `</div>`;
+    tooltipEl.innerHTML = `<h4 style="margin-bottom: 5px; border-bottom: none; padding-bottom: 0;">${rarity} Multiples</h4><div style="font-size:0.8em; color:var(--text-muted); border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 5px;">Max cluster size: ${max}x</div>${html}`;
+    tooltipEl.style.display = 'block';
+}
+
+window.toggleSignatureRow = (cell, baseSig, rarity) => {
+    const tr = cell.closest('tr');
+    const nextTr = tr.nextElementSibling;
+    
+    if (nextTr && nextTr.classList.contains('sig-details-row')) {
+        nextTr.remove();
+        return;
+    }
+    
+    const max = getMaxMulti(rarity);
+    let html = `<div style="display:flex; gap:15px; padding:5px 10px; border-left:3px solid var(--accent); flex-wrap:wrap; align-items: center;">`;
+    html += `<span style="color:var(--text-muted); font-size:0.8em; text-transform:uppercase; margin-right:10px;">${rarity} Limits:</span>`;
+    for(let i=1; i<=max; i++) {
+        html += `<div style="background:var(--bg-color); border:1px solid var(--border); padding:6px 12px; border-radius:6px; text-align:center;">
+                    <div style="color:var(--text-muted); font-size:0.75em; text-transform:uppercase;">${i}x Cluster</div>
+                    <div style="color:var(--accent); font-weight:bold; font-size:1.1em;">${baseSig * i}</div>
+                 </div>`;
+    }
+    html += `</div>`;
+
+    const detailRow = document.createElement('tr');
+    detailRow.className = 'sig-details-row';
+    detailRow.innerHTML = `<td colspan="7" style="padding: 15px; border-bottom: 1px solid var(--border);">${html}</td>`;
+    tr.after(detailRow);
+}
+
 // --- ORE DATABASE GENERATOR (UPDATED) ---
 function generateOreTable() {
     const tbody = document.getElementById('ore-table-body');
