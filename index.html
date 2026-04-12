@@ -63,7 +63,7 @@
         </div>
     </div>
 
-<div class="accordion-header" onclick="toggleAccordion(this)">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
         <h2>Rock Cracker Analysis</h2>
         <span class="accordion-icon">▼</span>
     </div>
@@ -71,24 +71,27 @@
         <div class="cracker-grid" style="margin-bottom: 20px;">
             <div class="cracker-input-group">
                 <div class="stat-title">Rock Mass</div>
-                <input type="number" id="rock-mass" class="cracker-input" placeholder="Example: 5000" oninput="calculate()">
+                <input type="number" id="rock-mass" class="cracker-input" value="5000" oninput="calculate()">
             </div>
             <div class="cracker-input-group">
                 <div class="stat-title">Resistance (%)</div>
-                <input type="number" id="rock-res" class="cracker-input" placeholder="Example: 45" oninput="calculate()">
+                <input type="number" id="rock-res" class="cracker-input" value="45" oninput="calculate()">
             </div>
             <div class="cracker-input-group">
                 <div class="stat-title">Instability</div>
-                <input type="number" id="rock-inst" class="cracker-input" placeholder="Example: 2.5" oninput="calculate()">
+                <input type="number" id="rock-inst" class="cracker-input" value="2.5" oninput="calculate()">
             </div>
         </div>
 
-        <div style="margin-bottom: 20px;">
-            <label style="color: var(--text-main); font-size: 0.9em; display: flex; align-items: center; gap: 8px; cursor: pointer;">
-                <input type="checkbox" id="gadgets-scanned" onchange="calculate()">
-                Rock was scanned WITH gadgets attached
-            </label>
-            <div class="disclaimer">Note: Check this box if you attached your gadgets to the rock BEFORE scanning it. Leave unchecked if you scanned the raw rock first.</div>
+        <div style="margin-bottom: 25px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 5px;">
+                <label class="switch">
+                    <input type="checkbox" id="gadgets-scanned" onchange="calculate()">
+                    <span class="slider"></span>
+                </label>
+                <span style="color: var(--text-main); font-size: 0.9em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Scanned WITH Gadgets</span>
+            </div>
+            <div class="disclaimer">Note: Check this toggle if you attached your gadgets to the rock BEFORE scanning it. Leave off if you scanned the raw rock first.</div>
         </div>
 
         <div style="display: flex; gap: 20px; flex-wrap: wrap;">
