@@ -84,26 +84,26 @@
         </div>
 
         <div style="margin-bottom: 25px;">
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 5px;">
+            <div class="control-group" style="margin-bottom: 5px;">
                 <label class="switch">
                     <input type="checkbox" id="gadgets-scanned" onchange="calculate()">
                     <span class="slider"></span>
                 </label>
-                <span style="color: var(--text-main); font-size: 0.9em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Scanned WITH Gadgets</span>
+                <span class="control-label">Scanned WITH Gadgets</span>
             </div>
             <div class="disclaimer">Note: Check this toggle if you attached your gadgets to the rock BEFORE scanning it. Leave off if you scanned the raw rock first.</div>
         </div>
 
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 200px; background: var(--bg-color); border: 1px solid var(--border); padding: 15px; border-radius: 8px;">
-                <h3 style="margin-top: 0; color: var(--accent); margin-bottom: 10px; font-size: 1.1em;">Power Check</h3>
-                <div id="crack-power-status" style="display: inline-block; padding: 4px 10px; border-radius: 4px; font-weight: bold; margin-bottom: 10px; background: var(--bg-color); color: var(--text-main);">Awaiting Input</div>
-                <div id="crack-power-required" style="color: var(--text-muted); font-size: 0.9em;">Required Power: 0</div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3 style="margin-top: 0;">Power Check</h3>
+                <div id="crack-power-status" class="status-badge" style="background-color: var(--panel-bg);">Awaiting Input</div>
+                <div id="crack-power-required" class="stat-title" style="margin-top: 10px;">Required Power: 0</div>
             </div>
-            <div style="flex: 1; min-width: 200px; background: var(--bg-color); border: 1px solid var(--border); padding: 15px; border-radius: 8px;">
-                <h3 style="margin-top: 0; color: var(--accent); margin-bottom: 10px; font-size: 1.1em;">Instability Check</h3>
-                <div id="crack-inst-status" style="display: inline-block; padding: 4px 10px; border-radius: 4px; font-weight: bold; margin-bottom: 10px; background: var(--bg-color); color: var(--text-main);">Awaiting Input</div>
-                <div id="crack-inst-final" style="color: var(--text-muted); font-size: 0.9em;">Final Instability: 0</div>
+            <div class="stat-box">
+                <h3 style="margin-top: 0;">Instability Check</h3>
+                <div id="crack-inst-status" class="status-badge" style="background-color: var(--panel-bg);">Awaiting Input</div>
+                <div id="crack-inst-final" class="stat-title" style="margin-top: 10px;">Final Instability: 0</div>
             </div>
         </div>
     </div>
