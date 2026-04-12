@@ -315,16 +315,30 @@ function handleImport(event) {
     const reader = new FileReader();
     reader.onload = (e) => {
         try {
-            const data = JSON.parse(e.target.result);
+            // 1. CLEAN THE TEXT: Strip out invisible non-breaking spaces that crash JSON parsers
+            let rawText = e.target.result.replace(/\u00A0/g, " ");
             
-            if (!data._hash) { alert("❌ Invalid File: Missing security signature."); return; }
-            const providedHash = data._hash;
-            delete data._hash; 
-            if (providedHash !== generateHash(JSON.stringify(data))) {
-                alert("❌ Corrupted File: The contents have been modified or tampered with."); return;
+            const data = JSON.parse(rawText);
+            
+            // 2. FORGIVING HASH CHECK: Warning instead of a hard lock
+            let hashValid = false;
+            if (data._hash) {
+                const providedHash = data._hash;
+                delete data._hash; 
+                if (providedHash === generateHash(JSON.stringify(data))) {
+                    hashValid = true;
+                }
             }
 
-            // AUTO-DETECT: Look at the file's type, or guess based on if it contains multiple ships
+            if (!hashValid) {
+                let force = confirm("⚠️ Warning: This file is from an older version or was modified manually. It might not load perfectly.\n\nDo you want to force import it anyway?");
+                if (!force) {
+                    event.target.value = "";
+                    return;
+                }
+            }
+
+            // 3. AUTO-DETECT FLEET VS SHIP
             let dataType = data.type || (data.ships ? 'FLEET' : 'SHIP');
 
             if (dataType === 'FLEET' && data.ships) {
@@ -332,20 +346,19 @@ function handleImport(event) {
                     alert("❌ Import failed: Fleet exceeds the maximum limit of 20 ships.");
                     return;
                 }
-                // Safety warning only triggers if it's a fleet!
                 if (confirm("Importing a Fleet will overwrite your current setup. Continue?")) {
                     document.getElementById('fleet-container').innerHTML = '';
                     data.ships.forEach(s => addShip(s.shipType || s.type, s.operators, s.customName));
                 }
             } else if (dataType === 'SHIP') {
                 let t = data.shipType || (data.operators && data.operators.length > 1 ? 'MOLE' : 'PROSPECTOR');
-                // No warning, just adds the ship to the current fleet seamlessly
                 addShip(t, data.operators, data.customName);
             } else {
-                alert("❌ Unrecognized file format.");
+                alert("❌ Unrecognized file format. Is this a Minecalc export?");
             }
         } catch (err) { 
-            alert("❌ Invalid JSON file format!"); 
+            console.error("JSON Parse Error:", err);
+            alert("❌ Invalid JSON file format! Ensure the file hasn't been corrupted."); 
         }
         event.target.value = ""; 
     };
