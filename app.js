@@ -132,6 +132,7 @@ function initUI() {
     addShip('MOLE');
 }
 
+// Ensure IDs are always 100% unique
 let globalIdCounter = 0;
 function generateId() { 
     globalIdCounter++;
@@ -207,10 +208,8 @@ function addShip(type, loadConfig = null, customName = null) {
         <div class="setups-grid">${operatorsHtml}</div>
     `;
 
-    // Append to DOM immediately
     container.appendChild(shipDiv);
 
-    // Establish Default Loadouts if needed
     if (!loadConfig) {
         let defaultLaser = "None";
         if (type === 'MOLE') {
@@ -232,12 +231,8 @@ function addShip(type, loadConfig = null, customName = null) {
         }
     }
 
-    // SAFEGUARD: Apply config only after the browser paints the new HTML to the screen
     if (loadConfig) { 
-        setTimeout(() => {
-            applyShipConfig(operatorIds, loadConfig);
-            calculate();
-        }, 10);
+        applyShipConfig(operatorIds, loadConfig); 
     } else {
         calculate();
     }
@@ -413,7 +408,7 @@ function applyShipConfig(operatorIds, opConfigs) {
             const cardToggle = document.getElementById(`card-${opId}`);
             if (cardToggle) {
                 cardToggle.querySelector('.switch input').checked = false;
-                toggleOperator(opId, false);
+                cardToggle.classList.add('off');
             }
         }
 
@@ -421,7 +416,6 @@ function applyShipConfig(operatorIds, opConfigs) {
             let idx = list.findIndex(i => i.name === nameToFind);
             if (idx > 0) {
                 let el = document.getElementById(elId);
-                // Added a safety check here to ensure the element exists before modifying it
                 if (el) {
                     el.dataset.value = idx;
                     el.querySelector('.cs-display').innerText = list[idx].name;
@@ -430,11 +424,31 @@ function applyShipConfig(operatorIds, opConfigs) {
         };
 
         setSelect(`cs-laser-${opId}`, conf.laser, lasers);
-        handleLaserChange(opId); 
+        
+        // Safely update module slots without triggering calculate() repeatedly
+        let lIdx = lasers.findIndex(i => i.name === conf.laser);
+        let currentLaser = lIdx > 0 ? lasers[lIdx] : { slots: 0 };
+        
+        for (let m=1; m<=3; m++) {
+            let el = document.getElementById(`cs-mod${m}-${opId}`);
+            if (el) {
+                if (m <= currentLaser.slots) {
+                    el.classList.remove('disabled');
+                } else { 
+                    el.classList.add('disabled'); 
+                    el.dataset.value = 0; 
+                    el.querySelector('.cs-display').innerText = 'None'; 
+                }
+            }
+        }
+        
         setSelect(`cs-mod1-${opId}`, conf.m1, modules);
         setSelect(`cs-mod2-${opId}`, conf.m2, modules);
         setSelect(`cs-mod3-${opId}`, conf.m3, modules);
     });
+    
+    // Calculate everything ONCE after all elements are loaded safely
+    calculate();
 }
 
 function toggleCS(container) {
@@ -514,14 +528,20 @@ function calculate() {
             return;
         }
 
-        let l = lasers[document.getElementById(`cs-laser-${opId}`).dataset.value];
+        let laserEl = document.getElementById(`cs-laser-${opId}`);
+        if (!laserEl) return;
+        
+        let l = lasers[laserEl.dataset.value];
         if (!l || l.name === "None") return;
 
         let pMod = 0, eMod = 0, opInert = [l.inert || 0];
         let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
 
         [1,2,3].forEach(m => {
-            let mod = modules[document.getElementById(`cs-mod${m}-${opId}`).dataset.value];
+            let modEl = document.getElementById(`cs-mod${m}-${opId}`);
+            if (!modEl) return;
+            
+            let mod = modules[modEl.dataset.value];
             if (!mod || mod.name === "None") return;
             
             pMod += mod.power; 
@@ -661,7 +681,7 @@ function calculate() {
 }
 
 
-// --- NEW HELPER FUNCTIONS FOR MULTIPLES ---
+// --- HELPER FUNCTIONS FOR MULTIPLES ---
 
 function getMaxMulti(rarity) {
     if(rarity === 'Legendary') return 2;
@@ -709,7 +729,7 @@ window.toggleSignatureRow = (cell, baseSig, rarity) => {
     tr.after(detailRow);
 }
 
-// --- ORE DATABASE GENERATOR (UPDATED) ---
+// --- ORE DATABASE GENERATOR ---
 function generateOreTable() {
     const tbody = document.getElementById('ore-table-body');
     if (!tbody || typeof ores === 'undefined') return;
@@ -758,7 +778,7 @@ function generateOreTable() {
     tbody.innerHTML = html;
 }
 
-// --- ROCK READER CALCULATOR (UPDATED) ---
+// --- ROCK READER CALCULATOR ---
 function findOres() {
     const inputSignatureStr = document.getElementById('signatureInput').value;
     const signature = parseInt(inputSignatureStr);
@@ -812,13 +832,11 @@ window.onclick = (e) => {
     }
 };
 
-// IMPORTANT: This triggers the initial data fetch and clears the loading screen!
 window.onload = loadData;
 
 document.addEventListener('DOMContentLoaded', function() {
     generateOreTable();
     
-    // Kept your enter key functionality just in case!
     const sigInput = document.getElementById('signatureInput');
     if (sigInput) {
         sigInput.addEventListener('keydown', function(event) {
