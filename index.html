@@ -29,8 +29,7 @@
         <div class="control-group" style="border-left: 2px solid var(--border); padding-left: 15px;">
             <span class="control-label">Data:</span>
             <button class="btn btn-export" onclick="exportFleet()">💾 Export Fleet</button>
-            <button class="btn btn-import" onclick="triggerImport('FLEET')">📂 Import Fleet</button>
-            <button class="btn btn-import" onclick="triggerImport('SHIP')">📄 Import Ship</button>
+            <button class="btn btn-import" onclick="triggerImport()">📂 Import Ship / Fleet</button>
             <button class="btn btn-remove" onclick="clearFleet()" style="margin-left: 10px;">🗑️ Clear</button>
             <input type="file" id="import-file" accept=".json" style="display: none;" onchange="handleImport(event)">
         </div>

@@ -1,7 +1,6 @@
 let lasers = [], modules = [], gadgets = [];
 let gadgetOptionsHtml = "";
 let modOptionsHtml = "";
-let importMode = ""; 
 
 let laserOptionsS1 = ""; 
 let laserOptionsS2 = ""; 
@@ -298,8 +297,8 @@ function generateHash(str) {
     return Math.abs(hash).toString(16); 
 }
 
-function triggerImport(mode) {
-    importMode = mode;
+function triggerImport() {
+    // Just opens the file browser, no mode needed!
     document.getElementById('import-file').click();
 }
 
@@ -325,18 +324,25 @@ function handleImport(event) {
                 alert("❌ Corrupted File: The contents have been modified or tampered with."); return;
             }
 
-            if (data.type === 'FLEET' && data.ships) {
+            // AUTO-DETECT: Look at the file's type, or guess based on if it contains multiple ships
+            let dataType = data.type || (data.ships ? 'FLEET' : 'SHIP');
+
+            if (dataType === 'FLEET' && data.ships) {
                 if (data.ships.length > 20) {
                     alert("❌ Import failed: Fleet exceeds the maximum limit of 20 ships.");
                     return;
                 }
+                // Safety warning only triggers if it's a fleet!
                 if (confirm("Importing a Fleet will overwrite your current setup. Continue?")) {
                     document.getElementById('fleet-container').innerHTML = '';
                     data.ships.forEach(s => addShip(s.shipType || s.type, s.operators, s.customName));
                 }
-            } else if (data.type === 'SHIP' || importMode === 'SHIP') {
+            } else if (dataType === 'SHIP') {
                 let t = data.shipType || (data.operators && data.operators.length > 1 ? 'MOLE' : 'PROSPECTOR');
+                // No warning, just adds the ship to the current fleet seamlessly
                 addShip(t, data.operators, data.customName);
+            } else {
+                alert("❌ Unrecognized file format.");
             }
         } catch (err) { 
             alert("❌ Invalid JSON file format!"); 
