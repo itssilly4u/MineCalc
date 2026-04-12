@@ -63,18 +63,57 @@
         </div>
     </div>
 
+<div class="accordion-header" onclick="toggleAccordion(this)">
+        <h2>Rock Cracker Analysis</h2>
+        <span class="accordion-icon">▼</span>
+    </div>
+    <div class="accordion-content">
+        <div class="cracker-grid" style="margin-bottom: 20px;">
+            <div class="cracker-input-group">
+                <div class="stat-title">Rock Mass</div>
+                <input type="number" id="rock-mass" class="cracker-input" placeholder="Example: 5000" oninput="calculate()">
+            </div>
+            <div class="cracker-input-group">
+                <div class="stat-title">Resistance (%)</div>
+                <input type="number" id="rock-res" class="cracker-input" placeholder="Example: 45" oninput="calculate()">
+            </div>
+            <div class="cracker-input-group">
+                <div class="stat-title">Instability</div>
+                <input type="number" id="rock-inst" class="cracker-input" placeholder="Example: 2.5" oninput="calculate()">
+            </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label style="color: var(--text-main); font-size: 0.9em; display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <input type="checkbox" id="gadgets-scanned" onchange="calculate()">
+                Rock was scanned WITH gadgets attached
+            </label>
+            <div class="disclaimer">Note: Check this box if you attached your gadgets to the rock BEFORE scanning it. Leave unchecked if you scanned the raw rock first.</div>
+        </div>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px; background: var(--bg-color); border: 1px solid var(--border); padding: 15px; border-radius: 8px;">
+                <h3 style="margin-top: 0; color: var(--accent); margin-bottom: 10px; font-size: 1.1em;">Power Check</h3>
+                <div id="crack-power-status" style="display: inline-block; padding: 4px 10px; border-radius: 4px; font-weight: bold; margin-bottom: 10px; background: var(--bg-color); color: var(--text-main);">Awaiting Input</div>
+                <div id="crack-power-required" style="color: var(--text-muted); font-size: 0.9em;">Required Power: 0</div>
+            </div>
+            <div style="flex: 1; min-width: 200px; background: var(--bg-color); border: 1px solid var(--border); padding: 15px; border-radius: 8px;">
+                <h3 style="margin-top: 0; color: var(--accent); margin-bottom: 10px; font-size: 1.1em;">Instability Check</h3>
+                <div id="crack-inst-status" style="display: inline-block; padding: 4px 10px; border-radius: 4px; font-weight: bold; margin-bottom: 10px; background: var(--bg-color); color: var(--text-main);">Awaiting Input</div>
+                <div id="crack-inst-final" style="color: var(--text-muted); font-size: 0.9em;">Final Instability: 0</div>
+            </div>
+        </div>
+    </div>
+
     <div class="accordion-header" onclick="toggleAccordion(this)">
         <h2>Rock Reader</h2>
         <span class="accordion-icon">▼</span>
     </div>
     <div class="accordion-content">
-        <div class="cracker-grid" style="margin-bottom: 20px;">
-            <div class="cracker-input-group" style="flex: 2;">
+        <div style="margin-bottom: 20px;">
+            <div class="cracker-input-group">
                 <div class="stat-title">Remote Cluster Signature</div>
-                <input type="number" id="signatureInput" class="cracker-input" placeholder="Example: 11610" oninput="findOres()">
-            </div>
-            <div class="cracker-input-group" style="flex: 1; justify-content: flex-end;">
-                <button class="action-button" onclick="findOres()">Check Matches</button>
+                <input type="number" id="signatureInput" class="cracker-input" placeholder="Example: 11610" oninput="findOres()" style="width: 100%; box-sizing: border-box;">
             </div>
         </div>
 
