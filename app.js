@@ -780,7 +780,18 @@ function generateOreTable() {
 
     const getInstRating = (val) => colorize(val >= 1000 ? 'Extreme' : val >= 600 ? 'High' : val > 50 ? 'Medium' : 'Low');
     const getResRating = (val) => colorize(val >= 95 ? 'Extreme' : val >= 60 ? 'High' : val >= 30 ? 'Medium' : val >= 10 ? 'Low' : 'Very Low');
-    const getDensRating = (val) => val >= 2500 ? 'Very Large' : val >= 1200 ? 'Large' : val >= 800 ? 'Medium' : val >= 300 ? 'Small' : 'Very Small';
+    const getDensRating = (val) => {
+        let word = val >= 2500 ? 'Very Large' : val >= 1200 ? 'Large' : val >= 800 ? 'Medium' : val >= 300 ? 'Small' : 'Very Small';
+        
+        let cssClass = '';
+        if (word === 'Very Large') cssClass = 'rating-extreme';
+        else if (word === 'Large') cssClass = 'rating-high';
+        else if (word === 'Medium') cssClass = 'rating-medium';
+        else if (word === 'Small') cssClass = 'rating-low';
+        else if (word === 'Very Small') cssClass = 'rating-very-low';
+        
+        return `<span class="${cssClass}">${word}</span>`;
+    };
 
     let htmlOres = "";
     let htmlSpecials = "";
