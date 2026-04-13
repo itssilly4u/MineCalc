@@ -448,6 +448,14 @@ footer { background-color: var(--panel-bg); border-top: 2px solid var(--border);
 }
 
 /* --- Header Logo Styles --- */
+.main-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
 .main-title-container h1 {
     margin: 0; 
     display: flex;
@@ -455,13 +463,7 @@ footer { background-color: var(--panel-bg); border-top: 2px solid var(--border);
     gap: 8px; 
 }
 
-.main-title-container h1 {
-    margin: 0; 
-    display: flex;
-    align-items: center;
-}
-
 .site-logo {
-    height: 45px; 
+    height: 40px; 
     width: auto;
 }
