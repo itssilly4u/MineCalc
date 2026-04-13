@@ -452,7 +452,6 @@ footer { background-color: var(--panel-bg); border-top: 2px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: flex-start; 
-    gap: 15px; 
     margin-bottom: 25px;
     margin-top: 10px;
 }
@@ -466,5 +465,4 @@ footer { background-color: var(--panel-bg); border-top: 2px solid var(--border);
 .site-logo {
     height: 45px; 
     width: auto;
-    filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.4)); 
 }
