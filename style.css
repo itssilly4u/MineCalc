@@ -806,6 +806,12 @@ footer {
     text-transform: uppercase; 
 } 
 
+.minecalc-table th:nth-child(2), 
+.minecalc-table td.ore-name-cell {
+    width: 205px; 
+    min-width: 205px;
+}
+
 /* Rating Colors (Hooked to variables) */
 .rating-extreme { 
     color: var(--impossible); 

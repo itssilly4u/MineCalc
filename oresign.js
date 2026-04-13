@@ -34,10 +34,10 @@ const ores = [
     { name: "Aluminium", rarity: "Common", secondary: "Corundum", signature: 4285, instability: 0, resistance: -40, density: 387 },
     { name: "Copper", rarity: "Common", secondary: "Tin", signature: 4240, instability: 50, resistance: -70, density: 1284 },
     { name: "Corundum", rarity: "Common", secondary: "Aluminium", signature: 4225, instability: 50, resistance: 10, density: 576 },
-    { name: "Hephestanite", rarity: "Common", secondary: "Quartz", tertiary: "Silicon", signature: 4180, instability: 550, resistance: 50, density: 459 },
+    { name: "Hephaestanite", rarity: "Common", secondary: "Quartz", tertiary: "Silicon", signature: 4180, instability: 550, resistance: 50, density: 459 },
     { name: "Ice", rarity: "Common", signature: 4300, instability: 0, resistance: -50, density: 143 },
     { name: "Iron", rarity: "Common", signature: 4270, instability: 50, resistance: -40, density: 1128 },
-    { name: "Quartz", rarity: "Common", secondary: "Hephestanite", tertiary: "Silicon", signature: 4210, instability: 50, resistance: -70, density: 380 },
-    { name: "Silicon", rarity: "Common", secondary: "Hephestanite", signature: 4255, instability: 50, resistance: -20, density: 335 },
+    { name: "Quartz", rarity: "Common", secondary: "Hephaestanite", tertiary: "Silicon", signature: 4210, instability: 50, resistance: -70, density: 380 },
+    { name: "Silicon", rarity: "Common", secondary: "Hephaestanite", signature: 4255, instability: 50, resistance: -20, density: 335 },
     { name: "Tin", rarity: "Common", secondary: "Copper", signature: 4195, instability: 0, resistance: -20, density: 827 }
 ];

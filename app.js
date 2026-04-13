@@ -820,7 +820,14 @@ function generateOreTable() {
         htmlOres += `
             <tr data-signature="${ore.signature}" data-rarity="${ore.rarity}">
                 <td class="rarity-${ore.rarity.toLowerCase()}">${ore.rarity}</td>
-                <td class="ore-name-cell" style="font-weight: bold;">${ore.name} ${ore.locationNote ? `<span style="font-size:0.7em; color:var(--accent); display:block;">(${ore.locationNote})</span>` : ''}</td>
+                <td class="ore-name-cell">
+                    <div class="name-badge-wrapper" style="display: flex; align-items: center; gap: 15px;">
+                        <div style="font-weight: bold; line-height: 1.2;">
+                            ${ore.name} 
+                            ${ore.locationNote ? `<span style="font-size:0.7em; color:var(--accent); display:block; font-weight: normal;">(${ore.locationNote})</span>` : ''}
+                        </div>
+                    </div>
+                </td>
                 <td class="sig-clickable" style="color: var(--accent); font-weight: bold; font-size: 1.1em;" 
                     onmouseenter="showSignatureTip(${ore.signature}, '${ore.rarity}')" 
                     onmouseleave="hidePreview()" 
@@ -869,8 +876,8 @@ function findOres() {
             
             if (count <= maxMulti) {
                 row.classList.add('highlight-match');
-                const nameCell = row.querySelector('.ore-name-cell');
-                nameCell.innerHTML += `<span class="cluster-badge">${count}x Cluster</span>`;
+                const nameWrapper = row.querySelector('.name-badge-wrapper');
+                nameWrapper.insertAdjacentHTML('beforeend', `<span class="cluster-badge">${count}x Cluster</span>`);
                 matchFound = true;
             }
         }
