@@ -47,6 +47,68 @@ window.showPreview = (index, type) => {
 }
 window.hidePreview = () => tooltipEl.style.display = 'none';
 
+window.showGadgetTip = (name, inst, res, density) => {
+    let rec1 = "OptiMax";
+    let reason1 = "Manageable stats. Maximize your cluster bonus!";
+    let rec2 = "BoreMax";
+    let reason2 = "A safe backup if you want a little extra stability while keeping a cluster bonus.";
+
+    // SAFEGURARD: Force these to be numbers just in case the database passes strings or missing data
+    const safeInst = parseFloat(inst) || 0;
+    const safeRes = parseFloat(res) || 0;
+    const safeDens = parseFloat(density) || 0;
+
+    const isHighInstability = safeInst >= 600;
+    const isHighResistance = safeRes >= 60;
+    const isHighDensity = safeDens >= 1200; 
+
+    if (isHighInstability && isHighDensity) {
+        rec1 = "Waveshift";
+        reason1 = "Extreme instability combined with a dense rock! Use this to safely stabilize it.";
+        rec2 = "Sabir";
+        reason2 = "Focuses on breaking the density/resistance.";
+    } 
+    else if (isHighResistance || isHighDensity) {
+        rec1 = "Sabir";
+        reason1 = "High resistance or density. Soften it up so your lasers can break it more easily.";
+        
+        // THE FIX: Check if the rock is also highly unstable to swap the Alternative
+        if (isHighInstability) {
+            rec2 = "Waveshift";
+            reason2 = "Since the instability is also high, use this as a safer alternative to prevent explosions.";
+        } else {
+            rec2 = "OptiMax";
+            reason2 = "If your laser is strong enough to ignore the resistance, go greedy for the cluster bonus!";
+        }
+    } 
+    else if (isHighInstability && !isHighResistance && !isHighDensity) {
+        rec1 = "BoreMax";
+        reason1 = "Tames the high instability while still providing a solid cluster bonus.";
+        rec2 = "Waveshift";
+        reason2 = "Use this if you want pure stability and safety over getting a cluster bonus.";
+    }
+
+    tooltipEl.innerHTML = `
+        <h4 style="margin-bottom: 12px;">Gadget Recommendation</h4>
+        <div style="font-size:0.9em; line-height:1.4; display:flex; flex-direction:column; gap:10px;">
+            
+            <div style="background-color: rgba(0,0,0,0.2); padding: 8px; border-left: 3px solid var(--good-stat); border-radius: 4px;">
+                <span style="color:var(--good-stat); font-size:0.75em; text-transform:uppercase; font-weight:bold; letter-spacing:1px;">Primary</span><br>
+                <span style="color:var(--accent); font-weight:bold; font-size:1.1em;">${rec1}</span><br>
+                <span style="color:var(--text-muted); font-size:0.85em; margin-top:2px; display:block;">${reason1}</span>
+            </div>
+
+            <div style="background-color: rgba(0,0,0,0.2); padding: 8px; border-left: 3px solid var(--difficult); border-radius: 4px;">
+                <span style="color:var(--difficult); font-size:0.75em; text-transform:uppercase; font-weight:bold; letter-spacing:1px;">Alternative</span><br>
+                <span style="color:var(--text-main); font-weight:bold; font-size:1em;">${rec2}</span><br>
+                <span style="color:var(--text-muted); font-size:0.85em; margin-top:2px; display:block;">${reason2}</span>
+            </div>
+
+        </div>
+    `;
+    tooltipEl.style.display = 'block';
+}
+
 function formatStatPreview(item, type) {
     if (!item || item.name === "None") return `<div style="color:var(--text-muted);">No modifiers</div>`;
     let html = '';
@@ -836,6 +898,7 @@ function generateOreTable() {
         htmlOres += `
             <tr data-signature="${ore.signature}" data-rarity="${ore.rarity}">
                 <td class="rarity-${ore.rarity.toLowerCase()}">${ore.rarity}</td>
+                
                 <td class="ore-name-cell">
                     <div class="name-badge-wrapper" style="display: flex; align-items: center; gap: 15px;">
                         <div style="font-weight: bold; line-height: 1.2;">
@@ -844,6 +907,7 @@ function generateOreTable() {
                         </div>
                     </div>
                 </td>
+                
                 <td class="sig-clickable" style="color: var(--accent); font-weight: bold; font-size: 1.1em;" 
                     onmouseenter="showSignatureTip(${ore.signature}, '${ore.rarity}')" 
                     onmouseleave="hidePreview()" 
@@ -851,9 +915,19 @@ function generateOreTable() {
                     title="Click or hover to expand clusters">
                     ${ore.signature}
                 </td>
-                <td>${getInstRating(ore.instability)} <span style="color: var(--text-muted); font-size: 0.8em;">(${ore.instability})</span></td>
-                <td>${getResRating(ore.resistance)} <span style="color: var(--text-muted); font-size: 0.8em;">(${ore.resistance})</span></td>
-                <td>${getDensRating(ore.density)} <span style="color: var(--text-muted); font-size: 0.8em;">(${ore.density})</span></td>
+                
+                <td style="cursor: help;" onmouseenter="showGadgetTip('${ore.name.replace(/'/g, "\\'")}', '${ore.instability}', '${ore.resistance}', '${ore.density}')" onmouseleave="hidePreview()">
+                    ${getInstRating(ore.instability)} <span style="color: var(--text-muted); font-size: 0.8em;">(${ore.instability})</span>
+                </td>
+                
+                <td style="cursor: help;" onmouseenter="showGadgetTip('${ore.name.replace(/'/g, "\\'")}', '${ore.instability}', '${ore.resistance}', '${ore.density}')" onmouseleave="hidePreview()">
+                    ${getResRating(ore.resistance)} <span style="color: var(--text-muted); font-size: 0.8em;">(${ore.resistance})</span>
+                </td>
+                
+                <td style="cursor: help;" onmouseenter="showGadgetTip('${ore.name.replace(/'/g, "\\'")}', '${ore.instability}', '${ore.resistance}', '${ore.density}')" onmouseleave="hidePreview()">
+                    ${getDensRating(ore.density)} <span style="color: var(--text-muted); font-size: 0.8em;">(${ore.density})</span>
+                </td>
+
                 <td style="font-size: 0.85em; color: var(--text-muted);">${subOres}</td>
             </tr>
         `;
