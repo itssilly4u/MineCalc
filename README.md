@@ -35,3 +35,9 @@ Built with pure HTML, CSS, and Vanilla JavaScript—no frameworks, no build step
 ## 🏆 Credits & Data Source
 
 A massive thank you to **[UEX Corp](https://uexcorp.space/)** for providing the raw item statistics. MineCalc relies entirely on their fantastic community database for the baseline numbers (Lasers, Modules and Gadgets) that power the calculator.
+
+## 🤝 Connect
+
+* **Discord:** itss_illy
+* **GitHub:** [@itssilly4u](https://github.com/itssilly4u)
+* **Website:** [itssilly.xyz](https://itssilly.xyz)
