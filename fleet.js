@@ -343,6 +343,18 @@ function handleLaserChange(opId) {
 
 function addGadgetRow() {
     const list = document.getElementById('gadget-list');
+    
+    const currentCount = list.querySelectorAll('.gadget-row').length;
+
+    if (currentCount >= 3) {
+        alert("You've reached the maximum limit of 3 gadgets.");
+        return; // Stops the function from adding a new row
+    }
+
+    if (currentCount === 1) {
+        alert("⚠️ Heads up: In the current Star Citizen patch, you can only attach ONE gadget to a rock at a time. You can add more here to theory-craft, but it won't work in-game!");
+    }
+
     const row = document.createElement('div');
     row.className = 'gadget-row';
     row.innerHTML = `
@@ -352,6 +364,7 @@ function addGadgetRow() {
         </div>
         <button class="btn btn-remove" onclick="this.parentElement.remove(); calculate();">Remove</button>
     `;
+    
     list.appendChild(row);
     calculate();
 }
