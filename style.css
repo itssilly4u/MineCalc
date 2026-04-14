@@ -806,10 +806,38 @@ footer {
     text-transform: uppercase; 
 } 
 
-.minecalc-table th:nth-child(2), 
-.minecalc-table td.ore-name-cell {
+#rock-reader-table th:nth-child(2), 
+#rock-reader-table td.ore-name-cell {
     width: 205px; 
     min-width: 205px;
+}
+
+/* --- Refinery Table  --- */
+
+#refinery-table th:first-child,
+#refinery-table td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--panel-bg);
+    z-index: 11;
+    box-shadow: 2px 0 0 0 var(--border);
+}
+
+#refinery-table th:first-child {
+    background-color: var(--bg-color);
+    z-index: 12 !important;
+}
+
+#refinery-table th:nth-child(2),
+#refinery-table td:nth-child(2) {
+    padding-right: 30px;
+    text-align: left;
+    border-left: none; 
+}
+
+#refinery-table {
+    border-collapse: separate; 
+    border-spacing: 0;
 }
 
 /* Rating Colors (Hooked to variables) */

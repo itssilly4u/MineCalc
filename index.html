@@ -125,7 +125,7 @@
         </div>
 
         <div class="table-responsive">
-            <table class="minecalc-table">
+            <table class="minecalc-table" id="rock-reader-table">
                 <thead>
                     <tr>
                         <th>Rarity</th>
@@ -138,6 +138,24 @@
                     </tr>
                 </thead>
                 <tbody id="ore-table-body">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h2>Refinery Yield Matrix</h2>
+        <span class="accordion-icon">▼</span>
+    </div>
+    <div class="accordion-content">
+        <div class="table-responsive">
+            <table class="minecalc-table" id="refinery-table">
+                <thead>
+                    <tr>
+                        <th>Refinery</th>
+                        <th>System</th>
+                        </tr>
+                </thead>
+                <tbody id="refinery-table-body">
                     </tbody>
             </table>
         </div>
@@ -158,6 +176,7 @@
 <script src="calculator.js"></script>
 <script src="rockreader.js"></script>
 <script src="fleet.js"></script>
+<script src="refinery.js"></script>
 
 <script src="app.js"></script>
 

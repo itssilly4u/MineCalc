@@ -1,5 +1,5 @@
 // --- GLOBALS & DATA VARIABLES ---
-let lasers = [], modules = [], gadgets = [];
+let lasers = [], modules = [], gadgets = [], refineryData = [];
 let gadgetOptionsHtml = "";
 let modOptionsHtml = "";
 let laserOptionsS1 = ""; 
@@ -35,8 +35,15 @@ function generateId() {
 // --- DATA INITIALIZATION ---
 async function loadData() {
     try {
-        const [lR, mR, gR] = await Promise.all([fetch('UEX - mining-laser-heads.json'), fetch('UEX - mining-modules.json'), fetch('UEX - gadgets.json')]);
-        const rL = await lR.json(), rM = await mR.json(), rG = await gR.json();
+        const [lR, mR, gR, refR] = await Promise.all([
+            fetch('UEX - mining-laser-heads.json'), 
+            fetch('UEX - mining-modules.json'), 
+            fetch('UEX - gadgets.json'),
+            fetch('UEX - refinery-yields.json')
+        ]);
+        const rL = await lR.json(), rM = await mR.json(), rG = await gR.json(), rRef = await refR.json();
+
+        refineryData = rRef;
 
         lasers.push({ name: "None", slots: 0, powerMin: 0, powerMax: 0, extraction: 0 });
         rL.forEach(l => {
@@ -99,4 +106,5 @@ function initUI() {
     gadgetOptionsHtml = gadgets.map((g, i) => `<div class="cs-option" data-val="${i}" onmouseenter="showPreview(${i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${g.name}</div>`).join('');
 
     addShip('MOLE');
+    generateRefineryTable();
 }
