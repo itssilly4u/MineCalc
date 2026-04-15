@@ -13,6 +13,9 @@ concurrency:
   group: star-citizen-data-update
   cancel-in-progress: true
 
+permissions:
+  contents: write  # Allows the bot to push code changes back to the repo
+
 jobs:
   build:
     runs-on: self-hosted  
