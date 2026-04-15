@@ -9,11 +9,6 @@ function getMaxMulti(rarity) {
     return 1;
 }
 
-const systemColors = {
-    "Stanton": "var(--text-stanton)", 
-    "Nyx": "var(--text-nyx)", 
-    "Pyro": "var(--text-pyro)" 
-};
 
 // --- SIGNATURE HOVER AND DROPDOWNS ---
 function showSignatureTip(baseSig, rarity) {
