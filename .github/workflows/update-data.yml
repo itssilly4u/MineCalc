@@ -36,11 +36,15 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           
-          if git diff --quiet game-data.js; then
-            echo "No changes detected. Skipping update."
-          else
-            echo "Changes detected! Updating game-data.js..."
-            git add game-data.js
-            git commit -m "Auto-update: Fresh Market Prices"
-            git push
-          fi
+          # Check for changes
+          git diff --quiet game-data.js
+          
+          # $LASTEXITCODE is 0 if no changes, 1 if changes exist
+          if ($LASTEXITCODE -ne 0) {
+              echo "Changes detected! Updating game-data.js..."
+              git add game-data.js
+              git commit -m "Auto-update: Fresh Market Prices"
+              git push
+          } else {
+              echo "No changes detected. Skipping update."
+          }
