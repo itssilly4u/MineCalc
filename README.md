@@ -23,15 +23,15 @@ Built with **Zero-Framework Vanilla JS**, it delivers desktop-grade performance 
 * **📖 Signature & Rarity Intelligence**
   * Custom-built signature database for remote scanning.
   * Smart-logic that calculates cluster multiples while strictly enforcing in-game rarity caps (Legendary, Epic, etc.).
-* **💹 Live Market & Refinery Integration**
-  * Automated data pipeline via GitHub Actions that pulls fresh market prices every 12 hours.
+* **💹 Market & Refinery Integration**
+  * Regularly updated data pipeline providing fresh market prices and refinery yields. *(Note: A fully automated 12-hour cloud synchronization via GitHub Actions is currently in active development!)*
   * **Interactive Price cards:** Contextual market data for every ore, featuring regional "Best Price" tooltips and expanded outlet lists.
 
 ## 🛠️ Tech Stack
 
 * **Logic Engine:** Vanilla JavaScript (Math-intensive simulation logic).
 * **UI/UX:** HTML5 & CSS3 with a focus on scannability and "at-a-glance" data.
-* **Automation:** Node.js & GitHub Actions for continuous data synchronization.
+* **Automation:** Node.js script engine for rapid data processing and synchronization.
 
 ## 🏆 Data Sources
 

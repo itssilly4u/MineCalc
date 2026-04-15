@@ -1,9 +1,9 @@
 name: Update Star Citizen Data
 
 on:
-  schedule:
+  # schedule:
     # This runs the script every 12 hours (UTC)
-    - cron: '0 */12 * * *'
+   #- cron: '0 */12 * * *'
   workflow_dispatch: # Allows you to run it manually with a button click
 
 jobs:
