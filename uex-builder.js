@@ -6,7 +6,11 @@ if (!API_KEY) {
     process.exit(1);
 } 
 const BASE_URL = 'https://api.uexcorp.space/2.0';
-const HEADERS = { 'Authorization': `Bearer ${API_KEY}`, 'Accept': 'application/json' };
+const HEADERS = { 
+    'Authorization': `Bearer ${API_KEY}`, 
+    'Accept': 'application/json',
+    'User-Agent': 'MineCalc-AutoUpdater/1.0 (GitHub Actions)'
+};
 
 const targetOres = [
     "Quantainium", "Stileron", "Savrilium", "Riccite", "Ouratite", "Lindinium", 
