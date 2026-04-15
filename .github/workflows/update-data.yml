@@ -1,14 +1,21 @@
 name: Update Star Citizen Data
 
 on:
-  # schedule:
+  schedule:
     # This runs the script every 12 hours (UTC)
-   #- cron: '0 */12 * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch: # Allows you to run it manually with a button click
+
+# This block ensures only ONE job runs at a time.
+# If a new one starts while an old one is still waiting (PC was off), 
+# it cancels the old one so you always get the freshest data.
+concurrency:
+  group: star-citizen-data-update
+  cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted  
 
     steps:
       - name: Checkout code
