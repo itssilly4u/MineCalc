@@ -1,3 +1,37 @@
+// --- UI STATE VARIABLES ---
+let gadgetOptionsHtml = "";
+let modOptionsHtml = "";
+let laserOptionsS1 = ""; 
+let laserOptionsS2 = ""; 
+let laserOptionsGolem = ""; 
+let globalIdCounter = 0;
+
+// --- HELPER FUNCTIONS ---
+function escapeHTML(str) {
+    if (!str) return "";
+    return str.toString()
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function generateHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash; 
+    }
+    return Math.abs(hash).toString(16); 
+}
+
+function generateId() { 
+    globalIdCounter++;
+    return 'uid_' + globalIdCounter + '_' + Math.random().toString(36).substr(2, 5); 
+}
+
 // --- GLOBAL TOOLTIP ELEMENT ---
 window.tooltipEl = document.createElement('div');
 window.tooltipEl.className = 'item-preview-tooltip';
@@ -24,6 +58,7 @@ window.showStatTip = (type) => {
 }
 
 window.showPreview = (index, type) => {
+    // Uses the global arrays loaded from game-data.js
     let item = type === 'laser' ? lasers[index] : (type === 'module' ? modules[index] : gadgets[index]);
     window.tooltipEl.innerHTML = `<h4>${item.name}</h4>${formatStatPreview(item, type)}`;
     window.tooltipEl.style.display = 'block';
@@ -116,7 +151,42 @@ window.showGadgetTip = (name, inst, res, density) => {
     window.tooltipEl.style.display = 'block';
 }
 
-// --- GLOBAL EVENT LISTENERS & INITIALIZATION ---
+// --- UI INITIALIZATION ---
+function initUI() {
+    // 1. Hide loading screen instantly
+    const loader = document.getElementById('loading');
+    if (loader) loader.style.display = 'none';
+    
+    const appContent = document.getElementById('app-content');
+    if (appContent) appContent.style.display = 'block';
+
+    // 2. Build Dropdowns using game-data.js arrays
+    laserOptionsS1 = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
+    laserOptionsS2 = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
+    laserOptionsGolem = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
+    
+    let f2 = lasers.map((l, i) => ({l, i})).filter(o => o.l.size === 2 && o.l.name !== "None");
+    if(f2.length) laserOptionsS2 += `<div class="cs-optgroup">Size 2 Lasers</div>` + f2.map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'laser')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'laser')">${o.l.name}</div>`).join('');
+
+    let f1 = lasers.map((l, i) => ({l, i})).filter(o => o.l.size === 1 && o.l.name !== "None" && !o.l.name.toLowerCase().includes("pitman"));
+    if(f1.length) laserOptionsS1 += `<div class="cs-optgroup">Size 1 Lasers</div>` + f1.map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'laser')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'laser')">${o.l.name}</div>`).join('');
+
+    let fGolem = lasers.map((l, i) => ({l, i})).filter(o => o.l.name.toLowerCase().includes("pitman"));
+    if(fGolem.length) laserOptionsGolem += `<div class="cs-optgroup">Drake Golem</div>` + fGolem.map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'laser')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'laser')">${o.l.name}</div>`).join('');
+
+    modOptionsHtml = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'module')">None</div>`;
+    let actives = modules.map((m, i) => ({m, i})).filter(o => o.m.uses > 0);
+    let passives = modules.map((m, i) => ({m, i})).filter(o => o.m.uses === 0 && o.m.name !== "None");
+    if (actives.length) { modOptionsHtml += `<div class="cs-optgroup">Active Modules</div>`; actives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
+    if (passives.length) { modOptionsHtml += `<div class="cs-optgroup">Passive Modules</div>`; passives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
+
+    gadgetOptionsHtml = gadgets.map((g, i) => `<div class="cs-option" data-val="${i}" onmouseenter="showPreview(${i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${g.name}</div>`).join('');
+
+    // 3. Initialize external modules if they exist
+    if (typeof addShip === "function") addShip('MOLE');
+}
+
+// --- GLOBAL EVENT LISTENERS ---
 window.onclick = (e) => { 
     if (!e.target.closest('.custom-select')) {
         document.querySelectorAll('.custom-select').forEach(el => { 
@@ -126,17 +196,34 @@ window.onclick = (e) => {
     }
 };
 
-window.onload = loadData;
-
 document.addEventListener('DOMContentLoaded', function() {
-    generateOreTable();
+    // 1. Run the UI initialization
+    initUI();
     
+    // 2. Build the data tables (Only once!)
+    if (typeof generateOreTable === "function") generateOreTable();
+    if (typeof generateRefineryTable === "function") generateRefineryTable();
+    
+    // 3. Simulate clicks to open specific sections by default
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+        const title = header.querySelector('h2').innerText.toLowerCase();
+        
+        // We open the Reader and the Analysis
+        if (title.includes('rock reader') || title.includes('cracker analysis')) {
+            if (!header.classList.contains('active')) {
+                header.click();
+            }
+        }
+    });
+
+    // 4. Setup the input listener for the Rock Reader
     const sigInput = document.getElementById('signatureInput');
     if (sigInput) {
         sigInput.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
                 event.preventDefault(); 
-                findOres();
+                if (typeof findOres === "function") findOres();
             }
         });
     }

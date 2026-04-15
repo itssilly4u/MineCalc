@@ -1,7 +1,8 @@
 const systemMap = {
     "ST": "Stanton",
     "PY": "Pyro",
-    "NX": "Nyx"
+    "NX": "Nyx",
+    "NY": "Nyx" 
 };
 
 const systemColors = {
@@ -10,50 +11,52 @@ const systemColors = {
     "Pyro": "#e88e3c"       // Fiery Orange
 };
 
-// Memory for our sorter
 let currentSortCol = 'Refinery';
-let isSortAsc = true; // true = A-Z or Min-Max, false = Z-A or Max-Min
+let isSortAsc = true; 
 
-// The function triggered when clicking a header
-window.sortRefineryTable = (col) => {
+function sortRefineryTable(col) {
     if (currentSortCol === col) {
-        // Reverse direction if clicking the same column
         isSortAsc = !isSortAsc;
     } else {
-        // Change column. Default to A-Z for text, Max-Min for ores.
         currentSortCol = col;
         isSortAsc = (col === 'Refinery' || col === 'System') ? true : false;
     }
-    window.generateRefineryTable(); // Re-render
-};
+    generateRefineryTable(); 
+}
 
-window.generateRefineryTable = () => {
+function generateRefineryTable() {
     const table = document.getElementById('refinery-table');
+    if (!table) return; 
+    
     const thead = table.querySelector('thead tr');
     const tbody = document.getElementById('refinery-table-body');
 
     if (!tbody || !thead || !refineryData || refineryData.length === 0) return;
 
-    // Clear existing headers
     thead.innerHTML = '';
 
-    const ignoreKeys = ["Refinery", "", "__1", "__2"];
-    const oreKeys = Object.keys(refineryData[0]).filter(k => !ignoreKeys.includes(k)).sort();
+    // --- 1. Find all unique ore columns dynamically ---
+    const ignoreKeys = ["Refinery", ""]; // "" is the System code key in your data
+    const oreSet = new Set();
+    
+    refineryData.forEach(row => {
+        Object.keys(row).forEach(key => {
+            if (!ignoreKeys.includes(key)) oreSet.add(key);
+        });
+    });
+    
+    const oreKeys = Array.from(oreSet).sort();
 
-    // 1. Build Interactive Headers
+    // --- 2. Build Headers ---
     const buildHeader = (label, sortKey) => {
         const th = document.createElement('th');
         th.style.cursor = 'pointer';
         th.title = `Sort by ${label}`;
-        
-        // Force the text and arrow to stay on a single line
         th.style.whiteSpace = 'nowrap'; 
-        
         th.onclick = () => sortRefineryTable(sortKey);
         
         let arrow = '';
         if (currentSortCol === sortKey) {
-            // Using &nbsp; (non-breaking space) instead of a regular space
             arrow = isSortAsc ? '&nbsp;<span style="font-size:0.8em">▲</span>' : '&nbsp;<span style="font-size:0.8em">▼</span>';
             th.style.color = 'var(--accent)'; 
         }
@@ -68,11 +71,10 @@ window.generateRefineryTable = () => {
     buildHeader('System', 'System');
     oreKeys.forEach(ore => buildHeader(ore, ore));
 
-    // 2. Sort the Data Array
+    // --- 3. Sort Data ---
     let sortedData = [...refineryData].sort((a, b) => {
         let valA, valB;
 
-        // Determine what we are comparing
         if (currentSortCol === 'System') {
             valA = systemMap[a[""]] || a[""];
             valB = systemMap[b[""]] || b[""];
@@ -81,16 +83,25 @@ window.generateRefineryTable = () => {
             valB = b[currentSortCol];
         }
 
-        // Apply sorting math
+        // Handle string vs numeric sorting safely
+        if (currentSortCol === 'Refinery' || currentSortCol === 'System') {
+            valA = valA ? valA.toString().toLowerCase() : "";
+            valB = valB ? valB.toString().toLowerCase() : "";
+        } else {
+            valA = valA === undefined ? -999 : parseFloat(valA);
+            valB = valB === undefined ? -999 : parseFloat(valB);
+        }
+
         if (valA < valB) return isSortAsc ? -1 : 1;
         if (valA > valB) return isSortAsc ? 1 : -1;
         return 0;
     });
 
-    // 3. Render the Rows
+    // --- 4. Render Rows ---
     let htmlRows = "";
     sortedData.forEach(ref => {
-        const sysName = systemMap[ref[""]] || ref[""];
+        const sysCode = ref[""]; 
+        const sysName = systemMap[sysCode] || sysCode || "Unknown";
         const sysColor = systemColors[sysName] || "var(--text-muted)";
         
         let row = `<tr>
@@ -100,18 +111,22 @@ window.generateRefineryTable = () => {
         oreKeys.forEach(ore => {
             const val = ref[ore];
             let colorStr = "";
-            let valStr = val + "%";
+            let valStr = "0%";
 
-            if (val > 0) {
-                colorStr = 'color: var(--good-stat); font-weight: bold;';
-                valStr = '+' + val + '%';
-            } else if (val < 0) {
-                colorStr = 'color: var(--bad-stat);';
+            if (val !== undefined && val !== null) {
+                if (val > 0) {
+                    colorStr = 'color: var(--good-stat); font-weight: bold;';
+                    valStr = '+' + val + '%';
+                } else if (val < 0) {
+                    colorStr = 'color: var(--bad-stat);';
+                    valStr = val + '%';
+                } else {
+                    colorStr = 'color: var(--text-muted);';
+                }
             } else {
                 colorStr = 'color: var(--text-muted);';
             }
 
-            // Center align the numbers so they look neat under the headers
             row += `<td style="${colorStr} text-align: center;">${valStr}</td>`;
         });
 
@@ -120,4 +135,7 @@ window.generateRefineryTable = () => {
     });
 
     tbody.innerHTML = htmlRows;
-};
+}
+
+window.sortRefineryTable = sortRefineryTable;
+window.generateRefineryTable = generateRefineryTable;

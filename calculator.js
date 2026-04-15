@@ -1,20 +1,38 @@
-function calcMulti(arr) { if (!arr.length) return 0; let p = 1; arr.forEach(v => p *= (1 + (v/100))); return (p - 1) * 100; }
+// --- HELPER FUNCTIONS ---
+// We need this on the frontend to safely parse user input from the HTML boxes
+function safeFloat(v, d=0) { 
+    if (!v) return d; 
+    let f = parseFloat(v.toString().replace(/[% ,]/g, '')); 
+    return isNaN(f) ? d : f; 
+}
+
+function calcMulti(arr) { 
+    if (!arr.length) return 0; 
+    let p = 1; 
+    arr.forEach(v => p *= (1 + (v/100))); 
+    return (p - 1) * 100; 
+}
 
 function updateStat(id, val, inv, suf='%') {
-    let el = document.getElementById(id); if (!el) return;
+    let el = document.getElementById(id); 
+    if (!el) return;
     let d = val.toFixed(1).replace('.0', '');
     el.innerText = (val === 0 ? '0' : (val > 0 ? '+' + d : d)) + suf;
     el.style.color = val === 0 ? 'var(--text-main)' : ((val > 0 ? !inv : inv) ? 'var(--good-stat)' : 'var(--bad-stat)');
 }
 
+// --- MAIN CALCULATOR ---
 function calculate() {
     let tMax = 0, tMin = 0;
     let fleetRes = [], fleetInst = []; 
     let gadgetRes = [], gadgetInst = []; 
     let win = [], chg = [], over = [], shat = [], clust = [];
 
+    // 1. Process Ships & Lasers
     document.querySelectorAll('.setup-card').forEach(card => {
         let opId = card.dataset.opid;
+        
+        // If operator is toggled off, reset local stats and skip
         if (card.classList.contains('off')) {
             let extEl = document.getElementById(`op-ext-${opId}`);
             let inertEl = document.getElementById(`op-inert-${opId}`);
@@ -32,6 +50,7 @@ function calculate() {
         let pMod = 0, eMod = 0, opInert = [l.inert || 0];
         let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
 
+        // Process Modules for this seat
         [1,2,3].forEach(m => {
             let modEl = document.getElementById(`cs-mod${m}-${opId}`);
             if (!modEl) return;
@@ -39,8 +58,8 @@ function calculate() {
             let mod = modules[modEl.dataset.value];
             if (!mod || mod.name === "None") return;
             
-            pMod += mod.power; 
-            eMod += mod.extraction; 
+            pMod += mod.power || 0; 
+            eMod += mod.extraction || 0; 
             opInert.push(mod.inert || 0);
             
             if (mod.resistance) fleetRes.push(mod.resistance); 
@@ -53,8 +72,9 @@ function calculate() {
             if (mod.cluster) seatClust += mod.cluster;
         });
 
-        tMax += l.powerMax * (1 + pMod/100); 
-        tMin += l.powerMin * (1 + pMod/100);
+        // Add to Fleet Totals
+        tMax += (l.powerMax || 0) * (1 + pMod/100); 
+        tMin += (l.powerMin || 0) * (1 + pMod/100);
         
         if (l.resistance) fleetRes.push(l.resistance); 
         if (l.instability) fleetInst.push(l.instability);
@@ -74,12 +94,20 @@ function calculate() {
         let finalSeatClust = ((1 + (l.cluster || 0)/100) * (1 + seatClust/100)) - 1;
         if (finalSeatClust !== 0) clust.push(finalSeatClust * 100);
 
-        document.getElementById(`op-ext-${opId}`).innerText = (l.extraction * (1 + eMod/100)).toFixed(1);
+        // Update Local HTML Stats
+        const extDisplay = document.getElementById(`op-ext-${opId}`);
+        if (extDisplay) extDisplay.innerText = ((l.extraction || 0) * (1 + eMod/100)).toFixed(1);
+        
         updateStat(`op-inert-${opId}`, calcMulti(opInert), true);
-        document.getElementById(`op-optrange-${opId}`).innerText = (l.optRange || 0) + 'm';
-        document.getElementById(`op-maxrange-${opId}`).innerText = (l.maxRange || 0) + 'm';
+        
+        const optRangeDisplay = document.getElementById(`op-optrange-${opId}`);
+        if (optRangeDisplay) optRangeDisplay.innerText = (l.optRange || 0) + 'm';
+        
+        const maxRangeDisplay = document.getElementById(`op-maxrange-${opId}`);
+        if (maxRangeDisplay) maxRangeDisplay.innerText = (l.maxRange || 0) + 'm';
     });
 
+    // 2. Process Gadgets
     document.querySelectorAll('.gadget-select').forEach(el => {
         let g = gadgets[el.dataset.value];
         if (g && g.name !== "None") {
@@ -93,11 +121,15 @@ function calculate() {
         }
     });
 
+    // 3. Output Fleet Modifiers
     const totalResMod = calcMulti([...fleetRes, ...gadgetRes]);
     const totalInstMod = calcMulti([...fleetInst, ...gadgetInst]);
 
-    document.getElementById('res-max-power').innerText = Math.round(tMax).toLocaleString();
-    document.getElementById('res-min-power').innerText = Math.round(tMin).toLocaleString();
+    const maxPowerDisplay = document.getElementById('res-max-power');
+    if (maxPowerDisplay) maxPowerDisplay.innerText = Math.round(tMax).toLocaleString();
+    
+    const minPowerDisplay = document.getElementById('res-min-power');
+    if (minPowerDisplay) minPowerDisplay.innerText = Math.round(tMin).toLocaleString();
     
     updateStat('res-resistance', totalResMod, true);
     updateStat('res-instability', totalInstMod, true);
@@ -107,17 +139,28 @@ function calculate() {
     updateStat('res-shatter', calcMulti(shat), true);
     updateStat('res-cluster', calcMulti(clust), false);
 
-    const inputMass = safeFloat(document.getElementById('rock-mass').value);
-    const inputRes = safeFloat(document.getElementById('rock-res').value);
-    const inputInst = safeFloat(document.getElementById('rock-inst').value);
-    const scannedWithGadgets = document.getElementById('gadgets-scanned').checked;
+    // 4. Calculate Rock Stats based on user input
+    const rockMassInput = document.getElementById('rock-mass');
+    const rockResInput = document.getElementById('rock-res');
+    const rockInstInput = document.getElementById('rock-inst');
+    const gadgetsScanned = document.getElementById('gadgets-scanned');
+
+    if (!rockMassInput || !rockResInput || !rockInstInput) return; // Failsafe
+
+    const inputMass = safeFloat(rockMassInput.value);
+    const inputRes = safeFloat(rockResInput.value);
+    const inputInst = safeFloat(rockInstInput.value);
+    const scannedWithGadgets = gadgetsScanned ? gadgetsScanned.checked : false;
+
+    const pStatus = document.getElementById('crack-power-status');
+    const pReqDisplay = document.getElementById('crack-power-required');
+    const iStatus = document.getElementById('crack-inst-status');
+    const iFinalDisplay = document.getElementById('crack-inst-final');
 
     if (inputMass > 0) {
+        // Evaluate Resistance & Power
         let resModToApply = scannedWithGadgets ? calcMulti(fleetRes) : totalResMod;
         let effectiveRes = inputRes * (1 + resModToApply / 100);
-
-        const pStatus = document.getElementById('crack-power-status');
-        const pReqDisplay = document.getElementById('crack-power-required');
 
         if (effectiveRes >= 100) {
             pStatus.innerText = "Impossible";
@@ -148,11 +191,11 @@ function calculate() {
             }
         }
 
+        // Evaluate Instability
         let instModToApply = scannedWithGadgets ? calcMulti(fleetInst) : totalInstMod;
         let finalInst = Math.max(0, inputInst * (1 + instModToApply / 100));
 
-        const iStatus = document.getElementById('crack-inst-status');
-        document.getElementById('crack-inst-final').innerText = "Final Instability: " + Math.round(finalInst).toLocaleString();
+        iFinalDisplay.innerText = "Final Instability: " + Math.round(finalInst).toLocaleString();
 
         if (finalInst < 101) {
             iStatus.innerText = "Stable";
@@ -167,10 +210,19 @@ function calculate() {
             iStatus.style.backgroundColor = "var(--impossible)";
             iStatus.style.color = "white";
         }
+        
     } else {
-        document.getElementById('crack-power-status').innerText = "Awaiting Input";
-        document.getElementById('crack-power-status').style.backgroundColor = "var(--bg-color)";
-        document.getElementById('crack-inst-status').innerText = "Awaiting Input";
-        document.getElementById('crack-inst-status').style.backgroundColor = "var(--bg-color)";
+        // Reset state if Mass is 0
+        if (pStatus) {
+            pStatus.innerText = "Awaiting Input";
+            pStatus.style.backgroundColor = "var(--bg-color)";
+        }
+        if (iStatus) {
+            iStatus.innerText = "Awaiting Input";
+            iStatus.style.backgroundColor = "var(--bg-color)";
+        }
     }
 }
+
+// Make globally available if called by HTML
+window.calculate = calculate;

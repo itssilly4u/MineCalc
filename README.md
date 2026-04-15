@@ -1,6 +1,6 @@
 # ⛏️ MineCalc
 
-**An advanced, standalone Mining Fleet Builder and Rock Cracker Calculator for Star Citizen.**
+**A high-performance Mining Intelligence Engine and Fleet Management suite for Star Citizen.**
 
 Live version available at: [minecalc.itssilly.xyz](https://minecalc.itssilly.xyz)
 
@@ -8,33 +8,34 @@ Live version available at: [minecalc.itssilly.xyz](https://minecalc.itssilly.xyz
 
 ## 🚀 Overview
 
-MineCalc is a lightweight, blazing-fast web tool designed for Star Citizen miners. Whether you are running a solo Prospector or managing a multi-crew MOLE fleet, MineCalc allows you to theory-craft loadouts, calculate complex in-game mining modifiers and analyze rock crackability on the fly. 
+MineCalc is a sophisticated "Mining Brain" built to handle the complex variables of Star Citizen's mining ecosystem. While most tools simply list stats, MineCalc uses a **proprietary calculation engine** to simulate real-world mining scenarios, from multi-crew MOLE operations to solo prospecting in the belts of Pyro.
 
-Built with pure HTML, CSS, and Vanilla JavaScript—no frameworks, no build steps and zero lag.
+Built with **Zero-Framework Vanilla JS**, it delivers desktop-grade performance with zero lag, even when calculating high-complexity fleet modifiers.
 
 ## ✨ Key Features
 
-* **🛸 Dynamic Fleet Builder**
-  * Add, rename, and manage multiple ships (ARGO MOLE, MISC Prospector, Drake Golem).
-  * Toggle individual operator seats on or off to calculate total fleet power dynamically.
-* **⚙️ Advanced Loadout Customization**
-  * Equip Lasers, Active/Passive Modules, and Gadgets.
-  * Accurately calculates Star Citizen's unique **Hybrid Multiplicative** math system for stats like Optimal Window, Charge Rates, Shatter, and Cluster modifiers.
-* **🪨 Rock Cracker Analysis**
-  * Input scanned Rock Mass, Resistance, and Instability.
-  * Instantly tells you if a rock is *Crackable*, *Difficult* or *Impossible* based on your current fleet loadout.
-  * Smart toggle to account for whether gadgets were applied *before* or *after* the initial rock scan.
-* **📖 Rock Reader & Signature Database**
-  * Live-search database for remote cluster signatures (e.g., typing `11610` instantly highlights the match).
-  * Automatically calculates cluster multiples (e.g., "3x Cluster") while strictly respecting in-game rarity limits (Legendary 2x, Epic 3x, etc.).
-  * Expandable UI to view all possible cluster sizes and ratings at a glance.
-* **💾 Secure Import & Export**
-  * Export individual ships or your entire fleet layout to a lightweight `.json` file.
-  * Includes a background security check to prevent corrupted or maliciously edited files from breaking the UI upon import.
+* **🧠 Advanced Mining Engine**
+  * Implements the full **Hybrid Multiplicative** math system used by Star Citizen for calculating Optimal Windows, Charge Rates, and Shatter Damage.
+  * Real-time "Crackability" simulation: Instantly analyzes Rock Mass vs. Fleet Power to categorize rocks as *Crackable*, *Difficult*, or *Impossible*.
+* **🛸 Multi-Crew Fleet Management**
+  * Custom ship builder (MOLE, Prospector) with seat-specific loadouts.
+  * Toggle operator seats dynamically to see how crew count affects your total mining throughput.
+* **📖 Signature & Rarity Intelligence**
+  * Custom-built signature database for remote scanning.
+  * Smart-logic that calculates cluster multiples while strictly enforcing in-game rarity caps (Legendary, Epic, etc.).
+* **💹 Live Market & Refinery Integration**
+  * Automated data pipeline via GitHub Actions that pulls fresh market prices every 12 hours.
+  * **Interactive Price cards:** Contextual market data for every ore, featuring regional "Best Price" tooltips and expanded outlet lists.
 
-## 🏆 Credits & Data Source
+## 🛠️ Tech Stack
 
-A massive thank you to **[UEX Corp](https://uexcorp.space/)** for providing the raw item statistics. MineCalc relies entirely on their fantastic community database for the baseline numbers (Lasers, Modules, Gadgets and Refinery Data) that power the calculator.
+* **Logic Engine:** Vanilla JavaScript (Math-intensive simulation logic).
+* **UI/UX:** HTML5 & CSS3 with a focus on scannability and "at-a-glance" data.
+* **Automation:** Node.js & GitHub Actions for continuous data synchronization.
+
+## 🏆 Data Sources
+
+MineCalc's intelligence is powered by baseline statistics and market pricing graciously provided by the **[UEX Corp API](https://uexcorp.space/)**. Their community-driven data serves as the foundation for the calculations performed by the MineCalc engine.
 
 ## 🤝 Connect
 

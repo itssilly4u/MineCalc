@@ -812,6 +812,48 @@ footer {
     min-width: 205px;
 }
 
+#rock-reader-table th:nth-child(n+3),
+#rock-reader-table td:nth-child(n+3) {
+    text-align: center;
+}
+
+#rock-reader-table td.price-clickable {
+    color: var(--accent);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#rock-reader-table td.price-cell-empty {
+    color: var(--text-muted);
+}
+
+
+#rock-reader-table th, 
+#rock-reader-table td.ore-name-cell,
+#rock-reader-table td.sig-clickable,
+#rock-reader-table td.price-clickable {
+    white-space: nowrap; 
+}
+
+
+#rock-reader-table th:nth-child(7),
+#rock-reader-table td.price-clickable {
+    width: 130px;
+    min-width: 130px;
+}
+
+
+#rock-reader-table th:last-child,
+#rock-reader-table td:last-child {
+    width: auto;
+    white-space: normal; 
+}
+
+
+.price-details-row td {
+    white-space: normal !important; 
+}
+
 /* --- Refinery Table  --- */
 
 #refinery-table th:first-child,

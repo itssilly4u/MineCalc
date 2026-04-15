@@ -18,6 +18,8 @@ function createOperatorHtml(opId, seatName, laserOptions) {
 
 function addShip(type, loadConfig = null, customName = null) {
     const container = document.getElementById('fleet-container');
+    if (!container) return; // Failsafe
+
     const shipId = generateId();
     const shipDiv = document.createElement('div');
     shipDiv.className = 'ship-container';
@@ -93,20 +95,21 @@ function addShip(type, loadConfig = null, customName = null) {
     if (loadConfig) { 
         applyShipConfig(operatorIds, loadConfig); 
     } else {
-        calculate();
+        if (typeof calculate === "function") calculate();
     }
 }
 
 function clearFleet() {
     if (confirm("Are you sure you want to clear the entire fleet?")) {
         document.getElementById('fleet-container').innerHTML = '';
-        calculate();
+        if (typeof calculate === "function") calculate();
     }
 }
 
 function removeShip(shipId) {
-    document.getElementById(`ship-${shipId}`).remove();
-    calculate();
+    const ship = document.getElementById(`ship-${shipId}`);
+    if (ship) ship.remove();
+    if (typeof calculate === "function") calculate();
 }
 
 function editShipName(shipId) {
@@ -307,7 +310,7 @@ function applyShipConfig(operatorIds, opConfigs) {
         setSelect(`cs-mod3-${opId}`, conf.m3, modules);
     });
     
-    calculate();
+    if (typeof calculate === "function") calculate();
 }
 
 function toggleCS(container) {
@@ -326,10 +329,13 @@ function selectCSOption(e, el, type) {
     c.querySelector('.cs-options').style.display = 'none';
     hidePreview();
     if (type === 'laser') handleLaserChange(c.id.split('-').pop());
-    else calculate();
+    else if (typeof calculate === "function") calculate();
 }
 
-function toggleOperator(opId, state) { document.getElementById(`card-${opId}`).classList.toggle('off', !state); calculate(); }
+function toggleOperator(opId, state) { 
+    document.getElementById(`card-${opId}`).classList.toggle('off', !state); 
+    if (typeof calculate === "function") calculate(); 
+}
 
 function handleLaserChange(opId) {
     let l = lasers[document.getElementById(`cs-laser-${opId}`).dataset.value];
@@ -338,12 +344,13 @@ function handleLaserChange(opId) {
         if (m <= l.slots) el.classList.remove('disabled');
         else { el.classList.add('disabled'); el.dataset.value = 0; el.querySelector('.cs-display').innerText = 'None'; }
     }
-    calculate();
+    if (typeof calculate === "function") calculate();
 }
 
 function addGadgetRow() {
     const list = document.getElementById('gadget-list');
-    
+    if (!list) return;
+
     const currentCount = list.querySelectorAll('.gadget-row').length;
 
     if (currentCount >= 3) {
@@ -362,11 +369,11 @@ function addGadgetRow() {
             <div class="cs-display">None</div>
             <div class="cs-options">${gadgetOptionsHtml}</div>
         </div>
-        <button class="btn btn-remove" onclick="this.parentElement.remove(); calculate();">Remove</button>
+        <button class="btn btn-remove" onclick="this.parentElement.remove(); if (typeof calculate === 'function') calculate();">Remove</button>
     `;
     
     list.appendChild(row);
-    calculate();
+    if (typeof calculate === "function") calculate();
 }
 
 function toggleAccordion(headerElement) {
