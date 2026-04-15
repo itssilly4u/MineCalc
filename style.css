@@ -34,6 +34,12 @@
 
     /* UI Elements */
     --toggle-bg: #444444;
+
+    /* System Colors */
+    --text-stanton: #4fa3e3;
+    --text-nyx: #b164e8;
+    --text-pyro: #e88e3c;
+
 }
 
 body {

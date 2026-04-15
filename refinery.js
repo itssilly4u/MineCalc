@@ -6,9 +6,9 @@ const systemMap = {
 };
 
 const systemColors = {
-    "Stanton": "#4fa3e3",   // Light Blue
-    "Nyx": "#b164e8",       // Vibrant Purple
-    "Pyro": "#e88e3c"       // Fiery Orange
+    "Stanton": "var(--text-stanton)",
+    "Nyx": "var(--text-nyx)",
+    "Pyro": "var(--text-pyro)"
 };
 
 let currentSortCol = 'Refinery';

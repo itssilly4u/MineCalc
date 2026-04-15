@@ -9,6 +9,12 @@ function getMaxMulti(rarity) {
     return 1;
 }
 
+const systemColors = {
+    "Stanton": "var(--text-stanton)", 
+    "Nyx": "var(--text-nyx)", 
+    "Pyro": "var(--text-pyro)" 
+};
+
 // --- SIGNATURE HOVER AND DROPDOWNS ---
 function showSignatureTip(baseSig, rarity) {
     const max = getMaxMulti(rarity);
@@ -76,9 +82,10 @@ function showPriceTip(oreName) {
         const data = bestPrices[sys];
         // Shorten name for the tooltip
         const displayLoc = data.location.replace("Green Imperial Housing Exchange", "Grim HEX");
+        const sysColor = systemColors[sys] || "var(--text-muted)";
 
         html += `<div>
-                    <span style="color:var(--text-muted); font-weight:bold; width: 60px; display:inline-block;">${sys}:</span> 
+                    <span style="color:${sysColor}; font-weight:bold; width: 60px; display:inline-block;">${sys}:</span> 
                     <span style="color:var(--accent); font-weight:bold;">${data.price.toLocaleString()} <span style="font-size:0.8em; color:var(--text-main);">aUEC / SCU</span></span> 
                     <span style="color:var(--text-muted); font-size:0.9em;">(${displayLoc})</span>
                  </div>`;
@@ -125,10 +132,11 @@ function togglePriceRow(cell, oreName, showAll = false, btnEl = null) {
     displayPrices.forEach(p => {
         // Shorten the name here for the cards
         const displayLoc = p.location.replace("Green Imperial Housing Exchange", "Grim HEX");
+        const sysColor = systemColors[p.system] || "var(--text-muted)";
 
         html += `
             <div style="background:var(--bg-color); border:1px solid var(--border); padding:8px 15px; border-radius:6px; flex: 1 1 200px; max-width: 250px;">
-                <div style="color:var(--text-muted); font-size:0.7em; text-transform:uppercase;">${p.system}</div>
+                <div style="color:${sysColor}; font-size:0.7em; text-transform:uppercase;">${p.system}</div>
                 <div style="color:var(--text-main); font-size:0.85em; font-weight: bold; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${p.location}">${displayLoc}</div>
                 <div style="color:var(--accent); font-weight:bold; font-size:1.1em;">${p.price.toLocaleString()} <span style="font-size:0.7em; color:var(--text-main);">aUEC/SCU</span></div>
             </div>`;
