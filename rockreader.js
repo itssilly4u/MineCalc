@@ -195,7 +195,6 @@ function generateOreTable() {
         let priceCellHtml = `<td style="color: var(--text-muted); text-align: center;">N/A</td>`;
         
         if (typeof pricingData !== 'undefined' && pricingData[ore.name] && pricingData[ore.name].length > 0) {
-            // Get the absolute best price value (already sorted highest to lowest)
             const bestPriceValue = pricingData[ore.name][0].price; 
             const formattedPrice = bestPriceValue.toLocaleString();
 
