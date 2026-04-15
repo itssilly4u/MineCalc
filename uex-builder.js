@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 const API_KEY = process.env.UEX_API_KEY;
+console.log(`My API key is exactly ${API_KEY ? API_KEY.length : 0} characters long.`);
 if (!API_KEY) {
     console.error("❌ ERROR: No API Key found. Make sure UEX_API_KEY is set in GitHub Secrets.");
     process.exit(1);
