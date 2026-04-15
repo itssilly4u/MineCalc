@@ -40,7 +40,7 @@ jobs:
           git config --global user.email "action@github.com"
           
           # Check for changes
-          git diff --quiet game-data.js
+          $status = git diff --ignore-space-at-eol --name-only game-data.js
           
           # $LASTEXITCODE is 0 if no changes, 1 if changes exist
           if ($LASTEXITCODE -ne 0) {
