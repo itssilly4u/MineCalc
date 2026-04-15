@@ -175,6 +175,8 @@ function generateOreTable() {
 
     ores.forEach(ore => {
         const safeName = ore.name.replace(/'/g, "\\'");
+        
+        // Handle "Special" un-mineable things
         if (!ore.rarity) {
             htmlSpecials += `<tr data-signature="${ore.signature}" data-rarity="Special">
                 <td style="color: var(--text-muted); font-weight: bold; text-transform: uppercase;">Special</td>
@@ -189,9 +191,20 @@ function generateOreTable() {
         let subOres = ore.secondary || "-";
         if (ore.tertiary) subOres += `, ${ore.tertiary}`;
 
-        let priceCellHtml = `<td class="price-cell-empty">N/A</td>`;
-        if (typeof pricingData !== 'undefined' && pricingData[ore.name]) {
-            priceCellHtml = `<td class="price-clickable" onmouseenter="showPriceTip('${safeName}')" onmouseleave="hidePreview()" onclick="togglePriceRow(this, '${safeName}')">View Market 📊</td>`;
+       // --- NEW BEST MARKET PRICE LOGIC ---
+        let priceCellHtml = `<td style="color: var(--text-muted); text-align: center;">N/A</td>`;
+        
+        if (typeof pricingData !== 'undefined' && pricingData[ore.name] && pricingData[ore.name].length > 0) {
+            // Get the absolute best price value (already sorted highest to lowest)
+            const bestPriceValue = pricingData[ore.name][0].price; 
+            const formattedPrice = bestPriceValue.toLocaleString();
+
+            priceCellHtml = `
+            <td class="price-clickable" onmouseenter="showPriceTip('${safeName}')" onmouseleave="hidePreview()" onclick="togglePriceRow(this, '${safeName}')">
+                <div style="color: var(--accent); font-weight: bold; font-size: 1.1em; text-align: center;">
+                    ${formattedPrice} <span style="font-size: 0.7em; color: var(--text-main);">aUEC</span> <span style="font-size: 0.8em; color: var(--text-muted);">📊</span>
+                </div>
+            </td>`;
         }
 
         htmlOres += `<tr data-signature="${ore.signature}" data-rarity="${ore.rarity}">
@@ -205,6 +218,7 @@ function generateOreTable() {
             <td style="font-size: 0.85em; color: var(--text-muted);">${subOres}</td>
         </tr>`;
     });
+    
     tbody.innerHTML = htmlOres + htmlSpecials;
 }
 
