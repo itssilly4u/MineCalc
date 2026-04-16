@@ -216,7 +216,7 @@ const CartSystem = {
                                 <input type="checkbox" id="mc-show-all" onchange="CartSystem.toggleShowAll()" ${this.showAll ? 'checked' : ''}>
                                 <span class="slider"></span>
                             </label>
-                            <label for="mc-show-all" style="cursor:pointer; user-select:none;">Show all unequipped</label>
+                            <label for="mc-show-all" style="cursor:pointer; user-select:none;">Show all</label>
                         </div>
                         <div class="mc-search-container" id="mc-search-container">
                             <input type="text" id="mc-cart-search" placeholder="Search items..." oninput="CartSystem.updateSearch(this.value)">
