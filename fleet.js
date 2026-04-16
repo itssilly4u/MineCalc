@@ -1,3 +1,32 @@
+// --- NEW: CART INTEGRATION HELPER ---
+window.updateCartLoadout = function() {
+    // Failsafe in case CartSystem hasn't loaded yet
+    if (typeof CartSystem === "undefined") return;
+    
+    let equipped = [];
+
+    // 1. Gather Ship Gear (Lasers & Modules) from ACTIVE seats
+    document.querySelectorAll('.setup-card:not(.off)').forEach(card => {
+        card.querySelectorAll('.custom-select:not(.disabled) .cs-display').forEach(display => {
+            let itemName = display.innerText.trim();
+            if (itemName !== "None" && itemName !== "") {
+                equipped.push(itemName);
+            }
+        });
+    });
+
+    // 2. Gather Deployed Gadgets
+    document.querySelectorAll('#gadget-list .custom-select .cs-display').forEach(display => {
+        let itemName = display.innerText.trim();
+        if (itemName !== "None" && itemName !== "") {
+            equipped.push(itemName);
+        }
+    });
+
+    // Push the array to the cart
+    CartSystem.updateEquipped(equipped);
+};
+
 function createOperatorHtml(opId, seatName, laserOptions) {
     return `
         <div class="setup-card" id="card-${opId}" data-opid="${opId}">
@@ -18,7 +47,7 @@ function createOperatorHtml(opId, seatName, laserOptions) {
 
 function addShip(type, loadConfig = null, customName = null) {
     const container = document.getElementById('fleet-container');
-    if (!container) return; // Failsafe
+    if (!container) return; 
 
     const shipId = generateId();
     const shipDiv = document.createElement('div');
@@ -96,6 +125,7 @@ function addShip(type, loadConfig = null, customName = null) {
         applyShipConfig(operatorIds, loadConfig); 
     } else {
         if (typeof calculate === "function") calculate();
+        window.updateCartLoadout();
     }
 }
 
@@ -103,6 +133,7 @@ function clearFleet() {
     if (confirm("Are you sure you want to clear the entire fleet?")) {
         document.getElementById('fleet-container').innerHTML = '';
         if (typeof calculate === "function") calculate();
+        window.updateCartLoadout();
     }
 }
 
@@ -110,6 +141,7 @@ function removeShip(shipId) {
     const ship = document.getElementById(`ship-${shipId}`);
     if (ship) ship.remove();
     if (typeof calculate === "function") calculate();
+    window.updateCartLoadout();
 }
 
 function editShipName(shipId) {
@@ -311,6 +343,7 @@ function applyShipConfig(operatorIds, opConfigs) {
     });
     
     if (typeof calculate === "function") calculate();
+    window.updateCartLoadout();
 }
 
 function toggleCS(container) {
@@ -328,13 +361,17 @@ function selectCSOption(e, el, type) {
     c.classList.remove('open');
     c.querySelector('.cs-options').style.display = 'none';
     hidePreview();
+    
     if (type === 'laser') handleLaserChange(c.id.split('-').pop());
     else if (typeof calculate === "function") calculate();
+    
+    window.updateCartLoadout();
 }
 
 function toggleOperator(opId, state) { 
     document.getElementById(`card-${opId}`).classList.toggle('off', !state); 
     if (typeof calculate === "function") calculate(); 
+    window.updateCartLoadout();
 }
 
 function handleLaserChange(opId) {
@@ -345,6 +382,7 @@ function handleLaserChange(opId) {
         else { el.classList.add('disabled'); el.dataset.value = 0; el.querySelector('.cs-display').innerText = 'None'; }
     }
     if (typeof calculate === "function") calculate();
+    window.updateCartLoadout();
 }
 
 function addGadgetRow() {
@@ -355,7 +393,7 @@ function addGadgetRow() {
 
     if (currentCount >= 3) {
         alert("You've reached the maximum limit of 3 gadgets.");
-        return; // Stops the function from adding a new row
+        return; 
     }
 
     if (currentCount === 1) {
@@ -369,11 +407,12 @@ function addGadgetRow() {
             <div class="cs-display">None</div>
             <div class="cs-options">${gadgetOptionsHtml}</div>
         </div>
-        <button class="btn btn-remove" onclick="this.parentElement.remove(); if (typeof calculate === 'function') calculate();">Remove</button>
+        <button class="btn btn-remove" onclick="this.parentElement.remove(); if (typeof calculate === 'function') calculate(); window.updateCartLoadout();">Remove</button>
     `;
     
     list.appendChild(row);
     if (typeof calculate === "function") calculate();
+    window.updateCartLoadout();
 }
 
 function toggleAccordion(headerElement) {

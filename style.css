@@ -967,3 +967,208 @@ footer {
     font-size: 40px; 
     line-height: 1; 
 }
+
+/* --- SHOPPING CART UI --- */
+#mc-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background: var(--accent);
+    color: var(--bg-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+#mc-cart-btn:hover {
+    transform: scale(1.05);
+    background-color: #e6b800;
+}
+#mc-cart-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 380px;
+    max-width: 100vw;
+    height: 100vh;
+    background: var(--panel-bg);
+    color: var(--text-main);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--border);
+}
+#mc-cart-panel.open { 
+    right: 0; 
+}
+.mc-cart-header {
+    padding: 20px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+}
+.mc-cart-header h3 { 
+    margin: 0; 
+    font-size: 1.2rem; 
+}
+.mc-close-btn { 
+    background: none; 
+    border: none; 
+    color: var(--text-muted); 
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    transition: color 0.2s; 
+}
+.mc-close-btn:hover { 
+    color: var(--bad-stat); 
+}
+.mc-cart-controls {
+    padding: 10px 20px;
+    background: var(--panel-bg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+.mc-cart-list { 
+    flex: 1; 
+    overflow-y: auto; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+.mc-cart-item {
+    background: var(--bg-color);
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid transparent;
+    border: 1px solid var(--border);
+}
+.mc-cart-item.equipped { border-left-color: var(--accent); }
+.mc-cart-item.pinned { border-left-color: var(--btn-export); }
+
+.mc-item-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 8px; 
+}
+.mc-item-name { 
+    font-weight: bold; 
+    flex: 1; 
+    color: var(--text-bright); 
+    text-transform: uppercase; 
+    font-size: 0.9em;
+}
+.mc-item-qty { 
+    background: var(--accent); 
+    color: var(--bg-color); 
+    padding: 2px 8px; 
+    border-radius: 12px; 
+    font-size: 0.8em; 
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+.mc-pin-btn { 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    opacity: 0.4; 
+    transition: opacity 0.2s; 
+    font-size: 1.1em; 
+}
+.mc-pin-btn:hover { opacity: 0.8; }
+.mc-pin-btn.active { 
+    opacity: 1; 
+    text-shadow: 0 0 5px var(--btn-export); 
+}
+.mc-shop-select {
+    width: 100%;
+    padding: 8px;
+    background: var(--panel-bg);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+.mc-shop-select:focus { 
+    border-color: var(--accent); 
+    outline: none; 
+}
+.mc-cart-footer {
+    padding: 20px;
+    background: var(--bg-color);
+    border-top: 2px solid var(--border);
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-main);
+}
+
+/* --- CART SEARCH UI --- */
+.mc-controls-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.mc-show-all-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mc-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#mc-cart-search {
+    width: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    background: var(--bg-color);
+    color: var(--text-main);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    font-size: 0.9em;
+    pointer-events: none;
+}
+.mc-search-container.open #mc-cart-search {
+    width: 140px;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    opacity: 1;
+    margin-right: 8px;
+    pointer-events: auto;
+}
+#mc-cart-search:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+.mc-search-toggle {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: color 0.2s, transform 0.2s;
+    padding: 2px;
+}
+.mc-search-toggle:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}

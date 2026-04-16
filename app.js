@@ -37,11 +37,39 @@ window.tooltipEl = document.createElement('div');
 window.tooltipEl.className = 'item-preview-tooltip';
 window.tooltipEl.style.display = 'none';
 document.body.appendChild(window.tooltipEl);
+window.showTextTip = (text) => {
+    window.tooltipEl.innerHTML = `<div style="font-size:0.9em; line-height:1.4;">${text}</div>`;
+    window.tooltipEl.style.display = 'block';
+}
+
+// --- OPTIMIZED TOOLTIP TRACKING ---
+let mouseX = 0;
+let mouseY = 0;
+let ticking = false;
+const ESTIMATED_TIP_WIDTH = 320; // Hardcoded to prevent layout thrashing lag
 
 document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
     if (window.tooltipEl && window.tooltipEl.style.display === 'block') {
-        window.tooltipEl.style.left = (e.clientX + 15) + 'px';
-        window.tooltipEl.style.top = (e.clientY + 15) + 'px';
+        // Only fire on visual frames to prevent lag
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                let leftPos = mouseX + 15;
+
+                // SMART CHECK: Flip to the left if it hits the right edge of the monitor
+                if (leftPos + ESTIMATED_TIP_WIDTH > window.innerWidth) {
+                    leftPos = mouseX - ESTIMATED_TIP_WIDTH - 15;
+                }
+
+                window.tooltipEl.style.left = leftPos + 'px';
+                window.tooltipEl.style.top = (mouseY + 15) + 'px';
+                
+                ticking = false;
+            });
+            ticking = true;
+        }
     }
 });
 
@@ -151,6 +179,234 @@ window.showGadgetTip = (name, inst, res, density) => {
     window.tooltipEl.style.display = 'block';
 }
 
+// --- NEW: CART SYSTEM ---
+const CartSystem = {
+    isOpen: false,
+    showAll: false,
+    searchOpen: false, 
+    searchTerm: "",    
+    pinnedItems: new Set(),
+    equippedCounts: {}, 
+    selectedShops: {},  
+    masterItemList: [],
+
+    init() {
+        this.masterItemList = [...lasers, ...modules, ...gadgets].filter(i => i.name !== "None");
+        
+        this.masterItemList.forEach(item => {
+            if (item.shops && item.shops.length > 0) {
+                this.selectedShops[item.name] = 0; 
+            }
+        });
+
+        const cartHtml = `
+            <button id="mc-cart-btn" onclick="CartSystem.toggle()">🛒 Loadout Cart</button>
+            <div id="mc-cart-panel">
+                <div class="mc-cart-header">
+                    <h3>Shopping Cart</h3>
+                    <button class="mc-close-btn" onclick="CartSystem.toggle()">&times;</button>
+                </div>
+                <div class="mc-cart-controls">
+                    <div class="mc-controls-wrapper">
+                        <div class="mc-show-all-wrap">
+                            <label class="switch">
+                                <input type="checkbox" id="mc-show-all" onchange="CartSystem.toggleShowAll()">
+                                <span class="slider"></span>
+                            </label>
+                            <label for="mc-show-all" style="cursor:pointer; user-select:none;">Show all items</label>
+                        </div>
+                        <div class="mc-search-container" id="mc-search-container">
+                            <input type="text" id="mc-cart-search" placeholder="Search items..." oninput="CartSystem.updateSearch(this.value)">
+                            <button class="mc-search-toggle" onclick="CartSystem.toggleSearch()" title="Toggle Search">🔍</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mc-cart-list" id="mc-cart-list"></div>
+                <div class="mc-cart-footer">
+                    Loadout: <span id="mc-cart-total" style="color:var(--accent);">0</span> aUEC
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', cartHtml);
+        this.render();
+    },
+
+    toggle() {
+        this.isOpen = !this.isOpen;
+        document.getElementById('mc-cart-panel').classList.toggle('open', this.isOpen);
+        if (this.isOpen) this.render();
+    },
+
+    toggleShowAll() {
+        this.showAll = document.getElementById('mc-show-all').checked;
+        if (this.showAll && this.searchTerm !== "") {
+            this.updateSearch("");
+            document.getElementById('mc-cart-search').value = "";
+        }
+        this.render();
+    },
+
+    toggleSearch() {
+        this.searchOpen = !this.searchOpen;
+        const container = document.getElementById('mc-search-container');
+        container.classList.toggle('open', this.searchOpen);
+        
+        if (this.searchOpen) {
+            document.getElementById('mc-cart-search').focus();
+        } else {
+            this.updateSearch("");
+            document.getElementById('mc-cart-search').value = "";
+        }
+    },
+
+    updateSearch(term) {
+        this.searchTerm = term.toLowerCase().trim();
+        this.render();
+    },
+
+    togglePin(itemName) {
+        if (this.pinnedItems.has(itemName)) this.pinnedItems.delete(itemName);
+        else this.pinnedItems.add(itemName);
+        this.render();
+    },
+
+    changeShop(event, itemName, shopIndex) {
+        if (event) event.stopPropagation(); // Stops the dropdown from aggressively re-opening
+        this.selectedShops[itemName] = parseInt(shopIndex);
+        this.render();
+        hidePreview(); // Dismiss tooltip on click
+    },
+
+    updateEquipped(equippedItemNamesArray) {
+        this.equippedCounts = {};
+        
+        // 1. Make all incoming item names uppercase to ignore CSS formatting
+        const safeEquipped = equippedItemNamesArray.map(name => name ? name.toUpperCase().trim() : "");
+
+        // 2. Loop through our master list and count matches case-insensitively
+        this.masterItemList.forEach(item => {
+            const upperMasterName = item.name.toUpperCase().trim();
+            const count = safeEquipped.filter(name => name === upperMasterName).length;
+            
+            if (count > 0) {
+                // Store using the original exact-case name so the cart renders correctly
+                this.equippedCounts[item.name] = count;
+            }
+        });
+        
+        this.render();
+    },
+
+    render() {
+        const listEl = document.getElementById('mc-cart-list');
+        if (!listEl) return;
+
+        let html = '';
+        let grandTotal = 0;
+
+        let displayItems = this.masterItemList.filter(item => {
+            const isEquipped = (this.equippedCounts[item.name] || 0) > 0;
+            const isPinned = this.pinnedItems.has(item.name);
+            const matchesSearch = item.name.toLowerCase().includes(this.searchTerm);
+            
+            if (this.searchTerm !== "") return matchesSearch;
+            return this.showAll || isEquipped || isPinned;
+        });
+
+        displayItems.sort((a, b) => {
+            const aPin = this.pinnedItems.has(a.name) ? 1 : 0;
+            const bPin = this.pinnedItems.has(b.name) ? 1 : 0;
+            if (aPin !== bPin) return bPin - aPin; 
+            
+            const aEq = (this.equippedCounts[a.name] || 0) > 0 ? 1 : 0;
+            const bEq = (this.equippedCounts[b.name] || 0) > 0 ? 1 : 0;
+            if (aEq !== bEq) return bEq - aEq; 
+            
+            return a.name.localeCompare(b.name); 
+        });
+
+        if (displayItems.length === 0) {
+            let emptyMsg = this.searchTerm !== "" 
+                ? `No items found matching "${this.searchTerm}".` 
+                : `Your cart is empty.<br>Equip items or click "Show all".`;
+                
+            listEl.innerHTML = `<div style="text-align:center; color:var(--text-muted); margin-top:20px;">${emptyMsg}</div>`;
+            document.getElementById('mc-cart-total').innerText = "0";
+            return;
+        }
+
+        displayItems.forEach(item => {
+            const qty = this.equippedCounts[item.name] || 0;
+            const isPinned = this.pinnedItems.has(item.name);
+            const shopIdx = this.selectedShops[item.name] || 0;
+            
+            let currentPrice = 0;
+            let displayHtml = "Not sold in shops";
+            let shopOptionsHtml = `<div class="cs-option" data-val="0">Not sold in shops</div>`;
+            let isDisabled = !item.shops || item.shops.length === 0;
+
+            if (!isDisabled) {
+                currentPrice = item.shops[shopIdx] ? item.shops[shopIdx].price : 0;
+                let currentLoc = item.shops[shopIdx] ? item.shops[shopIdx].location : "";
+                let currentSys = item.shops[shopIdx] ? item.shops[shopIdx].system : "Unknown";
+                
+                // 1. Assign System Colors
+                let sysColor = 'var(--text-muted)';
+                let sysLower = currentSys.toLowerCase();
+                if (sysLower === 'pyro') sysColor = 'var(--text-pyro)';
+                else if (sysLower === 'nyx') sysColor = 'var(--text-nyx)';
+                else if (sysLower === 'stanton') sysColor = 'var(--text-stanton)';
+
+                let formattedSystem = `<span style="color:${sysColor}; font-weight:bold;">[${currentSys}]</span>`;
+                displayHtml = `${currentPrice.toLocaleString()} aUEC - ${formattedSystem} ${escapeHTML(currentLoc)}`;
+                
+                // 2. Build your custom dropdown options
+                shopOptionsHtml = item.shops.map((shop, idx) => {
+                    let sColor = 'var(--text-muted)';
+                    let sLower = shop.system.toLowerCase();
+                    if (sLower === 'pyro') sColor = 'var(--text-pyro)';
+                    else if (sLower === 'nyx') sColor = 'var(--text-nyx)';
+                    else if (sLower === 'stanton') sColor = 'var(--text-stanton)';
+                    
+                    let shopSys = `<span style="color:${sColor}; font-weight:bold;">[${shop.system}]</span>`;
+                    
+                    return `<div class="cs-option" style="font-size: 0.85em; text-transform: none;" data-val="${idx}" onclick="CartSystem.changeShop(event, '${item.name}', ${idx})">
+                        ${shop.price.toLocaleString()} aUEC - ${shopSys} ${escapeHTML(shop.location)}
+                    </div>`;
+                }).join('');
+            }
+
+            grandTotal += (currentPrice * qty);
+
+            // Encode quotes so the HTML fits safely inside the data-tip attribute
+            let tipAttr = displayHtml.replace(/"/g, '&quot;'); 
+
+            html += `
+                <div class="mc-cart-item ${qty > 0 ? 'equipped' : ''} ${isPinned ? 'pinned' : ''}">
+                    <div class="mc-item-header">
+                        <span class="mc-item-name">${item.name}</span>
+                        <div>
+                            ${qty > 0 ? `<span class="mc-item-qty">x${qty}</span>` : ''}
+                            <button class="mc-pin-btn ${isPinned ? 'active' : ''}" onclick="CartSystem.togglePin('${item.name}')" title="Pin to top">📌</button>
+                        </div>
+                    </div>
+                    
+                    <div class="custom-select ${isDisabled ? 'disabled' : ''}" style="border-color: #444; background: #111;" onclick="toggleCS(this)">
+                        <div class="cs-display" style="font-size: 0.8em; text-transform: none; padding: 6px 10px;" onmouseenter="showTextTip(this.dataset.tip)" onmouseleave="hidePreview()" data-tip="${tipAttr}">
+                            <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 15px;">${displayHtml}</span>
+                        </div>
+                        <div class="cs-options">${shopOptionsHtml}</div>
+                    </div>
+                    
+                </div>
+            `;
+        });
+
+        listEl.innerHTML = html;
+        document.getElementById('mc-cart-total').innerText = grandTotal.toLocaleString();
+    }
+};
+
 // --- UI INITIALIZATION ---
 function initUI() {
     // 1. Hide loading screen instantly
@@ -182,7 +438,10 @@ function initUI() {
 
     gadgetOptionsHtml = gadgets.map((g, i) => `<div class="cs-option" data-val="${i}" onmouseenter="showPreview(${i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${g.name}</div>`).join('');
 
-    // 3. Initialize external modules if they exist
+    // 3. Initialize the new Cart System FIRST
+    CartSystem.init();
+
+    // 4. Initialize external modules if they exist
     if (typeof addShip === "function") addShip('MOLE');
 }
 

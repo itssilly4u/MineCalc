@@ -53,7 +53,7 @@ function processRefinery(rawRefinery) {
             };
         }
 
-        const commName = fixOreName(row.commodity_name); // Standardize name here
+        const commName = fixOreName(row.commodity_name);
         if (commName) {
             const code = commName.substring(0, 4).toUpperCase();
             refineryMap[refName][code] = row.value;
@@ -62,11 +62,11 @@ function processRefinery(rawRefinery) {
     return Object.values(refineryMap);
 }
 
-// --- PRICE PROCESSING LOGIC ---
+// --- COMMODITY PRICE PROCESSING LOGIC ---
 function processPrices(rawPrices) {
     const priceMap = {};
     rawPrices.forEach(row => {
-        const cleanName = fixOreName(row.commodity_name); // Standardize name here
+        const cleanName = fixOreName(row.commodity_name);
         if (!cleanName) return;
 
         let price = row.price_sell || 0;
@@ -86,14 +86,65 @@ function processPrices(rawPrices) {
     });
 
     Object.keys(priceMap).forEach(key => {
-        priceMap[key].sort((a, b) => b.price - a.price);
+        priceMap[key].sort((a, b) => b.price - a.price); // Sort highest sell price first
     });
 
     return priceMap;
 }
 
-// (Lasers, Modules, Gadgets processing functions stay exactly as they were...)
+// --- NEW: ITEM (LASERS/MODULES/GADGETS) BUY PRICE LOGIC ---
+function processItemPrices(rawPrices) {
+    const priceMap = {};
+    rawPrices.forEach(row => {
+        if (!row.item_name) return;
+
+        let price = row.price_buy || 0;
+        if (price <= 0) return; // Skip if not for sale
+
+        let location = row.city_name || row.space_station_name || row.outpost_name || "Unknown";
+        
+        // CLEANUP: Filter out redundant location/system names from the terminal string
+        if (row.terminal_name) {
+            let parts = row.terminal_name.split(' - ').map(p => p.trim());
+            
+            let shopParts = parts.filter(p => {
+                // 1. Exact matches with the location or system
+                if (p === location || p === row.star_system_name) return false;
+                
+                // 2. Lagrange point overlap (e.g. drop "MIC-L1" if location already says "MIC-L1 Shallow Frontier")
+                if (location.includes(p)) return false;
+                
+                // 3. The GrimHEX / Green Imperial quirk
+                if (p === "GrimHEX" && location.includes("Green Imperial")) return false;
+                
+                return true;
+            });
+
+            if (shopParts.length > 0) {
+                location += ` - ${shopParts.join(' - ')}`;
+            }
+            
+            // Optional Polish: Rename long official lore names to what players actually call them
+            if (location.includes("Green Imperial Housing Exchange")) {
+                location = location.replace("Green Imperial Housing Exchange", "GrimHEX");
+            }
+        }
+        
+        let system = row.star_system_name || "Unknown";
+
+        if (!priceMap[row.item_name]) priceMap[row.item_name] = [];
+        priceMap[row.item_name].push({ system, location, price });
+    });
+
+    Object.keys(priceMap).forEach(key => {
+        priceMap[key].sort((a, b) => a.price - b.price); // Sort lowest buy price first
+    });
+
+    return priceMap;
+}
+
 function safeFloat(v, d = 0) { if (!v) return d; let f = parseFloat(v.toString().replace(/[% ,]/g, '')); return isNaN(f) ? d : f; }
+
 function groupItems(attributesArray) {
     const itemsMap = {};
     attributesArray.forEach(row => {
@@ -102,31 +153,76 @@ function groupItems(attributesArray) {
     });
     return Object.values(itemsMap);
 }
-function processLasers(rawAttributes) {
+
+// --- UPDATED: MERGING PRICES INTO ATTRIBUTES ---
+function processLasers(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
-    const lasers = [{ name: "None", slots: 0, powerMin: 0, powerMax: 0, extraction: 0, size: 0 }];
+    const lasers = [{ name: "None", slots: 0, powerMin: 0, powerMax: 0, extraction: 0, size: 0, shops: [] }];
     grouped.forEach(l => {
         let pm = l['Mining Laser Power'] || '', pmin = 0, pmax = 0;
         if (pm.includes('-')) { pmin = safeFloat(pm.split('-')[0]); pmax = safeFloat(pm.split('-')[1]); }
         else { pmax = safeFloat(pm); pmin = pmax * (safeFloat(l['Throttle min']) / 100); }
-        lasers.push({ name: `${l.Item} (S${l.Size || '0'})`, slots: safeFloat(l['Module Slots']), powerMin: pmin, powerMax: pmax, extraction: safeFloat(l['Extraction Laser Power'] || l['Extraction Throughput']), inert: safeFloat(l['Inert Material Level']), resistance: safeFloat(l['Resistance']), instability: safeFloat(l['Laser Instability'] || l.Instability), optimalWin: safeFloat(l['Optimal Charge Window Size']), optCharge: safeFloat(l['Optimal Charge Window Rate']), overcharge: safeFloat(l['Catastrophic Charge Rate']), shatter: safeFloat(l['Shatter Damage']), optRange: safeFloat(l['Optimal Range']), maxRange: safeFloat(l['Maximum Range']), size: safeFloat(l.Size) });
+        lasers.push({ 
+            name: `${l.Item} (S${l.Size || '0'})`, 
+            slots: safeFloat(l['Module Slots']), 
+            powerMin: pmin, 
+            powerMax: pmax, 
+            extraction: safeFloat(l['Extraction Laser Power'] || l['Extraction Throughput']), 
+            inert: safeFloat(l['Inert Material Level']), 
+            resistance: safeFloat(l['Resistance']), 
+            instability: safeFloat(l['Laser Instability'] || l.Instability), 
+            optimalWin: safeFloat(l['Optimal Charge Window Size']), 
+            optCharge: safeFloat(l['Optimal Charge Window Rate']), 
+            overcharge: safeFloat(l['Catastrophic Charge Rate']), 
+            shatter: safeFloat(l['Shatter Damage']), 
+            optRange: safeFloat(l['Optimal Range']), 
+            maxRange: safeFloat(l['Maximum Range']), 
+            size: safeFloat(l.Size),
+            shops: priceMap[l.Item] || [] // Injecting shops here
+        });
     });
     return lasers;
 }
-function processModules(rawAttributes) {
+
+function processModules(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
-    const modules = [{ name: "None", power: 0, extraction: 0, uses: 0 }];
+    const modules = [{ name: "None", power: 0, extraction: 0, uses: 0, shops: [] }];
     grouped.forEach(m => {
         let u = safeFloat(m.Uses);
-        modules.push({ name: `${m.Item} ${u > 0 ? '(Active)' : '(Passive)'}`, power: safeFloat(m['Mining Laser Power'], 100) - 100, extraction: safeFloat(m['Extraction Laser Power'], 100) - 100, uses: u, inert: safeFloat(m['Inert Material Level']), resistance: safeFloat(m['Resistance']), instability: safeFloat(m['Laser Instability']), optimalWin: safeFloat(m['Optimal Charge Window Size']), optCharge: safeFloat(m['Optimal Charge Rate']), overcharge: safeFloat(m['Catastrophic Charge Rate']), shatter: safeFloat(m['Shatter Damage']) });
+        modules.push({ 
+            name: `${m.Item} ${u > 0 ? '(Active)' : '(Passive)'}`, 
+            power: safeFloat(m['Mining Laser Power'], 100) - 100, 
+            extraction: safeFloat(m['Extraction Laser Power'], 100) - 100, 
+            uses: u, 
+            inert: safeFloat(m['Inert Material Level']), 
+            resistance: safeFloat(m['Resistance']), 
+            instability: safeFloat(m['Laser Instability']), 
+            optimalWin: safeFloat(m['Optimal Charge Window Size']), 
+            optCharge: safeFloat(m['Optimal Charge Rate']), 
+            overcharge: safeFloat(m['Catastrophic Charge Rate']), 
+            shatter: safeFloat(m['Shatter Damage']),
+            shops: priceMap[m.Item] || [] // Injecting shops here
+        });
     });
     return modules;
 }
-function processGadgets(rawAttributes) {
+
+function processGadgets(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
-    const gadgets = [{ name: "None" }];
+    const gadgets = [{ name: "None", shops: [] }];
     grouped.forEach(g => {
-        gadgets.push({ name: g.Item, inert: safeFloat(g['Inert Material Level']), resistance: safeFloat(g['Resistance']), instability: safeFloat(g['Laser Instability'] || g.Instability), optimalWin: safeFloat(g['Optimal Charge Window Size']), optCharge: safeFloat(g['Optimal Charge Window Rate']), overcharge: safeFloat(g['Catastrophic Charge Rate']), shatter: safeFloat(g['Shatter Damage']), cluster: safeFloat(g['Cluster Modifier']) });
+        gadgets.push({ 
+            name: g.Item, 
+            inert: safeFloat(g['Inert Material Level']), 
+            resistance: safeFloat(g['Resistance']), 
+            instability: safeFloat(g['Laser Instability'] || g.Instability), 
+            optimalWin: safeFloat(g['Optimal Charge Window Size']), 
+            optCharge: safeFloat(g['Optimal Charge Window Rate']), 
+            overcharge: safeFloat(g['Catastrophic Charge Rate']), 
+            shatter: safeFloat(g['Shatter Damage']), 
+            cluster: safeFloat(g['Cluster Modifier']),
+            shops: priceMap[g.Item] || [] // Injecting shops here
+        });
     });
     return gadgets;
 }
@@ -135,16 +231,28 @@ function processGadgets(rawAttributes) {
 async function buildData() {
     try {
         console.log("Starting UEX Data Build...");
+        
+        // Fetch Attributes
         const rawGadgets = await fetchData(`/items_attributes?id_category=28`);
         const rawLasers = await fetchData(`/items_attributes?id_category=29`);
         const rawModules = await fetchData(`/items_attributes?id_category=30`);
         const rawRefinery = await fetchData('/refineries_yields');
 
-        console.log("Fetching Market Prices...");
+        // NEW: Fetch Prices for Items
+        console.log("Fetching Equipment Shop Prices...");
+        const rawGadgetPrices = await fetchData(`/items_prices?id_category=28`);
+        const rawLaserPrices = await fetchData(`/items_prices?id_category=29`);
+        const rawModulePrices = await fetchData(`/items_prices?id_category=30`);
+        
+        // Combine and process item prices
+        const allItemPrices = [...rawGadgetPrices, ...rawLaserPrices, ...rawModulePrices];
+        const itemPriceMap = processItemPrices(allItemPrices);
+
+        // Fetch Prices for Ores
+        console.log("Fetching Ore Market Prices...");
         let allPriceData = [];
         for (const ore of targetOres) {
             try {
-                // We fetch using mapped names for the API
                 let apiName = ore;
                 if (ore === "Aluminium") apiName = "Aluminum";
                 if (ore === "Ice") apiName = "Pressurized Ice"; 
@@ -155,9 +263,11 @@ async function buildData() {
             } catch (err) { console.warn(`⚠️ Price fetch failed for: ${ore}`); }
         }
 
-        const finalLasers = processLasers(rawLasers);
-        const finalModules = processModules(rawModules);
-        const finalGadgets = processGadgets(rawGadgets);
+        // Pass the itemPriceMap down into your processing logic
+        const finalLasers = processLasers(rawLasers, itemPriceMap);
+        const finalModules = processModules(rawModules, itemPriceMap);
+        const finalGadgets = processGadgets(rawGadgets, itemPriceMap);
+        
         const finalRefinery = processRefinery(rawRefinery);
         const finalPrices = processPrices(allPriceData);
 
@@ -172,7 +282,8 @@ const pricingData = ${JSON.stringify(finalPrices, null, 2)};
 
         fs.writeFileSync('./game-data.js', fileContent.trim());
         console.log("✅ Successfully saved all data to 'game-data.js'!");
-    } catch (error) { console.error("❌ Script Failed:", error); 
+    } catch (error) { 
+        console.error("❌ Script Failed:", error); 
         process.exit(1);
     }
 }
