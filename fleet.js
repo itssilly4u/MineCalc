@@ -1,29 +1,35 @@
-// --- NEW: CART INTEGRATION HELPER ---
+// --- NEW: CART & AUTOSAVE INTEGRATION HELPER ---
 window.updateCartLoadout = function() {
-    // Failsafe in case CartSystem hasn't loaded yet
     if (typeof CartSystem === "undefined") return;
     
     let equipped = [];
+    let fleetToSave = { type: 'FLEET', ships: [] };
 
-    // 1. Gather Ship Gear (Lasers & Modules) from ACTIVE seats
-    document.querySelectorAll('.setup-card:not(.off)').forEach(card => {
-        card.querySelectorAll('.custom-select:not(.disabled) .cs-display').forEach(display => {
-            let itemName = display.innerText.trim();
-            if (itemName !== "None" && itemName !== "") {
-                equipped.push(itemName);
-            }
+    // 1. Gather Ship Gear & Build Save File
+    document.querySelectorAll('.ship-container').forEach(ship => {
+        // Automatically save the ship configurations
+        if (typeof extractShipData === "function") {
+            fleetToSave.ships.push(extractShipData(ship));
+        }
+
+        ship.querySelectorAll('.setup-card:not(.off)').forEach(card => {
+            card.querySelectorAll('.custom-select:not(.disabled) .cs-display').forEach(display => {
+                let itemName = display.innerText.trim();
+                if (itemName !== "None" && itemName !== "") equipped.push(itemName);
+            });
         });
     });
 
     // 2. Gather Deployed Gadgets
     document.querySelectorAll('#gadget-list .custom-select .cs-display').forEach(display => {
         let itemName = display.innerText.trim();
-        if (itemName !== "None" && itemName !== "") {
-            equipped.push(itemName);
-        }
+        if (itemName !== "None" && itemName !== "") equipped.push(itemName);
     });
 
-    // Push the array to the cart
+    // 3. Save Fleet setup to the Browser's Local Memory
+    localStorage.setItem('minecalc_fleet_state', JSON.stringify(fleetToSave));
+
+    // 4. Update the visual Cart UI
     CartSystem.updateEquipped(equipped);
 };
 

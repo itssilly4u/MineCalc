@@ -179,7 +179,7 @@ window.showGadgetTip = (name, inst, res, density) => {
     window.tooltipEl.style.display = 'block';
 }
 
-// --- NEW: CART SYSTEM ---
+// --- CART SYSTEM  ---
 const CartSystem = {
     isOpen: false,
     showAll: false,
@@ -199,6 +199,9 @@ const CartSystem = {
             }
         });
 
+        // Load saved state from browser memory before generating HTML
+        this.loadCartState();
+
         const cartHtml = `
             <button id="mc-cart-btn" onclick="CartSystem.toggle()">🛒 Loadout Cart</button>
             <div id="mc-cart-panel">
@@ -210,10 +213,10 @@ const CartSystem = {
                     <div class="mc-controls-wrapper">
                         <div class="mc-show-all-wrap">
                             <label class="switch">
-                                <input type="checkbox" id="mc-show-all" onchange="CartSystem.toggleShowAll()">
+                                <input type="checkbox" id="mc-show-all" onchange="CartSystem.toggleShowAll()" ${this.showAll ? 'checked' : ''}>
                                 <span class="slider"></span>
                             </label>
-                            <label for="mc-show-all" style="cursor:pointer; user-select:none;">Show all items</label>
+                            <label for="mc-show-all" style="cursor:pointer; user-select:none;">Show all unequipped</label>
                         </div>
                         <div class="mc-search-container" id="mc-search-container">
                             <input type="text" id="mc-cart-search" placeholder="Search items..." oninput="CartSystem.updateSearch(this.value)">
@@ -223,12 +226,33 @@ const CartSystem = {
                 </div>
                 <div class="mc-cart-list" id="mc-cart-list"></div>
                 <div class="mc-cart-footer">
-                    Loadout: <span id="mc-cart-total" style="color:var(--accent);">0</span> aUEC
+                    Total: <span id="mc-cart-total" style="color:var(--accent);">0</span> aUEC
                 </div>
             </div>
         `;
         document.body.insertAdjacentHTML('beforeend', cartHtml);
         this.render();
+    },
+
+    saveCartState() {
+        const state = {
+            showAll: this.showAll,
+            pinnedItems: Array.from(this.pinnedItems), // Sets can't be saved to JSON, so convert to array
+            selectedShops: this.selectedShops
+        };
+        localStorage.setItem('minecalc_cart_state', JSON.stringify(state));
+    },
+
+    loadCartState() {
+        const saved = localStorage.getItem('minecalc_cart_state');
+        if (saved) {
+            try {
+                const state = JSON.parse(saved);
+                this.showAll = !!state.showAll;
+                if (state.pinnedItems) this.pinnedItems = new Set(state.pinnedItems);
+                if (state.selectedShops) this.selectedShops = { ...this.selectedShops, ...state.selectedShops };
+            } catch (e) { console.warn("Could not load cart memory"); }
+        }
     },
 
     toggle() {
@@ -243,6 +267,7 @@ const CartSystem = {
             this.updateSearch("");
             document.getElementById('mc-cart-search').value = "";
         }
+        this.saveCartState(); // Save memory
         this.render();
     },
 
@@ -267,31 +292,26 @@ const CartSystem = {
     togglePin(itemName) {
         if (this.pinnedItems.has(itemName)) this.pinnedItems.delete(itemName);
         else this.pinnedItems.add(itemName);
+        this.saveCartState(); // Save memory
         this.render();
     },
 
     changeShop(event, itemName, shopIndex) {
-        if (event) event.stopPropagation(); // Stops the dropdown from aggressively re-opening
+        if (event) event.stopPropagation(); 
         this.selectedShops[itemName] = parseInt(shopIndex);
+        this.saveCartState(); // Save memory
         this.render();
-        hidePreview(); // Dismiss tooltip on click
+        hidePreview(); 
     },
 
     updateEquipped(equippedItemNamesArray) {
         this.equippedCounts = {};
-        
-        // 1. Make all incoming item names uppercase to ignore CSS formatting
         const safeEquipped = equippedItemNamesArray.map(name => name ? name.toUpperCase().trim() : "");
 
-        // 2. Loop through our master list and count matches case-insensitively
         this.masterItemList.forEach(item => {
             const upperMasterName = item.name.toUpperCase().trim();
             const count = safeEquipped.filter(name => name === upperMasterName).length;
-            
-            if (count > 0) {
-                // Store using the original exact-case name so the cart renders correctly
-                this.equippedCounts[item.name] = count;
-            }
+            if (count > 0) this.equippedCounts[item.name] = count;
         });
         
         this.render();
@@ -350,7 +370,6 @@ const CartSystem = {
                 let currentLoc = item.shops[shopIdx] ? item.shops[shopIdx].location : "";
                 let currentSys = item.shops[shopIdx] ? item.shops[shopIdx].system : "Unknown";
                 
-                // 1. Assign System Colors
                 let sysColor = 'var(--text-muted)';
                 let sysLower = currentSys.toLowerCase();
                 if (sysLower === 'pyro') sysColor = 'var(--text-pyro)';
@@ -360,7 +379,6 @@ const CartSystem = {
                 let formattedSystem = `<span style="color:${sysColor}; font-weight:bold;">[${currentSys}]</span>`;
                 displayHtml = `${currentPrice.toLocaleString()} aUEC - ${formattedSystem} ${escapeHTML(currentLoc)}`;
                 
-                // 2. Build your custom dropdown options
                 shopOptionsHtml = item.shops.map((shop, idx) => {
                     let sColor = 'var(--text-muted)';
                     let sLower = shop.system.toLowerCase();
@@ -377,8 +395,6 @@ const CartSystem = {
             }
 
             grandTotal += (currentPrice * qty);
-
-            // Encode quotes so the HTML fits safely inside the data-tip attribute
             let tipAttr = displayHtml.replace(/"/g, '&quot;'); 
 
             html += `
@@ -397,7 +413,6 @@ const CartSystem = {
                         </div>
                         <div class="cs-options">${shopOptionsHtml}</div>
                     </div>
-                    
                 </div>
             `;
         });
@@ -409,14 +424,12 @@ const CartSystem = {
 
 // --- UI INITIALIZATION ---
 function initUI() {
-    // 1. Hide loading screen instantly
     const loader = document.getElementById('loading');
     if (loader) loader.style.display = 'none';
     
     const appContent = document.getElementById('app-content');
     if (appContent) appContent.style.display = 'block';
 
-    // 2. Build Dropdowns using game-data.js arrays
     laserOptionsS1 = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
     laserOptionsS2 = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
     laserOptionsGolem = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
@@ -438,11 +451,28 @@ function initUI() {
 
     gadgetOptionsHtml = gadgets.map((g, i) => `<div class="cs-option" data-val="${i}" onmouseenter="showPreview(${i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${g.name}</div>`).join('');
 
-    // 3. Initialize the new Cart System FIRST
+    // 1. Initialize Cart System FIRST so it can read memory
     CartSystem.init();
 
-    // 4. Initialize external modules if they exist
-    if (typeof addShip === "function") addShip('MOLE');
+    // 2. Memory Restoration Logic
+    let restored = false;
+    const savedFleet = localStorage.getItem('minecalc_fleet_state');
+    
+    if (savedFleet && typeof addShip === "function") {
+        try {
+            const parsedFleet = JSON.parse(savedFleet);
+            if (parsedFleet.ships && parsedFleet.ships.length > 0) {
+                // We found a saved fleet! Rebuild it.
+                parsedFleet.ships.forEach(s => addShip(s.shipType || s.type, s.operators, s.customName));
+                restored = true;
+            }
+        } catch (e) { console.warn("Saved fleet was corrupted."); }
+    }
+
+    // 3. Fallback to default MOLE if no saved session was found
+    if (!restored && typeof addShip === "function") {
+        addShip('MOLE');
+    }
 }
 
 // --- GLOBAL EVENT LISTENERS ---
