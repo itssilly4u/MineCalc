@@ -61,8 +61,13 @@ function sanitizeObject(obj) {
 function fixOreName(name) {
     if (!name) return "";
     let n = name.replace(/\(.*\)/g, '').trim(); // Remove (Raw), (Ore), etc.
+    
     if (n === "Aluminum") return "Aluminium";
     if (n === "Raw" || n === "Raw Ice" || n === "Pressurized Ice") return "Ice";
+    
+    // Fix the UEX "Quantainium" spelling error
+    if (n === "Quantainium") return "Quantanium"; 
+    
     return n;
 }
 
@@ -307,6 +312,7 @@ async function buildData() {
                 let apiName = ore;
                 if (ore === "Aluminium") apiName = "Aluminum";
                 if (ore === "Ice") apiName = "Pressurized Ice"; 
+                if (ore === "Quantanium") apiName = "Quantainium";
                 
                 const priceData = await fetchData(`/commodities_prices?commodity_name=${encodeURIComponent(apiName)}`);
                 if (Array.isArray(priceData)) allPriceData = allPriceData.concat(priceData);
