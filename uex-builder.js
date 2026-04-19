@@ -20,16 +20,25 @@ const targetOres = [
     "Corundum", "Hephaestanite", "Ice", "Iron", "Quartz", "Silicon", "Tin"
 ];
 
-// --- SECURITY: Input Sanitization ---
-// Strips HTML tags entirely to prevent XSS, but leaves normal text and punctuation alone.
+// --- SECURITY: Input Validation ---
+// Detects malicious patterns and aborts the entire build if found.
 function sanitizeString(str) {
     if (typeof str !== 'string') return str;
-    
-    return str
-        .replace(/<[^>]*>?/gm, '') // Removes any HTML tags like <script> or <img>
-        .replace(/on\w+=/gi, '')   // Removes inline event handlers like onclick=
-        .replace(/javascript:/gi, '') // Removes javascript: protocol injections
-        .trim();
+
+    // Look for actual HTML tags (e.g., <script>, <img>, <div>), event handlers, or protocols
+    const hasHtmlTags = /<\/?\s*[a-z][^>]*>/gi.test(str);
+    const hasEventHandlers = /on\w+\s*=/gi.test(str);
+    const hasJavascript = /javascript:/gi.test(str);
+
+    if (hasHtmlTags || hasEventHandlers || hasJavascript) {
+        console.error("\n🚨 SECURITY ALERT: Potential code injection detected in UEX API data!");
+        console.error(`Blocked string: "${str}"`);
+        console.error("Aborting build to protect the live website.\n");
+        
+        process.exit(1); // This immediately kills the script and fails the GitHub Action
+    }
+
+    return str.trim();
 }
 
 // Sanitize an entire object by recursively cleaning all string properties
