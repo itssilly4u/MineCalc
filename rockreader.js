@@ -86,7 +86,7 @@ function toggleLocationRow(cell, oreName) {
     const locs = getOreLocations(oreName);
     if (!locs || Object.keys(locs).length === 0) return;
 
-    let html = `<div class="detail-row-wrapper"><div class="detail-row-header">Known Scan Locations</div><div class="detail-cards-container">`;
+    let html = `<div class="detail-row-wrapper"><div class="detail-row-header">All Known Locations</div><div class="detail-cards-container">`;
 
     // --- Custom System Sort Order ---
     const systemOrder = { "Stanton": 1, "Pyro": 2, "Nyx": 3 };
