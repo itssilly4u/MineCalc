@@ -43,7 +43,7 @@ Market pricing, trade locations, and equipment statistics (mining lasers, module
 
 MineCalc is an actively maintained passion project, but the Star Citizen universe changes rapidly! 
 
-**A Note on Locations:** With the introduction of the new Precision Location Intelligence feature, ore spawn tables are now mapped to specific moons and mining bases. Because CIG frequently tweaks these spawn rates and exclusivity rules from patch to patch, there may be locations that are outdated, incorrect, or missing entirely. 
+**A Note on Locations:** With the introduction of the new Precision Location Intelligence feature, ore spawn tables are now mapped to specific planets, moons, and mining bases. Because CIG frequently tweaks these spawn rates and exclusivity rules from patch to patch, there may be locations that are outdated, incorrect, or missing entirely. 
 
 If you spot an inaccurate location, find a bug, or just have a great idea for a new feature, please don't hesitate to reach out. You can open an issue here on GitHub, or contact me directly:
 
