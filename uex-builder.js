@@ -20,6 +20,34 @@ const targetOres = [
     "Corundum", "Hephaestanite", "Ice", "Iron", "Quartz", "Silicon", "Tin"
 ];
 
+// --- SECURITY: Input Sanitization ---
+// Strips HTML tags entirely to prevent XSS, but leaves normal text and punctuation alone.
+function sanitizeString(str) {
+    if (typeof str !== 'string') return str;
+    
+    return str
+        .replace(/<[^>]*>?/gm, '') // Removes any HTML tags like <script> or <img>
+        .replace(/on\w+=/gi, '')   // Removes inline event handlers like onclick=
+        .replace(/javascript:/gi, '') // Removes javascript: protocol injections
+        .trim();
+}
+
+// Sanitize an entire object by recursively cleaning all string properties
+function sanitizeObject(obj) {
+    if (obj === null || obj === undefined) return obj;
+    if (typeof obj === 'string') return sanitizeString(obj);
+    if (typeof obj === 'number' || typeof obj === 'boolean') return obj;
+    if (Array.isArray(obj)) return obj.map(item => sanitizeObject(item));
+    if (typeof obj === 'object') {
+        const sanitized = {};
+        for (const key in obj) {
+            sanitized[key] = sanitizeObject(obj[key]);
+        }
+        return sanitized;
+    }
+    return obj;
+}
+
 // Helper to fix UEX naming quirks at the source
 function fixOreName(name) {
     if (!name) return "";
@@ -285,13 +313,20 @@ async function buildData() {
         const finalRefinery = processRefinery(rawRefinery);
         const finalPrices = processPrices(allPriceData);
 
+// SECURITY: Clean the data of HTML tags before saving
+        const sanitizedLasers = sanitizeObject(finalLasers);
+        const sanitizedModules = sanitizeObject(finalModules);
+        const sanitizedGadgets = sanitizeObject(finalGadgets);
+        const sanitizedRefinery = sanitizeObject(finalRefinery);
+        const sanitizedPrices = sanitizeObject(finalPrices);
+
         const fileContent = `
 // AUTO-GENERATED UEX DATA
-const lasers = ${JSON.stringify(finalLasers, null, 2)};
-const modules = ${JSON.stringify(finalModules, null, 2)};
-const gadgets = ${JSON.stringify(finalGadgets, null, 2)};
-const refineryData = ${JSON.stringify(finalRefinery, null, 2)};
-const pricingData = ${JSON.stringify(finalPrices, null, 2)};
+const lasers = ${JSON.stringify(sanitizedLasers, null, 2)};
+const modules = ${JSON.stringify(sanitizedModules, null, 2)};
+const gadgets = ${JSON.stringify(sanitizedGadgets, null, 2)};
+const refineryData = ${JSON.stringify(sanitizedRefinery, null, 2)};
+const pricingData = ${JSON.stringify(sanitizedPrices, null, 2)};
         `;
 
         fs.writeFileSync('./game-data.js', fileContent.trim());
