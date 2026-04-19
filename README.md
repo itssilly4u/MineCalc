@@ -20,24 +20,32 @@ Built with **Zero-Framework Vanilla JS**, it delivers desktop-grade performance 
 * **🛸 Multi-Crew Fleet Management**
   * Custom ship builder (MOLE, Prospector) with seat-specific loadouts.
   * Toggle operator seats dynamically to see how crew count affects your total mining throughput.
+* **📍 Precision Location Intelligence**
+  * System-exclusive ore mapping (Stanton, Pyro, Nyx) strictly enforcing patch-accurate spawn tables.
+  * Custom-weighted sorting algorithms (Stanton priority) and multi-line hover tooltips for instant, readable scouting intel.
 * **📖 Signature & Rarity Intelligence**
   * Custom-built signature database for remote scanning.
   * Smart-logic that calculates cluster multiples while strictly enforcing in-game rarity caps (Legendary, Epic, etc.).
 * **💹 Market & Refinery Integration**
   * **Fully Automated Pipeline:** Market prices and stats are synchronized every 12 hours via a custom GitHub Actions infrastructure.
-  * **Interactive Price cards:** Contextual market data for every ore, featuring regional "Best Price" tooltips and expanded outlet lists.
+  * **Interactive Price cards:** Contextual market data for every ore, featuring regional "Best Price" tooltips and gracefully responsive grid layouts.
 
 ## 🛠️ Tech Stack
 
 * **Logic Engine:** Vanilla JavaScript (Math-intensive simulation logic).
-* **UI/UX:** HTML5 & CSS3 with a focus on scannability and "at-a-glance" data.
+* **UI/UX:** HTML5 & CSS3 with a focus on Flexbox/Grid scalability and "at-a-glance" data.
 
 ## 🏆 Data Sources
 
-MineCalc's intelligence is powered by baseline statistics and market pricing graciously provided by the **[UEX Corp API](https://uexcorp.space/)**. Their community-driven data serves as the foundation for the calculations performed by the MineCalc engine.
+Market pricing, trade locations, and equipment statistics (mining lasers, modules, and gadgets) are graciously provided by the **[UEX Corp API](https://uexcorp.space/)**. Their community-driven data ensures your fleet is always outfitted with the most up-to-date hardware and commodity values.
 
-## 🤝 Connect
+## 🐛 Feedback & Bug Reports
+
+MineCalc is an actively maintained passion project, but the Star Citizen universe changes rapidly! 
+
+**A Note on Locations:** With the introduction of the new Precision Location Intelligence feature, ore spawn tables are now mapped to specific moons and mining bases. Because CIG frequently tweaks these spawn rates and exclusivity rules from patch to patch, there may be locations that are outdated, incorrect, or missing entirely. 
+
+If you spot an inaccurate location, find a bug, or just have a great idea for a new feature, please don't hesitate to reach out. You can open an issue here on GitHub, or contact me directly:
 
 * **Discord:** itss_illy
 * **GitHub:** [@itssilly4u](https://github.com/itssilly4u)
-* **Website:** [itssilly.xyz](https://itssilly.xyz)
