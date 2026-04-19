@@ -4062,6 +4062,78 @@ const refineryData = [
   }
 ];
 const pricingData = {
+  "Quantanium": [
+    {
+      "system": "Stanton",
+      "location": "ArcCorp Mining Area 141",
+      "price": 170000
+    },
+    {
+      "system": "Pyro",
+      "location": "Fallow Field",
+      "price": 170000
+    },
+    {
+      "system": "Pyro",
+      "location": "Canard View",
+      "price": 170000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ashland",
+      "price": 160000
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 160000
+    },
+    {
+      "system": "Pyro",
+      "location": "The Golden Riviera",
+      "price": 160000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 150000
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 150000
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 150000
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 150000
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L5 Beautiful Glen Station",
+      "price": 140000
+    },
+    {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 140000
+    },
+    {
+      "system": "Stanton",
+      "location": "Green Imperial Housing Exchange - Admin",
+      "price": 139000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 130000
+    }
+  ],
   "Stileron": [
     {
       "system": "Nyx",
