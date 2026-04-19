@@ -7,6 +7,62 @@ let laserOptionsGolem = "";
 let globalIdCounter = 0;
 
 // --- HELPER FUNCTIONS ---
+// Sort by name alphabetically, but with Roman numerals sorted ascending (base name before I/II/III)
+function sortByNameWithVersion(a, b) {
+    const parseName = (name) => {
+        let cleanName = name;
+        let type = "";
+        let version = "";
+
+        // 1. Extract and remove the type suffix (e.g., "(Passive)")
+        const typeMatch = cleanName.match(/\s*\((Passive|Active)\)$/i);
+        if (typeMatch) {
+            type = typeMatch[1].toLowerCase();
+            cleanName = cleanName.slice(0, typeMatch.index).trim();
+        }
+
+        // 2. Remove the "MODULE" keyword so the Roman numeral is exposed at the end
+        const moduleMatch = cleanName.match(/\s+MODULE$/i);
+        if (moduleMatch) {
+            cleanName = cleanName.slice(0, moduleMatch.index).trim();
+        }
+
+        // 3. Now we can safely check for the Roman numeral at the end of the cleaned string
+        const versionRegex = /\s+(I|II|III|IV|V|VI|VII|VIII)$/i;
+        const versionMatch = cleanName.match(versionRegex);
+        if (versionMatch) {
+            version = versionMatch[1].toUpperCase();
+            cleanName = cleanName.slice(0, versionMatch.index).trim();
+        }
+
+        return { base: cleanName, type, version };
+    };
+
+    const parsedA = parseName(a.name);
+    const parsedB = parseName(b.name);
+
+    // Compare base names alphabetically first
+    if (parsedA.base < parsedB.base) return -1;
+    if (parsedA.base > parsedB.base) return 1;
+
+    // If base names match, compare types (Passive before Active)
+    if (parsedA.type !== parsedB.type) {
+        if (parsedA.type === "passive") return -1;
+        if (parsedB.type === "passive") return 1;
+    }
+
+    // If base names and types match, sort by Roman numeral version
+    if (parsedA.version === parsedB.version) return 0;
+    if (parsedA.version === "") return -1; // Base version (no numeral) comes first
+    if (parsedB.version === "") return 1;
+
+    const romanToNum = { 'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8 };
+    const aVer = romanToNum[parsedA.version] || 0;
+    const bVer = romanToNum[parsedB.version] || 0;
+
+    return aVer - bVer;
+}
+
 function escapeHTML(str) {
     if (!str) return "";
     return str.toString()
@@ -417,22 +473,22 @@ function initUI() {
     laserOptionsS2 = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
     laserOptionsGolem = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'laser')">None</div>`;
     
-    let f2 = lasers.map((l, i) => ({l, i})).filter(o => o.l.size === 2 && o.l.name !== "None");
+    let f2 = lasers.map((l, i) => ({l, i})).filter(o => o.l.size === 2 && o.l.name !== "None").sort((a, b) => sortByNameWithVersion(a.l, b.l));
     if(f2.length) laserOptionsS2 += `<div class="cs-optgroup">Size 2 Lasers</div>` + f2.map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'laser')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'laser')">${o.l.name}</div>`).join('');
 
-    let f1 = lasers.map((l, i) => ({l, i})).filter(o => o.l.size === 1 && o.l.name !== "None" && !o.l.name.toLowerCase().includes("pitman"));
+    let f1 = lasers.map((l, i) => ({l, i})).filter(o => o.l.size === 1 && o.l.name !== "None" && !o.l.name.toLowerCase().includes("pitman")).sort((a, b) => sortByNameWithVersion(a.l, b.l));
     if(f1.length) laserOptionsS1 += `<div class="cs-optgroup">Size 1 Lasers</div>` + f1.map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'laser')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'laser')">${o.l.name}</div>`).join('');
 
-    let fGolem = lasers.map((l, i) => ({l, i})).filter(o => o.l.name.toLowerCase().includes("pitman"));
+    let fGolem = lasers.map((l, i) => ({l, i})).filter(o => o.l.name.toLowerCase().includes("pitman")).sort((a, b) => sortByNameWithVersion(a.l, b.l));
     if(fGolem.length) laserOptionsGolem += `<div class="cs-optgroup">Drake Golem</div>` + fGolem.map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'laser')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'laser')">${o.l.name}</div>`).join('');
 
     modOptionsHtml = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'module')">None</div>`;
-    let actives = modules.map((m, i) => ({m, i})).filter(o => o.m.uses > 0);
-    let passives = modules.map((m, i) => ({m, i})).filter(o => o.m.uses === 0 && o.m.name !== "None");
+    let actives = modules.map((m, i) => ({m, i})).filter(o => o.m.uses > 0).sort((a, b) => sortByNameWithVersion(a.m, b.m));
+    let passives = modules.map((m, i) => ({m, i})).filter(o => o.m.uses === 0 && o.m.name !== "None").sort((a, b) => sortByNameWithVersion(a.m, b.m));
     if (actives.length) { modOptionsHtml += `<div class="cs-optgroup">Active Modules</div>`; actives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
     if (passives.length) { modOptionsHtml += `<div class="cs-optgroup">Passive Modules</div>`; passives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
 
-    gadgetOptionsHtml = gadgets.map((g, i) => `<div class="cs-option" data-val="${i}" onmouseenter="showPreview(${i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${g.name}</div>`).join('');
+    gadgetOptionsHtml = gadgets.map((g, i) => ({g, i})).sort((a, b) => sortByNameWithVersion(a.g, b.g)).map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${o.g.name}</div>`).join('');
 
     CartSystem.init();
 
