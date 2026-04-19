@@ -10,85 +10,6 @@ const lasers = [
     "shops": []
   },
   {
-    "name": "Lancet MH2 Mining Laser (S2)",
-    "slots": 2,
-    "powerMin": 900,
-    "powerMax": 3600,
-    "extraction": 2590,
-    "inert": -40,
-    "resistance": 0,
-    "instability": -10,
-    "optimalWin": -60,
-    "optCharge": 40,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 45,
-    "maxRange": 135,
-    "size": 2,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 89300
-      },
-      {
-        "system": "Stanton",
-        "location": "Area 18 - Dumper's Depot",
-        "price": 94000
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 94000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Stanton",
-        "location": "GrimHEX - Dumper's Depot",
-        "price": 94000
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 94000
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 94000
-      }
-    ]
-  },
-  {
     "name": "Arbor MH1 Mining Laser (S1)",
     "slots": 1,
     "powerMin": 189,
@@ -138,114 +59,185 @@ const lasers = [
     ]
   },
   {
-    "name": "Klein-S1 Mining Laser (S1)",
-    "slots": 0,
-    "powerMin": 378,
-    "powerMax": 2220,
-    "extraction": 2220,
-    "inert": -30,
-    "resistance": -45,
-    "instability": 35,
-    "optimalWin": 20,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 45,
-    "maxRange": 135,
-    "size": 1,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 10150
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 10150
-      }
-    ]
-  },
-  {
-    "name": "Klein-S2 Mining Laser (S2)",
-    "slots": 1,
-    "powerMin": 720,
-    "powerMax": 3600,
-    "extraction": 2775,
+    "name": "Arbor MH2 Mining Laser (S2)",
+    "slots": 2,
+    "powerMin": 480,
+    "powerMax": 2400,
+    "extraction": 2590,
     "inert": -40,
-    "resistance": -45,
-    "instability": 35,
-    "optimalWin": 20,
+    "resistance": 25,
+    "instability": -35,
+    "optimalWin": 40,
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
-    "optRange": 60,
-    "maxRange": 180,
+    "optRange": 90,
+    "maxRange": 270,
     "size": 2,
     "shops": [
       {
         "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 20150
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 20150
-      }
-    ]
-  },
-  {
-    "name": "Impact I Mining Laser (S1)",
-    "slots": 2,
-    "powerMin": 420,
-    "powerMax": 2100,
-    "extraction": 2775,
-    "inert": -30,
-    "resistance": 10,
-    "instability": -10,
-    "optimalWin": 20,
-    "optCharge": -40,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 45,
-    "maxRange": 135,
-    "size": 1,
-    "shops": [
-      {
-        "system": "Stanton",
         "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 54863
-      },
-      {
-        "system": "Stanton",
-        "location": "Area 18 - Dumper's Depot",
-        "price": 57750
+        "price": 20378
       },
       {
         "system": "Stanton",
         "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 57750
+        "price": 21450
       },
       {
         "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 57750
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 21450
       },
       {
         "system": "Stanton",
         "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 57750
+        "price": 21450
       },
       {
         "system": "Stanton",
         "location": "GrimHEX - Dumper's Depot",
-        "price": 57750
+        "price": 21450
+      }
+    ]
+  },
+  {
+    "name": "Arbor MHV Mining Laser (SS0)",
+    "slots": 0,
+    "powerMin": 0,
+    "powerMax": 0,
+    "extraction": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 15,
+    "maxRange": 20,
+    "size": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 4893
+      },
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 4893
+      },
+      {
+        "system": "Stanton",
+        "location": "Area 18 - Dumper's Depot",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "GrimHEX - Dumper's Depot",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 5150
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 5150
       },
       {
         "system": "Pyro",
         "location": "Ruin Station - Refinery Shop",
-        "price": 57750
+        "price": 5150
       }
     ]
   },
@@ -423,6 +415,365 @@ const lasers = [
     ]
   },
   {
+    "name": "Hofstede-S1 Mining Laser (S1)",
+    "slots": 1,
+    "powerMin": 105,
+    "powerMax": 2100,
+    "extraction": 1295,
+    "inert": -30,
+    "resistance": -30,
+    "instability": 10,
+    "optimalWin": 60,
+    "optCharge": 20,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 45,
+    "maxRange": 135,
+    "size": 1,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 12113
+      },
+      {
+        "system": "Stanton",
+        "location": "Area 18 - Dumper's Depot",
+        "price": 12750
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 12750
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 12750
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 12750
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 12750
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 12750
+      }
+    ]
+  },
+  {
+    "name": "Hofstede-S2 Mining Laser (S2)",
+    "slots": 2,
+    "powerMin": 336,
+    "powerMax": 3360,
+    "extraction": 1295,
+    "inert": -40,
+    "resistance": -30,
+    "instability": 10,
+    "optimalWin": 60,
+    "optCharge": 20,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 60,
+    "maxRange": 180,
+    "size": 2,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 21613
+      },
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 21613
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "GrimHEX - Dumper's Depot",
+        "price": 22750
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 22750
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 22750
+      }
+    ]
+  },
+  {
+    "name": "Impact I Mining Laser (S1)",
+    "slots": 2,
+    "powerMin": 420,
+    "powerMax": 2100,
+    "extraction": 2775,
+    "inert": -30,
+    "resistance": 10,
+    "instability": -10,
+    "optimalWin": 20,
+    "optCharge": -40,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 45,
+    "maxRange": 135,
+    "size": 1,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 54863
+      },
+      {
+        "system": "Stanton",
+        "location": "Area 18 - Dumper's Depot",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "GrimHEX - Dumper's Depot",
+        "price": 57750
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 57750
+      }
+    ]
+  },
+  {
+    "name": "Impact II Mining Laser (S2)",
+    "slots": 3,
+    "powerMin": 840,
+    "powerMax": 3360,
+    "extraction": 3145,
+    "inert": -40,
+    "resistance": 10,
+    "instability": -10,
+    "optimalWin": 20,
+    "optCharge": -40,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 60,
+    "maxRange": 180,
+    "size": 2,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 54863
+      },
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 54863
+      },
+      {
+        "system": "Stanton",
+        "location": "Area 18 - Dumper's Depot",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 57750
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 57750
+      }
+    ]
+  },
+  {
+    "name": "Klein-S1 Mining Laser (S1)",
+    "slots": 0,
+    "powerMin": 378,
+    "powerMax": 2220,
+    "extraction": 2220,
+    "inert": -30,
+    "resistance": -45,
+    "instability": 35,
+    "optimalWin": 20,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 45,
+    "maxRange": 135,
+    "size": 1,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 10150
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 10150
+      }
+    ]
+  },
+  {
+    "name": "Klein-S2 Mining Laser (S2)",
+    "slots": 1,
+    "powerMin": 720,
+    "powerMax": 3600,
+    "extraction": 2775,
+    "inert": -40,
+    "resistance": -45,
+    "instability": 35,
+    "optimalWin": 20,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 60,
+    "maxRange": 180,
+    "size": 2,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 20150
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 20150
+      }
+    ]
+  },
+  {
     "name": "Lancet MH1 Mining Laser (S1)",
     "slots": 1,
     "powerMin": 504,
@@ -527,434 +878,130 @@ const lasers = [
     ]
   },
   {
-    "name": "Arbor MH2 Mining Laser (S2)",
+    "name": "Lancet MH2 Mining Laser (S2)",
     "slots": 2,
-    "powerMin": 480,
-    "powerMax": 2400,
+    "powerMin": 900,
+    "powerMax": 3600,
     "extraction": 2590,
     "inert": -40,
-    "resistance": 25,
-    "instability": -35,
-    "optimalWin": 40,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 90,
-    "maxRange": 270,
-    "size": 2,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 20378
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 21450
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 21450
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 21450
-      },
-      {
-        "system": "Stanton",
-        "location": "GrimHEX - Dumper's Depot",
-        "price": 21450
-      }
-    ]
-  },
-  {
-    "name": "Hofstede-S2 Mining Laser (S2)",
-    "slots": 2,
-    "powerMin": 336,
-    "powerMax": 3360,
-    "extraction": 1295,
-    "inert": -40,
-    "resistance": -30,
-    "instability": 10,
-    "optimalWin": 60,
-    "optCharge": 20,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 60,
-    "maxRange": 180,
-    "size": 2,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 21613
-      },
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 21613
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "GrimHEX - Dumper's Depot",
-        "price": 22750
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 22750
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 22750
-      }
-    ]
-  },
-  {
-    "name": "Impact II Mining Laser (S2)",
-    "slots": 3,
-    "powerMin": 840,
-    "powerMax": 3360,
-    "extraction": 3145,
-    "inert": -40,
-    "resistance": 10,
+    "resistance": 0,
     "instability": -10,
-    "optimalWin": 20,
-    "optCharge": -40,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 60,
-    "maxRange": 180,
-    "size": 2,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 54863
-      },
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 54863
-      },
-      {
-        "system": "Stanton",
-        "location": "Area 18 - Dumper's Depot",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 57750
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 57750
-      }
-    ]
-  },
-  {
-    "name": "Hofstede-S1 Mining Laser (S1)",
-    "slots": 1,
-    "powerMin": 105,
-    "powerMax": 2100,
-    "extraction": 1295,
-    "inert": -30,
-    "resistance": -30,
-    "instability": 10,
-    "optimalWin": 60,
-    "optCharge": 20,
+    "optimalWin": -60,
+    "optCharge": 40,
     "overcharge": 0,
     "shatter": 0,
     "optRange": 45,
     "maxRange": 135,
-    "size": 1,
+    "size": 2,
     "shops": [
       {
         "system": "Stanton",
         "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 12113
+        "price": 89300
       },
       {
         "system": "Stanton",
         "location": "Area 18 - Dumper's Depot",
-        "price": 12750
+        "price": 94000
       },
       {
         "system": "Stanton",
         "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 12750
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 12750
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 12750
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 12750
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 12750
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 12750
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 12750
-      }
-    ]
-  },
-  {
-    "name": "Arbor MHV Mining Laser (SS0)",
-    "slots": 0,
-    "powerMin": 0,
-    "powerMax": 0,
-    "extraction": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 15,
-    "maxRange": 20,
-    "size": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 4893
-      },
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 4893
-      },
-      {
-        "system": "Stanton",
-        "location": "Area 18 - Dumper's Depot",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "GrimHEX - Dumper's Depot",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Stanton",
         "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Stanton",
         "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Stanton",
         "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 5150
+        "location": "GrimHEX - Dumper's Depot",
+        "price": 94000
       },
       {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 5150
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 94000
       },
       {
         "system": "Pyro",
         "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Nyx",
         "location": "Levski - Refinery Shop",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Nyx",
         "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 5150
+        "price": 94000
       },
       {
         "system": "Pyro",
         "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 5150
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 5150
+        "price": 94000
       }
     ]
+  },
+  {
+    "name": "Lawson Mining Laser (SS0)",
+    "slots": 0,
+    "powerMin": 0,
+    "powerMax": 0,
+    "extraction": 4,
+    "inert": 0,
+    "resistance": -40,
+    "instability": 30,
+    "optimalWin": 40,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 25,
+    "maxRange": 25,
+    "size": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 4950
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 4950
+      }
+    ]
+  },
+  {
+    "name": "Pitman Mining Laser (S1)",
+    "slots": 2,
+    "powerMin": 630,
+    "powerMax": 3150,
+    "extraction": 1295,
+    "inert": -40,
+    "resistance": 25,
+    "instability": 35,
+    "optimalWin": 40,
+    "optCharge": -40,
+    "overcharge": 0,
+    "shatter": 0,
+    "optRange": 40,
+    "maxRange": 45,
+    "size": 1,
+    "shops": []
   },
   {
     "name": "S0 Helix (SS0)",
@@ -1233,53 +1280,6 @@ const lasers = [
         "price": 5750
       }
     ]
-  },
-  {
-    "name": "Pitman Mining Laser (S1)",
-    "slots": 2,
-    "powerMin": 630,
-    "powerMax": 3150,
-    "extraction": 1295,
-    "inert": -40,
-    "resistance": 25,
-    "instability": 35,
-    "optimalWin": 40,
-    "optCharge": -40,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 40,
-    "maxRange": 45,
-    "size": 1,
-    "shops": []
-  },
-  {
-    "name": "Lawson Mining Laser (SS0)",
-    "slots": 0,
-    "powerMin": 0,
-    "powerMax": 0,
-    "extraction": 4,
-    "inert": 0,
-    "resistance": -40,
-    "instability": 30,
-    "optimalWin": 40,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "optRange": 25,
-    "maxRange": 25,
-    "size": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 4950
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 4950
-      }
-    ]
   }
 ];
 const modules = [
@@ -1289,6 +1289,456 @@ const modules = [
     "extraction": 0,
     "uses": 0,
     "shops": []
+  },
+  {
+    "name": "Brandt Module (Active)",
+    "power": 35,
+    "extraction": 0,
+    "uses": 5,
+    "inert": 0,
+    "resistance": 15,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": -30,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 2138
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 2250
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 2250
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 2250
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 2250
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 2250
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 2250
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 2250
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 2250
+      }
+    ]
+  },
+  {
+    "name": "FLTR Module (Passive)",
+    "power": 0,
+    "extraction": -15,
+    "uses": 0,
+    "inert": -20,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 5700
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 6000
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 6000
+      }
+    ]
+  },
+  {
+    "name": "FLTR-L Module (Passive)",
+    "power": 0,
+    "extraction": -10,
+    "uses": 0,
+    "inert": -23,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 17100
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 18000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 18000
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 18000
+      }
+    ]
+  },
+  {
+    "name": "FLTR-XL Module (Passive)",
+    "power": 0,
+    "extraction": -5,
+    "uses": 0,
+    "inert": -24,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 57000
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 60000
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 60000
+      }
+    ]
+  },
+  {
+    "name": "Focus II Module (Passive)",
+    "power": -10,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 37,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 11400
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 12000
+      }
+    ]
+  },
+  {
+    "name": "Focus III Module (Passive)",
+    "power": -5,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 40,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 40000
+      }
+    ]
   },
   {
     "name": "Focus Module (Passive)",
@@ -1397,6 +1847,841 @@ const modules = [
         "system": "Pyro",
         "location": "Nyx Gateway (Pyro) - Refinery Shop",
         "price": 4000
+      }
+    ]
+  },
+  {
+    "name": "Forel Module (Active)",
+    "power": 0,
+    "extraction": 50,
+    "uses": 6,
+    "inert": 0,
+    "resistance": 15,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": -60,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 1853
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 1950
+      }
+    ]
+  },
+  {
+    "name": "Lifeline Module (Active)",
+    "power": 0,
+    "extraction": 0,
+    "uses": 3,
+    "inert": 0,
+    "resistance": -15,
+    "instability": -20,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 60,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 760
+      },
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 760
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 800
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 800
+      }
+    ]
+  },
+  {
+    "name": "Optimum Module (Active)",
+    "power": -15,
+    "extraction": 0,
+    "uses": 5,
+    "inert": 0,
+    "resistance": 0,
+    "instability": -10,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": -80,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 3000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 3000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 3000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 3000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 3000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 3000
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 3000
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 3000
+      }
+    ]
+  },
+  {
+    "name": "Rieger Module (Passive)",
+    "power": 15,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": -10,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 5700
+      }
+    ]
+  },
+  {
+    "name": "Rieger-C2 Module (Passive)",
+    "power": 20,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": -3,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 17100
+      }
+    ]
+  },
+  {
+    "name": "Rieger-C3 Module (Passive)",
+    "power": 25,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": -1,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 57000
+      }
+    ]
+  },
+  {
+    "name": "Rime Module (Active)",
+    "power": -15,
+    "extraction": 0,
+    "uses": 10,
+    "inert": 0,
+    "resistance": -25,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": -10,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 1045
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 1100
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 1100
+      }
+    ]
+  },
+  {
+    "name": "Stampede Module (Active)",
+    "power": 35,
+    "extraction": -15,
+    "uses": 6,
+    "inert": 0,
+    "resistance": 0,
+    "instability": -10,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": -10,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 1330
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Pyro",
+        "location": "Ruin Station - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 1400
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 1400
+      }
+    ]
+  },
+  {
+    "name": "Surge Module (Active)",
+    "power": 50,
+    "extraction": 0,
+    "uses": 7,
+    "inert": 0,
+    "resistance": -15,
+    "instability": 10,
+    "optimalWin": 0,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 1400
+      }
+    ]
+  },
+  {
+    "name": "Torpid Module (Active)",
+    "power": 0,
+    "extraction": 0,
+    "uses": 5,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 0,
+    "optCharge": 60,
+    "overcharge": -60,
+    "shatter": 40,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 1853
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 1950
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 1950
+      }
+    ]
+  },
+  {
+    "name": "Torrent II Module (Passive)",
+    "power": 0,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": -3,
+    "optCharge": 35,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 11400
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 12000
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 12000
+      }
+    ]
+  },
+  {
+    "name": "Torrent III Module (Passive)",
+    "power": 0,
+    "extraction": 0,
+    "uses": 0,
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": -1,
+    "optCharge": 40,
+    "overcharge": 0,
+    "shatter": 0,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 38000
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Pyro",
+        "location": "Checkmate Station - Refinery Shop",
+        "price": 40000
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 40000
       }
     ]
   },
@@ -1984,1291 +3269,6 @@ const modules = [
         "price": 20000
       }
     ]
-  },
-  {
-    "name": "Forel Module (Active)",
-    "power": 0,
-    "extraction": 50,
-    "uses": 6,
-    "inert": 0,
-    "resistance": 15,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": -60,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 1853
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 1950
-      }
-    ]
-  },
-  {
-    "name": "Lifeline Module (Active)",
-    "power": 0,
-    "extraction": 0,
-    "uses": 3,
-    "inert": 0,
-    "resistance": -15,
-    "instability": -20,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 60,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 760
-      },
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 760
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 800
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 800
-      }
-    ]
-  },
-  {
-    "name": "Optimum Module (Active)",
-    "power": -15,
-    "extraction": 0,
-    "uses": 5,
-    "inert": 0,
-    "resistance": 0,
-    "instability": -10,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": -80,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 3000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 3000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 3000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 3000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 3000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 3000
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 3000
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 3000
-      }
-    ]
-  },
-  {
-    "name": "Rime Module (Active)",
-    "power": -15,
-    "extraction": 0,
-    "uses": 10,
-    "inert": 0,
-    "resistance": -25,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": -10,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 1045
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 1100
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 1100
-      }
-    ]
-  },
-  {
-    "name": "Stampede Module (Active)",
-    "power": 35,
-    "extraction": -15,
-    "uses": 6,
-    "inert": 0,
-    "resistance": 0,
-    "instability": -10,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": -10,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 1330
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 1400
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 1400
-      }
-    ]
-  },
-  {
-    "name": "Torpid Module (Active)",
-    "power": 0,
-    "extraction": 0,
-    "uses": 5,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 60,
-    "overcharge": -60,
-    "shatter": 40,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 1853
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 1950
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 1950
-      }
-    ]
-  },
-  {
-    "name": "FLTR-XL Module (Passive)",
-    "power": 0,
-    "extraction": -5,
-    "uses": 0,
-    "inert": -24,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 57000
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 60000
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 60000
-      }
-    ]
-  },
-  {
-    "name": "Focus III Module (Passive)",
-    "power": -5,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 40,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 40000
-      }
-    ]
-  },
-  {
-    "name": "Rieger-C2 Module (Passive)",
-    "power": 20,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": -3,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 17100
-      }
-    ]
-  },
-  {
-    "name": "Torrent II Module (Passive)",
-    "power": 0,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": -3,
-    "optCharge": 35,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 11400
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 12000
-      }
-    ]
-  },
-  {
-    "name": "FLTR Module (Passive)",
-    "power": 0,
-    "extraction": -15,
-    "uses": 0,
-    "inert": -20,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 5700
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 6000
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 6000
-      }
-    ]
-  },
-  {
-    "name": "FLTR-L Module (Passive)",
-    "power": 0,
-    "extraction": -10,
-    "uses": 0,
-    "inert": -23,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 17100
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 18000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 18000
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 18000
-      }
-    ]
-  },
-  {
-    "name": "Brandt Module (Active)",
-    "power": 35,
-    "extraction": 0,
-    "uses": 5,
-    "inert": 0,
-    "resistance": 15,
-    "instability": 0,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": -30,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 2138
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 2250
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 2250
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 2250
-      },
-      {
-        "system": "Pyro",
-        "location": "Ruin Station - Refinery Shop",
-        "price": 2250
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 2250
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 2250
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 2250
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 2250
-      }
-    ]
-  },
-  {
-    "name": "Focus II Module (Passive)",
-    "power": -10,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 37,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 11400
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 12000
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 12000
-      }
-    ]
-  },
-  {
-    "name": "Rieger-C3 Module (Passive)",
-    "power": 25,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": -1,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 57000
-      }
-    ]
-  },
-  {
-    "name": "Torrent III Module (Passive)",
-    "power": 0,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": -1,
-    "optCharge": 40,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 38000
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Pyro",
-        "location": "Checkmate Station - Refinery Shop",
-        "price": 40000
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 40000
-      }
-    ]
-  },
-  {
-    "name": "Surge Module (Active)",
-    "power": 50,
-    "extraction": 0,
-    "uses": 7,
-    "inert": 0,
-    "resistance": -15,
-    "instability": 10,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 1400
-      }
-    ]
-  },
-  {
-    "name": "Rieger Module (Passive)",
-    "power": 15,
-    "extraction": 0,
-    "uses": 0,
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": -10,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "shops": [
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 5700
-      }
-    ]
   }
 ];
 const gadgets = [
@@ -3277,85 +3277,216 @@ const gadgets = [
     "shops": []
   },
   {
-    "name": "Waveshift",
+    "name": "BoreMax",
     "inert": 0,
-    "resistance": 0,
-    "instability": -35,
-    "optimalWin": 100,
-    "optCharge": -30,
+    "resistance": 10,
+    "instability": -70,
+    "optimalWin": 0,
+    "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
-    "cluster": 0,
+    "cluster": 30,
+    "shops": [
+      {
+        "system": "Nyx",
+        "location": "Levski - Tools & Supplies",
+        "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "People's Service Station Alpha - Tools & Supplies",
+        "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "People's Service Station Theta - Tools & Supplies",
+        "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "People's Service Station Lambda - Tools & Supplies",
+        "price": 12750
+      }
+    ]
+  },
+  {
+    "name": "Okunis",
+    "inert": 0,
+    "resistance": 0,
+    "instability": 0,
+    "optimalWin": 50,
+    "optCharge": 100,
+    "overcharge": 0,
+    "shatter": 0,
+    "cluster": -20,
     "shops": [
       {
         "system": "Stanton",
-        "location": "Lorville - Tammany and Sons - Metro Center",
-        "price": 18169
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 22088
       },
       {
         "system": "Stanton",
-        "location": "Area 18 - Dumper's Depot",
-        "price": 19125
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 23250
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 23250
       },
       {
         "system": "Stanton",
         "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 19125
+        "price": 23250
       },
       {
         "system": "Stanton",
-        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-        "price": 19125
+        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Stanton",
+        "location": "HUR-L1 Green Glade Station - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Stanton",
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Pyro",
+        "location": "Orbituary - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Pyro",
+        "location": "Stanton Gateway (Pyro) - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Nyx",
+        "location": "Levski - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Nyx",
+        "location": "Stanton Gateway (Nyx) - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 23250
+      },
+      {
+        "system": "Pyro",
+        "location": "Nyx Gateway (Pyro) - Refinery Shop",
+        "price": 23250
+      }
+    ]
+  },
+  {
+    "name": "OptiMax",
+    "inert": 0,
+    "resistance": -30,
+    "instability": 0,
+    "optimalWin": -30,
+    "optCharge": 0,
+    "overcharge": 0,
+    "shatter": 0,
+    "cluster": 60,
+    "shops": [
+      {
+        "system": "Stanton",
+        "location": "Pyro Gateway (Stanton) - Refinery Shop",
+        "price": 26244
+      },
+      {
+        "system": "Stanton",
+        "location": "Terra Gateway (Stanton) - Refinery Shop",
+        "price": 27265
+      },
+      {
+        "system": "Stanton",
+        "location": "New Babbage - Shubin Interstellar - Commons",
+        "price": 27625
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+        "price": 27625
+      },
+      {
+        "system": "Stanton",
+        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+        "price": 27625
       },
       {
         "system": "Stanton",
         "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 19125
+        "price": 27625
       },
       {
         "system": "Stanton",
         "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 19125
+        "price": 27625
       },
       {
         "system": "Stanton",
-        "location": "GrimHEX - Dumper's Depot",
-        "price": 19125
+        "location": "Nyx Gateway (Stanton) - Refinery Shop",
+        "price": 27625
       },
       {
         "system": "Pyro",
         "location": "Ruin Station - Refinery Shop",
-        "price": 19125
+        "price": 27625
       },
       {
         "system": "Pyro",
         "location": "Checkmate Station - Refinery Shop",
-        "price": 19125
+        "price": 27625
       },
       {
-        "system": "Pyro",
-        "location": "Yang's Place - Shop Terminal",
-        "price": 19125
+        "system": "Nyx",
+        "location": "Levski - Tools & Supplies",
+        "price": 27625
       },
       {
-        "system": "Pyro",
-        "location": "Ostler's Claim - Shop Terminal",
-        "price": 19125
+        "system": "Nyx",
+        "location": "Pyro Gateway (Nyx) - Refinery Shop",
+        "price": 27625
       },
       {
-        "system": "Pyro",
-        "location": "Bueno Ravine - Shop Terminal",
-        "price": 19125
+        "system": "Nyx",
+        "location": "People's Service Station Alpha - Tools & Supplies",
+        "price": 27625
       },
       {
-        "system": "Pyro",
-        "location": "Carver's Ridge - Shop Terminal",
-        "price": 19125
+        "system": "Nyx",
+        "location": "People's Service Station Theta - Tools & Supplies",
+        "price": 27625
       },
       {
-        "system": "Pyro",
-        "location": "Stag's Rut - Shop Terminal",
-        "price": 19125
+        "system": "Nyx",
+        "location": "People's Service Station Lambda - Tools & Supplies",
+        "price": 27625
       }
     ]
   },
@@ -3533,132 +3664,6 @@ const gadgets = [
     ]
   },
   {
-    "name": "BoreMax",
-    "inert": 0,
-    "resistance": 10,
-    "instability": -70,
-    "optimalWin": 0,
-    "optCharge": 0,
-    "overcharge": 0,
-    "shatter": 0,
-    "cluster": 30,
-    "shops": [
-      {
-        "system": "Nyx",
-        "location": "Levski - Tools & Supplies",
-        "price": 12750
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 12750
-      },
-      {
-        "system": "Nyx",
-        "location": "People's Service Station Alpha - Tools & Supplies",
-        "price": 12750
-      },
-      {
-        "system": "Nyx",
-        "location": "People's Service Station Theta - Tools & Supplies",
-        "price": 12750
-      },
-      {
-        "system": "Nyx",
-        "location": "People's Service Station Lambda - Tools & Supplies",
-        "price": 12750
-      }
-    ]
-  },
-  {
-    "name": "Okunis",
-    "inert": 0,
-    "resistance": 0,
-    "instability": 0,
-    "optimalWin": 50,
-    "optCharge": 100,
-    "overcharge": 0,
-    "shatter": 0,
-    "cluster": -20,
-    "shops": [
-      {
-        "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 22088
-      },
-      {
-        "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L2 Long Forest Station - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "HUR-L1 Green Glade Station - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Pyro",
-        "location": "Orbituary - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Pyro",
-        "location": "Stanton Gateway (Pyro) - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Nyx",
-        "location": "Levski - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Nyx",
-        "location": "Stanton Gateway (Nyx) - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 23250
-      },
-      {
-        "system": "Pyro",
-        "location": "Nyx Gateway (Pyro) - Refinery Shop",
-        "price": 23250
-      }
-    ]
-  },
-  {
     "name": "Stalwart",
     "inert": 0,
     "resistance": 0,
@@ -3677,90 +3682,85 @@ const gadgets = [
     ]
   },
   {
-    "name": "OptiMax",
+    "name": "Waveshift",
     "inert": 0,
-    "resistance": -30,
-    "instability": 0,
-    "optimalWin": -30,
-    "optCharge": 0,
+    "resistance": 0,
+    "instability": -35,
+    "optimalWin": 100,
+    "optCharge": -30,
     "overcharge": 0,
     "shatter": 0,
-    "cluster": 60,
+    "cluster": 0,
     "shops": [
       {
         "system": "Stanton",
-        "location": "Pyro Gateway (Stanton) - Refinery Shop",
-        "price": 26244
+        "location": "Lorville - Tammany and Sons - Metro Center",
+        "price": 18169
       },
       {
         "system": "Stanton",
-        "location": "Terra Gateway (Stanton) - Refinery Shop",
-        "price": 27265
+        "location": "Area 18 - Dumper's Depot",
+        "price": 19125
       },
       {
         "system": "Stanton",
-        "location": "New Babbage - Shubin Interstellar - Commons",
-        "price": 27625
+        "location": "MIC-L2 Long Forest Station - Refinery Shop",
+        "price": 19125
       },
       {
         "system": "Stanton",
-        "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-        "price": 27625
-      },
-      {
-        "system": "Stanton",
-        "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-        "price": 27625
+        "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+        "price": 19125
       },
       {
         "system": "Stanton",
         "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-        "price": 27625
+        "price": 19125
       },
       {
         "system": "Stanton",
         "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-        "price": 27625
+        "price": 19125
       },
       {
         "system": "Stanton",
-        "location": "Nyx Gateway (Stanton) - Refinery Shop",
-        "price": 27625
+        "location": "GrimHEX - Dumper's Depot",
+        "price": 19125
       },
       {
         "system": "Pyro",
         "location": "Ruin Station - Refinery Shop",
-        "price": 27625
+        "price": 19125
       },
       {
         "system": "Pyro",
         "location": "Checkmate Station - Refinery Shop",
-        "price": 27625
+        "price": 19125
       },
       {
-        "system": "Nyx",
-        "location": "Levski - Tools & Supplies",
-        "price": 27625
+        "system": "Pyro",
+        "location": "Yang's Place - Shop Terminal",
+        "price": 19125
       },
       {
-        "system": "Nyx",
-        "location": "Pyro Gateway (Nyx) - Refinery Shop",
-        "price": 27625
+        "system": "Pyro",
+        "location": "Ostler's Claim - Shop Terminal",
+        "price": 19125
       },
       {
-        "system": "Nyx",
-        "location": "People's Service Station Alpha - Tools & Supplies",
-        "price": 27625
+        "system": "Pyro",
+        "location": "Bueno Ravine - Shop Terminal",
+        "price": 19125
       },
       {
-        "system": "Nyx",
-        "location": "People's Service Station Theta - Tools & Supplies",
-        "price": 27625
+        "system": "Pyro",
+        "location": "Carver's Ridge - Shop Terminal",
+        "price": 19125
       },
       {
-        "system": "Nyx",
-        "location": "People's Service Station Lambda - Tools & Supplies",
-        "price": 27625
+        "system": "Pyro",
+        "location": "Stag's Rut - Shop Terminal",
+        "price": 19125
       }
     ]
   }
@@ -4062,78 +4062,6 @@ const refineryData = [
   }
 ];
 const pricingData = {
-  "Quantanium": [
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 141",
-      "price": 170000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 170000
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 170000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 160000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 160000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 160000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 150000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 150000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 150000
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 150000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 140000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 140000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 130000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 130000
-    }
-  ],
   "Stileron": [
     {
       "system": "Nyx",
@@ -4141,13 +4069,13 @@ const pricingData = {
       "price": 160000
     },
     {
-      "system": "Pyro",
-      "location": "Nyx Gateway (Pyro) - Admin",
-      "price": 160000
-    },
-    {
       "system": "Stanton",
       "location": "Deakins Research",
+      "price": 150000
+    },
+    {
+      "system": "Pyro",
+      "location": "Nyx Gateway (Pyro) - Admin",
       "price": 150000
     },
     {
@@ -4265,7 +4193,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
-      "price": 120000
+      "price": 130000
     },
     {
       "system": "Nyx",
@@ -4281,6 +4209,11 @@ const pricingData = {
   "Riccite": [
     {
       "system": "Stanton",
+      "location": "ArcCorp Mining Area 157",
+      "price": 91000
+    },
+    {
+      "system": "Stanton",
       "location": "ArcCorp Mining Area 141",
       "price": 90000
     },
@@ -4288,11 +4221,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Ashland",
       "price": 83000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 157",
-      "price": 79000
     },
     {
       "system": "Nyx",
@@ -4393,11 +4321,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 4600
-    },
-    {
-      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 4600
     },
@@ -4405,6 +4328,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 4600
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 4500
     }
   ],
   "Lindinium": [
@@ -4698,6 +4626,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 28000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 28000
     },
@@ -4765,11 +4698,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 27000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 26000
     },
     {
       "system": "Stanton",
@@ -4895,6 +4823,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Patch City - Admin",
+      "price": 19000
+    },
+    {
+      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 19000
     },
@@ -4932,23 +4865,18 @@ const pricingData = {
       "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station",
       "price": 15000
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 4500
     }
   ],
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 34000
+      "location": "The Golden Riviera",
+      "price": 32000
     },
     {
       "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 32000
+      "location": "Rat's Nest - Admin",
+      "price": 31000
     },
     {
       "system": "Pyro",
@@ -4958,6 +4886,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 30000
+    },
+    {
+      "system": "Pyro",
+      "location": "Patch City - Admin",
       "price": 30000
     },
     {
@@ -4991,14 +4924,14 @@ const pricingData = {
       "price": 29000
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
+      "system": "Stanton",
+      "location": "Lorville - CBD",
       "price": 29000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 28000
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 29000
     },
     {
       "system": "Stanton",
@@ -5024,11 +4957,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station",
       "price": 24000
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 19000
     }
   ],
   "Tungsten": [
@@ -5149,7 +5077,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
-      "price": 9300
+      "price": 8700
     },
     {
       "system": "Pyro",
@@ -5275,18 +5203,18 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "HUR-L1 Green Glade Station - Admin",
+      "price": 9400
+    },
+    {
+      "system": "Stanton",
       "location": "HUR-L2 Faithful Dream Station - Admin",
       "price": 9400
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 9200
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 9200
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 9300
     },
     {
       "system": "Nyx",
@@ -5310,8 +5238,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 9000
+      "location": "Area 18 - TDD",
+      "price": 8900
     },
     {
       "system": "Pyro",
@@ -5405,6 +5333,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 12000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
       "price": 11000
     },
     {
@@ -5425,11 +5358,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
       "price": 10000
     },
     {
@@ -5541,22 +5469,22 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
       "price": 4100
     },
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
+      "price": 4000
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4000
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
       "price": 4000
     },
     {
@@ -5637,19 +5565,9 @@ const pricingData = {
   ],
   "Copper": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4500
-    },
-    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 4500
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4300
     },
     {
       "system": "Pyro",
@@ -5657,8 +5575,18 @@ const pricingData = {
       "price": 4200
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4100
+    },
+    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
+      "price": 4100
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 4000
     },
     {
@@ -5699,7 +5627,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3600
+      "price": 3700
     },
     {
       "system": "Pyro",
@@ -5776,7 +5704,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 4100
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -5841,7 +5769,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
-      "price": 3000
+      "price": 3009
     },
     {
       "system": "Stanton",
@@ -5857,12 +5785,12 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station - Admin",
-      "price": 5500
+      "location": "New Babbage - TDD",
+      "price": 5300
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
+      "location": "CRU-L4 Shallow Fields Station - Admin",
       "price": 5300
     },
     {
@@ -5897,18 +5825,23 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station - Admin",
+      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4800
     },
     {
       "system": "Stanton",
-      "location": "ARC-L5 Yellow Core Station - Admin",
+      "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 4800
     },
     {
       "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
       "price": 4800
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L5 Yellow Core Station - Admin",
+      "price": 4700
     },
     {
       "system": "Stanton",
@@ -5952,11 +5885,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 4600
     },
@@ -5966,19 +5894,19 @@ const pricingData = {
       "price": 4600
     },
     {
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
+      "price": 4500
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 4100
     },
     {
       "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
-      "price": 3900
+      "price": 3990
     },
     {
       "system": "Stanton",
@@ -5996,11 +5924,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Baijini Point - Admin",
       "price": 5800
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 5600
     },
     {
       "system": "Pyro",
@@ -6056,6 +5979,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Sacren's Plot",
       "price": 5500
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 5300
     },
     {
       "system": "Pyro",
@@ -6141,18 +6069,13 @@ const pricingData = {
   "Iron": [
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3900
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3600
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 3800
     },
     {
       "system": "Pyro",
@@ -6172,6 +6095,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3500
     },
     {
@@ -6289,7 +6217,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5300
+      "price": 4800
     },
     {
       "system": "Stanton",
@@ -6404,6 +6332,11 @@ const pricingData = {
       "price": 2900
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 2700
+    },
+    {
       "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 2600
@@ -6411,11 +6344,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
-      "price": 2600
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
       "price": 2600
     },
     {
@@ -6483,6 +6411,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 4000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3900
     },
     {
@@ -6517,7 +6450,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 3600
     },
     {
@@ -6543,11 +6476,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 3500
     },
     {
