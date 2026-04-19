@@ -1172,3 +1172,53 @@ footer {
     color: var(--accent);
     transform: scale(1.1);
 }
+
+
+/* --- ROCK READER DETAIL ROWS & TOOLTIPS --- */
+.tooltip-header { margin-bottom: 8px; border-bottom: 1px solid var(--border); padding-bottom: 5px; font-size: 1em; }
+.tooltip-row-container { display: flex; flex-direction: column; gap: 6px; font-size: 0.9em; }
+.tooltip-row { display: flex; align-items: baseline; }
+.tooltip-sys-label { 
+    font-weight: bold; 
+    width: 85px; 
+    flex-shrink: 0; 
+    display: inline-block; 
+}
+.tooltip-footer { margin-top: 10px; font-size: 0.8em; color: var(--text-muted); font-style: italic; text-align: center; border-top: 1px dashed var(--border); padding-top: 5px; }
+
+.detail-row-wrapper { padding: 10px 15px; border-left: 3px solid var(--accent); background-color: rgba(0,0,0,0.1); }
+.detail-row-header { color: var(--text-muted); font-size: 0.8em; text-transform: uppercase; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+.detail-cards-container { display: flex; gap: 15px; flex-wrap: wrap; align-items: stretch; justify-content: flex-start; }
+
+.recommendation-card {
+    flex: 0 1 auto !important;
+    min-height: auto !important;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.detail-card { background: var(--bg-color); border: 1px solid var(--border); padding: 8px 15px; border-radius: 6px; flex: 1 1 200px; max-width: 350px; text-align: left; }
+.detail-card.center-text { 
+    text-align: center; 
+    flex: 1 1 120px;
+    max-width: 150px; 
+}
+.card-sys-header { font-size: 0.8em; text-transform: uppercase; font-weight: bold; margin-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; }
+.card-content-chips { display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.85em; color: var(--text-main); }
+.loc-chip { background: rgba(255,255,255,0.05); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); }
+
+.show-more-card { background: rgba(var(--accent-rgb), 0.1); border: 1px dashed var(--accent); padding: 8px 15px; border-radius: 6px; flex: 1 1 200px; max-width: 250px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--accent); font-weight: bold; text-align: center; transition: background 0.2s; }
+.show-more-card:hover { background: rgba(var(--accent-rgb), 0.2); }
+.show-less-btn { cursor: pointer; color: var(--accent); font-weight: bold; transition: color 0.2s; }
+.show-less-btn:hover { color: var(--text-bright); text-decoration: underline; }
+
+.price-val { color: var(--accent); font-weight: bold; font-size: 1.1em; }
+.price-unit { font-size: 0.7em; color: var(--text-main); }
+.price-loc { color: var(--text-main); font-size: 0.85em; font-weight: bold; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.action-badge { color: var(--accent); font-weight: bold; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); display: inline-block; transition: background 0.2s; cursor: pointer; text-align: center; }
+.action-badge:hover { background: rgba(255,255,255,0.1); }
+
+.sys-stanton { color: var(--text-stanton); }
+.sys-nyx { color: var(--text-nyx); }
+.sys-pyro { color: var(--text-pyro); }
+.sys-unknown { color: var(--text-muted); }

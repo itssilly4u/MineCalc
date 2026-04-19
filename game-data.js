@@ -4062,7 +4062,7 @@ const refineryData = [
   }
 ];
 const pricingData = {
-  "Quantainium": [
+  "Quantanium": [
     {
       "system": "Stanton",
       "location": "ArcCorp Mining Area 141",

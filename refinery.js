@@ -35,8 +35,7 @@ function generateRefineryTable() {
 
     thead.innerHTML = '';
 
-    // --- 1. Find all unique ore columns dynamically ---
-    const ignoreKeys = ["Refinery", ""]; // "" is the System code key in your data
+    const ignoreKeys = ["Refinery", ""]; 
     const oreSet = new Set();
     
     refineryData.forEach(row => {
@@ -47,11 +46,22 @@ function generateRefineryTable() {
     
     const oreKeys = Array.from(oreSet).sort();
 
-    // --- 2. Build Headers ---
     const buildHeader = (label, sortKey) => {
         const th = document.createElement('th');
         th.style.cursor = 'pointer';
-        th.title = `Sort by ${label}`;
+        
+        let displayTitle = label;
+
+        if (label.toUpperCase() === 'CONS') {
+            displayTitle = "Construction Materials";
+        } 
+
+        else if (typeof ores !== 'undefined' && sortKey !== 'Refinery' && sortKey !== 'System') {
+            const match = ores.find(o => o.name.toUpperCase().startsWith(label.substring(0, 4).toUpperCase()));
+            if (match) displayTitle = match.name;
+        }
+
+        th.title = `Sort by ${displayTitle}`;
         th.style.whiteSpace = 'nowrap'; 
         th.onclick = () => sortRefineryTable(sortKey);
         
@@ -71,7 +81,6 @@ function generateRefineryTable() {
     buildHeader('System', 'System');
     oreKeys.forEach(ore => buildHeader(ore, ore));
 
-    // --- 3. Sort Data ---
     let sortedData = [...refineryData].sort((a, b) => {
         let valA, valB;
 
@@ -83,7 +92,6 @@ function generateRefineryTable() {
             valB = b[currentSortCol];
         }
 
-        // Handle string vs numeric sorting safely
         if (currentSortCol === 'Refinery' || currentSortCol === 'System') {
             valA = valA ? valA.toString().toLowerCase() : "";
             valB = valB ? valB.toString().toLowerCase() : "";
@@ -97,7 +105,6 @@ function generateRefineryTable() {
         return 0;
     });
 
-    // --- 4. Render Rows ---
     let htmlRows = "";
     sortedData.forEach(ref => {
         const sysCode = ref[""]; 

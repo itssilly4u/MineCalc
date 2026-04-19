@@ -17,6 +17,13 @@ function escapeHTML(str) {
         .replace(/'/g, "&#039;");
 }
 
+function getSystemClass(systemName) {
+    if (!systemName) return 'sys-unknown';
+    const lower = systemName.toLowerCase();
+    if (['pyro', 'nyx', 'stanton'].includes(lower)) return `sys-${lower}`;
+    return 'sys-unknown';
+}
+
 function generateHash(str) {
     let hash = 0;
     for (let i = 0; i < str.length; i++) {
@@ -37,6 +44,7 @@ window.tooltipEl = document.createElement('div');
 window.tooltipEl.className = 'item-preview-tooltip';
 window.tooltipEl.style.display = 'none';
 document.body.appendChild(window.tooltipEl);
+
 window.showTextTip = (text) => {
     window.tooltipEl.innerHTML = `<div style="font-size:0.9em; line-height:1.4;">${text}</div>`;
     window.tooltipEl.style.display = 'block';
@@ -46,26 +54,21 @@ window.showTextTip = (text) => {
 let mouseX = 0;
 let mouseY = 0;
 let ticking = false;
-const ESTIMATED_TIP_WIDTH = 320; // Hardcoded to prevent layout thrashing lag
+const ESTIMATED_TIP_WIDTH = 320; 
 
 document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
 
     if (window.tooltipEl && window.tooltipEl.style.display === 'block') {
-        // Only fire on visual frames to prevent lag
         if (!ticking) {
             window.requestAnimationFrame(() => {
                 let leftPos = mouseX + 15;
-
-                // SMART CHECK: Flip to the left if it hits the right edge of the monitor
                 if (leftPos + ESTIMATED_TIP_WIDTH > window.innerWidth) {
                     leftPos = mouseX - ESTIMATED_TIP_WIDTH - 15;
                 }
-
                 window.tooltipEl.style.left = leftPos + 'px';
                 window.tooltipEl.style.top = (mouseY + 15) + 'px';
-                
                 ticking = false;
             });
             ticking = true;
@@ -80,20 +83,19 @@ window.hidePreview = () => {
 // --- FLEET BUILDER & GADGET TOOLTIPS ---
 window.showStatTip = (type) => {
     if (type === 'window') {
-        window.tooltipEl.innerHTML = `<h4>Mining Limit</h4><div style="font-size:0.9em; line-height:1.4;">Regardless of how many modifiers you stack, the Optimal Charge Window is hard-capped at 50% of the total Window in-game.</div>`;
+        window.tooltipEl.innerHTML = `<h4 class="tooltip-header">Mining Limit</h4><div style="font-size:0.9em; line-height:1.4;">Regardless of how many modifiers you stack, the Optimal Charge Window is hard-capped at 50% of the total Window in-game.</div>`;
         window.tooltipEl.style.display = 'block';
     }
 }
 
 window.showPreview = (index, type) => {
-    // Uses the global arrays loaded from game-data.js
     let item = type === 'laser' ? lasers[index] : (type === 'module' ? modules[index] : gadgets[index]);
-    window.tooltipEl.innerHTML = `<h4>${item.name}</h4>${formatStatPreview(item, type)}`;
+    window.tooltipEl.innerHTML = `<h4 class="tooltip-header">${item.name}</h4>${formatStatPreview(item, type)}`;
     window.tooltipEl.style.display = 'block';
 }
 
 function formatStatPreview(item, type) {
-    if (!item || item.name === "None") return `<div style="color:var(--text-muted);">No modifiers</div>`;
+    if (!item || item.name === "None") return `<div class="sys-unknown">No modifiers</div>`;
     let html = '';
     const addStat = (label, val, suffix, inv = false, base = false) => {
         if (!val) return;
@@ -145,7 +147,6 @@ window.showGadgetTip = (name, inst, res, density) => {
     else if (isHighResistance || isHighDensity) {
         rec1 = "Sabir";
         reason1 = "High resistance or density. Soften it up so your lasers can break it more easily.";
-        
         if (isHighInstability) {
             rec2 = "Waveshift";
             reason2 = "Since the instability is also high, use this as a safer alternative to prevent explosions.";
@@ -162,17 +163,17 @@ window.showGadgetTip = (name, inst, res, density) => {
     }
 
     window.tooltipEl.innerHTML = `
-        <h4 style="margin-bottom: 12px;">Gadget Recommendation</h4>
-        <div style="font-size:0.9em; line-height:1.4; display:flex; flex-direction:column; gap:10px;">
-            <div style="background-color: rgba(0,0,0,0.2); padding: 8px; border-left: 3px solid var(--good-stat); border-radius: 4px;">
+        <h4 class="tooltip-header">Gadget Recommendation</h4>
+        <div class="tooltip-row-container">
+            <div class="detail-card recommendation-card" style="border-left: 3px solid var(--good-stat);">
                 <span style="color:var(--good-stat); font-size:0.75em; text-transform:uppercase; font-weight:bold; letter-spacing:1px;">Primary</span><br>
-                <span style="color:var(--accent); font-weight:bold; font-size:1.1em;">${rec1}</span><br>
-                <span style="color:var(--text-muted); font-size:0.85em; margin-top:2px; display:block;">${reason1}</span>
+                <span class="price-val">${rec1}</span><br>
+                <span class="sys-unknown" style="font-size:0.85em; display:block; margin-top:4px;">${reason1}</span>
             </div>
-            <div style="background-color: rgba(0,0,0,0.2); padding: 8px; border-left: 3px solid var(--difficult); border-radius: 4px;">
+            <div class="detail-card recommendation-card" style="border-left: 3px solid var(--difficult);">
                 <span style="color:var(--difficult); font-size:0.75em; text-transform:uppercase; font-weight:bold; letter-spacing:1px;">Alternative</span><br>
-                <span style="color:var(--text-main); font-weight:bold; font-size:1em;">${rec2}</span><br>
-                <span style="color:var(--text-muted); font-size:0.85em; margin-top:2px; display:block;">${reason2}</span>
+                <span style="color:var(--text-main); font-weight:bold;">${rec2}</span><br>
+                <span class="sys-unknown" style="font-size:0.85em; display:block; margin-top:4px;">${reason2}</span>
             </div>
         </div>
     `;
@@ -192,14 +193,11 @@ const CartSystem = {
 
     init() {
         this.masterItemList = [...lasers, ...modules, ...gadgets].filter(i => i.name !== "None");
-        
         this.masterItemList.forEach(item => {
             if (item.shops && item.shops.length > 0) {
                 this.selectedShops[item.name] = 0; 
             }
         });
-
-        // Load saved state from browser memory before generating HTML
         this.loadCartState();
 
         const cartHtml = `
@@ -237,7 +235,7 @@ const CartSystem = {
     saveCartState() {
         const state = {
             showAll: this.showAll,
-            pinnedItems: Array.from(this.pinnedItems), // Sets can't be saved to JSON, so convert to array
+            pinnedItems: Array.from(this.pinnedItems), 
             selectedShops: this.selectedShops
         };
         localStorage.setItem('minecalc_cart_state', JSON.stringify(state));
@@ -267,7 +265,7 @@ const CartSystem = {
             this.updateSearch("");
             document.getElementById('mc-cart-search').value = "";
         }
-        this.saveCartState(); // Save memory
+        this.saveCartState(); 
         this.render();
     },
 
@@ -275,7 +273,6 @@ const CartSystem = {
         this.searchOpen = !this.searchOpen;
         const container = document.getElementById('mc-search-container');
         container.classList.toggle('open', this.searchOpen);
-        
         if (this.searchOpen) {
             document.getElementById('mc-cart-search').focus();
         } else {
@@ -292,14 +289,14 @@ const CartSystem = {
     togglePin(itemName) {
         if (this.pinnedItems.has(itemName)) this.pinnedItems.delete(itemName);
         else this.pinnedItems.add(itemName);
-        this.saveCartState(); // Save memory
+        this.saveCartState(); 
         this.render();
     },
 
     changeShop(event, itemName, shopIndex) {
         if (event) event.stopPropagation(); 
         this.selectedShops[itemName] = parseInt(shopIndex);
-        this.saveCartState(); // Save memory
+        this.saveCartState(); 
         this.render();
         hidePreview(); 
     },
@@ -307,13 +304,11 @@ const CartSystem = {
     updateEquipped(equippedItemNamesArray) {
         this.equippedCounts = {};
         const safeEquipped = equippedItemNamesArray.map(name => name ? name.toUpperCase().trim() : "");
-
         this.masterItemList.forEach(item => {
             const upperMasterName = item.name.toUpperCase().trim();
             const count = safeEquipped.filter(name => name === upperMasterName).length;
             if (count > 0) this.equippedCounts[item.name] = count;
         });
-        
         this.render();
     },
 
@@ -328,7 +323,6 @@ const CartSystem = {
             const isEquipped = (this.equippedCounts[item.name] || 0) > 0;
             const isPinned = this.pinnedItems.has(item.name);
             const matchesSearch = item.name.toLowerCase().includes(this.searchTerm);
-            
             if (this.searchTerm !== "") return matchesSearch;
             return this.showAll || isEquipped || isPinned;
         });
@@ -337,11 +331,9 @@ const CartSystem = {
             const aPin = this.pinnedItems.has(a.name) ? 1 : 0;
             const bPin = this.pinnedItems.has(b.name) ? 1 : 0;
             if (aPin !== bPin) return bPin - aPin; 
-            
             const aEq = (this.equippedCounts[a.name] || 0) > 0 ? 1 : 0;
             const bEq = (this.equippedCounts[b.name] || 0) > 0 ? 1 : 0;
             if (aEq !== bEq) return bEq - aEq; 
-            
             return a.name.localeCompare(b.name); 
         });
 
@@ -349,7 +341,6 @@ const CartSystem = {
             let emptyMsg = this.searchTerm !== "" 
                 ? `No items found matching "${this.searchTerm}".` 
                 : `Your cart is empty.<br>Equip items or click "Show all".`;
-                
             listEl.innerHTML = `<div style="text-align:center; color:var(--text-muted); margin-top:20px;">${emptyMsg}</div>`;
             document.getElementById('mc-cart-total').innerText = "0";
             return;
@@ -370,23 +361,15 @@ const CartSystem = {
                 let currentLoc = item.shops[shopIdx] ? item.shops[shopIdx].location : "";
                 let currentSys = item.shops[shopIdx] ? item.shops[shopIdx].system : "Unknown";
                 
-                let sysColor = 'var(--text-muted)';
-                let sysLower = currentSys.toLowerCase();
-                if (sysLower === 'pyro') sysColor = 'var(--text-pyro)';
-                else if (sysLower === 'nyx') sysColor = 'var(--text-nyx)';
-                else if (sysLower === 'stanton') sysColor = 'var(--text-stanton)';
-
-                let formattedSystem = `<span style="color:${sysColor}; font-weight:bold;">[${currentSys}]</span>`;
+                // Using new class logic
+                let sysClass = getSystemClass(currentSys);
+                let formattedSystem = `<span class="${sysClass}" style="font-weight:bold;">[${currentSys}]</span>`;
+                
                 displayHtml = `${currentPrice.toLocaleString()} aUEC - ${formattedSystem} ${escapeHTML(currentLoc)}`;
                 
                 shopOptionsHtml = item.shops.map((shop, idx) => {
-                    let sColor = 'var(--text-muted)';
-                    let sLower = shop.system.toLowerCase();
-                    if (sLower === 'pyro') sColor = 'var(--text-pyro)';
-                    else if (sLower === 'nyx') sColor = 'var(--text-nyx)';
-                    else if (sLower === 'stanton') sColor = 'var(--text-stanton)';
-                    
-                    let shopSys = `<span style="color:${sColor}; font-weight:bold;">[${shop.system}]</span>`;
+                    let sClass = getSystemClass(shop.system);
+                    let shopSys = `<span class="${sClass}" style="font-weight:bold;">[${shop.system}]</span>`;
                     
                     return `<div class="cs-option" style="font-size: 0.85em; text-transform: none;" data-val="${idx}" onclick="CartSystem.changeShop(event, '${item.name}', ${idx})">
                         ${shop.price.toLocaleString()} aUEC - ${shopSys} ${escapeHTML(shop.location)}
@@ -451,25 +434,19 @@ function initUI() {
 
     gadgetOptionsHtml = gadgets.map((g, i) => `<div class="cs-option" data-val="${i}" onmouseenter="showPreview(${i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${g.name}</div>`).join('');
 
-    // 1. Initialize Cart System FIRST so it can read memory
     CartSystem.init();
 
-    // 2. Memory Restoration Logic
     let restored = false;
     const savedFleet = localStorage.getItem('minecalc_fleet_state');
-    
     if (savedFleet && typeof addShip === "function") {
         try {
             const parsedFleet = JSON.parse(savedFleet);
             if (parsedFleet.ships && parsedFleet.ships.length > 0) {
-                // We found a saved fleet! Rebuild it.
                 parsedFleet.ships.forEach(s => addShip(s.shipType || s.type, s.operators, s.customName));
                 restored = true;
             }
         } catch (e) { console.warn("Saved fleet was corrupted."); }
     }
-
-    // 3. Fallback to default MOLE if no saved session was found
     if (!restored && typeof addShip === "function") {
         addShip('MOLE');
     }
@@ -486,19 +463,13 @@ window.onclick = (e) => {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Run the UI initialization
     initUI();
-    
-    // 2. Build the data tables (Only once!)
     if (typeof generateOreTable === "function") generateOreTable();
     if (typeof generateRefineryTable === "function") generateRefineryTable();
     
-    // 3. Simulate clicks to open specific sections by default
     const headers = document.querySelectorAll('.accordion-header');
     headers.forEach(header => {
         const title = header.querySelector('h2').innerText.toLowerCase();
-        
-        // We open the Reader and the Analysis
         if (title.includes('rock reader') || title.includes('cracker analysis')) {
             if (!header.classList.contains('active')) {
                 header.click();
@@ -506,7 +477,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 4. Setup the input listener for the Rock Reader
     const sigInput = document.getElementById('signatureInput');
     if (sigInput) {
         sigInput.addEventListener('keydown', function(event) {

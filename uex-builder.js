@@ -14,7 +14,7 @@ const HEADERS = {
 };
 
 const targetOres = [
-    "Quantainium", "Stileron", "Savrilium", "Riccite", "Ouratite", "Lindinium", 
+    "Quantanium", "Stileron", "Savrilium", "Riccite", "Ouratite", "Lindinium", 
     "Taranite", "Gold", "Borase", "Beryl", "Bexalite", "Tungsten", "Torite", 
     "Titanium", "Laranite", "Aslarite", "Agricium", "Aluminium", "Copper", 
     "Corundum", "Hephaestanite", "Ice", "Iron", "Quartz", "Silicon", "Tin"
@@ -154,9 +154,13 @@ function groupItems(attributesArray) {
     return Object.values(itemsMap);
 }
 
-// --- UPDATED: MERGING PRICES INTO ATTRIBUTES ---
+// --- UPDATED: Alphabetical Sorting in Lasers ---
 function processLasers(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
+    
+    // Alphabetical sort by the Item Name
+    grouped.sort((a, b) => a.Item.localeCompare(b.Item));
+
     const lasers = [{ name: "None", slots: 0, powerMin: 0, powerMax: 0, extraction: 0, size: 0, shops: [] }];
     grouped.forEach(l => {
         let pm = l['Mining Laser Power'] || '', pmin = 0, pmax = 0;
@@ -178,14 +182,19 @@ function processLasers(rawAttributes, priceMap) {
             optRange: safeFloat(l['Optimal Range']), 
             maxRange: safeFloat(l['Maximum Range']), 
             size: safeFloat(l.Size),
-            shops: priceMap[l.Item] || [] // Injecting shops here
+            shops: priceMap[l.Item] || [] 
         });
     });
     return lasers;
 }
 
+// --- UPDATED: Alphabetical Sorting in Modules ---
 function processModules(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
+
+    // Alphabetical sort by the Item Name
+    grouped.sort((a, b) => a.Item.localeCompare(b.Item));
+
     const modules = [{ name: "None", power: 0, extraction: 0, uses: 0, shops: [] }];
     grouped.forEach(m => {
         let u = safeFloat(m.Uses);
@@ -201,14 +210,19 @@ function processModules(rawAttributes, priceMap) {
             optCharge: safeFloat(m['Optimal Charge Rate']), 
             overcharge: safeFloat(m['Catastrophic Charge Rate']), 
             shatter: safeFloat(m['Shatter Damage']),
-            shops: priceMap[m.Item] || [] // Injecting shops here
+            shops: priceMap[m.Item] || [] 
         });
     });
     return modules;
 }
 
+// --- UPDATED: Alphabetical Sorting in Gadgets ---
 function processGadgets(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
+
+    // Alphabetical sort by the Item Name
+    grouped.sort((a, b) => a.Item.localeCompare(b.Item));
+
     const gadgets = [{ name: "None", shops: [] }];
     grouped.forEach(g => {
         gadgets.push({ 
@@ -221,7 +235,7 @@ function processGadgets(rawAttributes, priceMap) {
             overcharge: safeFloat(g['Catastrophic Charge Rate']), 
             shatter: safeFloat(g['Shatter Damage']), 
             cluster: safeFloat(g['Cluster Modifier']),
-            shops: priceMap[g.Item] || [] // Injecting shops here
+            shops: priceMap[g.Item] || [] 
         });
     });
     return gadgets;
