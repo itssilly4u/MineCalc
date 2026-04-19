@@ -145,8 +145,10 @@ window.showStatTip = (type) => {
 }
 
 window.showPreview = (index, type) => {
-    let item = type === 'laser' ? lasers[index] : (type === 'module' ? modules[index] : gadgets[index]);
-    window.tooltipEl.innerHTML = `<h4 class="tooltip-header">${item.name}</h4>${formatStatPreview(item, type)}`;
+    // Adjust index for gadgets since "None" is now at index 0 (data-val is 1-based)
+    if (type === 'gadget' && index > 0) index = index - 1;
+    let item = type === 'laser' ? lasers[index] : (type === 'module' ? modules[index] : (index === 0 ? null : gadgets[index]));
+    window.tooltipEl.innerHTML = `<h4 class="tooltip-header">${item ? item.name : 'None'}</h4>${formatStatPreview(item, type)}`;
     window.tooltipEl.style.display = 'block';
 }
 
@@ -488,7 +490,8 @@ function initUI() {
     if (actives.length) { modOptionsHtml += `<div class="cs-optgroup">Active Modules</div>`; actives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
     if (passives.length) { modOptionsHtml += `<div class="cs-optgroup">Passive Modules</div>`; passives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
 
-    gadgetOptionsHtml = gadgets.map((g, i) => ({g, i})).sort((a, b) => sortByNameWithVersion(a.g, b.g)).map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${o.g.name}</div>`).join('');
+    gadgetOptionsHtml = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'gadget')">None</div>`;
+    gadgetOptionsHtml += gadgets.map((g, i) => ({g, i})).sort((a, b) => sortByNameWithVersion(a.g, b.g)).map(o => `<div class="cs-option" data-val="${o.i + 1}" onmouseenter="showPreview(${o.i + 1}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${o.g.name}</div>`).join('');
 
     CartSystem.init();
 
