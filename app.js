@@ -488,8 +488,14 @@ function initUI() {
     if (actives.length) { modOptionsHtml += `<div class="cs-optgroup">Active Modules</div>`; actives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
     if (passives.length) { modOptionsHtml += `<div class="cs-optgroup">Passive Modules</div>`; passives.forEach(o => modOptionsHtml += `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'module')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'module')">${o.m.name}</div>`); }
 
-    gadgetOptionsHtml = gadgets.map((g, i) => ({g, i})).sort((a, b) => sortByNameWithVersion(a.g, b.g)).map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${o.g.name}</div>`).join('');
-
+    gadgetOptionsHtml = `<div class="cs-option" data-val="0" onclick="selectCSOption(event, this, 'gadget')">None</div>`;
+    gadgetOptionsHtml += gadgets
+    .map((g, i) => ({g, i}))
+    .filter(o => o.g.name !== "None") // Prevent "None" from appearing twice and being sorted
+    .sort((a, b) => sortByNameWithVersion(a.g, b.g))
+    .map(o => `<div class="cs-option" data-val="${o.i}" onmouseenter="showPreview(${o.i}, 'gadget')" onmouseleave="hidePreview()" onclick="selectCSOption(event, this, 'gadget')">${o.g.name}</div>`)
+    .join('');
+    
     CartSystem.init();
 
     let restored = false;
