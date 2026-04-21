@@ -5276,7 +5276,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 9700
+      "price": 9400
     },
     {
       "system": "Stanton",
@@ -5403,6 +5403,11 @@ const pricingData = {
   ],
   "Agricium": [
     {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 12000
+    },
+    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 11000
@@ -5425,11 +5430,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 10000
     },
     {
