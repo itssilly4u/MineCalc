@@ -4981,6 +4981,11 @@ const pricingData = {
       "price": 30000
     },
     {
+      "system": "Pyro",
+      "location": "The Golden Riviera",
+      "price": 30000
+    },
+    {
       "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 29000
@@ -4998,11 +5003,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
       "price": 28000
     },
     {
@@ -5643,11 +5643,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
       "price": 4400
     },
@@ -5655,6 +5650,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4400
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4300
     },
     {
       "system": "Pyro",
@@ -6279,7 +6279,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 5500
+      "price": 5400
     },
     {
       "system": "Stanton",
@@ -6399,14 +6399,14 @@ const pricingData = {
   ],
   "Silicon": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3000
-    },
-    {
       "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 2900
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 2700
     },
     {
       "system": "Pyro",
