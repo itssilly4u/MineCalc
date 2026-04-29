@@ -4238,7 +4238,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
-      "price": 100000
+      "price": 110000
     }
   ],
   "Savrilium": [
@@ -4341,6 +4341,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 66000
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 66000
     },
@@ -4355,19 +4360,14 @@ const pricingData = {
       "price": 66000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 65000
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 59000
     },
     {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 59000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 57000
     }
   ],
   "Ouratite": [
@@ -4630,14 +4630,14 @@ const pricingData = {
       "price": 71000
     },
     {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
+      "system": "Stanton",
+      "location": "Orison - Admin",
       "price": 64000
     },
     {
-      "system": "Stanton",
-      "location": "Orison - Admin",
-      "price": 63000
+      "system": "Pyro",
+      "location": "Jackson's Swap",
+      "price": 64000
     },
     {
       "system": "Pyro",
@@ -5264,6 +5264,11 @@ const pricingData = {
   ],
   "Laranite": [
     {
+      "system": "Stanton",
+      "location": "HUR-L1 Green Glade Station - Admin",
+      "price": 9900
+    },
+    {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 9700
@@ -5277,11 +5282,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 9500
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 9300
     },
     {
       "system": "Stanton",
@@ -5305,13 +5305,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Orison - TDD",
+      "location": "Lorville - CBD",
       "price": 9100
     },
     {
       "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 9000
+      "location": "Orison - TDD",
+      "price": 9100
     },
     {
       "system": "Pyro",
@@ -5542,7 +5542,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4300
+      "price": 4600
     },
     {
       "system": "Stanton",
@@ -6399,14 +6399,14 @@ const pricingData = {
   ],
   "Silicon": [
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3000
+    },
+    {
       "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 2900
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 2700
     },
     {
       "system": "Pyro",
@@ -6532,11 +6532,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3590
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3500
     },
@@ -6548,6 +6543,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Rayari McGrath Research Outpost",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
       "price": 3500
     },
     {
