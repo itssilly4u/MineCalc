@@ -4282,7 +4282,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "ArcCorp Mining Area 141",
-      "price": 91000
+      "price": 85000
     },
     {
       "system": "Pyro",
@@ -4987,6 +4987,16 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 29000
     },
@@ -4999,16 +5009,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5149,7 +5149,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
-      "price": 9700
+      "price": 8800
     },
     {
       "system": "Pyro",
@@ -5280,17 +5280,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 9200
+      "location": "HUR-L2 Faithful Dream Station - Admin",
+      "price": 9300
     },
     {
       "system": "Stanton",
       "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 9200
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L2 Faithful Dream Station - Admin",
       "price": 9200
     },
     {
@@ -5312,6 +5307,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 9100
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8900
     },
     {
       "system": "Pyro",
@@ -5858,7 +5858,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 5400
+      "price": 5300
     },
     {
       "system": "Stanton",
@@ -5874,11 +5874,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "MIC-L4 Red Crossroads Station - Admin",
       "price": 4900
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 4800
     },
     {
       "system": "Stanton",
@@ -5909,6 +5904,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
       "price": 4800
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 4700
     },
     {
       "system": "Stanton",
@@ -6156,11 +6156,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 3600
     },
@@ -6197,6 +6192,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
+      "price": 3400
+    },
+    {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
       "price": 3400
     },
     {
