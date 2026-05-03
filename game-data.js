@@ -5178,6 +5178,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Checkmate Station - Admin",
+      "price": 8300
+    },
+    {
+      "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 8300
     },
@@ -5220,11 +5225,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 8200
     },
     {
       "system": "Stanton",
