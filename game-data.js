@@ -4265,7 +4265,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
-      "price": 120000
+      "price": 130000
     },
     {
       "system": "Nyx",
@@ -4529,12 +4529,12 @@ const pricingData = {
   "Gold": [
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 33000
+      "location": "ARC-L1 Wide Forest Station - Admin",
+      "price": 34000
     },
     {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
       "price": 33000
     },
     {
@@ -4554,13 +4554,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
+      "location": "Orison - TDD",
       "price": 32000
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 32000
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
+      "price": 31000
     },
     {
       "system": "Pyro",
@@ -4830,17 +4830,17 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "HUR-L4 Melodic Fields Station - Admin",
+      "price": 22000
+    },
+    {
+      "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
       "price": 22000
     },
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
-      "price": 21000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L4 Melodic Fields Station - Admin",
       "price": 21000
     },
     {
@@ -4942,13 +4942,8 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 36000
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
-      "price": 34000
+      "price": 31000
     },
     {
       "system": "Pyro",
@@ -4983,6 +4978,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "The Golden Riviera",
+      "price": 30000
+    },
+    {
+      "system": "Pyro",
+      "location": "Sacren's Plot",
       "price": 30000
     },
     {
@@ -5270,8 +5270,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 9700
+      "location": "HUR-L2 Faithful Dream Station - Admin",
+      "price": 9600
     },
     {
       "system": "Pyro",
@@ -5280,8 +5280,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "HUR-L2 Faithful Dream Station - Admin",
-      "price": 9300
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 9200
     },
     {
       "system": "Stanton",
@@ -5547,7 +5547,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Port Tressler - Admin",
-      "price": 4200
+      "price": 4100
     },
     {
       "system": "Pyro",
@@ -6210,6 +6210,11 @@ const pricingData = {
       "price": 3400
     },
     {
+      "system": "Stanton",
+      "location": "HDMS-Hahn",
+      "price": 3200
+    },
+    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 3200
@@ -6243,11 +6248,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
       "price": 3100
-    },
-    {
-      "system": "Stanton",
-      "location": "HDMS-Hahn",
-      "price": 3000
     },
     {
       "system": "Stanton",
@@ -6487,13 +6487,18 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3900
     },
     {
       "system": "Stanton",
       "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3900
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -6518,11 +6523,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Deakins Research",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3600
     },
     {
