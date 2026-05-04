@@ -4282,7 +4282,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "ArcCorp Mining Area 141",
-      "price": 85000
+      "price": 91000
     },
     {
       "system": "Pyro",
@@ -4367,7 +4367,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
-      "price": 53000
+      "price": 59000
     }
   ],
   "Ouratite": [
@@ -4388,6 +4388,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Green Imperial Housing Exchange - Admin",
+      "price": 4600
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 4600
     },
@@ -4400,11 +4405,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 4500
     }
   ],
   "Lindinium": [
@@ -5550,14 +5550,14 @@ const pricingData = {
       "price": 4500
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4200
+    },
+    {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 4000
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 3900
     },
     {
       "system": "Stanton",
@@ -5776,7 +5776,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 3900
+      "price": 4100
     },
     {
       "system": "Stanton",
@@ -6165,6 +6165,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3500
+    },
+    {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 3500
@@ -6177,11 +6182,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
       "price": 3400
     },
     {
@@ -6277,13 +6277,13 @@ const pricingData = {
   ],
   "Quartz": [
     {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 5400
-    },
-    {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 5500
+    },
+    {
+      "system": "Pyro",
+      "location": "Stanton Gateway (Pyro) - Admin",
       "price": 5400
     },
     {
@@ -6483,7 +6483,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 4000
+      "price": 4500
     },
     {
       "system": "Stanton",
