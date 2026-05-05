@@ -5545,14 +5545,14 @@ const pricingData = {
       "price": 4200
     },
     {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4200
-    },
-    {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 4000
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3900
     },
     {
       "system": "Stanton",
