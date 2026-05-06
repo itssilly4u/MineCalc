@@ -6284,7 +6284,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 5500
+      "price": 5400
     },
     {
       "system": "Stanton",
