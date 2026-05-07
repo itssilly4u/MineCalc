@@ -5149,7 +5149,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
-      "price": 8800
+      "price": 10000
     },
     {
       "system": "Pyro",
@@ -6165,6 +6165,11 @@ const pricingData = {
       "price": 3500
     },
     {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 3500
+    },
+    {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 3500
@@ -6192,11 +6197,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
-      "price": 3400
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
       "price": 3400
     },
     {
@@ -6292,13 +6292,13 @@ const pricingData = {
       "price": 5200
     },
     {
-      "system": "Stanton",
-      "location": "Orison - Admin",
-      "price": 4700
-    },
-    {
       "system": "Pyro",
       "location": "Patch City - Admin",
+      "price": 4600
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - Admin",
       "price": 4600
     },
     {
