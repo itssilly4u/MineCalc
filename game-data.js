@@ -5178,6 +5178,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 8300
+    },
+    {
+      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8300
     },
@@ -5220,11 +5225,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8100
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 8000
     },
     {
       "system": "Stanton",
@@ -5541,17 +5541,17 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4300
-    },
-    {
-      "system": "Stanton",
       "location": "Everus Harbor - Admin",
       "price": 4200
     },
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
+      "price": 4000
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
       "price": 4000
     },
     {
@@ -5643,6 +5643,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
       "price": 4400
     },
@@ -5650,11 +5655,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4400
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4200
     },
     {
       "system": "Pyro",
@@ -5771,12 +5771,12 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3900
+      "price": 4100
     },
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 3900
+      "price": 4100
     },
     {
       "system": "Stanton",
@@ -6141,6 +6141,11 @@ const pricingData = {
   "Iron": [
     {
       "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Pyro",
       "location": "Endgame - Admin",
       "price": 3700
     },
@@ -6153,11 +6158,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 3500
     },
     {
       "system": "Nyx",
