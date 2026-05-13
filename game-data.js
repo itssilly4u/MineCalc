@@ -4533,11 +4533,6 @@ const pricingData = {
       "price": 33000
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 33000
-    },
-    {
       "system": "Nyx",
       "location": "Pyro Gateway (Nyx) - Admin",
       "price": 33000
@@ -4550,6 +4545,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
+      "price": 32000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 32000
     },
     {
@@ -4616,18 +4616,18 @@ const pricingData = {
   "Golden Medmon": [
     {
       "system": "Pyro",
+      "location": "Ashland",
+      "price": 71000
+    },
+    {
+      "system": "Pyro",
       "location": "Fallow Field",
       "price": 71000
     },
     {
       "system": "Pyro",
       "location": "The Golden Riviera",
-      "price": 70000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 66000
+      "price": 71000
     },
     {
       "system": "Stanton",
@@ -4942,12 +4942,12 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 31000
+      "location": "The Golden Riviera",
+      "price": 32000
     },
     {
       "system": "Pyro",
-      "location": "The Golden Riviera",
+      "location": "Rat's Nest - Admin",
       "price": 31000
     },
     {
@@ -5148,13 +5148,13 @@ const pricingData = {
   "Titanium": [
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 8800
+      "location": "Starlight Service Station - Admin",
+      "price": 9200
     },
     {
       "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 8400
+      "location": "Megumi Refueling - Admin",
+      "price": 8800
     },
     {
       "system": "Stanton",
@@ -5266,7 +5266,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 9800
+      "price": 9900
     },
     {
       "system": "Pyro",
@@ -5647,11 +5647,6 @@ const pricingData = {
       "price": 4400
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4400
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4400
@@ -5660,6 +5655,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4200
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4000
     },
     {
       "system": "Stanton",
@@ -5857,6 +5857,11 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
+      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "price": 6000
+    },
+    {
+      "system": "Stanton",
       "location": "MIC-L4 Red Crossroads Station - Admin",
       "price": 5500
     },
@@ -5864,11 +5869,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 5400
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 5300
     },
     {
       "system": "Stanton",
@@ -5995,7 +5995,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Baijini Point - Admin",
-      "price": 5900
+      "price": 6800
     },
     {
       "system": "Pyro",
@@ -6156,6 +6156,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 3600
     },
@@ -6177,11 +6182,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
-      "price": 3400
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
       "price": 3400
     },
     {
@@ -6284,7 +6284,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5100
+      "price": 5000
     },
     {
       "system": "Stanton",
@@ -6399,14 +6399,14 @@ const pricingData = {
   ],
   "Silicon": [
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3000
+    },
+    {
       "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 2900
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 2800
     },
     {
       "system": "Pyro",
@@ -6483,7 +6483,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 4200
+      "price": 4500
     },
     {
       "system": "Stanton",
@@ -6494,6 +6494,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3900
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -6518,11 +6523,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Deakins Research",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3600
     },
     {
