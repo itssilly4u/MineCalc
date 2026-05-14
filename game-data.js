@@ -5183,6 +5183,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 8300
+    },
+    {
+      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 8300
     },
@@ -5202,13 +5207,13 @@ const pricingData = {
       "price": 8300
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 8200
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 8300
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
+      "location": "Ruin Station - Admin",
       "price": 8200
     },
     {
@@ -5220,11 +5225,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 8200
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 8000
     },
     {
       "system": "Stanton",
@@ -6141,13 +6141,13 @@ const pricingData = {
   "Iron": [
     {
       "system": "Pyro",
-      "location": "Gaslight - Admin",
+      "location": "Endgame - Admin",
       "price": 3900
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3700
+      "location": "Gaslight - Admin",
+      "price": 3900
     },
     {
       "system": "Pyro",
@@ -6166,12 +6166,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 3400
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3500
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
+      "location": "New Babbage - TDD",
       "price": 3400
     },
     {
@@ -6197,6 +6197,11 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "People's Service Station Theta - Admin",
+      "price": 3400
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3400
     },
     {
@@ -6227,11 +6232,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HDMS-Perlman",
-      "price": 3200
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3200
     },
     {
@@ -6283,13 +6283,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5000
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 5500
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 4900
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 5000
     },
     {
       "system": "Stanton",
