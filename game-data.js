@@ -4651,6 +4651,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 54000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 54000
     },
@@ -4668,11 +4673,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 53000
     }
   ],
   "Borase": [
@@ -5148,13 +5148,18 @@ const pricingData = {
   "Titanium": [
     {
       "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 10000
+    },
+    {
+      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 9200
     },
     {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 8800
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8300
     },
     {
       "system": "Stanton",
@@ -5217,11 +5222,6 @@ const pricingData = {
       "price": 8200
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8100
-    },
-    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8000
@@ -5280,6 +5280,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 9200
+    },
+    {
+      "system": "Stanton",
       "location": "HUR-L2 Faithful Dream Station - Admin",
       "price": 9200
     },
@@ -5287,11 +5292,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9200
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 9100
     },
     {
       "system": "Stanton",
