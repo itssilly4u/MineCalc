@@ -5269,11 +5269,6 @@ const pricingData = {
       "price": 9700
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 9200
-    },
-    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9200
@@ -5322,6 +5317,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8500
     },
     {
       "system": "Stanton",
