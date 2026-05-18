@@ -3306,6 +3306,11 @@ const gadgets = [
         "system": "Nyx",
         "location": "People's Service Station Lambda - Tools & Supplies",
         "price": 12750
+      },
+      {
+        "system": "Nyx",
+        "location": "People's Service Station Delta - Tools & Supplies",
+        "price": 12750
       }
     ]
   },
@@ -3482,6 +3487,11 @@ const gadgets = [
         "system": "Nyx",
         "location": "People's Service Station Lambda - Tools & Supplies",
         "price": 27625
+      },
+      {
+        "system": "Nyx",
+        "location": "People's Service Station Delta - Tools & Supplies",
+        "price": 27625
       }
     ]
   },
@@ -3654,6 +3664,11 @@ const gadgets = [
       {
         "system": "Nyx",
         "location": "People's Service Station Lambda - Tools & Supplies",
+        "price": 13815
+      },
+      {
+        "system": "Nyx",
+        "location": "People's Service Station Delta - Tools & Supplies",
         "price": 13815
       }
     ]
@@ -4080,11 +4095,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Ashland",
-      "price": 160000
-    },
-    {
-      "system": "Pyro",
       "location": "The Golden Riviera",
       "price": 160000
     },
@@ -4127,6 +4137,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 130000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ashland",
+      "price": 60000
     }
   ],
   "Stileron": [
@@ -4301,11 +4316,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 74000
-    },
-    {
-      "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 67000
     },
@@ -4363,6 +4373,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 59000
+    },
+    {
+      "system": "Pyro",
+      "location": "Sacren's Plot",
+      "price": 4000
     }
   ],
   "Ouratite": [
@@ -4815,12 +4830,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
-      "price": 23000
+      "location": "HUR-L1 Green Glade Station - Admin",
+      "price": 22000
     },
     {
       "system": "Stanton",
-      "location": "HUR-L1 Green Glade Station - Admin",
+      "location": "HUR-L3 Thundering Express Station - Admin",
       "price": 22000
     },
     {
@@ -4916,7 +4931,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "People's Service Station Theta - Admin",
-      "price": 18000
+      "price": 19000
     },
     {
       "system": "Stanton",
@@ -5148,6 +5163,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 8800
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 8300
     },
@@ -5227,11 +5247,6 @@ const pricingData = {
       "price": 7700
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 7700
-    },
-    {
       "system": "Nyx",
       "location": "Levski",
       "price": 7400
@@ -5258,11 +5273,6 @@ const pricingData = {
     }
   ],
   "Laranite": [
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 9700
-    },
     {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
@@ -5344,6 +5354,11 @@ const pricingData = {
       "price": 8100
     },
     {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 8100
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 7800
@@ -5398,8 +5413,18 @@ const pricingData = {
   ],
   "Agricium": [
     {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 12000
+    },
+    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 11000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
       "price": 11000
     },
     {
@@ -5415,11 +5440,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 10000
     },
     {
@@ -5444,6 +5464,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 10000
+    },
+    {
+      "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 10000
     },
@@ -5461,16 +5486,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 9700
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9600
     },
     {
       "system": "Pyro",
@@ -5536,8 +5551,8 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4200
+      "location": "Port Tressler - Admin",
+      "price": 4500
     },
     {
       "system": "Stanton",
@@ -5585,6 +5600,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3600
+    },
+    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
@@ -5592,11 +5612,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
       "price": 3500
     },
     {
@@ -5765,11 +5780,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3700
     },
@@ -5781,6 +5791,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
       "price": 3700
     },
     {
@@ -5850,6 +5865,11 @@ const pricingData = {
     }
   ],
   "Hephaestanite": [
+    {
+      "system": "Stanton",
+      "location": "CRU-L4 Shallow Fields Station - Admin",
+      "price": 5800
+    },
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
@@ -5957,11 +5977,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
       "location": "MIC-L5 Modern Icarus Station - Admin",
       "price": 4500
     },
@@ -5995,11 +6010,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Seer's Canyon",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
       "price": 5500
     },
     {
@@ -6131,6 +6141,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 4400
+    },
+    {
+      "system": "Pyro",
+      "location": "Ashland",
+      "price": 500
     }
   ],
   "Iron": [
@@ -6162,16 +6177,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Delta - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Theta - Admin",
       "price": 3500
     },
     {
@@ -6241,17 +6246,22 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 2760
-    },
-    {
-      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 2700
     },
     {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
+      "price": 2700
+    },
+    {
+      "system": "Nyx",
+      "location": "People's Service Station Delta - Admin",
+      "price": 2700
+    },
+    {
+      "system": "Nyx",
+      "location": "People's Service Station Theta - Admin",
       "price": 2700
     },
     {
@@ -6482,11 +6492,6 @@ const pricingData = {
   "Astatine": [
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3700
     },
@@ -6553,7 +6558,12 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3400
+      "price": 3300
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
+      "price": 3300
     },
     {
       "system": "Stanton",
