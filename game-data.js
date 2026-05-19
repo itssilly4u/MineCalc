@@ -4830,6 +4830,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "HUR-L1 Green Glade Station - Admin",
+      "price": 22000
+    },
+    {
+      "system": "Stanton",
       "location": "HUR-L4 Melodic Fields Station - Admin",
       "price": 22000
     },
@@ -4841,11 +4846,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
-      "price": 21000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L1 Green Glade Station - Admin",
       "price": 21000
     },
     {
@@ -5059,6 +5059,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 11000
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5070,11 +5075,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 10000
     },
     {
@@ -5552,7 +5552,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Port Tressler - Admin",
-      "price": 4500
+      "price": 4100
     },
     {
       "system": "Stanton",
@@ -5652,6 +5652,11 @@ const pricingData = {
       "price": 4400
     },
     {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4100
+    },
+    {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4100
@@ -5700,11 +5705,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3600
     },
     {
       "system": "Pyro",
