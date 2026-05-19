@@ -96,8 +96,8 @@ function generateRefineryTable() {
             valA = valA ? valA.toString().toLowerCase() : "";
             valB = valB ? valB.toString().toLowerCase() : "";
         } else {
-            valA = valA === undefined ? -999 : parseFloat(valA);
-            valB = valB === undefined ? -999 : parseFloat(valB);
+            valA = valA === undefined ? 0 : parseFloat(valA);
+            valB = valB === undefined ? 0 : parseFloat(valB);
         }
 
         if (valA < valB) return isSortAsc ? -1 : 1;
