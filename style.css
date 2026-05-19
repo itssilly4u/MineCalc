@@ -1222,3 +1222,62 @@ footer {
 .sys-nyx { color: var(--text-nyx); }
 .sys-pyro { color: var(--text-pyro); }
 .sys-unknown { color: var(--text-muted); }
+
+.quality-slider-container {
+    display: flex;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.quality-slider {
+    flex: 1;
+    margin-right: 15px;
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+.quality-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.quality-number {
+    width: 65px; 
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: right;
+    padding: 2px 4px;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.quality-number:focus {
+    border-color: var(--accent);
+    background: var(--panel-bg);
+}
+
+/* Hide the up/down arrows on number inputs */
+.quality-number::-webkit-outer-spin-button,
+.quality-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.quality-number[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quality-percent-sign {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 2px;
+}

@@ -33,6 +33,34 @@ window.updateCartLoadout = function() {
     CartSystem.updateEquipped(equipped);
 };
 
+window.syncQuality = function(opId, val, source) {
+    let numInput = document.getElementById(`qual-num-${opId}`);
+    let rangeInput = document.getElementById(`qual-range-${opId}`);
+    
+    let parsed = parseFloat(val);
+    if (isNaN(parsed)) parsed = 0;
+    
+    // Hard clamp to your game rules
+    if (parsed < -40) parsed = -40;
+    if (parsed > 40) parsed = 40;
+
+    // Optional: limit to 2 decimals when syncing back
+    let formatted = parseFloat(parsed.toFixed(2));
+
+    if (source === 'range') {
+        numInput.value = formatted;
+    } else if (source === 'num') {
+        rangeInput.value = formatted;
+    } else if (source === 'blur') {
+        // When clicking away from the text box, correct any weird entries
+        numInput.value = formatted;
+        rangeInput.value = formatted;
+    }
+
+    if (typeof calculate === 'function') calculate();
+    window.updateCartLoadout();
+};
+
 function createOperatorHtml(opId, seatName, laserOptions) {
     return `
         <div class="setup-card" id="card-${opId}" data-opid="${opId}">
@@ -41,6 +69,18 @@ function createOperatorHtml(opId, seatName, laserOptions) {
                 <label class="switch"><input type="checkbox" checked onchange="toggleOperator('${opId}', this.checked)"><span class="slider"></span></label>
             </div>
             <div class="form-group"><label>Laser Head</label><div class="custom-select" id="cs-laser-${opId}" data-value="0" onclick="toggleCS(this)"><div class="cs-display">None</div><div class="cs-options">${laserOptions}</div></div></div>
+            
+            <div class="form-group">
+                <label>Crafting Quality Bonus</label>
+                <div class="quality-slider-container">
+                    <input type="range" id="qual-range-${opId}" class="quality-slider" min="-40" max="40" step="0.01" value="0" oninput="syncQuality('${opId}', this.value, 'range')">
+                    <div class="quality-input-wrapper">
+                        <input type="number" id="qual-num-${opId}" class="quality-number" min="-40" max="40" step="0.01" value="0" oninput="syncQuality('${opId}', this.value, 'num')" onblur="syncQuality('${opId}', this.value, 'blur')">
+                        <span class="quality-percent-sign">%</span>
+                    </div>
+                </div>
+            </div>
+
             ${[1,2,3].map(m => `<div class="form-group"><label>Module ${m}</label><div class="custom-select disabled" id="cs-mod${m}-${opId}" data-value="0" onclick="toggleCS(this)"><div class="cs-display">None</div><div class="cs-options">${modOptionsHtml}</div></div></div>`).join('')}
             <div class="operator-results">
                 <div class="local-stat"><span class="label">Local Ext.</span><span class="value" id="op-ext-${opId}">0.0</span></div>
@@ -280,6 +320,7 @@ function extractShipData(shipDiv) {
         data.operators.push({
             enabled: !card.classList.contains('off'),
             laser: lasers[laserId].name,
+            quality: parseFloat(document.getElementById(`qual-num-${opId}`).value) || 0,
             m1: modules[document.getElementById(`cs-mod1-${opId}`).dataset.value].name,
             m2: modules[document.getElementById(`cs-mod2-${opId}`).dataset.value].name,
             m3: modules[document.getElementById(`cs-mod3-${opId}`).dataset.value].name
@@ -326,6 +367,15 @@ function applyShipConfig(operatorIds, opConfigs) {
         };
 
         setSelect(`cs-laser-${opId}`, conf.laser, lasers);
+
+        // NEW: Load Quality Slider
+        let rangeEl = document.getElementById(`qual-range-${opId}`);
+        let numEl = document.getElementById(`qual-num-${opId}`);
+        if (rangeEl && numEl) {
+            let qVal = conf.quality || 0;
+            rangeEl.value = qVal;
+            numEl.value = qVal;
+        }
         
         let lIdx = lasers.findIndex(i => i.name === conf.laser);
         let currentLaser = lIdx > 0 ? lasers[lIdx] : { slots: 0 };

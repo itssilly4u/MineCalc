@@ -47,7 +47,9 @@ function calculate() {
         let l = lasers[laserEl.dataset.value];
         if (!l || l.name === "None") return;
 
-        let pMod = 0, eMod = 0, opInert = [l.inert || 0];
+        let qualEl = document.getElementById(`qual-num-${opId}`);
+        let qualBonus = qualEl ? (parseFloat(qualEl.value) || 0) : 0;
+        let pMod = qualBonus, eMod = qualBonus, opInert = [l.inert || 0];
         let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
 
         // Process Modules for this seat
