@@ -4967,6 +4967,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 30000
+    },
+    {
+      "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 30000
     },
@@ -5003,11 +5008,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
       "price": 28000
     },
     {
@@ -5300,11 +5300,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
     },
@@ -5352,6 +5347,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8500
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 8400
     },
     {
       "system": "Pyro",
@@ -5439,11 +5439,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
       "location": "HUR-L3 Thundering Express Station - Admin",
       "price": 10000
     },
@@ -5486,6 +5481,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 10000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 9900
     },
     {
       "system": "Pyro",
@@ -5669,7 +5669,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Baijini Point - Admin",
-      "price": 3900
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -5867,11 +5867,6 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 5900
-    },
-    {
-      "system": "Stanton",
       "location": "CRU-L4 Shallow Fields Station - Admin",
       "price": 5800
     },
@@ -5981,6 +5976,11 @@ const pricingData = {
       "price": 4500
     },
     {
+      "system": "Stanton",
+      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "price": 4500
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 4100
@@ -6003,9 +6003,9 @@ const pricingData = {
   ],
   "Ice": [
     {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 6800
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 5700
     },
     {
       "system": "Pyro",
@@ -6108,11 +6108,6 @@ const pricingData = {
       "price": 5200
     },
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 5100
-    },
-    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 5100
@@ -6131,6 +6126,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 5100
+    },
+    {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 5000
     },
     {
       "system": "Nyx",
