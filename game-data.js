@@ -4972,6 +4972,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 30000
+    },
+    {
+      "system": "Pyro",
       "location": "Canard View",
       "price": 30000
     },
@@ -4988,11 +4993,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Patch City - Admin",
-      "price": 29000
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
       "price": 29000
     },
     {
@@ -5116,11 +5116,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 8700
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 045",
-      "price": 8265
     },
     {
       "system": "Stanton",
@@ -5380,11 +5375,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ArcCorp Mining Area 045",
-      "price": 7400
-    },
-    {
-      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 7400
     },
@@ -5576,6 +5566,16 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4200
+    },
+    {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 4000
+    },
+    {
+      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 3800
     },
@@ -5631,18 +5631,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 3570
-    },
-    {
-      "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 3400
     },
     {
       "system": "Nyx",
@@ -5800,12 +5790,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4100
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3900
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
+      "location": "Everus Harbor - Admin",
       "price": 3900
     },
     {
@@ -6079,6 +6069,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Checkmate Station - Admin",
+      "price": 5200
+    },
+    {
+      "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 5200
     },
@@ -6153,11 +6148,6 @@ const pricingData = {
       "price": 5000
     },
     {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 4800
-    },
-    {
       "system": "Nyx",
       "location": "Levski",
       "price": 4600
@@ -6190,11 +6180,6 @@ const pricingData = {
       "price": 3600
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 3600
-    },
-    {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
       "price": 3500
@@ -6207,6 +6192,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
+      "price": 3400
+    },
+    {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
       "price": 3400
     },
     {
@@ -6410,11 +6400,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Rayari Anvik Research Outpost",
       "price": 4000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 045",
-      "price": 3705
     },
     {
       "system": "Nyx",
