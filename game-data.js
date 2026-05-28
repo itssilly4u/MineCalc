@@ -4575,7 +4575,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 31000
+      "price": 30000
     },
     {
       "system": "Pyro",
@@ -5565,6 +5565,11 @@ const pricingData = {
       "price": 4600
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4500
+    },
+    {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 4000
@@ -5620,11 +5625,6 @@ const pricingData = {
       "price": 3600
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3600
-    },
-    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
@@ -5658,6 +5658,11 @@ const pricingData = {
   "Copper": [
     {
       "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
       "price": 4200
     },
@@ -5684,11 +5689,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3700
     },
     {
@@ -6426,7 +6426,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 2900
+      "price": 2800
     },
     {
       "system": "Pyro",
@@ -6532,11 +6532,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
       "location": "Rayari Kaltag Research Outpost",
       "price": 3600
     },
@@ -6578,6 +6573,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - Admin",
+      "price": 3400
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3400
     },
     {
