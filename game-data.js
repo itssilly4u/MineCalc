@@ -4412,14 +4412,14 @@ const pricingData = {
       "price": 46000
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
       "price": 45000
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 44000
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 45000
     }
   ],
   "Lindinium": [
@@ -4543,11 +4543,6 @@ const pricingData = {
   ],
   "Gold": [
     {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 36000
-    },
-    {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 34000
@@ -4555,6 +4550,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
+      "price": 33000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 33000
     },
     {
@@ -6297,11 +6297,6 @@ const pricingData = {
   ],
   "Quartz": [
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5500
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 5200
@@ -6309,6 +6304,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 4900
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 4900
     },
     {
@@ -6512,11 +6512,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3700
     },
@@ -6583,6 +6578,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - Admin",
+      "price": 3400
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3400
     },
     {
