@@ -5872,11 +5872,6 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 6000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 4800
     },
@@ -5978,6 +5973,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "CRU-L4 Shallow Fields Station - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Stanton",
+      "location": "MIC-L5 Modern Icarus Station - Admin",
       "price": 4500
     },
     {
