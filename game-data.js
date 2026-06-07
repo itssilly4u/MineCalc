@@ -6282,6 +6282,11 @@ const pricingData = {
   ],
   "Quartz": [
     {
+      "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 5400
+    },
+    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 5200
@@ -6290,11 +6295,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
       "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 4900
     },
     {
       "system": "Stanton",
