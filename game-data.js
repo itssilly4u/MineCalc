@@ -4398,6 +4398,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 46000
+    },
+    {
+      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 46000
     },
@@ -4410,11 +4415,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 45000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 44000
     }
   ],
   "Lindinium": [
@@ -5310,6 +5310,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 8700
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8500
     },
@@ -5336,11 +5341,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L2 Faithful Dream Station - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
       "price": 8500
     },
     {
@@ -5872,6 +5872,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 4800
     },
@@ -5904,11 +5909,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
       "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 4700
     },
     {
       "system": "Stanton",
