@@ -4291,6 +4291,11 @@ const pricingData = {
   "Riccite": [
     {
       "system": "Stanton",
+      "location": "ArcCorp Mining Area 141",
+      "price": 91000
+    },
+    {
+      "system": "Stanton",
       "location": "ArcCorp Mining Area 157",
       "price": 90000
     },
@@ -4308,11 +4313,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 74000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 141",
-      "price": 73000
     },
     {
       "system": "Pyro",
@@ -4650,6 +4650,11 @@ const pricingData = {
       "price": 64000
     },
     {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 64000
+    },
+    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 54000
@@ -4677,11 +4682,6 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "Levski",
-      "price": 54000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
       "price": 54000
     }
   ],
@@ -4952,11 +4952,6 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 36000
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 33000
     },
@@ -5008,6 +5003,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Pyro",
+      "location": "Sacren's Plot",
       "price": 29000
     },
     {
@@ -5556,16 +5556,6 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4200
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3800
     },
@@ -5628,6 +5618,16 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3500
     },
     {
       "system": "Nyx",
@@ -6003,6 +6003,11 @@ const pricingData = {
   ],
   "Ice": [
     {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 5800
+    },
+    {
       "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 5500
@@ -6126,11 +6131,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 5000
     },
     {
       "system": "Pyro",
@@ -6293,13 +6293,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 5100
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 5000
     },
     {
       "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5000
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 4900
     },
     {
       "system": "Pyro",
@@ -6542,11 +6542,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 3500
     },
@@ -6567,8 +6562,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3400
+    },
+    {
+      "system": "Stanton",
       "location": "Orison - Admin",
-      "price": 3300
+      "price": 3400
     },
     {
       "system": "Stanton",
