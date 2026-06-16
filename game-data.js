@@ -4397,6 +4397,11 @@ const pricingData = {
       "price": 46000
     },
     {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 46000
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 45000
@@ -4405,11 +4410,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 45000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 44000
     },
     {
       "system": "Stanton",
@@ -4544,11 +4544,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 32000
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 32000
     },
@@ -4561,6 +4556,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 32000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 31000
     },
     {
       "system": "Stanton",
@@ -4997,6 +4997,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 29000
     },
@@ -5009,11 +5014,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5887,11 +5887,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4800
     },
@@ -5956,11 +5951,6 @@ const pricingData = {
       "price": 4600
     },
     {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 4600
-    },
-    {
       "system": "Stanton",
       "location": "MIC-L5 Modern Icarus Station - Admin",
       "price": 4550
@@ -5973,6 +5963,16 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "CRU-L4 Shallow Fields Station - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Pyro",
+      "location": "Orbituary - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4500
     },
     {
@@ -6497,11 +6497,6 @@ const pricingData = {
   "Astatine": [
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
       "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3900
     },
@@ -6573,6 +6568,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - Admin",
+      "price": 3300
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 3300
     },
     {
