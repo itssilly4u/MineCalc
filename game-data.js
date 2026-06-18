@@ -4538,6 +4538,11 @@ const pricingData = {
   ],
   "Gold": [
     {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 33000
+    },
+    {
       "system": "Nyx",
       "location": "Pyro Gateway (Nyx) - Admin",
       "price": 33000
@@ -4556,11 +4561,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 32000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 31000
     },
     {
       "system": "Stanton",
@@ -4626,11 +4626,6 @@ const pricingData = {
   "Golden Medmon": [
     {
       "system": "Pyro",
-      "location": "Ashland",
-      "price": 71000
-    },
-    {
-      "system": "Pyro",
       "location": "Fallow Field",
       "price": 71000
     },
@@ -4638,6 +4633,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "The Golden Riviera",
       "price": 71000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ashland",
+      "price": 67000
     },
     {
       "system": "Stanton",
@@ -4952,11 +4952,6 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 33000
-    },
-    {
-      "system": "Pyro",
       "location": "The Golden Riviera",
       "price": 32000
     },
@@ -4993,6 +4988,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
       "price": 29000
     },
     {
@@ -5157,11 +5157,6 @@ const pricingData = {
   ],
   "Titanium": [
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9100
-    },
-    {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 8500
@@ -5247,6 +5242,11 @@ const pricingData = {
       "price": 7700
     },
     {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 7700
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 7400
@@ -5273,6 +5273,11 @@ const pricingData = {
     }
   ],
   "Laranite": [
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 9200
+    },
     {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
@@ -5312,11 +5317,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 8600
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8500
     },
     {
       "system": "Stanton",
@@ -5439,11 +5439,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
       "location": "HUR-L3 Thundering Express Station - Admin",
       "price": 10000
     },
@@ -5491,6 +5486,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 9600
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 9400
     },
     {
       "system": "Pyro",
@@ -5669,7 +5669,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
-      "price": 4200
+      "price": 4100
     },
     {
       "system": "Stanton",
@@ -5947,12 +5947,12 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
+      "location": "Rat's Nest - Admin",
       "price": 4600
     },
     {
-      "system": "Stanton",
-      "location": "MIC-L4 Red Crossroads Station - Admin",
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
       "price": 4600
     },
     {
@@ -5971,14 +5971,14 @@ const pricingData = {
       "price": 4500
     },
     {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
+      "system": "Stanton",
+      "location": "MIC-L4 Red Crossroads Station - Admin",
       "price": 4500
     },
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 4300
+      "location": "Orbituary - Admin",
+      "price": 4500
     },
     {
       "system": "Nyx",
@@ -6074,11 +6074,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 5200
     },
@@ -6106,6 +6101,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 5200
+    },
+    {
+      "system": "Pyro",
+      "location": "Starlight Service Station - Admin",
+      "price": 5100
     },
     {
       "system": "Stanton",
@@ -6502,7 +6502,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3800
     },
     {
@@ -6547,6 +6547,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Rayari McGrath Research Outpost",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 3500
     },
@@ -6577,13 +6582,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L2 Lively Pathway Station - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 3300
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari McGrath Research Outpost",
-      "price": 3100
     },
     {
       "system": "Stanton",
@@ -6679,6 +6679,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Patch City - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 3800
     },
@@ -6696,11 +6701,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 3600
     },
     {
       "system": "Stanton",
