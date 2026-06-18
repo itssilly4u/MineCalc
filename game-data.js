@@ -5657,11 +5657,6 @@ const pricingData = {
       "price": 4700
     },
     {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 4400
-    },
-    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 4400
@@ -5673,12 +5668,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3800
+      "location": "Baijini Point - Admin",
+      "price": 3900
     },
     {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
+      "system": "Pyro",
+      "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3800
     },
     {
@@ -5714,6 +5709,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3600
     },
     {
@@ -6297,11 +6297,6 @@ const pricingData = {
       "price": 5200
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5000
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 4700
@@ -6340,6 +6335,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 4400
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4300
     },
     {
       "system": "Pyro",
@@ -6502,6 +6502,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3800
     },
@@ -6569,11 +6574,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3400
     },
     {
       "system": "Stanton",
