@@ -5657,11 +5657,6 @@ const pricingData = {
       "price": 4500
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4400
-    },
-    {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4100
@@ -5670,6 +5665,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4100
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -6492,6 +6492,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3700
     },
@@ -6528,11 +6533,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3500
     },
     {
