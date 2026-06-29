@@ -4952,11 +4952,6 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 34000
-    },
-    {
-      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 30000
     },
@@ -4998,6 +4993,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
+      "price": 29000
+    },
+    {
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
       "price": 29000
     },
     {
@@ -5556,11 +5556,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3800
     },
@@ -5625,6 +5620,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3500
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 3300
@@ -5668,12 +5668,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3800
+      "location": "Baijini Point - Admin",
+      "price": 3900
     },
     {
       "system": "Stanton",
-      "location": "Baijini Point - Admin",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3800
     },
     {
@@ -5774,6 +5774,11 @@ const pricingData = {
       "price": 4100
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4100
+    },
+    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 3900
@@ -5840,11 +5845,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 3000
     },
@@ -5882,6 +5882,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 4800
     },
@@ -5903,11 +5908,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "CRU-L4 Shallow Fields Station - Admin",
-      "price": 4700
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4700
     },
     {
