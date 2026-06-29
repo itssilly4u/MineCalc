@@ -5551,11 +5551,6 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3800
     },
@@ -5625,6 +5620,11 @@ const pricingData = {
       "price": 3500
     },
     {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3500
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 3300
@@ -5646,11 +5646,6 @@ const pricingData = {
     }
   ],
   "Copper": [
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4700
-    },
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
@@ -5712,6 +5707,11 @@ const pricingData = {
       "price": 3700
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 3400
@@ -5770,17 +5770,17 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Everus Harbor - Admin",
       "price": 4100
     },
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3900
     },
     {
@@ -6145,11 +6145,6 @@ const pricingData = {
   ],
   "Iron": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3800
-    },
-    {
       "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3800
@@ -6235,6 +6230,11 @@ const pricingData = {
       "price": 3200
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3100
+    },
+    {
       "system": "Pyro",
       "location": "Endgame - Admin",
       "price": 3100
@@ -6297,13 +6297,13 @@ const pricingData = {
       "price": 4700
     },
     {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 4600
-    },
-    {
       "system": "Stanton",
       "location": "Orison - Admin",
+      "price": 4700
+    },
+    {
+      "system": "Pyro",
+      "location": "Patch City - Admin",
       "price": 4600
     },
     {
