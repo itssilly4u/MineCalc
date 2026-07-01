@@ -4361,11 +4361,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 66000
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 66000
     },
@@ -4373,6 +4368,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 66000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 65000
     },
     {
       "system": "Pyro",
@@ -5285,11 +5285,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8900
-    },
-    {
-      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 8700
     },
@@ -5312,6 +5307,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8600
     },
     {
       "system": "Stanton",
@@ -5479,6 +5479,11 @@ const pricingData = {
     },
     {
       "system": "Nyx",
+      "location": "People's Service Station Alpha - Admin",
+      "price": 10000
+    },
+    {
+      "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9600
     },
@@ -5526,11 +5531,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 9200
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Alpha - Admin",
-      "price": 8900
     },
     {
       "system": "Stanton",
@@ -5780,13 +5780,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4100
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4000
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4000
+      "location": "Everus Harbor - Admin",
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -5921,11 +5921,6 @@ const pricingData = {
       "price": 4700
     },
     {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4600
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 4600
@@ -5984,6 +5979,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Bueno Ravine",
       "price": 4494
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4300
     },
     {
       "system": "Nyx",
