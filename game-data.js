@@ -5023,7 +5023,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Brio's Breaker Yard",
-      "price": 27099
+      "price": 27000
     },
     {
       "system": "Pyro",
@@ -6578,7 +6578,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - Admin",
-      "price": 3400
+      "price": 3300
     },
     {
       "system": "Stanton",
