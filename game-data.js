@@ -5162,11 +5162,6 @@ const pricingData = {
   ],
   "Titanium": [
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9100
-    },
-    {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 8800
@@ -5248,6 +5243,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 7800
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L5 Yellow Core Station - Admin",
       "price": 7700
     },
@@ -5291,6 +5291,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
+      "price": 8900
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8900
     },
     {
@@ -5346,11 +5351,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Orbituary - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8500
     },
     {
@@ -5453,6 +5453,11 @@ const pricingData = {
       "price": 10000
     },
     {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 10000
+    },
+    {
       "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 10000
@@ -5485,11 +5490,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9600
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9600
     },
     {
@@ -5556,8 +5556,8 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4000
+      "location": "Port Tressler - Admin",
+      "price": 4600
     },
     {
       "system": "Stanton",
@@ -5580,14 +5580,9 @@ const pricingData = {
       "price": 3800
     },
     {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 3700
-    },
-    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3700
+      "price": 3800
     },
     {
       "system": "Pyro",
@@ -5623,6 +5618,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3500
     },
     {
       "system": "Pyro",
@@ -5673,11 +5673,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3700
     },
@@ -5715,6 +5710,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3600
     },
     {
       "system": "Pyro",
@@ -5785,11 +5785,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3700
     },
@@ -5812,6 +5807,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3600
     },
     {
       "system": "Pyro",
@@ -5921,6 +5921,11 @@ const pricingData = {
       "price": 4800
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4600
+    },
+    {
       "system": "Pyro",
       "location": "Checkmate Station - Admin",
       "price": 4600
@@ -5979,11 +5984,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Bueno Ravine",
       "price": 4494
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4400
     },
     {
       "system": "Nyx",
@@ -6220,6 +6220,11 @@ const pricingData = {
       "price": 3300
     },
     {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 3300
+    },
+    {
       "system": "Stanton",
       "location": "HDMS-Hahn",
       "price": 3200
@@ -6252,11 +6257,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
-      "price": 3100
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3100
     },
     {
@@ -6299,7 +6299,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5200
+      "price": 5000
     },
     {
       "system": "Stanton",
