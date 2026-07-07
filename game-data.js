@@ -4553,14 +4553,14 @@ const pricingData = {
       "price": 31000
     },
     {
-      "system": "Nyx",
-      "location": "Pyro Gateway (Nyx) - Admin",
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
       "price": 31000
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 30000
+      "system": "Nyx",
+      "location": "Pyro Gateway (Nyx) - Admin",
+      "price": 31000
     },
     {
       "system": "Stanton",
@@ -5002,6 +5002,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 29000
+    },
+    {
+      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 29000
     },
@@ -5009,11 +5014,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5284,6 +5284,11 @@ const pricingData = {
       "price": 9100
     },
     {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 9100
+    },
+    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9000
@@ -5326,11 +5331,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
       "price": 8500
     },
     {
@@ -5615,6 +5615,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3600
+    },
+    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
@@ -5622,11 +5627,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
       "price": 3500
     },
     {
@@ -5785,6 +5785,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4000
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3700
     },
@@ -5841,11 +5846,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
       "price": 3500
     },
     {
@@ -5922,11 +5922,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 4600
     },
@@ -5961,8 +5956,18 @@ const pricingData = {
       "price": 4500
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4500
+    },
+    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
       "price": 4500
     },
     {
@@ -5979,11 +5984,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Bueno Ravine",
       "price": 4494
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4400
     },
     {
       "system": "Nyx",
@@ -6010,7 +6010,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Baijini Point - Admin",
-      "price": 5900
+      "price": 6100
     },
     {
       "system": "Pyro",
@@ -6614,11 +6614,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
       "location": "Port Tressler - Admin",
       "price": 4400
     },
@@ -6630,6 +6625,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Gaslight - Admin",
+      "price": 4300
+    },
+    {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
       "price": 4300
     },
     {
