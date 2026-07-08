@@ -5269,11 +5269,6 @@ const pricingData = {
   ],
   "Laranite": [
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 9000
-    },
-    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 8900
@@ -5312,6 +5307,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 8600
     },
     {
       "system": "Stanton",
@@ -5654,7 +5654,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4000
+      "price": 3900
     },
     {
       "system": "Stanton",
@@ -5775,11 +5775,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3700
     },
@@ -5791,6 +5786,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
       "price": 3700
     },
     {
@@ -6210,11 +6210,6 @@ const pricingData = {
       "price": 3400
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3300
-    },
-    {
       "system": "Stanton",
       "location": "HDMS-Hahn",
       "price": 3200
@@ -6243,6 +6238,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "HDMS-Perlman",
       "price": 3200
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 3100
     },
     {
       "system": "Nyx",
@@ -6396,7 +6396,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Patch City - Admin",
-      "price": 2700
+      "price": 2900
     },
     {
       "system": "Pyro",
@@ -6476,11 +6476,6 @@ const pricingData = {
   ],
   "Astatine": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3700
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
@@ -6554,6 +6549,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3400
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3300
     },
     {
       "system": "Stanton",
