@@ -4146,11 +4146,6 @@ const pricingData = {
       "price": 150000
     },
     {
-      "system": "Pyro",
-      "location": "Nyx Gateway (Pyro) - Admin",
-      "price": 150000
-    },
-    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 140000
@@ -4203,6 +4198,11 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "Levski",
+      "price": 140000
+    },
+    {
+      "system": "Pyro",
+      "location": "Nyx Gateway (Pyro) - Admin",
       "price": 140000
     },
     {
@@ -5152,11 +5152,6 @@ const pricingData = {
   ],
   "Titanium": [
     {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 10000
-    },
-    {
       "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8300
@@ -5230,6 +5225,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 7800
+    },
+    {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 7700
     },
     {
       "system": "Pyro",
@@ -5545,11 +5545,6 @@ const pricingData = {
   ],
   "Aluminium": [
     {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4400
-    },
-    {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 4000
@@ -5613,6 +5608,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3500
     },
     {
       "system": "Stanton",
@@ -5917,11 +5917,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 4600
     },
@@ -5957,6 +5952,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Pyro",
       "location": "Endgame - Admin",
       "price": 4500
     },
@@ -5974,11 +5974,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 4100
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3966
     },
     {
       "system": "Stanton",
@@ -6161,11 +6156,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3600
     },
@@ -6177,6 +6167,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
       "price": 3500
     },
     {
