@@ -4948,7 +4948,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Sacren's Plot",
-      "price": 35000
+      "price": 34000
     },
     {
       "system": "Pyro",
@@ -5275,11 +5275,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 8900
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8800
     },
@@ -5306,6 +5301,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
+      "price": 8500
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
       "price": 8500
     },
     {
