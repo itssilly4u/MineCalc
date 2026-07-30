@@ -4141,6 +4141,11 @@ const pricingData = {
   ],
   "Stileron": [
     {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 160000
+    },
+    {
       "system": "Stanton",
       "location": "Deakins Research",
       "price": 150000
@@ -4193,11 +4198,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
       "price": 140000
     },
     {
@@ -4300,11 +4300,6 @@ const pricingData = {
       "price": 82000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 77000
-    },
-    {
       "system": "Pyro",
       "location": "The Golden Riviera",
       "price": 74000
@@ -4315,9 +4310,9 @@ const pricingData = {
       "price": 74000
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 67000
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 72000
     },
     {
       "system": "Pyro",
@@ -4366,13 +4361,18 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 59000
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 65000
     },
     {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 59000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 58000
     }
   ],
   "Ouratite": [
@@ -4409,7 +4409,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
-      "price": 44000
+      "price": 45000
     }
   ],
   "Lindinium": [
@@ -4446,11 +4446,6 @@ const pricingData = {
   ],
   "Taranite": [
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 29000
-    },
-    {
       "system": "Pyro",
       "location": "Fallow Field",
       "price": 28000
@@ -4479,6 +4474,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 27000
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 26000
     },
     {
       "system": "Pyro",
@@ -4733,11 +4733,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
       "location": "Checkmate Station - Admin",
       "price": 27000
     },
@@ -4770,6 +4765,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 27000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 26000
     },
     {
       "system": "Pyro",
@@ -4821,7 +4821,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 23000
+      "price": 24000
     },
     {
       "system": "Stanton",
@@ -4834,13 +4834,13 @@ const pricingData = {
       "price": 22000
     },
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 21000
-    },
-    {
       "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
+      "price": 22000
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
       "price": 21000
     },
     {
@@ -4992,11 +4992,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 29000
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 29000
     },
@@ -5006,13 +5001,18 @@ const pricingData = {
       "price": 29000
     },
     {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 29000
+    },
+    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
     },
     {
       "system": "Stanton",
-      "location": "Orison - TDD",
+      "location": "Area 18 - TDD",
       "price": 28000
     },
     {
@@ -5153,11 +5153,6 @@ const pricingData = {
   "Titanium": [
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9200
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8300
     },
@@ -5222,6 +5217,11 @@ const pricingData = {
       "price": 8300
     },
     {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 8300
+    },
+    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8300
@@ -5269,9 +5269,14 @@ const pricingData = {
   ],
   "Laranite": [
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 9400
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 9100
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8800
     },
     {
       "system": "Pyro",
@@ -5300,11 +5305,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
     },
@@ -5315,13 +5315,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 8500
+      "price": 8600
     },
     {
       "system": "Stanton",
@@ -5344,14 +5339,19 @@ const pricingData = {
       "price": 8500
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
+      "system": "Pyro",
+      "location": "Orbituary - Admin",
       "price": 8500
     },
     {
       "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 8500
+      "location": "Gaslight - Admin",
+      "price": 8400
+    },
+    {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 8100
     },
     {
       "system": "Nyx",
@@ -5408,6 +5408,16 @@ const pricingData = {
   ],
   "Agricium": [
     {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 11000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 11000
+    },
+    {
       "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
@@ -5423,13 +5433,8 @@ const pricingData = {
       "price": 10000
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 10000
-    },
-    {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
+      "location": "HUR-L3 Thundering Express Station - Admin",
       "price": 10000
     },
     {
@@ -5449,6 +5454,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 10000
+    },
+    {
+      "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 10000
     },
@@ -5463,23 +5473,13 @@ const pricingData = {
       "price": 10000
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 9700
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
-      "price": 9600
+      "system": "Nyx",
+      "location": "People's Service Station Alpha - Admin",
+      "price": 10000
     },
     {
       "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 9400
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Alpha - Admin",
       "price": 9400
     },
     {
@@ -5546,13 +5546,8 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4300
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4000
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3900
     },
     {
       "system": "Stanton",
@@ -5600,14 +5595,19 @@ const pricingData = {
       "price": 3600
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3600
-    },
-    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3500
     },
     {
       "system": "Pyro",
@@ -5642,6 +5642,16 @@ const pricingData = {
   ],
   "Copper": [
     {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4400
+    },
+    {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 4200
+    },
+    {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4000
@@ -5653,12 +5663,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 3900
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3800
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
+      "location": "Baijini Point - Admin",
       "price": 3800
     },
     {
@@ -5669,11 +5679,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3700
     },
     {
@@ -5703,18 +5708,13 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 3500
+      "location": "Ruin Station - Admin",
+      "price": 3400
     },
     {
       "system": "Nyx",
       "location": "Levski",
       "price": 3400
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 3300
     },
     {
       "system": "Stanton",
@@ -5764,9 +5764,19 @@ const pricingData = {
       "price": 4400
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4100
+    },
+    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 3800
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3900
     },
     {
       "system": "Stanton",
@@ -5830,16 +5840,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 3000
     },
@@ -5857,22 +5857,12 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station - Admin",
-      "price": 6000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 4800
     },
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 4800
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
       "price": 4800
     },
     {
@@ -5897,11 +5887,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "HUR-L5 High Course Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
       "location": "MIC-L5 Modern Icarus Station - Admin",
       "price": 4700
     },
@@ -5918,6 +5903,16 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
+      "price": 4600
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4600
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
       "price": 4600
     },
     {
@@ -5942,11 +5937,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4600
     },
@@ -5961,14 +5951,24 @@ const pricingData = {
       "price": 4600
     },
     {
+      "system": "Stanton",
+      "location": "HUR-L5 High Course Station - Admin",
+      "price": 4600
+    },
+    {
       "system": "Pyro",
       "location": "Checkmate Station - Admin",
       "price": 4500
     },
     {
+      "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 4500
+    },
+    {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4400
+      "location": "CRU-L4 Shallow Fields Station - Admin",
+      "price": 4500
     },
     {
       "system": "Nyx",
@@ -6140,13 +6140,18 @@ const pricingData = {
   ],
   "Iron": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3700
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 3600
     },
     {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
       "price": 3600
     },
     {
@@ -6155,8 +6160,8 @@ const pricingData = {
       "price": 3500
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
+      "system": "Nyx",
+      "location": "People's Service Station Theta - Admin",
       "price": 3500
     },
     {
@@ -6220,8 +6225,8 @@ const pricingData = {
       "price": 3200
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3100
     },
     {
@@ -6250,11 +6255,6 @@ const pricingData = {
       "price": 2700
     },
     {
-      "system": "Nyx",
-      "location": "People's Service Station Theta - Admin",
-      "price": 2700
-    },
-    {
       "system": "Stanton",
       "location": "Rappel",
       "price": 1000
@@ -6278,8 +6278,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 5400
+    },
+    {
+      "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5200
+      "price": 5000
     },
     {
       "system": "Stanton",
@@ -6290,11 +6295,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 4500
     },
     {
       "system": "Stanton",
@@ -6396,7 +6396,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Patch City - Admin",
-      "price": 2900
+      "price": 2700
     },
     {
       "system": "Pyro",
@@ -6406,6 +6406,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
+      "price": 2600
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
       "price": 2600
     },
     {
@@ -6465,11 +6470,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 2300
-    },
-    {
-      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 2000
     }
@@ -6477,23 +6477,28 @@ const pricingData = {
   "Astatine": [
     {
       "system": "Stanton",
-      "location": "ARC-L2 Lively Pathway Station - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
       "price": 3800
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3700
     },
     {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3600
     },
     {
       "system": "Stanton",
@@ -6532,11 +6537,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
       "location": "Rayari Cantwell Research Outpost",
       "price": 3500
     },
@@ -6552,18 +6552,18 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
       "location": "Orison - Admin",
       "price": 3400
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3300
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3100
     },
     {
       "system": "Stanton",
@@ -6594,13 +6594,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Port Tressler - Admin",
+      "location": "Baijini Point - Admin",
       "price": 4500
     },
     {
       "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 4400
+      "location": "Port Tressler - Admin",
+      "price": 4500
     },
     {
       "system": "Pyro",
