@@ -4820,6 +4820,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "HUR-L3 Thundering Express Station - Admin",
+      "price": 22000
+    },
+    {
+      "system": "Stanton",
       "location": "HUR-L4 Melodic Fields Station - Admin",
       "price": 22000
     },
@@ -4909,11 +4914,6 @@ const pricingData = {
       "price": 19000
     },
     {
-      "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
-      "price": 19000
-    },
-    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 19000
@@ -4957,13 +4957,13 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Canard View",
+      "location": "Rat's Nest - Admin",
       "price": 30000
     },
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 29000
+      "location": "Canard View",
+      "price": 30000
     },
     {
       "system": "Stanton",
@@ -5424,7 +5424,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "HUR-L4 Melodic Fields Station - Admin",
+      "location": "HUR-L3 Thundering Express Station - Admin",
       "price": 10000
     },
     {
@@ -5464,7 +5464,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
+      "location": "HUR-L4 Melodic Fields Station - Admin",
       "price": 9900
     },
     {
@@ -5546,16 +5546,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4200
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3800
     },
@@ -5605,6 +5595,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3600
+    },
+    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
@@ -5612,6 +5607,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
       "price": 3500
     },
     {
@@ -5637,19 +5637,19 @@ const pricingData = {
   ],
   "Copper": [
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4500
+    },
+    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 4300
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4200
-    },
-    {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
-      "price": 4100
+      "price": 4200
     },
     {
       "system": "Pyro",
@@ -5765,13 +5765,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3800
+      "price": 3900
     },
     {
       "system": "Stanton",
@@ -5835,6 +5830,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 3000
     },
@@ -5854,11 +5854,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "CRU-L4 Shallow Fields Station - Admin",
       "price": 6000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 5200
     },
     {
       "system": "Stanton",
@@ -5882,11 +5877,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 4800
     },
@@ -5902,12 +5892,17 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4700
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 4700
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
       "price": 4600
     },
     {
@@ -5959,6 +5954,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
       "price": 4600
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 4500
     },
     {
       "system": "Stanton",
@@ -6014,6 +6014,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Rustville",
+      "price": 5500
+    },
+    {
+      "system": "Pyro",
       "location": "Canard View",
       "price": 5500
     },
@@ -6039,11 +6044,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 5200
     },
@@ -6055,6 +6055,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Starlight Service Station - Admin",
+      "price": 5200
+    },
+    {
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
       "price": 5200
     },
     {
@@ -6075,11 +6080,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Orbituary - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Rustville",
       "price": 5200
     },
     {
@@ -6109,7 +6109,7 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
+      "location": "Checkmate Station - Admin",
       "price": 5000
     },
     {
@@ -6593,11 +6593,6 @@ const pricingData = {
       "price": 4500
     },
     {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4500
-    },
-    {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 4300
@@ -6606,6 +6601,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 4300
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 4200
     },
     {
       "system": "Stanton",
