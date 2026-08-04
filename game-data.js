@@ -5213,11 +5213,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 8200
-    },
-    {
-      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 8200
     },
@@ -5230,6 +5225,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 8100
+    },
+    {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 7700
     },
     {
       "system": "Stanton",
@@ -5515,7 +5515,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Orbituary - Admin",
-      "price": 8700
+      "price": 9200
     },
     {
       "system": "Stanton",
@@ -5877,11 +5877,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
       "location": "ARC-L5 Yellow Core Station - Admin",
       "price": 4800
     },
@@ -5898,6 +5893,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 4700
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 4700
     },
     {
@@ -5932,11 +5932,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4600
     },
@@ -5958,6 +5953,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Pyro",
+      "location": "Gaslight - Admin",
       "price": 4500
     },
     {
@@ -6079,11 +6079,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 5200
     },
@@ -6108,14 +6103,19 @@ const pricingData = {
       "price": 5100
     },
     {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 5000
-    },
-    {
       "system": "Stanton",
       "location": "Baijini Point - Admin",
       "price": 5000
+    },
+    {
+      "system": "Pyro",
+      "location": "Orbituary - Admin",
+      "price": 5000
+    },
+    {
+      "system": "Pyro",
+      "location": "Checkmate Station - Admin",
+      "price": 4900
     },
     {
       "system": "Pyro",
