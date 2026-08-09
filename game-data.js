@@ -4273,14 +4273,14 @@ const pricingData = {
       "price": 120000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 110000
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 110000
+    },
+    {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 100000
     }
   ],
   "Riccite": [
@@ -4377,13 +4377,13 @@ const pricingData = {
   ],
   "Ouratite": [
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "system": "Nyx",
+      "location": "Levski",
       "price": 46000
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
       "price": 46000
     },
     {
@@ -4397,8 +4397,8 @@ const pricingData = {
       "price": 46000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
       "price": 45000
     },
     {
@@ -4768,6 +4768,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Orbituary - Admin",
+      "price": 27000
+    },
+    {
+      "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 26000
     },
@@ -4779,11 +4784,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - TDD",
-      "price": 25000
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
       "price": 25000
     },
     {
@@ -4986,6 +4986,11 @@ const pricingData = {
       "price": 29000
     },
     {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 29000
+    },
+    {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 29000
@@ -4999,11 +5004,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5163,6 +5163,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 8400
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8300
     },
@@ -5233,11 +5238,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 8100
-    },
-    {
-      "system": "Stanton",
       "location": "ARC-L5 Yellow Core Station - Admin",
       "price": 8000
     },
@@ -5268,6 +5268,11 @@ const pricingData = {
     }
   ],
   "Laranite": [
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 8800
+    },
     {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
@@ -5306,11 +5311,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
       "price": 8500
     },
     {
@@ -5409,6 +5409,11 @@ const pricingData = {
   "Agricium": [
     {
       "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 11000
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5466,11 +5471,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9600
     },
     {
       "system": "Nyx",
@@ -5551,6 +5551,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 4200
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3800
     },
@@ -5601,11 +5606,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
       "location": "Everus Harbor - Admin",
       "price": 3500
     },
@@ -5645,11 +5645,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4200
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4100
     },
     {
       "system": "Pyro",
@@ -5704,6 +5699,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3600
     },
     {
@@ -5771,7 +5771,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4100
+      "price": 4000
     },
     {
       "system": "Stanton",
@@ -5857,13 +5857,13 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 5100
+      "location": "New Babbage - TDD",
+      "price": 5200
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 4900
+      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "price": 5100
     },
     {
       "system": "Stanton",
@@ -6140,11 +6140,6 @@ const pricingData = {
   ],
   "Iron": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4000
-    },
-    {
       "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3900
@@ -6170,6 +6165,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3500
+    },
+    {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 3500
@@ -6191,17 +6191,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 3400
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
+      "location": "Lorville - CBD",
       "price": 3300
     },
     {
@@ -6233,6 +6228,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "HDMS-Perlman",
       "price": 3200
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3100
     },
     {
       "system": "Nyx",
@@ -6279,12 +6279,12 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 5500
+      "price": 5300
     },
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5500
+      "price": 4900
     },
     {
       "system": "Stanton",
@@ -6477,12 +6477,17 @@ const pricingData = {
   "Astatine": [
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3900
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 3700
     },
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3700
     },
     {
@@ -6542,17 +6547,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
+      "location": "Orison - Admin",
       "price": 3300
     },
     {
       "system": "Stanton",
-      "location": "Orison - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 3300
     },
     {
