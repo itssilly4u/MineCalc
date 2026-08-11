@@ -4531,155 +4531,6 @@ const pricingData = {
       "price": 22000
     }
   ],
-  "Gold": [
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 31000
-    },
-    {
-      "system": "Nyx",
-      "location": "Pyro Gateway (Nyx) - Admin",
-      "price": 31000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 29000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 29000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 26000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 26000
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 26000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 26000
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 26000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 26000
-    },
-    {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
-      "price": 23000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
-      "price": 23000
-    }
-  ],
-  "Golden Medmon": [
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 71000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 70000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - Admin",
-      "price": 64000
-    },
-    {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 64000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 59000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 54000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 54000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 54000
-    }
-  ],
   "Borase": [
     {
       "system": "Pyro",
@@ -5269,6 +5120,11 @@ const pricingData = {
   ],
   "Laranite": [
     {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 9200
+    },
+    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 8800
@@ -5336,11 +5192,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Orbituary - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8500
     },
     {
@@ -5480,7 +5331,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 9600
+      "price": 9500
     },
     {
       "system": "Pyro",
@@ -5595,11 +5446,6 @@ const pricingData = {
       "price": 3600
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3600
-    },
-    {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3500
@@ -5607,6 +5453,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3500
     },
     {
@@ -5645,6 +5496,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4400
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4300
     },
     {
       "system": "Pyro",
@@ -5699,11 +5555,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3600
     },
     {
@@ -6004,11 +5855,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
       "location": "Chawla's Beach",
       "price": 5500
     },
@@ -6070,6 +5916,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Patch City - Admin",
+      "price": 5200
+    },
+    {
+      "system": "Pyro",
+      "location": "Jackson's Swap",
       "price": 5200
     },
     {
@@ -6195,6 +6046,11 @@ const pricingData = {
       "price": 3400
     },
     {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 3400
+    },
+    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 3300
@@ -6232,11 +6088,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3100
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3100
     },
     {
@@ -6278,13 +6129,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 5300
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 5400
     },
     {
       "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4900
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 5300
     },
     {
       "system": "Stanton",
@@ -6481,11 +6332,6 @@ const pricingData = {
       "price": 3700
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3700
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
@@ -6544,6 +6390,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3400
     },
     {
       "system": "Stanton",
