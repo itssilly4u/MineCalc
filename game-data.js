@@ -4573,11 +4573,6 @@ const pricingData = {
       "price": 29000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 28000
-    },
-    {
       "system": "Pyro",
       "location": "The Golden Riviera",
       "price": 27000
@@ -4605,6 +4600,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Sacren's Plot",
+      "price": 26000
+    },
+    {
+      "system": "Nyx",
+      "location": "Levski",
       "price": 26000
     },
     {
@@ -5157,9 +5157,9 @@ const pricingData = {
       "price": 8900
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 8400
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 8700
     },
     {
       "system": "Stanton",
@@ -5237,9 +5237,9 @@ const pricingData = {
       "price": 8000
     },
     {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 7700
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 8000
     },
     {
       "system": "Nyx",
@@ -5409,11 +5409,6 @@ const pricingData = {
   "Agricium": [
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5430,6 +5425,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 10000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
       "price": 10000
     },
     {
@@ -5565,6 +5565,11 @@ const pricingData = {
       "price": 3800
     },
     {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3700
+    },
+    {
       "system": "Pyro",
       "location": "Endgame - Admin",
       "price": 3600
@@ -5602,11 +5607,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
       "price": 3500
     },
     {
@@ -5659,7 +5659,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Baijini Point - Admin",
-      "price": 3900
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -5771,7 +5771,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 3900
+      "price": 4100
     },
     {
       "system": "Stanton",
@@ -5857,6 +5857,11 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
+      "location": "MIC-L4 Red Crossroads Station - Admin",
+      "price": 6000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 5200
     },
@@ -5907,11 +5912,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 4600
     },
@@ -5927,6 +5927,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 4600
+    },
+    {
+      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4600
     },
@@ -5936,13 +5941,23 @@ const pricingData = {
       "price": 4600
     },
     {
+      "system": "Stanton",
+      "location": "CRU-L4 Shallow Fields Station - Admin",
+      "price": 4600
+    },
+    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 4600
     },
     {
       "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station - Admin",
+      "location": "Everus Harbor - Admin",
+      "price": 4500
+    },
+    {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
       "price": 4500
     },
     {
@@ -5952,23 +5967,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "MIC-L4 Red Crossroads Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4500
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 4400
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4300
     },
     {
       "system": "Nyx",
@@ -5992,6 +5992,11 @@ const pricingData = {
     }
   ],
   "Ice": [
+    {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 6200
+    },
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
@@ -6118,11 +6123,6 @@ const pricingData = {
       "price": 5100
     },
     {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 5000
-    },
-    {
       "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 4900
@@ -6139,11 +6139,6 @@ const pricingData = {
     }
   ],
   "Iron": [
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 3900
-    },
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
@@ -6177,6 +6172,11 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Pyro",
+      "location": "Gaslight - Admin",
       "price": 3500
     },
     {
@@ -6279,7 +6279,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 5200
+      "price": 5300
     },
     {
       "system": "Stanton",
@@ -6593,16 +6593,6 @@ const pricingData = {
       "price": 4600
     },
     {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4400
-    },
-    {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 4300
@@ -6611,6 +6601,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 4300
+    },
+    {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 4200
     },
     {
       "system": "Stanton",
@@ -6681,6 +6676,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3700
     },
     {
       "system": "Stanton",
