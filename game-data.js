@@ -4151,6 +4151,11 @@ const pricingData = {
   ],
   "Stileron": [
     {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 160000
+    },
+    {
       "system": "Pyro",
       "location": "Nyx Gateway (Pyro) - Admin",
       "price": 160000
@@ -4208,11 +4213,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
       "price": 140000
     },
     {
@@ -4307,7 +4307,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "Levski",
-      "price": 75000
+      "price": 76000
     },
     {
       "system": "Pyro",
@@ -4967,6 +4967,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 30000
+    },
+    {
+      "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 30000
     },
@@ -5018,11 +5023,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 28000
     },
     {
@@ -5163,6 +5163,11 @@ const pricingData = {
   "Titanium": [
     {
       "system": "Pyro",
+      "location": "Starlight Service Station - Admin",
+      "price": 9200
+    },
+    {
+      "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 8400
     },
@@ -5242,11 +5247,6 @@ const pricingData = {
       "price": 8300
     },
     {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 8000
-    },
-    {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 7700
@@ -5278,6 +5278,16 @@ const pricingData = {
     }
   ],
   "Laranite": [
+    {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 9700
+    },
+    {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 9000
+    },
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
@@ -5314,11 +5324,6 @@ const pricingData = {
       "price": 8700
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 8600
-    },
-    {
       "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8500
@@ -5352,11 +5357,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8500
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 8200
     },
     {
       "system": "Pyro",
@@ -5418,6 +5418,11 @@ const pricingData = {
   ],
   "Agricium": [
     {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 11000
+    },
+    {
       "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 11000
@@ -5435,11 +5440,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 10000
     },
     {
@@ -5600,11 +5600,6 @@ const pricingData = {
       "price": 3600
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 3600
-    },
-    {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3600
@@ -5630,9 +5625,14 @@ const pricingData = {
       "price": 3500
     },
     {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 3400
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
-      "price": 3300
+      "price": 3200
     },
     {
       "system": "Stanton",
@@ -5654,7 +5654,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 4500
+      "price": 4600
     },
     {
       "system": "Pyro",
@@ -5770,13 +5770,13 @@ const pricingData = {
   "Corundum": [
     {
       "system": "Pyro",
-      "location": "Orbituary - Admin",
+      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 4400
     },
     {
       "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 4000
+      "location": "Orbituary - Admin",
+      "price": 4400
     },
     {
       "system": "Stanton",
@@ -5962,13 +5962,13 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Orbituary - Admin",
+      "location": "Dudley & Daughters - Admin",
       "price": 4600
     },
     {
       "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 4500
+      "location": "Orbituary - Admin",
+      "price": 4600
     },
     {
       "system": "Stanton",
@@ -6089,6 +6089,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 5200
+    },
+    {
+      "system": "Pyro",
       "location": "Bueno Ravine",
       "price": 5200
     },
@@ -6106,11 +6111,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 5100
     },
     {
       "system": "Stanton",
