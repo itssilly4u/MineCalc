@@ -4784,7 +4784,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Orbituary - Admin",
-      "price": 26000
+      "price": 27000
     },
     {
       "system": "Stanton",
@@ -6486,11 +6486,6 @@ const pricingData = {
   ],
   "Astatine": [
     {
-      "system": "Stanton",
-      "location": "ARC-L2 Lively Pathway Station - Admin",
-      "price": 3900
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
@@ -6532,6 +6527,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Rayari McGrath Research Outpost",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 3500
     },
@@ -6567,8 +6567,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Rayari McGrath Research Outpost",
-      "price": 3200
+      "location": "ARC-L2 Lively Pathway Station - Admin",
+      "price": 3300
     },
     {
       "system": "Stanton",
