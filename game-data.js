@@ -4939,6 +4939,11 @@ const pricingData = {
       "price": 19000
     },
     {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 19000
+    },
+    {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 16000
@@ -5419,11 +5424,6 @@ const pricingData = {
   "Agricium": [
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5481,6 +5481,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9700
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 9600
     },
     {
       "system": "Stanton",
@@ -5653,11 +5658,6 @@ const pricingData = {
   "Copper": [
     {
       "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 4400
-    },
-    {
-      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4200
     },
@@ -5714,6 +5714,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3600
     },
     {
@@ -6282,11 +6287,6 @@ const pricingData = {
   ],
   "Quartz": [
     {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 5500
-    },
-    {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
       "price": 5400
@@ -6299,6 +6299,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Patch City - Admin",
+      "price": 4600
+    },
+    {
+      "system": "Pyro",
+      "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4600
     },
     {
