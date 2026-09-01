@@ -5867,11 +5867,6 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 5400
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 4800
     },
@@ -5937,11 +5932,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 4600
     },
@@ -5964,6 +5954,16 @@ const pricingData = {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 4600
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 4500
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 4500
     },
     {
       "system": "Stanton",
@@ -6002,11 +6002,6 @@ const pricingData = {
     }
   ],
   "Ice": [
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 5700
-    },
     {
       "system": "Pyro",
       "location": "Jackson's Swap",
@@ -6138,6 +6133,11 @@ const pricingData = {
       "price": 5000
     },
     {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 4800
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 4600
@@ -6149,11 +6149,6 @@ const pricingData = {
     }
   ],
   "Iron": [
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3900
-    },
     {
       "system": "Pyro",
       "location": "Gaslight - Admin",
@@ -6250,6 +6245,11 @@ const pricingData = {
       "price": 3100
     },
     {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 3100
+    },
+    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3100
@@ -6281,11 +6281,6 @@ const pricingData = {
     }
   ],
   "Quartz": [
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 5400
-    },
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
@@ -6365,6 +6360,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 4200
+    },
+    {
+      "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 4000
     },
     {
       "system": "Stanton",
@@ -6487,6 +6487,11 @@ const pricingData = {
   "Astatine": [
     {
       "system": "Stanton",
+      "location": "Nyx Gateway (Stanton) - Admin",
+      "price": 4400
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3900
     },
@@ -6554,11 +6559,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3400
     },
     {
       "system": "Stanton",
