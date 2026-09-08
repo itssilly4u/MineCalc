@@ -4156,14 +4156,14 @@ const pricingData = {
       "price": 160000
     },
     {
-      "system": "Pyro",
-      "location": "Nyx Gateway (Pyro) - Admin",
-      "price": 160000
-    },
-    {
       "system": "Stanton",
       "location": "Deakins Research",
       "price": 150000
+    },
+    {
+      "system": "Pyro",
+      "location": "Nyx Gateway (Pyro) - Admin",
+      "price": 143000
     },
     {
       "system": "Stanton",
@@ -5294,11 +5294,6 @@ const pricingData = {
       "price": 9100
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 8800
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 8700
@@ -5351,6 +5346,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L2 Faithful Dream Station - Admin",
+      "price": 8500
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
       "price": 8500
     },
     {
@@ -5586,6 +5586,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 3800
     },
@@ -5622,11 +5627,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3500
     },
     {
@@ -6155,11 +6155,6 @@ const pricingData = {
   ],
   "Iron": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4000
-    },
-    {
       "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3800
@@ -6223,6 +6218,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 3300
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3200
     },
     {
       "system": "Stanton",
@@ -6425,6 +6425,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 2500
+    },
+    {
+      "system": "Stanton",
       "location": "Orison - Admin",
       "price": 2400
     },
@@ -6476,11 +6481,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
-      "price": 2300
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
       "price": 2300
     },
     {
