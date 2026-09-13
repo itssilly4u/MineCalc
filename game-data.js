@@ -4321,6 +4321,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 67000
+    },
+    {
+      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 67000
     },
@@ -4368,11 +4373,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 66000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 64000
     },
     {
       "system": "Pyro",
@@ -5285,11 +5285,6 @@ const pricingData = {
   "Laranite": [
     {
       "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 9700
-    },
-    {
-      "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 8700
     },
@@ -5320,11 +5315,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8600
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 8600
     },
@@ -5332,6 +5322,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 8505
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8500
     },
     {
       "system": "Stanton",
@@ -5367,6 +5362,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 8400
+    },
+    {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 8100
     },
     {
       "system": "Nyx",
@@ -5422,6 +5422,11 @@ const pricingData = {
     }
   ],
   "Agricium": [
+    {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 11000
+    },
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
@@ -5500,11 +5505,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Checkmate Station - Admin",
-      "price": 9200
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 9200
     },
     {
@@ -5606,6 +5606,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3600
     },
@@ -5618,11 +5623,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3500
     },
     {
       "system": "Stanton",
@@ -5657,11 +5657,6 @@ const pricingData = {
   ],
   "Copper": [
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 4700
-    },
-    {
       "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 4600
@@ -5669,6 +5664,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4200
+    },
+    {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 4200
     },
     {
@@ -5775,6 +5775,11 @@ const pricingData = {
   "Corundum": [
     {
       "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 4400
+    },
+    {
+      "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 4400
     },
@@ -5807,11 +5812,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3700
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 3600
     },
     {
       "system": "Stanton",
@@ -6009,6 +6009,11 @@ const pricingData = {
   "Ice": [
     {
       "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 5700
+    },
+    {
+      "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 5500
     },
@@ -6064,11 +6069,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 5200
     },
@@ -6104,7 +6104,7 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
+      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 5100
     },
     {
@@ -6156,8 +6156,18 @@ const pricingData = {
   "Iron": [
     {
       "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 3800
+    },
+    {
+      "system": "Pyro",
+      "location": "Rod's Fuel 'N Supplies - Admin",
+      "price": 3600
     },
     {
       "system": "Pyro",
@@ -6167,11 +6177,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 3500
     },
     {
@@ -6213,11 +6218,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 3400
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3300
     },
     {
       "system": "Stanton",
