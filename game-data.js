@@ -4962,6 +4962,11 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
+      "location": "Sacren's Plot",
+      "price": 36000
+    },
+    {
+      "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 34000
     },
@@ -5028,11 +5033,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Brio's Breaker Yard",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
       "price": 27000
     },
     {
@@ -5423,6 +5423,11 @@ const pricingData = {
   ],
   "Agricium": [
     {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 12000
+    },
+    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 11000
@@ -5491,11 +5496,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 9800
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 9400
     },
     {
       "system": "Pyro",
@@ -5567,7 +5567,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 4100
+      "price": 4200
     },
     {
       "system": "Pyro",
@@ -5791,7 +5791,7 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
-      "price": 3900
+      "price": 4100
     },
     {
       "system": "Stanton",
@@ -5897,6 +5897,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
       "location": "CRU-L5 Beautiful Glen Station - Admin",
       "price": 4800
     },
@@ -5912,8 +5917,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 4700
+      "location": "Everus Harbor - Admin",
+      "price": 4600
     },
     {
       "system": "Pyro",
@@ -5981,11 +5986,6 @@ const pricingData = {
       "price": 4400
     },
     {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4300
-    },
-    {
       "system": "Nyx",
       "location": "Levski",
       "price": 4100
@@ -6007,6 +6007,11 @@ const pricingData = {
     }
   ],
   "Ice": [
+    {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 6800
+    },
     {
       "system": "Pyro",
       "location": "Jackson's Swap",
@@ -6135,11 +6140,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
-      "price": 5000
-    },
-    {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
       "price": 5000
     },
     {
