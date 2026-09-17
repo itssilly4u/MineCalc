@@ -5289,11 +5289,6 @@ const pricingData = {
       "price": 9700
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 9500
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 8700
@@ -5336,6 +5331,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
+      "price": 8500
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 8500
     },
     {
@@ -5892,11 +5892,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4800
     },
@@ -5918,6 +5913,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
+      "price": 4700
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4700
     },
     {
@@ -6497,6 +6497,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3900
     },
@@ -6574,11 +6579,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - Admin",
       "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3300
     },
     {
       "system": "Stanton",
