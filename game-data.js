@@ -5289,6 +5289,11 @@ const pricingData = {
       "price": 9700
     },
     {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 9200
+    },
+    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 8700
@@ -5351,11 +5356,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Orbituary - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8500
     },
     {
@@ -5468,11 +5468,6 @@ const pricingData = {
       "price": 10000
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 10000
-    },
-    {
       "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 10000
@@ -5496,6 +5491,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 10000
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 9700
     },
     {
       "system": "Pyro",
@@ -5581,13 +5581,18 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 3800
     },
     {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3700
+      "price": 3800
     },
     {
       "system": "Stanton",
@@ -5617,11 +5622,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3600
     },
     {
@@ -6215,11 +6215,6 @@ const pricingData = {
       "price": 3400
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3300
-    },
-    {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
       "price": 3300
@@ -6255,9 +6250,14 @@ const pricingData = {
       "price": 3200
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3100
+    },
+    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3200
+      "price": 3100
     },
     {
       "system": "Nyx",
@@ -6409,6 +6409,11 @@ const pricingData = {
   ],
   "Silicon": [
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3100
+    },
+    {
       "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 2900
@@ -6422,11 +6427,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 2600
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 2500
     },
     {
       "system": "Stanton",
