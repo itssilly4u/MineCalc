@@ -5243,13 +5243,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
+      "location": "ARC-L5 Yellow Core Station - Admin",
       "price": 8200
     },
     {
       "system": "Stanton",
-      "location": "ARC-L5 Yellow Core Station - Admin",
-      "price": 8100
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 8200
     },
     {
       "system": "Pyro",
@@ -5658,11 +5658,6 @@ const pricingData = {
   "Copper": [
     {
       "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 4300
-    },
-    {
-      "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 4200
     },
@@ -5719,6 +5714,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3600
     },
     {
@@ -6008,11 +6008,6 @@ const pricingData = {
   ],
   "Ice": [
     {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 6500
-    },
-    {
       "system": "Pyro",
       "location": "Endgame - Admin",
       "price": 5700
@@ -6141,6 +6136,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 5100
+    },
+    {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 5000
     },
     {
       "system": "Nyx",
