@@ -4412,13 +4412,13 @@ const pricingData = {
       "price": 46000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 46000
-    },
-    {
       "system": "Nyx",
       "location": "Levski",
+      "price": 45000
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
       "price": 45000
     }
   ],
@@ -4598,6 +4598,11 @@ const pricingData = {
       "price": 26000
     },
     {
+      "system": "Stanton",
+      "location": "Green Imperial Housing Exchange - Admin",
+      "price": 26000
+    },
+    {
       "system": "Pyro",
       "location": "Canard View",
       "price": 26000
@@ -4611,11 +4616,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Sacren's Plot",
       "price": 26000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 24000
     },
     {
       "system": "Stanton",
@@ -5011,11 +5011,6 @@ const pricingData = {
       "price": 29000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 29000
-    },
-    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
@@ -5028,6 +5023,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Brio's Breaker Yard",
+      "price": 27000
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
       "price": 27000
     },
     {
@@ -5305,6 +5305,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 9100
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 8700
     },
@@ -5332,11 +5337,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 8600
     },
     {
       "system": "Stanton",
@@ -5872,6 +5872,11 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
+      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "price": 6000
+    },
+    {
+      "system": "Stanton",
       "location": "MIC-L4 Red Crossroads Station - Admin",
       "price": 6000
     },
@@ -5974,11 +5979,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 4500
     },
     {
       "system": "Pyro",
@@ -6497,6 +6497,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3900
     },
@@ -6523,11 +6528,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Deakins Research",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3600
     },
     {
