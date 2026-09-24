@@ -4457,12 +4457,12 @@ const pricingData = {
   "Taranite": [
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 28000
+      "location": "Orison - TDD",
+      "price": 29000
     },
     {
       "system": "Stanton",
-      "location": "Orison - TDD",
+      "location": "New Babbage - TDD",
       "price": 28000
     },
     {
@@ -5011,14 +5011,14 @@ const pricingData = {
       "price": 29000
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
+      "system": "Stanton",
+      "location": "Orison - TDD",
       "price": 29000
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 28000
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 29000
     },
     {
       "system": "Stanton",
@@ -5299,14 +5299,19 @@ const pricingData = {
       "price": 9300
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 9200
-    },
-    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 9100
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 9100
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 9000
     },
     {
       "system": "Stanton",
@@ -5337,11 +5342,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 8600
     },
     {
       "system": "Stanton",
@@ -5463,6 +5463,11 @@ const pricingData = {
       "price": 10000
     },
     {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 10000
+    },
+    {
       "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 10000
@@ -5486,11 +5491,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 10000
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 9700
     },
     {
       "system": "Stanton",
