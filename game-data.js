@@ -4830,6 +4830,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Theta - Admin",
       "price": 14000
+    },
+    {
+      "system": "Nyx",
+      "location": "People's Service Station Theta - Admin",
+      "price": 14000
     }
   ],
   "Beryl": [
@@ -5284,11 +5289,6 @@ const pricingData = {
   ],
   "Laranite": [
     {
-      "system": "Stanton",
-      "location": "HUR-L2 Faithful Dream Station - Admin",
-      "price": 10000
-    },
-    {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
       "price": 9300
@@ -5351,6 +5351,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L1 Green Glade Station - Admin",
+      "price": 8500
+    },
+    {
+      "system": "Stanton",
+      "location": "HUR-L2 Faithful Dream Station - Admin",
       "price": 8500
     },
     {
@@ -5424,6 +5429,11 @@ const pricingData = {
   "Agricium": [
     {
       "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 12000
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5486,11 +5496,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "HUR-L5 High Course Station - Admin",
       "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 9400
     },
     {
       "system": "Nyx",
@@ -5561,6 +5566,11 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 4600
+    },
+    {
+      "system": "Stanton",
       "location": "Everus Harbor - Admin",
       "price": 4100
     },
@@ -5628,11 +5638,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 3500
     },
     {
       "system": "Nyx",
@@ -5892,7 +5897,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4800
     },
     {
@@ -5972,12 +5977,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 4600
+      "location": "MIC-L4 Red Crossroads Station - Admin",
+      "price": 4500
     },
     {
       "system": "Stanton",
-      "location": "MIC-L4 Red Crossroads Station - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4500
     },
     {
@@ -6220,6 +6225,11 @@ const pricingData = {
       "price": 3400
     },
     {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 3300
+    },
+    {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
       "price": 3300
@@ -6242,11 +6252,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Starlight Service Station - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
       "price": 3200
     },
     {
@@ -6492,27 +6497,22 @@ const pricingData = {
   "Astatine": [
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L2 Lively Pathway Station - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3700
     },
     {
       "system": "Stanton",
       "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L2 Lively Pathway Station - Admin",
       "price": 3700
     },
     {
@@ -6578,6 +6578,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Seraphim Station - Admin",
+      "price": 3400
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3400
     },
     {
