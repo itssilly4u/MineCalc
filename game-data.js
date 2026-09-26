@@ -4280,7 +4280,7 @@ const pricingData = {
     {
       "system": "Nyx",
       "location": "People's Service Station Delta - Admin",
-      "price": 120000
+      "price": 130000
     },
     {
       "system": "Nyx",
@@ -4645,14 +4645,14 @@ const pricingData = {
       "price": 71000
     },
     {
-      "system": "Stanton",
-      "location": "Seraphim Station - Admin",
-      "price": 64000
-    },
-    {
       "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 64000
+    },
+    {
+      "system": "Stanton",
+      "location": "Seraphim Station - Admin",
+      "price": 63000
     },
     {
       "system": "Stanton",
@@ -5012,11 +5012,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 29000
-    },
-    {
-      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 29000
     },
@@ -5024,6 +5019,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5566,12 +5566,12 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4600
+      "location": "Everus Harbor - Admin",
+      "price": 4100
     },
     {
       "system": "Stanton",
-      "location": "Everus Harbor - Admin",
+      "location": "Port Tressler - Admin",
       "price": 4100
     },
     {
@@ -5673,12 +5673,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3800
+      "location": "Baijini Point - Admin",
+      "price": 3900
     },
     {
       "system": "Stanton",
-      "location": "Baijini Point - Admin",
+      "location": "Terra Gateway (Stanton) - Admin",
       "price": 3800
     },
     {
@@ -5774,6 +5774,16 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Dunboro",
+      "price": 1200
+    },
+    {
+      "system": "Stanton",
+      "location": "Rappel",
+      "price": 1200
+    },
+    {
+      "system": "Stanton",
+      "location": "Picker's Field",
       "price": 1200
     }
   ],
@@ -5882,6 +5892,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 5400
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 4800
     },
@@ -5893,6 +5908,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - TDD",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4800
     },
     {
@@ -5909,11 +5929,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "ARC-L5 Yellow Core Station - Admin",
       "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 4700
     },
     {
       "system": "Stanton",
@@ -5981,11 +5996,6 @@ const pricingData = {
       "price": 4500
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 4500
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 4400
@@ -6012,11 +6022,6 @@ const pricingData = {
     }
   ],
   "Ice": [
-    {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 6100
-    },
     {
       "system": "Pyro",
       "location": "Endgame - Admin",
@@ -6148,6 +6153,11 @@ const pricingData = {
       "price": 5100
     },
     {
+      "system": "Stanton",
+      "location": "Baijini Point - Admin",
+      "price": 5000
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 4600
@@ -6230,11 +6240,6 @@ const pricingData = {
       "price": 3300
     },
     {
-      "system": "Nyx",
-      "location": "People's Service Station Delta - Admin",
-      "price": 3300
-    },
-    {
       "system": "Stanton",
       "location": "HDMS-Hahn",
       "price": 3200
@@ -6275,6 +6280,11 @@ const pricingData = {
       "price": 2700
     },
     {
+      "system": "Nyx",
+      "location": "People's Service Station Delta - Admin",
+      "price": 2700
+    },
+    {
       "system": "Stanton",
       "location": "Rappel",
       "price": 1000
@@ -6282,6 +6292,16 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Dunboro",
+      "price": 1000
+    },
+    {
+      "system": "Stanton",
+      "location": "Picker's Field",
+      "price": 1000
+    },
+    {
+      "system": "Stanton",
+      "location": "Rappel",
       "price": 1000
     },
     {
@@ -6507,7 +6527,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3700
     },
     {
@@ -6582,8 +6602,8 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 3400
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 3300
     },
     {
       "system": "Stanton",
@@ -6614,13 +6634,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Baijini Point - Admin",
+      "location": "Port Tressler - Admin",
       "price": 4500
     },
     {
       "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4500
+      "location": "Baijini Point - Admin",
+      "price": 4400
     },
     {
       "system": "Pyro",
