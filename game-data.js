@@ -4080,6 +4080,11 @@ const pricingData = {
   "Quantanium": [
     {
       "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 170000
+    },
+    {
+      "system": "Stanton",
       "location": "ArcCorp Mining Area 141",
       "price": 170000
     },
@@ -4096,11 +4101,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Ashland",
-      "price": 160000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
       "price": 160000
     },
     {
@@ -4413,13 +4413,13 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 46000
+      "location": "Lorville - CBD",
+      "price": 45000
     },
     {
       "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 45000
+      "location": "Orison - TDD",
+      "price": 44000
     }
   ],
   "Lindinium": [
@@ -4457,6 +4457,11 @@ const pricingData = {
   "Taranite": [
     {
       "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 28000
     },
@@ -4478,11 +4483,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 27000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
       "price": 27000
     },
     {
@@ -5330,11 +5330,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 8700
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 8500
     },
@@ -5351,6 +5346,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L2 Faithful Dream Station - Admin",
+      "price": 8500
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
       "price": 8500
     },
     {
