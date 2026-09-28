@@ -4163,7 +4163,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Nyx Gateway (Pyro) - Admin",
-      "price": 143000
+      "price": 150000
     },
     {
       "system": "Stanton",
@@ -4585,7 +4585,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "The Golden Riviera",
-      "price": 29000
+      "price": 28000
     },
     {
       "system": "Pyro",
@@ -4977,16 +4977,6 @@ const pricingData = {
   "Bexalite": [
     {
       "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 31000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 31000
-    },
-    {
-      "system": "Pyro",
       "location": "Patch City - Admin",
       "price": 30000
     },
@@ -5021,8 +5011,18 @@ const pricingData = {
       "price": 29000
     },
     {
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
+      "price": 29000
+    },
+    {
       "system": "Stanton",
       "location": "Orison - TDD",
+      "price": 29000
+    },
+    {
+      "system": "Pyro",
+      "location": "The Golden Riviera",
       "price": 29000
     },
     {
