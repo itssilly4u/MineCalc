@@ -5855,11 +5855,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
       "location": "Everus Harbor - Admin",
       "price": 4100
     },
@@ -5927,6 +5922,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3400
     },
     {
       "system": "Stanton",
@@ -6256,6 +6256,11 @@ const pricingData = {
     },
     {
       "system": "Nyx",
+      "location": "People's Service Station Delta - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Nyx",
       "location": "People's Service Station Theta - Admin",
       "price": 3500
     },
@@ -6331,11 +6336,6 @@ const pricingData = {
     },
     {
       "system": "Nyx",
-      "location": "People's Service Station Delta - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 3100
     },
@@ -6371,6 +6371,11 @@ const pricingData = {
     }
   ],
   "Quartz": [
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 5500
+    },
     {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
@@ -6450,11 +6455,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 4200
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4000
     },
     {
       "system": "Stanton",
