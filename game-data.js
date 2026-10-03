@@ -4253,7 +4253,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
-      "price": 110000
+      "price": 100000
     }
   ],
   "Savrilium": [
@@ -4341,6 +4341,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 67000
+    },
+    {
+      "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 67000
     },
@@ -4350,11 +4355,6 @@ const pricingData = {
       "price": 67000
     },
     {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 66000
-    },
-    {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 66000
@@ -4366,23 +4366,23 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 66000
-    },
-    {
-      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 66000
     },
     {
       "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 59000
+      "location": "New Babbage - TDD",
+      "price": 65000
     },
     {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
-      "price": 51000
+      "price": 59000
+    },
+    {
+      "system": "Stanton",
+      "location": "Green Imperial Housing Exchange - Admin",
+      "price": 59000
     }
   ],
   "Ouratite": [
@@ -4392,6 +4392,11 @@ const pricingData = {
       "price": 46000
     },
     {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 46000
+    },
+    {
       "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 46000
@@ -4399,11 +4404,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
-      "price": 46000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
       "price": 46000
     },
     {
@@ -4417,12 +4417,17 @@ const pricingData = {
       "price": 46000
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 45000
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 44000
     }
   ],
   "Lindinium": [
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 51000
+    },
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
@@ -4432,11 +4437,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 51000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 50000
     },
     {
       "system": "Pyro",
@@ -4461,6 +4461,11 @@ const pricingData = {
       "price": 28000
     },
     {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 28000
+    },
+    {
       "system": "Pyro",
       "location": "Fallow Field",
       "price": 28000
@@ -4478,11 +4483,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 27000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
       "price": 27000
     },
     {
@@ -4640,14 +4640,14 @@ const pricingData = {
       "price": 71000
     },
     {
-      "system": "Stanton",
-      "location": "Seraphim Station - Admin",
-      "price": 64000
-    },
-    {
       "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 64000
+    },
+    {
+      "system": "Stanton",
+      "location": "Seraphim Station - Admin",
+      "price": 63000
     },
     {
       "system": "Pyro",
@@ -4743,11 +4743,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 27000
     },
@@ -4779,6 +4774,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
+      "price": 25000
+    },
+    {
+      "system": "Pyro",
+      "location": "Checkmate Station - Admin",
       "price": 25000
     },
     {
@@ -5168,11 +5168,6 @@ const pricingData = {
   "Titanium": [
     {
       "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 9500
-    },
-    {
-      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 9100
     },
@@ -5252,6 +5247,11 @@ const pricingData = {
       "price": 8300
     },
     {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 7900
+    },
+    {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 7800
@@ -5295,12 +5295,17 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 8800
+      "location": "New Babbage - TDD",
+      "price": 9000
     },
     {
       "system": "Stanton",
-      "location": "Orison - TDD",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 9000
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
       "price": 8800
     },
     {
@@ -5340,22 +5345,17 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
       "location": "HUR-L1 Green Glade Station - Admin",
       "price": 8500
     },
     {
       "system": "Stanton",
       "location": "HUR-L2 Faithful Dream Station - Admin",
+      "price": 8500
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
       "price": 8500
     },
     {
@@ -5662,9 +5662,9 @@ const pricingData = {
       "price": 4600
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4200
+      "system": "Pyro",
+      "location": "Stanton Gateway (Pyro) - Admin",
+      "price": 4400
     },
     {
       "system": "Pyro",
@@ -5689,6 +5689,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "New Babbage - TDD",
+      "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
       "price": 3700
     },
     {
@@ -5720,11 +5725,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison",
       "price": 3700
-    },
-    {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 3600
     },
     {
       "system": "Pyro",
@@ -5907,6 +5907,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4800
     },
@@ -5933,11 +5938,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Checkmate Station - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
       "price": 4600
     },
     {
@@ -5991,9 +5991,9 @@ const pricingData = {
       "price": 4500
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 4500
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 4460
     },
     {
       "system": "Nyx",
@@ -6309,7 +6309,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 5400
+      "price": 4800
     },
     {
       "system": "Stanton",
@@ -6511,6 +6511,11 @@ const pricingData = {
   ],
   "Astatine": [
     {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3700
+    },
+    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
@@ -6579,11 +6584,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Seraphim Station - Admin",
       "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3300
     },
     {
       "system": "Stanton",
