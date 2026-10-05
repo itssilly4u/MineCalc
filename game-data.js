@@ -4982,11 +4982,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 30000
     },
@@ -5023,6 +5018,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
+      "price": 28000
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
       "price": 28000
     },
     {
@@ -5167,11 +5167,6 @@ const pricingData = {
   ],
   "Titanium": [
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9200
-    },
-    {
       "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 8400
@@ -5257,6 +5252,11 @@ const pricingData = {
       "price": 7900
     },
     {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 7700
+    },
+    {
       "system": "Nyx",
       "location": "Levski",
       "price": 7400
@@ -5325,11 +5325,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 8700
     },
@@ -5337,6 +5332,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 8500
     },
     {
       "system": "Stanton",
@@ -5429,11 +5429,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5486,6 +5481,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 10000
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 9800
     },
     {
       "system": "Nyx",
@@ -5937,11 +5937,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Gaslight - Admin",
       "price": 4600
     },
@@ -5969,6 +5964,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 4600
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 4500
     },
     {
       "system": "Stanton",
