@@ -5167,6 +5167,11 @@ const pricingData = {
   ],
   "Titanium": [
     {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 9200
+    },
+    {
       "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 8400
@@ -5250,11 +5255,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
       "price": 7900
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 7800
     },
     {
       "system": "Nyx",
@@ -5429,6 +5429,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 11000
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5440,11 +5445,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
       "price": 10000
     },
     {
