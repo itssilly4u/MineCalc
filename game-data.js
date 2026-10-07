@@ -5167,6 +5167,11 @@ const pricingData = {
   ],
   "Titanium": [
     {
+      "system": "Pyro",
+      "location": "Megumi Refueling - Admin",
+      "price": 10000
+    },
+    {
       "system": "Stanton",
       "location": "ARC-L3 Modern Express Station - Admin",
       "price": 8600
@@ -5250,11 +5255,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 7900
     },
     {
       "system": "Nyx",
@@ -5882,6 +5882,11 @@ const pricingData = {
   "Hephaestanite": [
     {
       "system": "Stanton",
+      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "price": 6000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 5400
     },
@@ -5903,11 +5908,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Orison - TDD",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4800
     },
     {
@@ -5982,12 +5982,12 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "location": "MIC-L4 Red Crossroads Station - Admin",
       "price": 4500
     },
     {
       "system": "Stanton",
-      "location": "MIC-L4 Red Crossroads Station - Admin",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 4500
     },
     {
@@ -6526,11 +6526,6 @@ const pricingData = {
       "price": 3700
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3700
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
@@ -6599,6 +6594,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Seraphim Station - Admin",
       "price": 3400
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 3300
     },
     {
       "system": "Stanton",
