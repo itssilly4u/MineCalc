@@ -4392,11 +4392,6 @@ const pricingData = {
       "price": 46000
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 46000
-    },
-    {
       "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 46000
@@ -4420,6 +4415,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 46000
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 45000
     }
   ],
   "Lindinium": [
@@ -4636,6 +4636,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Fallow Field",
+      "price": 71000
+    },
+    {
+      "system": "Pyro",
       "location": "The Golden Riviera",
       "price": 71000
     },
@@ -4648,11 +4653,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 64000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 59000
     },
     {
       "system": "Stanton",
@@ -5320,11 +5320,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 8700
     },
@@ -5367,6 +5362,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 8500
+    },
+    {
+      "system": "Pyro",
+      "location": "Patch City - Admin",
+      "price": 8200
     },
     {
       "system": "Nyx",
@@ -5422,6 +5422,11 @@ const pricingData = {
     }
   ],
   "Agricium": [
+    {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
+      "price": 12000
+    },
     {
       "system": "Pyro",
       "location": "Rod's Fuel 'N Supplies - Admin",
@@ -5491,11 +5496,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9800
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 9400
     },
     {
       "system": "Pyro",
@@ -5662,11 +5662,6 @@ const pricingData = {
       "price": 4700
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4400
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 4300
@@ -5675,6 +5670,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4200
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4000
     },
     {
       "system": "Stanton",
@@ -6201,6 +6201,11 @@ const pricingData = {
     },
     {
       "system": "Nyx",
+      "location": "People's Service Station Delta - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Nyx",
       "location": "People's Service Station Theta - Admin",
       "price": 3500
     },
@@ -6275,11 +6280,6 @@ const pricingData = {
       "price": 2700
     },
     {
-      "system": "Nyx",
-      "location": "People's Service Station Delta - Admin",
-      "price": 2700
-    },
-    {
       "system": "Stanton",
       "location": "Rappel",
       "price": 1000
@@ -6307,14 +6307,14 @@ const pricingData = {
   ],
   "Quartz": [
     {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 5200
+    },
+    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 5000
     },
     {
       "system": "Stanton",
@@ -6521,14 +6521,14 @@ const pricingData = {
       "price": 3700
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3700
-    },
-    {
       "system": "Pyro",
       "location": "Stanton Gateway (Pyro) - Admin",
       "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3600
     },
     {
       "system": "Stanton",
