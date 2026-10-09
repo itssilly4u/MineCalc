@@ -4162,11 +4162,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 140000
     },
@@ -4223,6 +4218,11 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Ashland",
+      "price": 130000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
       "price": 130000
     },
     {
@@ -4545,7 +4545,12 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
-      "price": 31000
+      "price": 33000
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 32000
     },
     {
       "system": "Stanton",
@@ -4556,11 +4561,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Pyro Gateway (Nyx) - Admin",
       "price": 31000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 30000
     },
     {
       "system": "Stanton",
@@ -4996,6 +4996,11 @@ const pricingData = {
       "price": 29000
     },
     {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 29000
+    },
+    {
       "system": "Pyro",
       "location": "Endgame - Admin",
       "price": 29000
@@ -5009,11 +5014,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5289,24 +5289,24 @@ const pricingData = {
       "price": 9700
     },
     {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 9200
+    },
+    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9200
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "location": "New Babbage - TDD",
       "price": 9100
     },
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 9100
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 9000
     },
     {
       "system": "Stanton",
