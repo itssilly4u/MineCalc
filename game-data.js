@@ -4162,6 +4162,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 140000
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 140000
     },
@@ -4218,11 +4223,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Ashland",
-      "price": 130000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
       "price": 130000
     },
     {
@@ -4544,13 +4544,13 @@ const pricingData = {
   "Gold": [
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 33000
+      "location": "New Babbage - TDD",
+      "price": 32000
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 32000
+      "location": "Area 18 - TDD",
+      "price": 31000
     },
     {
       "system": "Stanton",
@@ -4992,11 +4992,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 29000
-    },
-    {
-      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 29000
     },
@@ -5029,6 +5024,11 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison - TDD",
       "price": 28000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 27000
     },
     {
       "system": "Stanton",
@@ -5800,6 +5800,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3900
+    },
+    {
+      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3700
     },
@@ -5856,11 +5861,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
       "price": 3500
     },
     {
@@ -6517,6 +6517,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "ARC-L1 Wide Forest Station - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
       "location": "Terra Gateway (Stanton) - Admin",
       "price": 3700
     },
@@ -6563,11 +6568,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Lorville - CBD",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
       "price": 3500
     },
     {
