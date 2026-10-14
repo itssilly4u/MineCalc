@@ -4167,11 +4167,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
       "location": "Rayari Kaltag Research Outpost",
       "price": 140000
     },
@@ -4223,6 +4218,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Area 18 - TDD",
+      "price": 130000
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
       "price": 130000
     },
     {
@@ -4398,6 +4398,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 46000
+    },
+    {
+      "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
       "price": 46000
     },
@@ -4410,11 +4415,6 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 46000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 45000
     },
     {
       "system": "Stanton",
@@ -5299,6 +5299,11 @@ const pricingData = {
       "price": 9100
     },
     {
+      "system": "Stanton",
+      "location": "HUR-L2 Faithful Dream Station - Admin",
+      "price": 9100
+    },
+    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 8700
@@ -5341,11 +5346,6 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L2 Faithful Dream Station - Admin",
       "price": 8500
     },
     {
@@ -5561,16 +5561,6 @@ const pricingData = {
   "Aluminium": [
     {
       "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4200
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 3800
     },
@@ -5625,6 +5615,11 @@ const pricingData = {
       "price": 3600
     },
     {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 3600
@@ -5632,6 +5627,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "Everus Harbor - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
       "price": 3500
     },
     {
@@ -5670,16 +5670,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 4200
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4100
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4000
     },
     {
       "system": "Stanton",
@@ -5725,6 +5715,16 @@ const pricingData = {
       "system": "Stanton",
       "location": "Orison",
       "price": 3700
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 3600
     },
     {
       "system": "Pyro",
@@ -6313,6 +6313,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "Pyro Gateway (Stanton) - Admin",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
       "location": "Seraphim Station - Admin",
       "price": 4700
     },
@@ -6385,11 +6390,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 4200
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 4000
     },
     {
       "system": "Stanton",
