@@ -4604,6 +4604,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "The Golden Riviera",
+      "price": 26000
+    },
+    {
+      "system": "Pyro",
       "location": "Sacren's Plot",
       "price": 26000
     },
@@ -4611,11 +4616,6 @@ const pricingData = {
       "system": "Nyx",
       "location": "Levski",
       "price": 26000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 24000
     },
     {
       "system": "Stanton",
@@ -4968,7 +4968,7 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "The Golden Riviera",
-      "price": 32000
+      "price": 31000
     },
     {
       "system": "Pyro",
@@ -5167,9 +5167,9 @@ const pricingData = {
   ],
   "Titanium": [
     {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 8400
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 8500
     },
     {
       "system": "Stanton",
@@ -5242,13 +5242,13 @@ const pricingData = {
       "price": 8300
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L5 Yellow Core Station - Admin",
-      "price": 7800
+      "system": "Pyro",
+      "location": "Starlight Service Station - Admin",
+      "price": 8000
     },
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
+      "location": "ARC-L5 Yellow Core Station - Admin",
       "price": 7800
     },
     {
@@ -5315,6 +5315,11 @@ const pricingData = {
     },
     {
       "system": "Pyro",
+      "location": "Patch City - Admin",
+      "price": 8700
+    },
+    {
+      "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 8700
     },
@@ -5357,11 +5362,6 @@ const pricingData = {
       "system": "Pyro",
       "location": "Orbituary - Admin",
       "price": 8500
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 8200
     },
     {
       "system": "Pyro",
@@ -5429,11 +5429,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
       "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 11000
     },
@@ -5496,6 +5491,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 9800
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 9600
     },
     {
       "system": "Pyro",
@@ -5947,11 +5947,6 @@ const pricingData = {
     },
     {
       "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
       "location": "Dudley & Daughters - Admin",
       "price": 4600
     },
@@ -5964,6 +5959,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 4600
+    },
+    {
+      "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 4500
     },
     {
       "system": "Pyro",
