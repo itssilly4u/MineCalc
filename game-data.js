@@ -4387,11 +4387,6 @@ const pricingData = {
   ],
   "Ouratite": [
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 46000
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 46000
@@ -4408,11 +4403,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 46000
-    },
-    {
-      "system": "Stanton",
       "location": "Orison - TDD",
       "price": 46000
     },
@@ -4420,6 +4410,16 @@ const pricingData = {
       "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 46000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 45000
+    },
+    {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 44000
     }
   ],
   "Lindinium": [
@@ -4583,6 +4583,11 @@ const pricingData = {
       "price": 27000
     },
     {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 27000
+    },
+    {
       "system": "Pyro",
       "location": "Jackson's Swap",
       "price": 26000
@@ -4610,11 +4615,6 @@ const pricingData = {
     {
       "system": "Pyro",
       "location": "Sacren's Plot",
-      "price": 26000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
       "price": 26000
     },
     {
@@ -4997,11 +4997,6 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 29000
-    },
-    {
-      "system": "Stanton",
       "location": "Lorville - CBD",
       "price": 29000
     },
@@ -5014,6 +5009,11 @@ const pricingData = {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
       "price": 29000
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 28000
     },
     {
       "system": "Stanton",
@@ -5167,14 +5167,14 @@ const pricingData = {
   ],
   "Titanium": [
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 9200
-    },
-    {
       "system": "Pyro",
       "location": "Starlight Service Station - Admin",
       "price": 9100
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8300
     },
     {
       "system": "Stanton",
@@ -5247,13 +5247,13 @@ const pricingData = {
       "price": 8300
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8200
-    },
-    {
       "system": "Pyro",
       "location": "Megumi Refueling - Admin",
+      "price": 7700
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
       "price": 7700
     },
     {
@@ -5289,11 +5289,6 @@ const pricingData = {
       "price": 9700
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8900
-    },
-    {
       "system": "Pyro",
       "location": "Ruin Station - Admin",
       "price": 8700
@@ -5322,6 +5317,11 @@ const pricingData = {
       "system": "Pyro",
       "location": "Rat's Nest - Admin",
       "price": 8700
+    },
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 8500
     },
     {
       "system": "Stanton",
@@ -5424,11 +5424,6 @@ const pricingData = {
   "Agricium": [
     {
       "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
       "location": "Area 18 - TDD",
       "price": 10000
     },
@@ -5463,11 +5458,6 @@ const pricingData = {
       "price": 10000
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 10000
-    },
-    {
       "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
       "price": 10000
@@ -5489,8 +5479,18 @@ const pricingData = {
     },
     {
       "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 9800
+    },
+    {
+      "system": "Nyx",
       "location": "People's Service Station Alpha - Admin",
       "price": 9800
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L3 Modern Express Station - Admin",
+      "price": 9600
     },
     {
       "system": "Stanton",
@@ -5585,13 +5585,13 @@ const pricingData = {
       "price": 3800
     },
     {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 3700
-    },
-    {
       "system": "Nyx",
       "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
       "price": 3700
     },
     {
@@ -5877,6 +5877,11 @@ const pricingData = {
     },
     {
       "system": "Stanton",
+      "location": "MIC-L5 Modern Icarus Station - Admin",
+      "price": 5200
+    },
+    {
+      "system": "Stanton",
       "location": "New Babbage - TDD",
       "price": 4900
     },
@@ -5898,6 +5903,11 @@ const pricingData = {
     {
       "system": "Stanton",
       "location": "CRU-L1 Ambitious Dream Station - Admin",
+      "price": 4800
+    },
+    {
+      "system": "Stanton",
+      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4800
     },
     {
@@ -5972,17 +5982,7 @@ const pricingData = {
     },
     {
       "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
       "location": "MIC-L4 Red Crossroads Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
       "price": 4500
     },
     {
@@ -6392,13 +6392,13 @@ const pricingData = {
       "price": 4000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 3700
-    },
-    {
       "system": "Stanton",
       "location": "Green Imperial Housing Exchange - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Nyx",
+      "location": "Levski",
       "price": 3500
     },
     {
