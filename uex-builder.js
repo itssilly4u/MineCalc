@@ -287,7 +287,7 @@ async function buildData() {
         for (const ore of targetOres) {
             try {
                 let apiName = ore;
-                if (ore === "Aluminum") apiName = "Aluminium";
+                if (ore === "Aluminium") apiName = "Aluminum";
                 if (ore === "Ice") apiName = "Pressurized Ice"; 
                 if (ore === "Quantanium") apiName = "Quantainium";
                 const priceData = await fetchData(`/commodities_prices?commodity_name=${encodeURIComponent(apiName)}`);
