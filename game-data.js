@@ -5137,6 +5137,103 @@ const pricingData = {
       "price": 7200
     }
   ],
+  "Aluminium": [
+    {
+      "system": "Stanton",
+      "location": "Area 18 - TDD",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "New Babbage - TDD",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "Lorville - CBD",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "Port Tressler - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "Orison - TDD",
+      "price": 3800
+    },
+    {
+      "system": "Nyx",
+      "location": "Stanton Gateway (Nyx) - Admin",
+      "price": 3800
+    },
+    {
+      "system": "Stanton",
+      "location": "Everus Harbor - Admin",
+      "price": 3700
+    },
+    {
+      "system": "Pyro",
+      "location": "Ruin Station - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Starlight Service Station - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Endgame - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Gaslight - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Rat's Nest - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Pyro",
+      "location": "Orbituary - Admin",
+      "price": 3600
+    },
+    {
+      "system": "Stanton",
+      "location": "Terra Gateway (Stanton) - Admin",
+      "price": 3500
+    },
+    {
+      "system": "Pyro",
+      "location": "Dudley & Daughters - Admin",
+      "price": 3400
+    },
+    {
+      "system": "Nyx",
+      "location": "Levski",
+      "price": 3200
+    },
+    {
+      "system": "Stanton",
+      "location": "Green Imperial Housing Exchange - Admin",
+      "price": 3100
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L4 Shallow Fields Station",
+      "price": 2900
+    },
+    {
+      "system": "Stanton",
+      "location": "CRU-L5 Beautiful Glen Station",
+      "price": 2900
+    }
+  ],
   "Copper": [
     {
       "system": "Pyro",
