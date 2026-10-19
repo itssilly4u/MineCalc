@@ -413,22 +413,29 @@ const CartSystem = {
             let isDisabled = !item.shops || item.shops.length === 0;
 
             if (!isDisabled) {
-                currentPrice = item.shops[shopIdx] ? item.shops[shopIdx].price : 0;
-                let currentLoc = item.shops[shopIdx] ? item.shops[shopIdx].location : "";
-                let currentSys = item.shops[shopIdx] ? item.shops[shopIdx].system : "Unknown";
+                const shopData = item.shops[shopIdx];
+                currentPrice = shopData ? shopData.price : 0;
                 
-                // Using new class logic
+                let currentLoc = "";
+                let currentSys = "";
+                if (shopData) {
+                    const loc = locations[shopData.locIdx];
+                    currentLoc = loc ? loc.location : "";
+                    currentSys = loc ? loc.system : "Unknown";
+                }
+                
                 let sysClass = getSystemClass(currentSys);
                 let formattedSystem = `<span class="${sysClass}" style="font-weight:bold;">[${currentSys}]</span>`;
                 
                 displayHtml = `${currentPrice.toLocaleString()} aUEC - ${formattedSystem} ${escapeHTML(currentLoc)}`;
                 
                 shopOptionsHtml = item.shops.map((shop, idx) => {
-                    let sClass = getSystemClass(shop.system);
-                    let shopSys = `<span class="${sClass}" style="font-weight:bold;">[${shop.system}]</span>`;
+                    const loc = locations[shop.locIdx];
+                    let sClass = getSystemClass(loc ? loc.system : "Unknown");
+                    let shopSys = `<span class="${sClass}" style="font-weight:bold;">[${loc ? loc.system : "Unknown"}]</span>`;
                     
                     return `<div class="cs-option" style="font-size: 0.85em; text-transform: none;" data-val="${idx}" onclick="CartSystem.changeShop(event, '${item.name}', ${idx})">
-                        ${shop.price.toLocaleString()} aUEC - ${shopSys} ${escapeHTML(shop.location)}
+                        ${shop.price.toLocaleString()} aUEC - ${shopSys} ${escapeHTML(loc ? loc.location : "")}
                     </div>`;
                 }).join('');
             }

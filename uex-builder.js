@@ -21,11 +21,8 @@ const targetOres = [
 ];
 
 // --- SECURITY: Input Validation ---
-// Detects malicious patterns and aborts the entire build if found.
 function sanitizeString(str) {
     if (typeof str !== 'string') return str;
-
-    // Look for actual HTML tags (e.g., <script>, <img>, <div>), event handlers, or protocols
     const hasHtmlTags = /<\/?\s*[a-z][^>]*>/gi.test(str);
     const hasEventHandlers = /on\w+\s*=/gi.test(str);
     const hasJavascript = /javascript:/gi.test(str);
@@ -34,14 +31,11 @@ function sanitizeString(str) {
         console.error("\n🚨 SECURITY ALERT: Potential code injection detected in UEX API data!");
         console.error(`Blocked string: "${str}"`);
         console.error("Aborting build to protect the live website.\n");
-        
-        process.exit(1); // This immediately kills the script and fails the GitHub Action
+        process.exit(1);
     }
-
     return str.trim();
 }
 
-// Sanitize an entire object by recursively cleaning all string properties
 function sanitizeObject(obj) {
     if (obj === null || obj === undefined) return obj;
     if (typeof obj === 'string') return sanitizeString(obj);
@@ -57,21 +51,15 @@ function sanitizeObject(obj) {
     return obj;
 }
 
-// Helper to fix UEX naming quirks at the source
 function fixOreName(name) {
     if (!name) return "";
-    let n = name.replace(/\(.*\)/g, '').trim(); // Remove (Raw), (Ore), etc.
-    
+    let n = name.replace(/\(.*\)/g, '').trim(); 
     if (n === "Aluminum") return "Aluminium";
     if (n === "Raw" || n === "Raw Ice" || n === "Pressurized Ice") return "Ice";
-    
-    // Fix the UEX "Quantainium" spelling error
     if (n === "Quantainium") return "Quantanium"; 
-    
     return n;
 }
 
-// Fetch helper
 async function fetchData(endpoint) {
     console.log(`Fetching: ${endpoint}...`);
     const response = await fetch(`${BASE_URL}${endpoint}`, { headers: HEADERS });
@@ -80,7 +68,6 @@ async function fetchData(endpoint) {
     return result.data || result; 
 }
 
-// --- REFINERY PIVOT LOGIC ---
 function processRefinery(rawRefinery) {
     const refineryMap = {};
     rawRefinery.forEach(row => {
@@ -104,7 +91,6 @@ function processRefinery(rawRefinery) {
     return Object.values(refineryMap);
 }
 
-// --- COMMODITY PRICE PROCESSING LOGIC ---
 function processPrices(rawPrices) {
     const priceMap = {};
     rawPrices.forEach(row => {
@@ -128,61 +114,65 @@ function processPrices(rawPrices) {
     });
 
     Object.keys(priceMap).forEach(key => {
-        priceMap[key].sort((a, b) => b.price - a.price); // Sort highest sell price first
+        priceMap[key].sort((a, b) => b.price - a.price);
     });
 
     return priceMap;
 }
 
-// --- NEW: ITEM (LASERS/MODULES/GADGETS) BUY PRICE LOGIC ---
 function processItemPrices(rawPrices) {
     const priceMap = {};
+    const uniqueLocations = [];
+    const locationLookup = {};
+
     rawPrices.forEach(row => {
         if (!row.item_name) return;
 
         let price = row.price_buy || 0;
-        if (price <= 0) return; // Skip if not for sale
+        if (price <= 0) return;
 
         let location = row.city_name || row.space_station_name || row.outpost_name || "Unknown";
         
-        // CLEANUP: Filter out redundant location/system names from the terminal string
         if (row.terminal_name) {
             let parts = row.terminal_name.split(' - ').map(p => p.trim());
-            
             let shopParts = parts.filter(p => {
-                // 1. Exact matches with the location or system
                 if (p === location || p === row.star_system_name) return false;
-                
-                // 2. Lagrange point overlap (e.g. drop "MIC-L1" if location already says "MIC-L1 Shallow Frontier")
                 if (location.includes(p)) return false;
-                
-                // 3. The GrimHEX / Green Imperial quirk
                 if (p === "GrimHEX" && location.includes("Green Imperial")) return false;
-                
                 return true;
             });
-
             if (shopParts.length > 0) {
                 location += ` - ${shopParts.join(' - ')}`;
             }
-            
-            // Optional Polish: Rename long official lore names to what players actually call them
             if (location.includes("Green Imperial Housing Exchange")) {
                 location = location.replace("Green Imperial Housing Exchange", "GrimHEX");
             }
         }
         
         let system = row.star_system_name || "Unknown";
+        const locKey = `${system}|${location}`;
+
+        if (!locationLookup[locKey]) {
+            locationLookup[locKey] = {
+                system: system,
+                location: location,
+                locIdx: uniqueLocations.length
+            };
+            uniqueLocations.push(locationLookup[locKey]);
+        }
 
         if (!priceMap[row.item_name]) priceMap[row.item_name] = [];
-        priceMap[row.item_name].push({ system, location, price });
+        priceMap[row.item_name].push({ 
+            locIdx: locationLookup[locKey].locIdx, 
+            price: price 
+        });
     });
 
     Object.keys(priceMap).forEach(key => {
-        priceMap[key].sort((a, b) => a.price - b.price); // Sort lowest buy price first
+        priceMap[key].sort((a, b) => a.price - b.price);
     });
 
-    return priceMap;
+    return { priceMap, uniqueLocations };
 }
 
 function safeFloat(v, d = 0) { if (!v) return d; let f = parseFloat(v.toString().replace(/[% ,]/g, '')); return isNaN(f) ? d : f; }
@@ -196,13 +186,9 @@ function groupItems(attributesArray) {
     return Object.values(itemsMap);
 }
 
-// --- UPDATED: Alphabetical Sorting in Lasers ---
 function processLasers(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
-    
-    // Alphabetical sort by the Item Name
     grouped.sort((a, b) => a.Item.localeCompare(b.Item));
-
     const lasers = [{ name: "None", slots: 0, powerMin: 0, powerMax: 0, extraction: 0, size: 0, shops: [] }];
     grouped.forEach(l => {
         let pm = l['Mining Laser Power'] || '', pmin = 0, pmax = 0;
@@ -230,13 +216,9 @@ function processLasers(rawAttributes, priceMap) {
     return lasers;
 }
 
-// --- UPDATED: Alphabetical Sorting in Modules ---
 function processModules(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
-
-    // Alphabetical sort by the Item Name
     grouped.sort((a, b) => a.Item.localeCompare(b.Item));
-
     const modules = [{ name: "None", power: 0, extraction: 0, uses: 0, shops: [] }];
     grouped.forEach(m => {
         let u = safeFloat(m.Uses);
@@ -249,7 +231,7 @@ function processModules(rawAttributes, priceMap) {
             resistance: safeFloat(m['Resistance']), 
             instability: safeFloat(m['Laser Instability']), 
             optimalWin: safeFloat(m['Optimal Charge Window Size']), 
-            optCharge: safeFloat(m['Optimal Charge Rate']), 
+            optCharge: safeFloat(m['Optimal Charge Window Rate']), 
             overcharge: safeFloat(m['Catastrophic Charge Rate']), 
             shatter: safeFloat(m['Shatter Damage']),
             shops: priceMap[m.Item] || [] 
@@ -258,13 +240,9 @@ function processModules(rawAttributes, priceMap) {
     return modules;
 }
 
-// --- UPDATED: Alphabetical Sorting in Gadgets ---
 function processGadgets(rawAttributes, priceMap) {
     const grouped = groupItems(rawAttributes);
-
-    // Alphabetical sort by the Item Name
     grouped.sort((a, b) => a.Item.localeCompare(b.Item));
-
     const gadgets = [{ name: "None", shops: [] }];
     grouped.forEach(g => {
         gadgets.push({ 
@@ -283,52 +261,42 @@ function processGadgets(rawAttributes, priceMap) {
     return gadgets;
 }
 
-// --- MAIN SCRIPT ---
 async function buildData() {
     try {
         console.log("Starting UEX Data Build...");
-        
-        // Fetch Attributes
         const rawGadgets = await fetchData(`/items_attributes?id_category=28`);
         const rawLasers = await fetchData(`/items_attributes?id_category=29`);
         const rawModules = await fetchData(`/items_attributes?id_category=30`);
         const rawRefinery = await fetchData('/refineries_yields');
 
-        // NEW: Fetch Prices for Items
         console.log("Fetching Equipment Shop Prices...");
         const rawGadgetPrices = await fetchData(`/items_prices?id_category=28`);
         const rawLaserPrices = await fetchData(`/items_prices?id_category=29`);
         const rawModulePrices = await fetchData(`/items_prices?id_category=30`);
         
-        // Combine and process item prices
         const allItemPrices = [...rawGadgetPrices, ...rawLaserPrices, ...rawModulePrices];
-        const itemPriceMap = processItemPrices(allItemPrices);
+        const { priceMap, uniqueLocations } = processItemPrices(allItemPrices);
 
-        // Fetch Prices for Ores
-        console.log("Fetching Ore Market Prices...");
+        const finalLasers = processLasers(rawLasers, priceMap);
+        const finalModules = processModules(rawModules, priceMap);
+        const finalGadgets = processGadgets(rawGadgets, priceMap);
+        const finalRefinery = processRefinery(rawRefinery);
+
+        // Fetch Ore Prices
         let allPriceData = [];
         for (const ore of targetOres) {
             try {
                 let apiName = ore;
-                if (ore === "Aluminium") apiName = "Aluminum";
+                if (ore === "Aluminum") apiName = "Aluminum";
                 if (ore === "Ice") apiName = "Pressurized Ice"; 
                 if (ore === "Quantanium") apiName = "Quantainium";
-                
                 const priceData = await fetchData(`/commodities_prices?commodity_name=${encodeURIComponent(apiName)}`);
                 if (Array.isArray(priceData)) allPriceData = allPriceData.concat(priceData);
                 await new Promise(res => setTimeout(res, 200));
             } catch (err) { console.warn(`⚠️ Price fetch failed for: ${ore}`); }
         }
-
-        // Pass the itemPriceMap down into your processing logic
-        const finalLasers = processLasers(rawLasers, itemPriceMap);
-        const finalModules = processModules(rawModules, itemPriceMap);
-        const finalGadgets = processGadgets(rawGadgets, itemPriceMap);
-        
-        const finalRefinery = processRefinery(rawRefinery);
         const finalPrices = processPrices(allPriceData);
 
-// SECURITY: Clean the data of HTML tags before saving
         const sanitizedLasers = sanitizeObject(finalLasers);
         const sanitizedModules = sanitizeObject(finalModules);
         const sanitizedGadgets = sanitizeObject(finalGadgets);
@@ -337,6 +305,7 @@ async function buildData() {
 
         const fileContent = `
 // AUTO-GENERATED UEX DATA
+const locations = ${JSON.stringify(uniqueLocations, null, 2)};
 const lasers = ${JSON.stringify(sanitizedLasers, null, 2)};
 const modules = ${JSON.stringify(sanitizedModules, null, 2)};
 const gadgets = ${JSON.stringify(sanitizedGadgets, null, 2)};
