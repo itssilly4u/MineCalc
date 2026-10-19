@@ -49,7 +49,7 @@ function calculate() {
 
         let qualEl = document.getElementById(`qual-num-${opId}`);
         let qualBonus = qualEl ? (parseFloat(qualEl.value) || 0) : 0;
-        let pMod = qualBonus, eMod = qualBonus, opInert = [l.inert || 0];
+        let pMod = qualBonus, eModPos = qualBonus, eModNeg = 0, opInert = [l.inert || 0];
         let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
 
         // Process Modules for this seat
@@ -61,7 +61,7 @@ function calculate() {
             if (!mod || mod.name === "None") return;
             
             pMod += mod.power || 0; 
-            eMod += mod.extraction || 0; 
+            if (mod.extraction) { if (mod.extraction > 0) eModPos += mod.extraction; else eModNeg += Math.abs(mod.extraction); } 
             opInert.push(mod.inert || 0);
             
             if (mod.resistance) fleetRes.push(mod.resistance); 
@@ -98,7 +98,7 @@ function calculate() {
 
         // Update Local HTML Stats
         const extDisplay = document.getElementById(`op-ext-${opId}`);
-        if (extDisplay) extDisplay.innerText = ((l.extraction || 0) * (1 + eMod/100)).toFixed(1);
+        if (extDisplay) { let finalExt = (l.extraction || 0) * (1 + eModPos/100) * (1 - eModNeg/100); extDisplay.innerText = Math.max(0, finalExt).toFixed(1); }
         
         updateStat(`op-inert-${opId}`, calcMulti(opInert), true);
         
