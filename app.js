@@ -166,6 +166,7 @@ function formatStatPreview(item, type) {
         addStat('Extraction', item.extraction, '', false, true);
     } else if (type === 'module') {
         addStat('Uses', item.uses, '', false, true);
+        if (item.duration) addStat('Duration', item.duration, 's', false, true);
         addStat('Power', item.power, '%');
         addStat('Extraction', item.extraction, '%');
     }
@@ -177,6 +178,9 @@ function formatStatPreview(item, type) {
     addStat('Overcharge', item.overcharge, '%', true);
     addStat('Shatter', item.shatter, '%', true);
     addStat('Cluster', item.cluster, '%');
+    if (item.crafted) {
+        html += `<div class="preview-stat-row"><span class="preview-label">Availability</span><span style="color:var(--text-main);">Crafted only</span></div>`;
+    }
     return html;
 }
 
@@ -408,8 +412,9 @@ const CartSystem = {
             const shopIdx = this.selectedShops[item.name] || 0;
             
             let currentPrice = 0;
-            let displayHtml = "Not sold in shops";
-            let shopOptionsHtml = `<div class="cs-option" data-val="0">Not sold in shops</div>`;
+            const noShopLabel = item.crafted ? "Crafted — not sold in shops" : "Not sold in shops";
+            let displayHtml = noShopLabel;
+            let shopOptionsHtml = `<div class="cs-option" data-val="0">${noShopLabel}</div>`;
             let isDisabled = !item.shops || item.shops.length === 0;
 
             if (!isDisabled) {
