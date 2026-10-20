@@ -40,7 +40,9 @@ function computeSeat(card) {
         finalChg: 0,
         finalOver: 0,
         finalShat: 0,
-        finalClust: 0
+        finalClust: 0,
+        finalRes: 0,
+        finalInst: 0
     };
 
     const laserEl = document.getElementById(`cs-laser-${opId}`);
@@ -90,6 +92,10 @@ function computeSeat(card) {
     seat.finalOver = (((1 + (l.overcharge || 0)/100) * (1 + seatOver/100)) - 1) * 100;
     seat.finalShat = (((1 + (l.shatter || 0)/100) * (1 + seatShat/100)) - 1) * 100;
     seat.finalClust = (((1 + (l.cluster || 0)/100) * (1 + seatClust/100)) - 1) * 100;
+
+    // Seat's own Resistance/Instability contribution (laser + its modules), same calcMulti math as the fleet
+    seat.finalRes = calcMulti([l.resistance || 0, ...seat.modules.map(m => m.resistance || 0)]);
+    seat.finalInst = calcMulti([l.instability || 0, ...seat.modules.map(m => m.instability || 0)]);
     return seat;
 }
 
@@ -284,6 +290,8 @@ window.showSeatTip = (opId) => {
     let html = `<h4 class="tooltip-header">Seat Stats</h4>`;
 
     html += row('Power', `${Math.round(s.powerMin)}-${Math.round(s.powerMax)}`, '', false, true);
+    html += row('Resistance', s.finalRes, '%', true);
+    html += row('Instability', s.finalInst, '%', true);
     html += row('Opt. Window', s.finalWin, '%', false);
     html += row('Opt. Charge', s.finalChg, '%', false);
     html += row('Overcharge', s.finalOver, '%', true);
