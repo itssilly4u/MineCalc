@@ -449,7 +449,7 @@ const CartSystem = {
                         <span class="mc-item-name">${item.name}</span>
                         <div>
                             ${qty > 0 ? `<span class="mc-item-qty">x${qty}</span>` : ''}
-                            <button class="mc-pin-btn ${isPinned ? 'active' : ''}" onclick="CartSystem.togglePin('${item.name}')" title="Pin to top">📌</button>
+                            <button class="mc-pin-btn ${isPinned ? 'active' : ''}" onclick="CartSystem.togglePin('${item.name}')" title="Pin to top">${isPinned ? '[PINNED]' : '[PIN]'}</button>
                         </div>
                     </div>
                     

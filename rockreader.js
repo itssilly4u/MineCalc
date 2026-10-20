@@ -264,6 +264,28 @@ function togglePriceRow(cell, oreName, showAll = false, btnEl = null) {
     tr.after(detailRow);
 }
 
+// --- ORE PIN SYSTEM ---
+const OrePinSystem = {
+    pinnedItems: new Set(),
+    storageKey: 'minecalc_pinned_ores',
+    load() {
+        try {
+            const saved = JSON.parse(localStorage.getItem(this.storageKey) || '[]');
+            if (Array.isArray(saved)) this.pinnedItems = new Set(saved);
+        } catch (e) {}
+    },
+    save() { try { localStorage.setItem(this.storageKey, JSON.stringify([...this.pinnedItems])); } catch (e) {} },
+    isPinned(name) { return this.pinnedItems.has(name); },
+    togglePin(name) {
+        if (this.pinnedItems.has(name)) this.pinnedItems.delete(name);
+        else this.pinnedItems.add(name);
+        this.save();
+        if (typeof generateOreTable === 'function') generateOreTable();
+    }
+};
+OrePinSystem.load();
+window.OrePinSystem = OrePinSystem;
+
 // --- TABLE GENERATION ---
 function generateOreTable() {
     const tbody = document.getElementById('ore-table-body');
@@ -282,21 +304,29 @@ function generateOreTable() {
         return `<span class="${cssClass}">${word}</span>`;
     };
 
-    let htmlOres = "";
+    let htmlPinned = "";
+    let htmlUnpinned = "";
     let htmlSpecials = "";
+
+    const pinCellProps = (oreName) => {
+        const pinned = OrePinSystem.isPinned(oreName);
+        return `ore-name-cell pin-clickable${pinned ? ' pinned' : ''}" onclick="OrePinSystem.togglePin('${oreName.replace(/'/g, "\\'")}')" title="${pinned ? 'Click to unpin' : 'Click to pin to top'}"`;
+    };
 
     ores.forEach(ore => {
         const safeName = ore.name.replace(/'/g, "\\'");
         
         if (!ore.rarity) {
-            htmlSpecials += `<tr data-signature="${ore.signature}" data-rarity="Special">
+            const specialRow = `<tr data-signature="${ore.signature}" data-rarity="Special">
                 <td class="sys-unknown" style="font-weight: bold; text-transform: uppercase;">Special</td>
-                <td class="ore-name-cell" style="font-weight: bold;">${ore.name}</td>
+                <td class="${pinCellProps(ore.name)}" style="font-weight: bold;"><div class="name-badge-wrapper">${ore.name}</div></td>
                 <td class="sys-unknown" style="font-weight: bold; font-size: 1.1em;">${ore.signature}</td>
                 <td colspan="4" class="sys-unknown" style="text-align: center;">N/A</td>
                 <td class="sys-unknown" style="text-align: center;">-</td>
                 <td class="sys-unknown" style="font-size: 0.85em;">-</td>
             </tr>`;
+            if (OrePinSystem.isPinned(ore.name)) htmlPinned += specialRow;
+            else htmlSpecials += specialRow;
             return;
         }
 
@@ -327,9 +357,9 @@ function generateOreTable() {
             </td>`;
         }
 
-        htmlOres += `<tr data-signature="${ore.signature}" data-rarity="${ore.rarity}">
+        const oreRow = `<tr data-signature="${ore.signature}" data-rarity="${ore.rarity}">
             <td class="rarity-${ore.rarity.toLowerCase()}">${ore.rarity}</td>
-            <td class="ore-name-cell"><div class="name-badge-wrapper" style="display: flex; align-items: center; gap: 15px;"><div style="font-weight: bold; line-height: 1.2;">${ore.name} ${ore.locationNote ? `<span style="font-size:0.7em; color:var(--accent); display:block; font-weight: normal;">(${ore.locationNote})</span>` : ''}</div></div></td>
+            <td class="${pinCellProps(ore.name)}"><div class="name-badge-wrapper" style="font-weight: bold; line-height: 1.2;">${ore.name} ${ore.locationNote ? `<span style="font-size:0.7em; color:var(--accent); display:block; font-weight: normal;">(${ore.locationNote})</span>` : ''}</div></td>
             <td class="sig-clickable" style="color: var(--accent); font-weight: bold; font-size: 1.1em;" onmouseenter="showSignatureTip(${ore.signature}, '${ore.rarity}')" onmouseleave="hidePreview()" onclick="toggleSignatureRow(this, ${ore.signature}, '${ore.rarity}')">${ore.signature}</td>
             <td onmouseenter="showGadgetTip('${safeName}', '${ore.instability}', '${ore.resistance}', '${ore.density}')" onmouseleave="hidePreview()">${getInstRating(ore.instability)} <span class="sys-unknown" style="font-size: 0.8em;">(${ore.instability})</span></td>
             <td onmouseenter="showGadgetTip('${safeName}', '${ore.instability}', '${ore.resistance}', '${ore.density}')" onmouseleave="hidePreview()">${getResRating(ore.resistance)} <span class="sys-unknown" style="font-size: 0.8em;">(${ore.resistance})</span></td>
@@ -338,9 +368,11 @@ function generateOreTable() {
             ${locCellHtml}
             <td class="sys-unknown" style="font-size: 0.85em;">${subOres}</td>
         </tr>`;
+        if (OrePinSystem.isPinned(ore.name)) htmlPinned += oreRow;
+        else htmlUnpinned += oreRow;
     });
     
-    tbody.innerHTML = htmlOres + htmlSpecials;
+    tbody.innerHTML = htmlPinned + htmlUnpinned + htmlSpecials;
 }
 
 function findOres() {

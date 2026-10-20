@@ -44,8 +44,8 @@ window.syncQuality = function(opId, val, source) {
     if (parsed < -40) parsed = -40;
     if (parsed > 40) parsed = 40;
 
-    // Optional: limit to 2 decimals when syncing back
-    let formatted = parseFloat(parsed.toFixed(2));
+    // Slider always snaps to even steps (-40, -38, ... 0 ... 38, 40)
+    let formatted = (source === 'range') ? Math.round(parsed / 2) * 2 : parseFloat(parsed.toFixed(2));
 
     if (source === 'range') {
         numInput.value = formatted;
@@ -66,16 +66,16 @@ function createOperatorHtml(opId, seatName, laserOptions) {
         <div class="setup-card" id="card-${opId}" data-opid="${opId}">
             <div class="card-header">
                 <h3>${seatName}</h3>
-                <label class="switch"><input type="checkbox" checked onchange="toggleOperator('${opId}', this.checked)"><span class="slider"></span></label>
+                <button type="button" class="status-badge active" id="status-${opId}" onclick="toggleOperator('${opId}')">[ACTIVE]</button>
             </div>
             <div class="form-group"><label>Laser Head</label><div class="custom-select" id="cs-laser-${opId}" data-value="0" onclick="toggleCS(this)"><div class="cs-display">None</div><div class="cs-options">${laserOptions}</div></div></div>
             
             <div class="form-group">
                 <label>Crafting Quality Bonus</label>
                 <div class="quality-slider-container">
-                    <input type="range" id="qual-range-${opId}" class="quality-slider" min="-40" max="40" step="0.01" value="0" oninput="syncQuality('${opId}', this.value, 'range')">
+                    <input type="range" id="qual-range-${opId}" class="quality-slider" min="-40" max="40" step="2" value="0" oninput="syncQuality('${opId}', this.value, 'range')">
                     <div class="quality-input-wrapper">
-                        <input type="number" id="qual-num-${opId}" class="quality-number" min="-40" max="40" step="0.01" value="0" oninput="syncQuality('${opId}', this.value, 'num')" onblur="syncQuality('${opId}', this.value, 'blur')">
+                        <input type="number" id="qual-num-${opId}" class="quality-number" min="-40" max="40" step="2" value="0" oninput="syncQuality('${opId}', this.value, 'num')" onblur="syncQuality('${opId}', this.value, 'blur')">
                         <span class="quality-percent-sign">%</span>
                     </div>
                 </div>
@@ -350,8 +350,8 @@ function applyShipConfig(operatorIds, opConfigs) {
         if (conf.enabled === false) {
             const cardToggle = document.getElementById(`card-${opId}`);
             if (cardToggle) {
-                cardToggle.querySelector('.switch input').checked = false;
                 cardToggle.classList.add('off');
+                setSeatStatus(opId, false);
             }
         }
 
@@ -424,8 +424,21 @@ function selectCSOption(e, el, type) {
     window.updateCartLoadout();
 }
 
+function setSeatStatus(opId, active) {
+    const badge = document.getElementById(`status-${opId}`);
+    if (!badge) return;
+    badge.textContent = active ? '[ACTIVE]' : '[INACTIVE]';
+    badge.classList.toggle('active', active);
+    badge.classList.toggle('inactive', !active);
+}
+
 function toggleOperator(opId, state) { 
-    document.getElementById(`card-${opId}`).classList.toggle('off', !state); 
+    const card = document.getElementById(`card-${opId}`); 
+    if (!card) return;
+    // Toggles when called from a click, sets when called with an explicit state
+    const active = (state === undefined) ? card.classList.contains('off') : state; 
+    card.classList.toggle('off', !active);
+    setSeatStatus(opId, active);
     if (typeof calculate === "function") calculate(); 
     window.updateCartLoadout();
 }

@@ -124,50 +124,34 @@ h3 {
     margin: 0; 
 }
 
-/* Switch UI */
-.switch { 
-    position: relative; 
-    display: inline-block; 
-    width: 44px; 
-    height: 22px; 
-}
-
-.switch input { 
-    opacity: 0; 
-    width: 0; 
-    height: 0; 
-}
-
-.slider { 
-    position: absolute; 
+/* Seat Status Badge UI */
+.status-badge { 
     cursor: pointer; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-color: var(--toggle-bg); 
-    transition: .4s; 
-    border-radius: 22px; 
+    font-family: inherit; 
+    font-size: 0.7em; 
+    font-weight: bold; 
+    letter-spacing: 0.5px; 
+    padding: 2px 8px; 
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+    transition: color .2s, background-color .2s, border-color .2s; 
+    white-space: nowrap; 
 }
 
-.slider:before { 
-    position: absolute; 
-    content: ""; 
-    height: 16px; 
-    width: 16px; 
-    left: 3px; 
-    bottom: 3px; 
-    background-color: var(--text-bright); 
-    transition: .4s; 
-    border-radius: 50%; 
+.status-badge.active { 
+    color: var(--good-stat); 
+    background-color: rgba(74, 222, 128, 0.12); 
+    border-color: var(--good-stat); 
 }
 
-input:checked + .slider { 
-    background-color: var(--good-stat); 
+.status-badge.inactive { 
+    color: var(--bad-stat); 
+    background-color: rgba(248, 113, 113, 0.12); 
+    border-color: var(--bad-stat); 
 }
 
-input:checked + .slider:before { 
-    transform: translateX(22px); 
+.status-badge:hover { 
+    filter: brightness(1.2); 
 }
 
 /* Custom Select UI */
@@ -816,6 +800,45 @@ footer {
 #rock-reader-table td.ore-name-cell {
     width: 205px; 
     min-width: 205px;
+    position: relative;
+}
+
+#rock-reader-table td.pin-clickable {
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+#rock-reader-table td.pin-clickable:hover {
+    background-color: rgba(var(--accent-rgb), 0.10);
+}
+
+#rock-reader-table td.pin-clickable::after {
+    content: '[PIN]';
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+#rock-reader-table td.pin-clickable:hover::after {
+    opacity: 1;
+}
+
+#rock-reader-table td.pin-clickable.pinned::after {
+    content: '[PINNED]';
+    color: var(--accent);
+    opacity: 1;
+}
+
+#rock-reader-table td.pin-clickable.pinned:hover::after {
+    content: '[UNPIN]';
+    color: var(--bad-stat);
 }
 
 #rock-reader-table th:nth-child(n+3),
@@ -1082,17 +1105,24 @@ footer {
     margin-right: 10px; 
 }
 .mc-pin-btn { 
-    background: none; 
-    border: none; 
+    font-family: inherit; 
     cursor: pointer; 
-    opacity: 0.4; 
-    transition: opacity 0.2s; 
-    font-size: 1.1em; 
+    font-size: 0.7em; 
+    font-weight: bold; 
+    letter-spacing: 0.5px; 
+    padding: 2px 8px; 
+    border-radius: 5px; 
+    white-space: nowrap; 
+    color: var(--text-muted); 
+    background-color: rgba(148, 163, 184, 0.10); 
+    border: 1px solid var(--border); 
+    transition: color .2s, background-color .2s, border-color .2s; 
 }
-.mc-pin-btn:hover { opacity: 0.8; }
+.mc-pin-btn:hover { filter: brightness(1.2); }
 .mc-pin-btn.active { 
-    opacity: 1; 
-    text-shadow: 0 0 5px var(--btn-export); 
+    color: var(--btn-export); 
+    background-color: rgba(56, 189, 248, 0.12); 
+    border-color: var(--btn-export); 
 }
 .mc-shop-select {
     width: 100%;
