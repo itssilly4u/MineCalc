@@ -21,6 +21,78 @@ function updateStat(id, val, inv, suf='%') {
     el.style.color = val === 0 ? 'var(--text-main)' : ((val > 0 ? !inv : inv) ? 'var(--good-stat)' : 'var(--bad-stat)');
 }
 
+// --- SEAT COMPUTATION (single source of truth for calculate() and seat tooltips) ---
+function computeSeat(card) {
+    const opId = card.dataset.opid;
+    const seat = {
+        opId,
+        active: !card.classList.contains('off'),
+        laser: null,
+        modules: [],
+        quality: 0,
+        powerMin: 0,
+        powerMax: 0,
+        finalExt: 0,
+        finalInert: 0,
+        optRange: 0,
+        maxRange: 0,
+        finalWin: 0,
+        finalChg: 0,
+        finalOver: 0,
+        finalShat: 0,
+        finalClust: 0
+    };
+
+    const laserEl = document.getElementById(`cs-laser-${opId}`);
+    if (!laserEl) return seat;
+
+    const l = lasers[laserEl.dataset.value];
+    if (!l || l.name === "None") return seat;
+    seat.laser = l;
+
+    const qualEl = document.getElementById(`qual-num-${opId}`);
+    const qualBonus = qualEl ? (parseFloat(qualEl.value) || 0) : 0;
+    seat.quality = qualBonus;
+
+    // Collect Modules for this seat
+    [1,2,3].forEach(m => {
+        const modEl = document.getElementById(`cs-mod${m}-${opId}`);
+        if (!modEl) return;
+
+        const mod = modules[modEl.dataset.value];
+        if (!mod || mod.name === "None") return;
+        seat.modules.push(mod);
+    });
+
+    let pMod = qualBonus, eModPos = qualBonus, eModNeg = 0;
+    const opInert = [l.inert || 0];
+    let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
+
+    seat.modules.forEach(mod => {
+        pMod += mod.power || 0;
+        if (mod.extraction) { if (mod.extraction > 0) eModPos += mod.extraction; else eModNeg += Math.abs(mod.extraction); }
+        opInert.push(mod.inert || 0);
+        if (mod.optimalWin) seatWin += mod.optimalWin;
+        if (mod.optCharge) seatChg += mod.optCharge;
+        if (mod.overcharge) seatOver += mod.overcharge;
+        if (mod.shatter) seatShat += mod.shatter;
+        if (mod.cluster) seatClust += mod.cluster;
+    });
+
+    seat.powerMin = (l.powerMin || 0) * (1 + pMod/100);
+    seat.powerMax = (l.powerMax || 0) * (1 + pMod/100);
+    seat.finalExt = Math.max(0, (l.extraction || 0) * (1 + eModPos/100) * (1 - eModNeg/100));
+    seat.finalInert = calcMulti(opInert);
+    seat.optRange = l.optRange || 0;
+    seat.maxRange = l.maxRange || 0;
+    seat.finalWin = (((1 + (l.optimalWin || 0)/100) * (1 + seatWin/100)) - 1) * 100;
+    seat.finalChg = (((1 + (l.optCharge || 0)/100) * (1 + seatChg/100)) - 1) * 100;
+    seat.finalOver = (((1 + (l.overcharge || 0)/100) * (1 + seatOver/100)) - 1) * 100;
+    seat.finalShat = (((1 + (l.shatter || 0)/100) * (1 + seatShat/100)) - 1) * 100;
+    seat.finalClust = (((1 + (l.cluster || 0)/100) * (1 + seatClust/100)) - 1) * 100;
+    return seat;
+}
+
 // --- MAIN CALCULATOR ---
 function calculate() {
     let tMax = 0, tMin = 0;
@@ -30,83 +102,52 @@ function calculate() {
 
     // 1. Process Ships & Lasers
     document.querySelectorAll('.setup-card').forEach(card => {
-        let opId = card.dataset.opid;
-        
-        // If operator is toggled off, reset local stats and skip
-        if (card.classList.contains('off')) {
+        let s = computeSeat(card);
+        let opId = s.opId;
+
+        // No laser equipped — nothing to show, reset local stats and skip
+        if (!s.laser) {
             let extEl = document.getElementById(`op-ext-${opId}`);
             let inertEl = document.getElementById(`op-inert-${opId}`);
+            let optEl = document.getElementById(`op-optrange-${opId}`);
+            let maxEl = document.getElementById(`op-maxrange-${opId}`);
             if (extEl) extEl.innerText = '0.0';
             if (inertEl) inertEl.innerText = '0%';
+            if (optEl) optEl.innerText = '0m';
+            if (maxEl) maxEl.innerText = '0m';
             return;
         }
 
-        let laserEl = document.getElementById(`cs-laser-${opId}`);
-        if (!laserEl) return;
-        
-        let l = lasers[laserEl.dataset.value];
-        if (!l || l.name === "None") return;
+        // Add to Fleet Totals — only if this seat is active
+        if (s.active) {
+            tMax += s.powerMax;
+            tMin += s.powerMin;
 
-        let qualEl = document.getElementById(`qual-num-${opId}`);
-        let qualBonus = qualEl ? (parseFloat(qualEl.value) || 0) : 0;
-        let pMod = qualBonus, eModPos = qualBonus, eModNeg = 0, opInert = [l.inert || 0];
-        let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
+            if (s.laser.resistance) fleetRes.push(s.laser.resistance); 
+            if (s.laser.instability) fleetInst.push(s.laser.instability);
+            s.modules.forEach(mod => {
+                if (mod.resistance) fleetRes.push(mod.resistance); 
+                if (mod.instability) fleetInst.push(mod.instability);
+            });
 
-        // Process Modules for this seat
-        [1,2,3].forEach(m => {
-            let modEl = document.getElementById(`cs-mod${m}-${opId}`);
-            if (!modEl) return;
-            
-            let mod = modules[modEl.dataset.value];
-            if (!mod || mod.name === "None") return;
-            
-            pMod += mod.power || 0; 
-            if (mod.extraction) { if (mod.extraction > 0) eModPos += mod.extraction; else eModNeg += Math.abs(mod.extraction); } 
-            opInert.push(mod.inert || 0);
-            
-            if (mod.resistance) fleetRes.push(mod.resistance); 
-            if (mod.instability) fleetInst.push(mod.instability);
-            
-            if (mod.optimalWin) seatWin += mod.optimalWin; 
-            if (mod.optCharge) seatChg += mod.optCharge;
-            if (mod.overcharge) seatOver += mod.overcharge; 
-            if (mod.shatter) seatShat += mod.shatter;
-            if (mod.cluster) seatClust += mod.cluster;
-        });
+            if (s.finalWin !== 0) win.push(s.finalWin);
+            if (s.finalChg !== 0) chg.push(s.finalChg);
+            if (s.finalOver !== 0) over.push(s.finalOver);
+            if (s.finalShat !== 0) shat.push(s.finalShat);
+            if (s.finalClust !== 0) clust.push(s.finalClust);
+        }
 
-        // Add to Fleet Totals
-        tMax += (l.powerMax || 0) * (1 + pMod/100); 
-        tMin += (l.powerMin || 0) * (1 + pMod/100);
-        
-        if (l.resistance) fleetRes.push(l.resistance); 
-        if (l.instability) fleetInst.push(l.instability);
-
-        let finalSeatWin = ((1 + (l.optimalWin || 0)/100) * (1 + seatWin/100)) - 1;
-        if (finalSeatWin !== 0) win.push(finalSeatWin * 100);
-        
-        let finalSeatChg = ((1 + (l.optCharge || 0)/100) * (1 + seatChg/100)) - 1;
-        if (finalSeatChg !== 0) chg.push(finalSeatChg * 100);
-        
-        let finalSeatOver = ((1 + (l.overcharge || 0)/100) * (1 + seatOver/100)) - 1;
-        if (finalSeatOver !== 0) over.push(finalSeatOver * 100);
-        
-        let finalSeatShat = ((1 + (l.shatter || 0)/100) * (1 + seatShat/100)) - 1;
-        if (finalSeatShat !== 0) shat.push(finalSeatShat * 100);
-
-        let finalSeatClust = ((1 + (l.cluster || 0)/100) * (1 + seatClust/100)) - 1;
-        if (finalSeatClust !== 0) clust.push(finalSeatClust * 100);
-
-        // Update Local HTML Stats
+        // Update Local HTML Stats — always shown, even when the seat is toggled off
         const extDisplay = document.getElementById(`op-ext-${opId}`);
-        if (extDisplay) { let finalExt = (l.extraction || 0) * (1 + eModPos/100) * (1 - eModNeg/100); extDisplay.innerText = Math.max(0, finalExt).toFixed(1); }
+        if (extDisplay) extDisplay.innerText = s.finalExt.toFixed(1);
         
-        updateStat(`op-inert-${opId}`, calcMulti(opInert), true);
+        updateStat(`op-inert-${opId}`, s.finalInert, true);
         
         const optRangeDisplay = document.getElementById(`op-optrange-${opId}`);
-        if (optRangeDisplay) optRangeDisplay.innerText = (l.optRange || 0) + 'm';
+        if (optRangeDisplay) optRangeDisplay.innerText = s.optRange + 'm';
         
         const maxRangeDisplay = document.getElementById(`op-maxrange-${opId}`);
-        if (maxRangeDisplay) maxRangeDisplay.innerText = (l.maxRange || 0) + 'm';
+        if (maxRangeDisplay) maxRangeDisplay.innerText = s.maxRange + 'm';
     });
 
     // 2. Process Gadgets
@@ -225,6 +266,33 @@ function calculate() {
         }
     }
 }
+
+// --- SEAT TOOLTIP (hover on the per-seat stat row) ---
+window.showSeatTip = (opId) => {
+    const card = document.querySelector(`.setup-card[data-opid="${opId}"]`);
+    if (!card) return;
+    const s = computeSeat(card);
+
+    const row = (label, value, suffix = '', inv = false, base = false) => {
+        let d;
+        if (typeof value === 'number') d = parseFloat(value).toFixed(1).replace(/\.0$/, '');
+        else d = value;
+        if (!base && typeof value === 'number' && value > 0) d = '+' + d;
+        const c = (typeof value === 'number' && value !== 0 && !base) ? ((value > 0 ? !inv : inv) ? 'style="color:var(--good-stat);"' : 'style="color:var(--bad-stat);"') : '';
+        return `<div class="preview-stat-row"><span class="preview-label">${label}</span><span ${c}>${d}${suffix}</span></div>`;
+    };
+    let html = `<h4 class="tooltip-header">Seat Stats</h4>`;
+
+    html += row('Power', `${Math.round(s.powerMin)}-${Math.round(s.powerMax)}`, '', false, true);
+    html += row('Opt. Window', s.finalWin, '%', false);
+    html += row('Opt. Charge', s.finalChg, '%', false);
+    html += row('Overcharge', s.finalOver, '%', true);
+    html += row('Shatter', s.finalShat, '%', true);
+    html += row('Cluster', s.finalClust, '%', false);
+
+    window.tooltipEl.innerHTML = html;
+    window.tooltipEl.style.display = 'block';
+};
 
 // Make globally available if called by HTML
 window.calculate = calculate;

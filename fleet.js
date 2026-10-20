@@ -82,7 +82,7 @@ function createOperatorHtml(opId, seatName, laserOptions) {
             </div>
 
             ${[1,2,3].map(m => `<div class="form-group"><label>Module ${m}</label><div class="custom-select disabled" id="cs-mod${m}-${opId}" data-value="0" onclick="toggleCS(this)"><div class="cs-display">None</div><div class="cs-options">${modOptionsHtml}</div></div></div>`).join('')}
-            <div class="operator-results">
+            <div class="operator-results" onmouseenter="showSeatTip('${opId}')" onmouseleave="hidePreview()">
                 <div class="local-stat"><span class="label">Local Ext.</span><span class="value" id="op-ext-${opId}">0.0</span></div>
                 <div class="local-stat"><span class="label">Local Inert</span><span class="value" id="op-inert-${opId}">0%</span></div>
                 <div class="local-stat"><span class="label">Opt. Range</span><span class="value" id="op-optrange-${opId}">0m</span></div>

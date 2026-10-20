@@ -408,6 +408,7 @@ h3 {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     gap: 15px 10px; 
+    cursor: help; 
 }
 
 .local-stat { 
