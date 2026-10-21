@@ -4243,7 +4243,7 @@ const pricingData = {
   "Riccite": [
     {
       "locIdx": 0,
-      "price": 77000
+      "price": 76000
     },
     {
       "locIdx": 15,
@@ -4317,7 +4317,7 @@ const pricingData = {
   "Ouratite": [
     {
       "locIdx": 0,
-      "price": 44000
+      "price": 45000
     },
     {
       "locIdx": 38,
@@ -4557,7 +4557,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 63000
+      "price": 64000
     }
   ],
   "Borase": [
@@ -4815,7 +4815,7 @@ const pricingData = {
     },
     {
       "locIdx": 41,
-      "price": 34000
+      "price": 32000
     },
     {
       "locIdx": 49,
@@ -5099,7 +5099,7 @@ const pricingData = {
     },
     {
       "locIdx": 80,
-      "price": 10000
+      "price": 8500
     },
     {
       "locIdx": 82,
@@ -5329,7 +5329,7 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 4400
+      "price": 3500
     },
     {
       "locIdx": 113,
@@ -5481,7 +5481,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5717,7 +5717,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5000
+      "price": 6200
     },
     {
       "locIdx": 75,
@@ -5811,7 +5811,7 @@ const pricingData = {
     },
     {
       "locIdx": 78,
-      "price": 3200
+      "price": 3000
     },
     {
       "locIdx": 87,
@@ -5959,7 +5959,7 @@ const pricingData = {
     },
     {
       "locIdx": 35,
-      "price": 2900
+      "price": 2800
     },
     {
       "locIdx": 36,
@@ -6089,7 +6089,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 3300
+      "price": 3400
     },
     {
       "locIdx": 113,
