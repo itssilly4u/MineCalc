@@ -255,7 +255,7 @@ const CartSystem = {
         this.masterItemList = [...lasers, ...modules, ...gadgets].filter(i => i.name !== "None");
         this.masterItemList.forEach(item => {
             if (item.shops && item.shops.length > 0) {
-                this.selectedShops[item.name] = 0; 
+                this.selectedShops[item.name] = this._cheapestShopIndex(item);
             }
         });
         this.loadCartState();
@@ -361,6 +361,15 @@ const CartSystem = {
         hidePreview(); 
     },
 
+    _cheapestShopIndex(item) {
+        if (!item.shops || item.shops.length === 0) return 0;
+        let minIdx = 0;
+        for (let i = 1; i < item.shops.length; i++) {
+            if (item.shops[i].price < item.shops[minIdx].price) minIdx = i;
+        }
+        return minIdx;
+    },
+
     updateEquipped(equippedItemNamesArray) {
         this.equippedCounts = {};
         const safeEquipped = equippedItemNamesArray.map(name => name ? name.toUpperCase().trim() : "");
@@ -409,7 +418,7 @@ const CartSystem = {
         displayItems.forEach(item => {
             const qty = this.equippedCounts[item.name] || 0;
             const isPinned = this.pinnedItems.has(item.name);
-            const shopIdx = this.selectedShops[item.name] || 0;
+            const shopIdx = this.selectedShops[item.name] ?? this._cheapestShopIndex(item);
             
             let currentPrice = 0;
             const noShopLabel = item.crafted ? "Crafted — not sold in shops" : "Not sold in shops";

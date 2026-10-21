@@ -304,14 +304,14 @@ async function buildData() {
 
         // Both processors have now registered every location. Finalize the shared
         // registry (alphabetical: system, then location) and resolve each price
-        // list to its stable locIdx. Equipment stays price-ascending (cheapest is
-        // the default shop + preserves saved selection indices); ores are ordered
-        // by locIdx so the list order is stable and diffs stay clean.
+        // list to its stable locIdx. Both ores and equipment are sorted by locIdx
+        // (alphabetical) so that a price-only change keeps the list order byte-
+        // identical and GitHub diffs stay clean.
         const { locations: finalLocations, keyToIdx } = finalizeLocations();
         for (const item of Object.keys(priceMap)) {
             priceMap[item] = priceMap[item]
                 .map(x => ({ locIdx: keyToIdx.get(x.locKey), price: x.price }))
-                .sort((a, b) => a.price - b.price);
+                .sort((a, b) => a.locIdx - b.locIdx);
         }
         for (const ore of Object.keys(finalPrices)) {
             finalPrices[ore] = finalPrices[ore]
