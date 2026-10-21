@@ -609,19 +609,11 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 10795
-      },
-      {
         "locIdx": 61,
         "price": 11363
       },
       {
-        "locIdx": 96,
-        "price": 11363
-      },
-      {
-        "locIdx": 90,
+        "locIdx": 66,
         "price": 11363
       },
       {
@@ -629,7 +621,15 @@ const lasers = [
         "price": 11363
       },
       {
-        "locIdx": 66,
+        "locIdx": 88,
+        "price": 10795
+      },
+      {
+        "locIdx": 90,
+        "price": 11363
+      },
+      {
+        "locIdx": 96,
         "price": 11363
       }
     ]
@@ -652,23 +652,23 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 20378
-      },
-      {
-        "locIdx": 96,
-        "price": 21450
-      },
-      {
         "locIdx": 57,
         "price": 21450
+      },
+      {
+        "locIdx": 76,
+        "price": 21450
+      },
+      {
+        "locIdx": 88,
+        "price": 20378
       },
       {
         "locIdx": 95,
         "price": 21450
       },
       {
-        "locIdx": 76,
+        "locIdx": 96,
         "price": 21450
       }
     ]
@@ -691,24 +691,72 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 4893
+        "locIdx": 1,
+        "price": 5150
       },
       {
-        "locIdx": 104,
-        "price": 4893
+        "locIdx": 12,
+        "price": 5150
+      },
+      {
+        "locIdx": 14,
+        "price": 5150
+      },
+      {
+        "locIdx": 22,
+        "price": 5150
+      },
+      {
+        "locIdx": 31,
+        "price": 5150
+      },
+      {
+        "locIdx": 33,
+        "price": 5150
+      },
+      {
+        "locIdx": 39,
+        "price": 5150
+      },
+      {
+        "locIdx": 46,
+        "price": 5150
+      },
+      {
+        "locIdx": 52,
+        "price": 5150
+      },
+      {
+        "locIdx": 54,
+        "price": 5150
+      },
+      {
+        "locIdx": 57,
+        "price": 5150
       },
       {
         "locIdx": 61,
         "price": 5150
       },
       {
-        "locIdx": 96,
+        "locIdx": 66,
         "price": 5150
       },
       {
         "locIdx": 76,
         "price": 5150
+      },
+      {
+        "locIdx": 81,
+        "price": 5150
+      },
+      {
+        "locIdx": 83,
+        "price": 5150
+      },
+      {
+        "locIdx": 88,
+        "price": 4893
       },
       {
         "locIdx": 90,
@@ -723,31 +771,7 @@ const lasers = [
         "price": 5150
       },
       {
-        "locIdx": 54,
-        "price": 5150
-      },
-      {
-        "locIdx": 66,
-        "price": 5150
-      },
-      {
-        "locIdx": 52,
-        "price": 5150
-      },
-      {
-        "locIdx": 83,
-        "price": 5150
-      },
-      {
-        "locIdx": 33,
-        "price": 5150
-      },
-      {
-        "locIdx": 22,
-        "price": 5150
-      },
-      {
-        "locIdx": 81,
+        "locIdx": 96,
         "price": 5150
       },
       {
@@ -755,35 +779,11 @@ const lasers = [
         "price": 5150
       },
       {
-        "locIdx": 57,
-        "price": 5150
+        "locIdx": 104,
+        "price": 4893
       },
       {
         "locIdx": 114,
-        "price": 5150
-      },
-      {
-        "locIdx": 46,
-        "price": 5150
-      },
-      {
-        "locIdx": 1,
-        "price": 5150
-      },
-      {
-        "locIdx": 14,
-        "price": 5150
-      },
-      {
-        "locIdx": 12,
-        "price": 5150
-      },
-      {
-        "locIdx": 31,
-        "price": 5150
-      },
-      {
-        "locIdx": 39,
         "price": 5150
       }
     ]
@@ -806,51 +806,7 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 55100
-      },
-      {
-        "locIdx": 104,
-        "price": 55100
-      },
-      {
-        "locIdx": 61,
-        "price": 58000
-      },
-      {
-        "locIdx": 96,
-        "price": 58000
-      },
-      {
-        "locIdx": 54,
-        "price": 58000
-      },
-      {
-        "locIdx": 91,
-        "price": 58000
-      },
-      {
-        "locIdx": 90,
-        "price": 58000
-      },
-      {
-        "locIdx": 114,
-        "price": 58000
-      },
-      {
-        "locIdx": 83,
-        "price": 58000
-      },
-      {
-        "locIdx": 76,
-        "price": 58000
-      },
-      {
-        "locIdx": 99,
-        "price": 58000
-      },
-      {
-        "locIdx": 66,
+        "locIdx": 12,
         "price": 58000
       },
       {
@@ -858,7 +814,51 @@ const lasers = [
         "price": 58000
       },
       {
-        "locIdx": 12,
+        "locIdx": 54,
+        "price": 58000
+      },
+      {
+        "locIdx": 61,
+        "price": 58000
+      },
+      {
+        "locIdx": 66,
+        "price": 58000
+      },
+      {
+        "locIdx": 76,
+        "price": 58000
+      },
+      {
+        "locIdx": 83,
+        "price": 58000
+      },
+      {
+        "locIdx": 88,
+        "price": 55100
+      },
+      {
+        "locIdx": 90,
+        "price": 58000
+      },
+      {
+        "locIdx": 91,
+        "price": 58000
+      },
+      {
+        "locIdx": 96,
+        "price": 58000
+      },
+      {
+        "locIdx": 99,
+        "price": 58000
+      },
+      {
+        "locIdx": 104,
+        "price": 55100
+      },
+      {
+        "locIdx": 114,
         "price": 58000
       }
     ]
@@ -881,46 +881,6 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 102600
-      },
-      {
-        "locIdx": 61,
-        "price": 108000
-      },
-      {
-        "locIdx": 96,
-        "price": 108000
-      },
-      {
-        "locIdx": 91,
-        "price": 108000
-      },
-      {
-        "locIdx": 90,
-        "price": 108000
-      },
-      {
-        "locIdx": 95,
-        "price": 108000
-      },
-      {
-        "locIdx": 81,
-        "price": 108000
-      },
-      {
-        "locIdx": 66,
-        "price": 108000
-      },
-      {
-        "locIdx": 46,
-        "price": 108000
-      },
-      {
-        "locIdx": 33,
-        "price": 108000
-      },
-      {
         "locIdx": 1,
         "price": 108000
       },
@@ -930,6 +890,46 @@ const lasers = [
       },
       {
         "locIdx": 31,
+        "price": 108000
+      },
+      {
+        "locIdx": 33,
+        "price": 108000
+      },
+      {
+        "locIdx": 46,
+        "price": 108000
+      },
+      {
+        "locIdx": 61,
+        "price": 108000
+      },
+      {
+        "locIdx": 66,
+        "price": 108000
+      },
+      {
+        "locIdx": 81,
+        "price": 108000
+      },
+      {
+        "locIdx": 88,
+        "price": 102600
+      },
+      {
+        "locIdx": 90,
+        "price": 108000
+      },
+      {
+        "locIdx": 91,
+        "price": 108000
+      },
+      {
+        "locIdx": 95,
+        "price": 108000
+      },
+      {
+        "locIdx": 96,
         "price": 108000
       }
     ]
@@ -952,30 +952,6 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 12113
-      },
-      {
-        "locIdx": 61,
-        "price": 12750
-      },
-      {
-        "locIdx": 96,
-        "price": 12750
-      },
-      {
-        "locIdx": 95,
-        "price": 12750
-      },
-      {
-        "locIdx": 81,
-        "price": 12750
-      },
-      {
-        "locIdx": 22,
-        "price": 12750
-      },
-      {
         "locIdx": 1,
         "price": 12750
       },
@@ -984,7 +960,31 @@ const lasers = [
         "price": 12750
       },
       {
+        "locIdx": 22,
+        "price": 12750
+      },
+      {
+        "locIdx": 61,
+        "price": 12750
+      },
+      {
         "locIdx": 66,
+        "price": 12750
+      },
+      {
+        "locIdx": 81,
+        "price": 12750
+      },
+      {
+        "locIdx": 88,
+        "price": 12113
+      },
+      {
+        "locIdx": 95,
+        "price": 12750
+      },
+      {
+        "locIdx": 96,
         "price": 12750
       }
     ]
@@ -1007,15 +1007,11 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 21613
+        "locIdx": 12,
+        "price": 22750
       },
       {
-        "locIdx": 104,
-        "price": 21613
-      },
-      {
-        "locIdx": 96,
+        "locIdx": 39,
         "price": 22750
       },
       {
@@ -1031,15 +1027,7 @@ const lasers = [
         "price": 22750
       },
       {
-        "locIdx": 91,
-        "price": 22750
-      },
-      {
-        "locIdx": 90,
-        "price": 22750
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 76,
         "price": 22750
       },
       {
@@ -1047,7 +1035,19 @@ const lasers = [
         "price": 22750
       },
       {
-        "locIdx": 76,
+        "locIdx": 88,
+        "price": 21613
+      },
+      {
+        "locIdx": 90,
+        "price": 22750
+      },
+      {
+        "locIdx": 91,
+        "price": 22750
+      },
+      {
+        "locIdx": 96,
         "price": 22750
       },
       {
@@ -1055,11 +1055,11 @@ const lasers = [
         "price": 22750
       },
       {
-        "locIdx": 39,
-        "price": 22750
+        "locIdx": 104,
+        "price": 21613
       },
       {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 22750
       }
     ]
@@ -1082,15 +1082,7 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 54863
-      },
-      {
-        "locIdx": 61,
-        "price": 57750
-      },
-      {
-        "locIdx": 96,
+        "locIdx": 39,
         "price": 57750
       },
       {
@@ -1098,7 +1090,7 @@ const lasers = [
         "price": 57750
       },
       {
-        "locIdx": 95,
+        "locIdx": 61,
         "price": 57750
       },
       {
@@ -1106,7 +1098,15 @@ const lasers = [
         "price": 57750
       },
       {
-        "locIdx": 39,
+        "locIdx": 88,
+        "price": 54863
+      },
+      {
+        "locIdx": 95,
+        "price": 57750
+      },
+      {
+        "locIdx": 96,
         "price": 57750
       }
     ]
@@ -1129,19 +1129,19 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 54863
-      },
-      {
-        "locIdx": 104,
-        "price": 54863
-      },
-      {
-        "locIdx": 61,
+        "locIdx": 1,
         "price": 57750
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 57750
+      },
+      {
+        "locIdx": 14,
+        "price": 57750
+      },
+      {
+        "locIdx": 22,
         "price": 57750
       },
       {
@@ -1153,7 +1153,11 @@ const lasers = [
         "price": 57750
       },
       {
-        "locIdx": 114,
+        "locIdx": 61,
+        "price": 57750
+      },
+      {
+        "locIdx": 66,
         "price": 57750
       },
       {
@@ -1165,27 +1169,23 @@ const lasers = [
         "price": 57750
       },
       {
+        "locIdx": 88,
+        "price": 54863
+      },
+      {
+        "locIdx": 96,
+        "price": 57750
+      },
+      {
         "locIdx": 99,
         "price": 57750
       },
       {
-        "locIdx": 66,
-        "price": 57750
+        "locIdx": 104,
+        "price": 54863
       },
       {
-        "locIdx": 22,
-        "price": 57750
-      },
-      {
-        "locIdx": 1,
-        "price": 57750
-      },
-      {
-        "locIdx": 14,
-        "price": 57750
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 57750
       }
     ]
@@ -1208,11 +1208,11 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 96,
+        "locIdx": 1,
         "price": 10150
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 10150
       }
     ]
@@ -1235,11 +1235,11 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 96,
+        "locIdx": 1,
         "price": 20150
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 20150
       }
     ]
@@ -1262,15 +1262,23 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 22325
+        "locIdx": 12,
+        "price": 23500
       },
       {
-        "locIdx": 104,
-        "price": 22325
+        "locIdx": 31,
+        "price": 23500
       },
       {
-        "locIdx": 96,
+        "locIdx": 33,
+        "price": 23500
+      },
+      {
+        "locIdx": 39,
+        "price": 23500
+      },
+      {
+        "locIdx": 46,
         "price": 23500
       },
       {
@@ -1286,15 +1294,7 @@ const lasers = [
         "price": 23500
       },
       {
-        "locIdx": 91,
-        "price": 23500
-      },
-      {
-        "locIdx": 90,
-        "price": 23500
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 23500
       },
       {
@@ -1302,31 +1302,31 @@ const lasers = [
         "price": 23500
       },
       {
+        "locIdx": 88,
+        "price": 22325
+      },
+      {
+        "locIdx": 90,
+        "price": 23500
+      },
+      {
+        "locIdx": 91,
+        "price": 23500
+      },
+      {
+        "locIdx": 96,
+        "price": 23500
+      },
+      {
         "locIdx": 99,
         "price": 23500
       },
       {
-        "locIdx": 66,
-        "price": 23500
+        "locIdx": 104,
+        "price": 22325
       },
       {
-        "locIdx": 33,
-        "price": 23500
-      },
-      {
-        "locIdx": 46,
-        "price": 23500
-      },
-      {
-        "locIdx": 12,
-        "price": 23500
-      },
-      {
-        "locIdx": 31,
-        "price": 23500
-      },
-      {
-        "locIdx": 39,
+        "locIdx": 114,
         "price": 23500
       }
     ]
@@ -1349,31 +1349,15 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 89300
-      },
-      {
-        "locIdx": 61,
+        "locIdx": 1,
         "price": 94000
       },
       {
-        "locIdx": 96,
+        "locIdx": 14,
         "price": 94000
       },
       {
-        "locIdx": 90,
-        "price": 94000
-      },
-      {
-        "locIdx": 95,
-        "price": 94000
-      },
-      {
-        "locIdx": 81,
-        "price": 94000
-      },
-      {
-        "locIdx": 76,
+        "locIdx": 31,
         "price": 94000
       },
       {
@@ -1385,15 +1369,31 @@ const lasers = [
         "price": 94000
       },
       {
-        "locIdx": 1,
+        "locIdx": 61,
         "price": 94000
       },
       {
-        "locIdx": 14,
+        "locIdx": 76,
         "price": 94000
       },
       {
-        "locIdx": 31,
+        "locIdx": 81,
+        "price": 94000
+      },
+      {
+        "locIdx": 88,
+        "price": 89300
+      },
+      {
+        "locIdx": 90,
+        "price": 94000
+      },
+      {
+        "locIdx": 95,
+        "price": 94000
+      },
+      {
+        "locIdx": 96,
         "price": 94000
       }
     ]
@@ -1461,15 +1461,27 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 8075
+        "locIdx": 1,
+        "price": 8500
       },
       {
-        "locIdx": 104,
-        "price": 8075
+        "locIdx": 12,
+        "price": 8500
       },
       {
-        "locIdx": 61,
+        "locIdx": 14,
+        "price": 8500
+      },
+      {
+        "locIdx": 22,
+        "price": 8500
+      },
+      {
+        "locIdx": 31,
+        "price": 8500
+      },
+      {
+        "locIdx": 33,
         "price": 8500
       },
       {
@@ -1477,12 +1489,44 @@ const lasers = [
         "price": 8500
       },
       {
-        "locIdx": 96,
+        "locIdx": 46,
+        "price": 8500
+      },
+      {
+        "locIdx": 52,
+        "price": 8500
+      },
+      {
+        "locIdx": 54,
+        "price": 8500
+      },
+      {
+        "locIdx": 57,
+        "price": 8500
+      },
+      {
+        "locIdx": 61,
+        "price": 8500
+      },
+      {
+        "locIdx": 66,
         "price": 8500
       },
       {
         "locIdx": 76,
         "price": 8500
+      },
+      {
+        "locIdx": 81,
+        "price": 8500
+      },
+      {
+        "locIdx": 83,
+        "price": 8500
+      },
+      {
+        "locIdx": 88,
+        "price": 8075
       },
       {
         "locIdx": 90,
@@ -1497,31 +1541,7 @@ const lasers = [
         "price": 8500
       },
       {
-        "locIdx": 54,
-        "price": 8500
-      },
-      {
-        "locIdx": 66,
-        "price": 8500
-      },
-      {
-        "locIdx": 52,
-        "price": 8500
-      },
-      {
-        "locIdx": 83,
-        "price": 8500
-      },
-      {
-        "locIdx": 33,
-        "price": 8500
-      },
-      {
-        "locIdx": 22,
-        "price": 8500
-      },
-      {
-        "locIdx": 81,
+        "locIdx": 96,
         "price": 8500
       },
       {
@@ -1529,31 +1549,11 @@ const lasers = [
         "price": 8500
       },
       {
-        "locIdx": 57,
-        "price": 8500
+        "locIdx": 104,
+        "price": 8075
       },
       {
         "locIdx": 114,
-        "price": 8500
-      },
-      {
-        "locIdx": 46,
-        "price": 8500
-      },
-      {
-        "locIdx": 1,
-        "price": 8500
-      },
-      {
-        "locIdx": 14,
-        "price": 8500
-      },
-      {
-        "locIdx": 12,
-        "price": 8500
-      },
-      {
-        "locIdx": 31,
         "price": 8500
       }
     ]
@@ -1576,15 +1576,27 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 5463
+        "locIdx": 1,
+        "price": 5750
       },
       {
-        "locIdx": 104,
-        "price": 5463
+        "locIdx": 12,
+        "price": 5750
       },
       {
-        "locIdx": 61,
+        "locIdx": 14,
+        "price": 5750
+      },
+      {
+        "locIdx": 22,
+        "price": 5750
+      },
+      {
+        "locIdx": 31,
+        "price": 5750
+      },
+      {
+        "locIdx": 33,
         "price": 5750
       },
       {
@@ -1592,12 +1604,44 @@ const lasers = [
         "price": 5750
       },
       {
-        "locIdx": 96,
+        "locIdx": 46,
+        "price": 5750
+      },
+      {
+        "locIdx": 52,
+        "price": 5750
+      },
+      {
+        "locIdx": 54,
+        "price": 5750
+      },
+      {
+        "locIdx": 57,
+        "price": 5750
+      },
+      {
+        "locIdx": 61,
+        "price": 5750
+      },
+      {
+        "locIdx": 66,
         "price": 5750
       },
       {
         "locIdx": 76,
         "price": 5750
+      },
+      {
+        "locIdx": 81,
+        "price": 5750
+      },
+      {
+        "locIdx": 83,
+        "price": 5750
+      },
+      {
+        "locIdx": 88,
+        "price": 5463
       },
       {
         "locIdx": 90,
@@ -1612,31 +1656,7 @@ const lasers = [
         "price": 5750
       },
       {
-        "locIdx": 54,
-        "price": 5750
-      },
-      {
-        "locIdx": 66,
-        "price": 5750
-      },
-      {
-        "locIdx": 52,
-        "price": 5750
-      },
-      {
-        "locIdx": 83,
-        "price": 5750
-      },
-      {
-        "locIdx": 33,
-        "price": 5750
-      },
-      {
-        "locIdx": 22,
-        "price": 5750
-      },
-      {
-        "locIdx": 81,
+        "locIdx": 96,
         "price": 5750
       },
       {
@@ -1644,31 +1664,11 @@ const lasers = [
         "price": 5750
       },
       {
-        "locIdx": 57,
-        "price": 5750
+        "locIdx": 104,
+        "price": 5463
       },
       {
         "locIdx": 114,
-        "price": 5750
-      },
-      {
-        "locIdx": 46,
-        "price": 5750
-      },
-      {
-        "locIdx": 1,
-        "price": 5750
-      },
-      {
-        "locIdx": 14,
-        "price": 5750
-      },
-      {
-        "locIdx": 12,
-        "price": 5750
-      },
-      {
-        "locIdx": 31,
         "price": 5750
       }
     ]
@@ -1696,11 +1696,23 @@ const modules = [
     "shatter": -30,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 2138
+        "locIdx": 22,
+        "price": 2250
       },
       {
-        "locIdx": 96,
+        "locIdx": 31,
+        "price": 2250
+      },
+      {
+        "locIdx": 33,
+        "price": 2250
+      },
+      {
+        "locIdx": 39,
+        "price": 2250
+      },
+      {
+        "locIdx": 46,
         "price": 2250
       },
       {
@@ -1712,23 +1724,11 @@ const modules = [
         "price": 2250
       },
       {
-        "locIdx": 39,
-        "price": 2250
+        "locIdx": 88,
+        "price": 2138
       },
       {
-        "locIdx": 22,
-        "price": 2250
-      },
-      {
-        "locIdx": 33,
-        "price": 2250
-      },
-      {
-        "locIdx": 46,
-        "price": 2250
-      },
-      {
-        "locIdx": 31,
+        "locIdx": 96,
         "price": 2250
       }
     ]
@@ -1747,8 +1747,16 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 5700
+        "locIdx": 12,
+        "price": 6000
+      },
+      {
+        "locIdx": 22,
+        "price": 6000
+      },
+      {
+        "locIdx": 39,
+        "price": 6000
       },
       {
         "locIdx": 52,
@@ -1763,7 +1771,7 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 91,
+        "locIdx": 66,
         "price": 6000
       },
       {
@@ -1771,15 +1779,11 @@ const modules = [
         "price": 6000
       },
       {
+        "locIdx": 91,
+        "price": 6000
+      },
+      {
         "locIdx": 95,
-        "price": 6000
-      },
-      {
-        "locIdx": 114,
-        "price": 6000
-      },
-      {
-        "locIdx": 66,
         "price": 6000
       },
       {
@@ -1787,15 +1791,11 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 39,
-        "price": 6000
+        "locIdx": 104,
+        "price": 5700
       },
       {
-        "locIdx": 22,
-        "price": 6000
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 6000
       }
     ]
@@ -1814,35 +1814,11 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 17100
-      },
-      {
-        "locIdx": 96,
+        "locIdx": 12,
         "price": 18000
       },
       {
-        "locIdx": 54,
-        "price": 18000
-      },
-      {
-        "locIdx": 95,
-        "price": 18000
-      },
-      {
-        "locIdx": 114,
-        "price": 18000
-      },
-      {
-        "locIdx": 66,
-        "price": 18000
-      },
-      {
-        "locIdx": 83,
-        "price": 18000
-      },
-      {
-        "locIdx": 99,
+        "locIdx": 31,
         "price": 18000
       },
       {
@@ -1854,11 +1830,35 @@ const modules = [
         "price": 18000
       },
       {
-        "locIdx": 12,
+        "locIdx": 54,
         "price": 18000
       },
       {
-        "locIdx": 31,
+        "locIdx": 66,
+        "price": 18000
+      },
+      {
+        "locIdx": 83,
+        "price": 18000
+      },
+      {
+        "locIdx": 95,
+        "price": 18000
+      },
+      {
+        "locIdx": 96,
+        "price": 18000
+      },
+      {
+        "locIdx": 99,
+        "price": 18000
+      },
+      {
+        "locIdx": 104,
+        "price": 17100
+      },
+      {
+        "locIdx": 114,
         "price": 18000
       }
     ]
@@ -1877,11 +1877,19 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 57000
+        "locIdx": 1,
+        "price": 60000
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 60000
+      },
+      {
+        "locIdx": 14,
+        "price": 60000
+      },
+      {
+        "locIdx": 39,
         "price": 60000
       },
       {
@@ -1897,7 +1905,7 @@ const modules = [
         "price": 60000
       },
       {
-        "locIdx": 91,
+        "locIdx": 81,
         "price": 60000
       },
       {
@@ -1905,11 +1913,11 @@ const modules = [
         "price": 60000
       },
       {
-        "locIdx": 114,
+        "locIdx": 91,
         "price": 60000
       },
       {
-        "locIdx": 81,
+        "locIdx": 96,
         "price": 60000
       },
       {
@@ -1917,19 +1925,11 @@ const modules = [
         "price": 60000
       },
       {
-        "locIdx": 39,
-        "price": 60000
+        "locIdx": 104,
+        "price": 57000
       },
       {
-        "locIdx": 1,
-        "price": 60000
-      },
-      {
-        "locIdx": 14,
-        "price": 60000
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 60000
       }
     ]
@@ -1948,11 +1948,15 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 11400
+        "locIdx": 1,
+        "price": 12000
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 12000
+      },
+      {
+        "locIdx": 14,
         "price": 12000
       },
       {
@@ -1968,11 +1972,7 @@ const modules = [
         "price": 12000
       },
       {
-        "locIdx": 91,
-        "price": 12000
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 12000
       },
       {
@@ -1980,11 +1980,15 @@ const modules = [
         "price": 12000
       },
       {
-        "locIdx": 66,
+        "locIdx": 83,
         "price": 12000
       },
       {
-        "locIdx": 83,
+        "locIdx": 91,
+        "price": 12000
+      },
+      {
+        "locIdx": 96,
         "price": 12000
       },
       {
@@ -1992,15 +1996,11 @@ const modules = [
         "price": 12000
       },
       {
-        "locIdx": 1,
-        "price": 12000
+        "locIdx": 104,
+        "price": 11400
       },
       {
-        "locIdx": 14,
-        "price": 12000
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 12000
       }
     ]
@@ -2019,7 +2019,11 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 96,
+        "locIdx": 1,
+        "price": 40000
+      },
+      {
+        "locIdx": 14,
         "price": 40000
       },
       {
@@ -2027,15 +2031,7 @@ const modules = [
         "price": 40000
       },
       {
-        "locIdx": 91,
-        "price": 40000
-      },
-      {
-        "locIdx": 90,
-        "price": 40000
-      },
-      {
-        "locIdx": 95,
+        "locIdx": 66,
         "price": 40000
       },
       {
@@ -2043,19 +2039,23 @@ const modules = [
         "price": 40000
       },
       {
-        "locIdx": 66,
-        "price": 40000
-      },
-      {
         "locIdx": 83,
         "price": 40000
       },
       {
-        "locIdx": 1,
+        "locIdx": 90,
         "price": 40000
       },
       {
-        "locIdx": 14,
+        "locIdx": 91,
+        "price": 40000
+      },
+      {
+        "locIdx": 95,
+        "price": 40000
+      },
+      {
+        "locIdx": 96,
         "price": 40000
       }
     ]
@@ -2074,11 +2074,27 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 3800
+        "locIdx": 1,
+        "price": 4000
       },
       {
-        "locIdx": 61,
+        "locIdx": 12,
+        "price": 4000
+      },
+      {
+        "locIdx": 14,
+        "price": 4000
+      },
+      {
+        "locIdx": 31,
+        "price": 4000
+      },
+      {
+        "locIdx": 33,
+        "price": 4000
+      },
+      {
+        "locIdx": 46,
         "price": 4000
       },
       {
@@ -2094,6 +2110,26 @@ const modules = [
         "price": 4000
       },
       {
+        "locIdx": 61,
+        "price": 4000
+      },
+      {
+        "locIdx": 66,
+        "price": 4000
+      },
+      {
+        "locIdx": 76,
+        "price": 4000
+      },
+      {
+        "locIdx": 81,
+        "price": 4000
+      },
+      {
+        "locIdx": 83,
+        "price": 4000
+      },
+      {
         "locIdx": 90,
         "price": 4000
       },
@@ -2102,51 +2138,15 @@ const modules = [
         "price": 4000
       },
       {
-        "locIdx": 114,
-        "price": 4000
-      },
-      {
-        "locIdx": 81,
-        "price": 4000
-      },
-      {
-        "locIdx": 66,
-        "price": 4000
-      },
-      {
-        "locIdx": 83,
-        "price": 4000
-      },
-      {
-        "locIdx": 76,
-        "price": 4000
-      },
-      {
         "locIdx": 99,
         "price": 4000
       },
       {
-        "locIdx": 33,
-        "price": 4000
+        "locIdx": 104,
+        "price": 3800
       },
       {
-        "locIdx": 46,
-        "price": 4000
-      },
-      {
-        "locIdx": 1,
-        "price": 4000
-      },
-      {
-        "locIdx": 14,
-        "price": 4000
-      },
-      {
-        "locIdx": 12,
-        "price": 4000
-      },
-      {
-        "locIdx": 31,
+        "locIdx": 114,
         "price": 4000
       }
     ]
@@ -2165,11 +2165,15 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 1853
+        "locIdx": 1,
+        "price": 1950
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 1950
+      },
+      {
+        "locIdx": 14,
         "price": 1950
       },
       {
@@ -2185,19 +2189,7 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 91,
-        "price": 1950
-      },
-      {
-        "locIdx": 90,
-        "price": 1950
-      },
-      {
-        "locIdx": 95,
-        "price": 1950
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 1950
       },
       {
@@ -2205,11 +2197,23 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 66,
+        "locIdx": 83,
         "price": 1950
       },
       {
-        "locIdx": 83,
+        "locIdx": 90,
+        "price": 1950
+      },
+      {
+        "locIdx": 91,
+        "price": 1950
+      },
+      {
+        "locIdx": 95,
+        "price": 1950
+      },
+      {
+        "locIdx": 96,
         "price": 1950
       },
       {
@@ -2217,15 +2221,11 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 1,
-        "price": 1950
+        "locIdx": 104,
+        "price": 1853
       },
       {
-        "locIdx": 14,
-        "price": 1950
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 1950
       }
     ]
@@ -2244,15 +2244,27 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 760
+        "locIdx": 1,
+        "price": 800
       },
       {
-        "locIdx": 104,
-        "price": 760
+        "locIdx": 12,
+        "price": 800
       },
       {
-        "locIdx": 96,
+        "locIdx": 14,
+        "price": 800
+      },
+      {
+        "locIdx": 31,
+        "price": 800
+      },
+      {
+        "locIdx": 33,
+        "price": 800
+      },
+      {
+        "locIdx": 46,
         "price": 800
       },
       {
@@ -2268,19 +2280,7 @@ const modules = [
         "price": 800
       },
       {
-        "locIdx": 91,
-        "price": 800
-      },
-      {
-        "locIdx": 90,
-        "price": 800
-      },
-      {
-        "locIdx": 95,
-        "price": 800
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 800
       },
       {
@@ -2288,11 +2288,27 @@ const modules = [
         "price": 800
       },
       {
-        "locIdx": 66,
+        "locIdx": 83,
         "price": 800
       },
       {
-        "locIdx": 83,
+        "locIdx": 88,
+        "price": 760
+      },
+      {
+        "locIdx": 90,
+        "price": 800
+      },
+      {
+        "locIdx": 91,
+        "price": 800
+      },
+      {
+        "locIdx": 95,
+        "price": 800
+      },
+      {
+        "locIdx": 96,
         "price": 800
       },
       {
@@ -2300,27 +2316,11 @@ const modules = [
         "price": 800
       },
       {
-        "locIdx": 33,
-        "price": 800
+        "locIdx": 104,
+        "price": 760
       },
       {
-        "locIdx": 46,
-        "price": 800
-      },
-      {
-        "locIdx": 1,
-        "price": 800
-      },
-      {
-        "locIdx": 14,
-        "price": 800
-      },
-      {
-        "locIdx": 12,
-        "price": 800
-      },
-      {
-        "locIdx": 31,
+        "locIdx": 114,
         "price": 800
       }
     ]
@@ -2339,7 +2339,11 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 96,
+        "locIdx": 22,
+        "price": 3000
+      },
+      {
+        "locIdx": 39,
         "price": 3000
       },
       {
@@ -2351,6 +2355,10 @@ const modules = [
         "price": 3000
       },
       {
+        "locIdx": 83,
+        "price": 3000
+      },
+      {
         "locIdx": 90,
         "price": 3000
       },
@@ -2359,15 +2367,7 @@ const modules = [
         "price": 3000
       },
       {
-        "locIdx": 83,
-        "price": 3000
-      },
-      {
-        "locIdx": 39,
-        "price": 3000
-      },
-      {
-        "locIdx": 22,
+        "locIdx": 96,
         "price": 3000
       }
     ]
@@ -2443,11 +2443,31 @@ const modules = [
     "shatter": -10,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 1045
+        "locIdx": 1,
+        "price": 1100
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 1100
+      },
+      {
+        "locIdx": 14,
+        "price": 1100
+      },
+      {
+        "locIdx": 31,
+        "price": 1100
+      },
+      {
+        "locIdx": 33,
+        "price": 1100
+      },
+      {
+        "locIdx": 39,
+        "price": 1100
+      },
+      {
+        "locIdx": 46,
         "price": 1100
       },
       {
@@ -2463,19 +2483,7 @@ const modules = [
         "price": 1100
       },
       {
-        "locIdx": 91,
-        "price": 1100
-      },
-      {
-        "locIdx": 90,
-        "price": 1100
-      },
-      {
-        "locIdx": 95,
-        "price": 1100
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 1100
       },
       {
@@ -2483,11 +2491,23 @@ const modules = [
         "price": 1100
       },
       {
-        "locIdx": 66,
+        "locIdx": 83,
         "price": 1100
       },
       {
-        "locIdx": 83,
+        "locIdx": 90,
+        "price": 1100
+      },
+      {
+        "locIdx": 91,
+        "price": 1100
+      },
+      {
+        "locIdx": 95,
+        "price": 1100
+      },
+      {
+        "locIdx": 96,
         "price": 1100
       },
       {
@@ -2495,31 +2515,11 @@ const modules = [
         "price": 1100
       },
       {
-        "locIdx": 39,
-        "price": 1100
+        "locIdx": 104,
+        "price": 1045
       },
       {
-        "locIdx": 33,
-        "price": 1100
-      },
-      {
-        "locIdx": 46,
-        "price": 1100
-      },
-      {
-        "locIdx": 1,
-        "price": 1100
-      },
-      {
-        "locIdx": 14,
-        "price": 1100
-      },
-      {
-        "locIdx": 12,
-        "price": 1100
-      },
-      {
-        "locIdx": 31,
+        "locIdx": 114,
         "price": 1100
       }
     ]
@@ -2538,11 +2538,19 @@ const modules = [
     "shatter": -10,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 1330
+        "locIdx": 1,
+        "price": 1400
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 1400
+      },
+      {
+        "locIdx": 14,
+        "price": 1400
+      },
+      {
+        "locIdx": 39,
         "price": 1400
       },
       {
@@ -2558,19 +2566,7 @@ const modules = [
         "price": 1400
       },
       {
-        "locIdx": 91,
-        "price": 1400
-      },
-      {
-        "locIdx": 90,
-        "price": 1400
-      },
-      {
-        "locIdx": 95,
-        "price": 1400
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 1400
       },
       {
@@ -2578,11 +2574,23 @@ const modules = [
         "price": 1400
       },
       {
-        "locIdx": 66,
+        "locIdx": 83,
         "price": 1400
       },
       {
-        "locIdx": 83,
+        "locIdx": 90,
+        "price": 1400
+      },
+      {
+        "locIdx": 91,
+        "price": 1400
+      },
+      {
+        "locIdx": 95,
+        "price": 1400
+      },
+      {
+        "locIdx": 96,
         "price": 1400
       },
       {
@@ -2590,19 +2598,11 @@ const modules = [
         "price": 1400
       },
       {
-        "locIdx": 39,
-        "price": 1400
+        "locIdx": 104,
+        "price": 1330
       },
       {
-        "locIdx": 1,
-        "price": 1400
-      },
-      {
-        "locIdx": 14,
-        "price": 1400
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 1400
       }
     ]
@@ -2640,11 +2640,27 @@ const modules = [
     "shatter": 40,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 1853
+        "locIdx": 1,
+        "price": 1950
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 1950
+      },
+      {
+        "locIdx": 14,
+        "price": 1950
+      },
+      {
+        "locIdx": 31,
+        "price": 1950
+      },
+      {
+        "locIdx": 33,
+        "price": 1950
+      },
+      {
+        "locIdx": 46,
         "price": 1950
       },
       {
@@ -2660,19 +2676,7 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 91,
-        "price": 1950
-      },
-      {
-        "locIdx": 90,
-        "price": 1950
-      },
-      {
-        "locIdx": 95,
-        "price": 1950
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 1950
       },
       {
@@ -2680,11 +2684,23 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 66,
+        "locIdx": 83,
         "price": 1950
       },
       {
-        "locIdx": 83,
+        "locIdx": 90,
+        "price": 1950
+      },
+      {
+        "locIdx": 91,
+        "price": 1950
+      },
+      {
+        "locIdx": 95,
+        "price": 1950
+      },
+      {
+        "locIdx": 96,
         "price": 1950
       },
       {
@@ -2692,27 +2708,11 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 33,
-        "price": 1950
+        "locIdx": 104,
+        "price": 1853
       },
       {
-        "locIdx": 46,
-        "price": 1950
-      },
-      {
-        "locIdx": 1,
-        "price": 1950
-      },
-      {
-        "locIdx": 14,
-        "price": 1950
-      },
-      {
-        "locIdx": 12,
-        "price": 1950
-      },
-      {
-        "locIdx": 31,
+        "locIdx": 114,
         "price": 1950
       }
     ]
@@ -2731,11 +2731,15 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 11400
+        "locIdx": 1,
+        "price": 15000
       },
       {
-        "locIdx": 96,
+        "locIdx": 12,
+        "price": 12000
+      },
+      {
+        "locIdx": 14,
         "price": 12000
       },
       {
@@ -2747,19 +2751,7 @@ const modules = [
         "price": 12000
       },
       {
-        "locIdx": 91,
-        "price": 12000
-      },
-      {
-        "locIdx": 90,
-        "price": 12000
-      },
-      {
-        "locIdx": 95,
-        "price": 12000
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 66,
         "price": 12000
       },
       {
@@ -2767,7 +2759,19 @@ const modules = [
         "price": 12000
       },
       {
-        "locIdx": 66,
+        "locIdx": 90,
+        "price": 12000
+      },
+      {
+        "locIdx": 91,
+        "price": 12000
+      },
+      {
+        "locIdx": 95,
+        "price": 12000
+      },
+      {
+        "locIdx": 96,
         "price": 12000
       },
       {
@@ -2775,16 +2779,12 @@ const modules = [
         "price": 12000
       },
       {
-        "locIdx": 14,
-        "price": 12000
+        "locIdx": 104,
+        "price": 11400
       },
       {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 12000
-      },
-      {
-        "locIdx": 1,
-        "price": 15000
       }
     ]
   },
@@ -2802,11 +2802,11 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 38000
+        "locIdx": 12,
+        "price": 40000
       },
       {
-        "locIdx": 96,
+        "locIdx": 22,
         "price": 40000
       },
       {
@@ -2822,18 +2822,6 @@ const modules = [
         "price": 40000
       },
       {
-        "locIdx": 90,
-        "price": 40000
-      },
-      {
-        "locIdx": 95,
-        "price": 40000
-      },
-      {
-        "locIdx": 114,
-        "price": 40000
-      },
-      {
         "locIdx": 66,
         "price": 40000
       },
@@ -2842,15 +2830,27 @@ const modules = [
         "price": 40000
       },
       {
+        "locIdx": 90,
+        "price": 40000
+      },
+      {
+        "locIdx": 95,
+        "price": 40000
+      },
+      {
+        "locIdx": 96,
+        "price": 40000
+      },
+      {
         "locIdx": 99,
         "price": 40000
       },
       {
-        "locIdx": 22,
-        "price": 40000
+        "locIdx": 104,
+        "price": 38000
       },
       {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 40000
       }
     ]
@@ -2869,7 +2869,15 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 61,
+        "locIdx": 1,
+        "price": 4000
+      },
+      {
+        "locIdx": 14,
+        "price": 4000
+      },
+      {
+        "locIdx": 22,
         "price": 4000
       },
       {
@@ -2881,11 +2889,7 @@ const modules = [
         "price": 4000
       },
       {
-        "locIdx": 91,
-        "price": 4000
-      },
-      {
-        "locIdx": 90,
+        "locIdx": 61,
         "price": 4000
       },
       {
@@ -2897,15 +2901,11 @@ const modules = [
         "price": 4000
       },
       {
-        "locIdx": 22,
+        "locIdx": 90,
         "price": 4000
       },
       {
-        "locIdx": 1,
-        "price": 4000
-      },
-      {
-        "locIdx": 14,
+        "locIdx": 91,
         "price": 4000
       }
     ]
@@ -2924,15 +2924,23 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 1900
-      },
-      {
-        "locIdx": 61,
+        "locIdx": 12,
         "price": 2000
       },
       {
-        "locIdx": 96,
+        "locIdx": 31,
+        "price": 2000
+      },
+      {
+        "locIdx": 33,
+        "price": 2000
+      },
+      {
+        "locIdx": 39,
+        "price": 2000
+      },
+      {
+        "locIdx": 46,
         "price": 2000
       },
       {
@@ -2948,15 +2956,7 @@ const modules = [
         "price": 2000
       },
       {
-        "locIdx": 91,
-        "price": 2000
-      },
-      {
-        "locIdx": 90,
-        "price": 2000
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 61,
         "price": 2000
       },
       {
@@ -2964,11 +2964,23 @@ const modules = [
         "price": 2000
       },
       {
+        "locIdx": 76,
+        "price": 2000
+      },
+      {
         "locIdx": 83,
         "price": 2000
       },
       {
-        "locIdx": 76,
+        "locIdx": 90,
+        "price": 2000
+      },
+      {
+        "locIdx": 91,
+        "price": 2000
+      },
+      {
+        "locIdx": 96,
         "price": 2000
       },
       {
@@ -2976,23 +2988,11 @@ const modules = [
         "price": 2000
       },
       {
-        "locIdx": 39,
-        "price": 2000
+        "locIdx": 104,
+        "price": 1900
       },
       {
-        "locIdx": 33,
-        "price": 2000
-      },
-      {
-        "locIdx": 46,
-        "price": 2000
-      },
-      {
-        "locIdx": 12,
-        "price": 2000
-      },
-      {
-        "locIdx": 31,
+        "locIdx": 114,
         "price": 2000
       }
     ]
@@ -3011,11 +3011,19 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 5700
+        "locIdx": 1,
+        "price": 6000
       },
       {
-        "locIdx": 61,
+        "locIdx": 12,
+        "price": 6000
+      },
+      {
+        "locIdx": 14,
+        "price": 6000
+      },
+      {
+        "locIdx": 22,
         "price": 6000
       },
       {
@@ -3031,15 +3039,7 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 90,
-        "price": 6000
-      },
-      {
-        "locIdx": 95,
-        "price": 6000
-      },
-      {
-        "locIdx": 114,
+        "locIdx": 61,
         "price": 6000
       },
       {
@@ -3051,27 +3051,27 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 99,
-        "price": 6000
-      },
-      {
         "locIdx": 81,
         "price": 6000
       },
       {
-        "locIdx": 22,
+        "locIdx": 90,
         "price": 6000
       },
       {
-        "locIdx": 1,
+        "locIdx": 95,
         "price": 6000
       },
       {
-        "locIdx": 14,
+        "locIdx": 99,
         "price": 6000
       },
       {
-        "locIdx": 12,
+        "locIdx": 104,
+        "price": 5700
+      },
+      {
+        "locIdx": 114,
         "price": 6000
       }
     ]
@@ -3090,7 +3090,11 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 61,
+        "locIdx": 1,
+        "price": 20000
+      },
+      {
+        "locIdx": 14,
         "price": 20000
       },
       {
@@ -3098,15 +3102,7 @@ const modules = [
         "price": 20000
       },
       {
-        "locIdx": 91,
-        "price": 20000
-      },
-      {
-        "locIdx": 90,
-        "price": 20000
-      },
-      {
-        "locIdx": 95,
+        "locIdx": 61,
         "price": 20000
       },
       {
@@ -3118,11 +3114,15 @@ const modules = [
         "price": 20000
       },
       {
-        "locIdx": 1,
+        "locIdx": 90,
         "price": 20000
       },
       {
-        "locIdx": 14,
+        "locIdx": 91,
+        "price": 20000
+      },
+      {
+        "locIdx": 95,
         "price": 20000
       }
     ]
@@ -3141,19 +3141,39 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 1900
+        "locIdx": 1,
+        "price": 2000
+      },
+      {
+        "locIdx": 12,
+        "price": 2000
+      },
+      {
+        "locIdx": 14,
+        "price": 2000
+      },
+      {
+        "locIdx": 54,
+        "price": 2000
       },
       {
         "locIdx": 61,
         "price": 2000
       },
       {
-        "locIdx": 96,
+        "locIdx": 66,
         "price": 2000
       },
       {
-        "locIdx": 54,
+        "locIdx": 76,
+        "price": 2000
+      },
+      {
+        "locIdx": 81,
+        "price": 2000
+      },
+      {
+        "locIdx": 83,
         "price": 2000
       },
       {
@@ -3165,23 +3185,7 @@ const modules = [
         "price": 2000
       },
       {
-        "locIdx": 114,
-        "price": 2000
-      },
-      {
-        "locIdx": 81,
-        "price": 2000
-      },
-      {
-        "locIdx": 66,
-        "price": 2000
-      },
-      {
-        "locIdx": 83,
-        "price": 2000
-      },
-      {
-        "locIdx": 76,
+        "locIdx": 96,
         "price": 2000
       },
       {
@@ -3189,15 +3193,11 @@ const modules = [
         "price": 2000
       },
       {
-        "locIdx": 1,
-        "price": 2000
+        "locIdx": 104,
+        "price": 1900
       },
       {
-        "locIdx": 14,
-        "price": 2000
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 2000
       }
     ]
@@ -3216,11 +3216,19 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 5700
+        "locIdx": 1,
+        "price": 6000
       },
       {
-        "locIdx": 61,
+        "locIdx": 12,
+        "price": 6000
+      },
+      {
+        "locIdx": 14,
+        "price": 6000
+      },
+      {
+        "locIdx": 39,
         "price": 6000
       },
       {
@@ -3236,15 +3244,7 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 95,
-        "price": 6000
-      },
-      {
-        "locIdx": 114,
-        "price": 6000
-      },
-      {
-        "locIdx": 81,
+        "locIdx": 61,
         "price": 6000
       },
       {
@@ -3252,11 +3252,19 @@ const modules = [
         "price": 6000
       },
       {
+        "locIdx": 76,
+        "price": 6000
+      },
+      {
+        "locIdx": 81,
+        "price": 6000
+      },
+      {
         "locIdx": 83,
         "price": 6000
       },
       {
-        "locIdx": 76,
+        "locIdx": 95,
         "price": 6000
       },
       {
@@ -3264,19 +3272,11 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 39,
-        "price": 6000
+        "locIdx": 104,
+        "price": 5700
       },
       {
-        "locIdx": 1,
-        "price": 6000
-      },
-      {
-        "locIdx": 14,
-        "price": 6000
-      },
-      {
-        "locIdx": 12,
+        "locIdx": 114,
         "price": 6000
       }
     ]
@@ -3295,7 +3295,15 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 61,
+        "locIdx": 1,
+        "price": 20000
+      },
+      {
+        "locIdx": 14,
+        "price": 20000
+      },
+      {
+        "locIdx": 39,
         "price": 20000
       },
       {
@@ -3307,15 +3315,7 @@ const modules = [
         "price": 20000
       },
       {
-        "locIdx": 90,
-        "price": 20000
-      },
-      {
-        "locIdx": 95,
-        "price": 20000
-      },
-      {
-        "locIdx": 81,
+        "locIdx": 61,
         "price": 20000
       },
       {
@@ -3323,23 +3323,23 @@ const modules = [
         "price": 20000
       },
       {
-        "locIdx": 83,
-        "price": 20000
-      },
-      {
         "locIdx": 76,
         "price": 20000
       },
       {
-        "locIdx": 39,
+        "locIdx": 81,
         "price": 20000
       },
       {
-        "locIdx": 1,
+        "locIdx": 83,
         "price": 20000
       },
       {
-        "locIdx": 14,
+        "locIdx": 90,
+        "price": 20000
+      },
+      {
+        "locIdx": 95,
         "price": 20000
       }
     ]
@@ -3362,11 +3362,11 @@ const gadgets = [
     "cluster": 30,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 1,
         "price": 12750
       },
       {
-        "locIdx": 1,
+        "locIdx": 2,
         "price": 12750
       },
       {
@@ -3374,7 +3374,7 @@ const gadgets = [
         "price": 12750
       },
       {
-        "locIdx": 10,
+        "locIdx": 6,
         "price": 12750
       },
       {
@@ -3382,7 +3382,7 @@ const gadgets = [
         "price": 12750
       },
       {
-        "locIdx": 6,
+        "locIdx": 10,
         "price": 12750
       }
     ]
@@ -3399,39 +3399,19 @@ const gadgets = [
     "cluster": -20,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 22088
-      },
-      {
-        "locIdx": 96,
+        "locIdx": 1,
         "price": 23250
       },
       {
-        "locIdx": 52,
+        "locIdx": 12,
         "price": 23250
       },
       {
-        "locIdx": 54,
+        "locIdx": 14,
         "price": 23250
       },
       {
-        "locIdx": 91,
-        "price": 23250
-      },
-      {
-        "locIdx": 90,
-        "price": 23250
-      },
-      {
-        "locIdx": 114,
-        "price": 23250
-      },
-      {
-        "locIdx": 81,
-        "price": 23250
-      },
-      {
-        "locIdx": 99,
+        "locIdx": 31,
         "price": 23250
       },
       {
@@ -3443,19 +3423,39 @@ const gadgets = [
         "price": 23250
       },
       {
-        "locIdx": 1,
+        "locIdx": 52,
         "price": 23250
       },
       {
-        "locIdx": 14,
+        "locIdx": 54,
         "price": 23250
       },
       {
-        "locIdx": 12,
+        "locIdx": 81,
         "price": 23250
       },
       {
-        "locIdx": 31,
+        "locIdx": 90,
+        "price": 23250
+      },
+      {
+        "locIdx": 91,
+        "price": 23250
+      },
+      {
+        "locIdx": 96,
+        "price": 23250
+      },
+      {
+        "locIdx": 99,
+        "price": 23250
+      },
+      {
+        "locIdx": 104,
+        "price": 22088
+      },
+      {
+        "locIdx": 114,
         "price": 23250
       }
     ]
@@ -3472,15 +3472,35 @@ const gadgets = [
     "cluster": 60,
     "shops": [
       {
-        "locIdx": 104,
-        "price": 26244
+        "locIdx": 2,
+        "price": 27625
       },
       {
-        "locIdx": 114,
-        "price": 27265
+        "locIdx": 4,
+        "price": 27625
       },
       {
-        "locIdx": 96,
+        "locIdx": 6,
+        "price": 27625
+      },
+      {
+        "locIdx": 8,
+        "price": 27625
+      },
+      {
+        "locIdx": 10,
+        "price": 27625
+      },
+      {
+        "locIdx": 12,
+        "price": 27625
+      },
+      {
+        "locIdx": 22,
+        "price": 27625
+      },
+      {
+        "locIdx": 39,
         "price": 27625
       },
       {
@@ -3500,40 +3520,20 @@ const gadgets = [
         "price": 27625
       },
       {
+        "locIdx": 96,
+        "price": 27625
+      },
+      {
         "locIdx": 99,
         "price": 27625
       },
       {
-        "locIdx": 39,
-        "price": 27625
+        "locIdx": 104,
+        "price": 26244
       },
       {
-        "locIdx": 22,
-        "price": 27625
-      },
-      {
-        "locIdx": 2,
-        "price": 27625
-      },
-      {
-        "locIdx": 12,
-        "price": 27625
-      },
-      {
-        "locIdx": 4,
-        "price": 27625
-      },
-      {
-        "locIdx": 10,
-        "price": 27625
-      },
-      {
-        "locIdx": 8,
-        "price": 27625
-      },
-      {
-        "locIdx": 6,
-        "price": 27625
+        "locIdx": 114,
+        "price": 27265
       }
     ]
   },
@@ -3549,19 +3549,71 @@ const gadgets = [
     "cluster": 0,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 13125
-      },
-      {
-        "locIdx": 104,
-        "price": 13125
-      },
-      {
-        "locIdx": 61,
+        "locIdx": 1,
         "price": 13815
       },
       {
-        "locIdx": 96,
+        "locIdx": 2,
+        "price": 13815
+      },
+      {
+        "locIdx": 4,
+        "price": 13815
+      },
+      {
+        "locIdx": 6,
+        "price": 13815
+      },
+      {
+        "locIdx": 8,
+        "price": 13815
+      },
+      {
+        "locIdx": 10,
+        "price": 13815
+      },
+      {
+        "locIdx": 12,
+        "price": 13815
+      },
+      {
+        "locIdx": 14,
+        "price": 13815
+      },
+      {
+        "locIdx": 17,
+        "price": 13815
+      },
+      {
+        "locIdx": 19,
+        "price": 13815
+      },
+      {
+        "locIdx": 31,
+        "price": 13815
+      },
+      {
+        "locIdx": 33,
+        "price": 13815
+      },
+      {
+        "locIdx": 34,
+        "price": 13815
+      },
+      {
+        "locIdx": 39,
+        "price": 13815
+      },
+      {
+        "locIdx": 44,
+        "price": 13815
+      },
+      {
+        "locIdx": 46,
+        "price": 13815
+      },
+      {
+        "locIdx": 50,
         "price": 13815
       },
       {
@@ -3577,23 +3629,7 @@ const gadgets = [
         "price": 13815
       },
       {
-        "locIdx": 91,
-        "price": 13815
-      },
-      {
-        "locIdx": 90,
-        "price": 13815
-      },
-      {
-        "locIdx": 95,
-        "price": 13815
-      },
-      {
-        "locIdx": 114,
-        "price": 13815
-      },
-      {
-        "locIdx": 81,
+        "locIdx": 61,
         "price": 13815
       },
       {
@@ -3601,11 +3637,35 @@ const gadgets = [
         "price": 13815
       },
       {
+        "locIdx": 76,
+        "price": 13815
+      },
+      {
+        "locIdx": 81,
+        "price": 13815
+      },
+      {
         "locIdx": 83,
         "price": 13815
       },
       {
-        "locIdx": 76,
+        "locIdx": 88,
+        "price": 13125
+      },
+      {
+        "locIdx": 90,
+        "price": 13815
+      },
+      {
+        "locIdx": 91,
+        "price": 13815
+      },
+      {
+        "locIdx": 95,
+        "price": 13815
+      },
+      {
+        "locIdx": 96,
         "price": 13815
       },
       {
@@ -3613,71 +3673,11 @@ const gadgets = [
         "price": 13815
       },
       {
-        "locIdx": 39,
-        "price": 13815
+        "locIdx": 104,
+        "price": 13125
       },
       {
-        "locIdx": 33,
-        "price": 13815
-      },
-      {
-        "locIdx": 50,
-        "price": 13815
-      },
-      {
-        "locIdx": 34,
-        "price": 13815
-      },
-      {
-        "locIdx": 17,
-        "price": 13815
-      },
-      {
-        "locIdx": 46,
-        "price": 13815
-      },
-      {
-        "locIdx": 19,
-        "price": 13815
-      },
-      {
-        "locIdx": 44,
-        "price": 13815
-      },
-      {
-        "locIdx": 2,
-        "price": 13815
-      },
-      {
-        "locIdx": 1,
-        "price": 13815
-      },
-      {
-        "locIdx": 14,
-        "price": 13815
-      },
-      {
-        "locIdx": 12,
-        "price": 13815
-      },
-      {
-        "locIdx": 31,
-        "price": 13815
-      },
-      {
-        "locIdx": 4,
-        "price": 13815
-      },
-      {
-        "locIdx": 10,
-        "price": 13815
-      },
-      {
-        "locIdx": 8,
-        "price": 13815
-      },
-      {
-        "locIdx": 6,
+        "locIdx": 114,
         "price": 13815
       }
     ]
@@ -3711,50 +3711,6 @@ const gadgets = [
     "cluster": 0,
     "shops": [
       {
-        "locIdx": 88,
-        "price": 18169
-      },
-      {
-        "locIdx": 61,
-        "price": 19125
-      },
-      {
-        "locIdx": 91,
-        "price": 19125
-      },
-      {
-        "locIdx": 95,
-        "price": 19125
-      },
-      {
-        "locIdx": 66,
-        "price": 19125
-      },
-      {
-        "locIdx": 83,
-        "price": 19125
-      },
-      {
-        "locIdx": 76,
-        "price": 19125
-      },
-      {
-        "locIdx": 39,
-        "price": 19125
-      },
-      {
-        "locIdx": 22,
-        "price": 19125
-      },
-      {
-        "locIdx": 50,
-        "price": 19125
-      },
-      {
-        "locIdx": 34,
-        "price": 19125
-      },
-      {
         "locIdx": 17,
         "price": 19125
       },
@@ -3763,7 +3719,51 @@ const gadgets = [
         "price": 19125
       },
       {
+        "locIdx": 22,
+        "price": 19125
+      },
+      {
+        "locIdx": 34,
+        "price": 19125
+      },
+      {
+        "locIdx": 39,
+        "price": 19125
+      },
+      {
         "locIdx": 44,
+        "price": 19125
+      },
+      {
+        "locIdx": 50,
+        "price": 19125
+      },
+      {
+        "locIdx": 61,
+        "price": 19125
+      },
+      {
+        "locIdx": 66,
+        "price": 19125
+      },
+      {
+        "locIdx": 76,
+        "price": 19125
+      },
+      {
+        "locIdx": 83,
+        "price": 19125
+      },
+      {
+        "locIdx": 88,
+        "price": 18169
+      },
+      {
+        "locIdx": 91,
+        "price": 19125
+      },
+      {
+        "locIdx": 95,
         "price": 19125
       }
     ]
@@ -5099,7 +5099,7 @@ const pricingData = {
     },
     {
       "locIdx": 80,
-      "price": 8500
+      "price": 10000
     },
     {
       "locIdx": 82,
