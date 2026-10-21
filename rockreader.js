@@ -190,8 +190,8 @@ function showPriceTip(oreName) {
 
     let html = `<h4 class="tooltip-header">Best Regional Prices</h4><div class="tooltip-row-container">`;
 
-    Object.keys(bestPrices).forEach(sys => {
-        const data = bestPrices[sys];
+    Object.values(bestPrices).sort((a, b) => b.price - a.price).forEach(data => {
+        const sys = data.system;
         const displayLoc = data.location.replace("Green Imperial Housing Exchange", "Grim HEX");
         const sysClass = getSystemClass(sys);
 
