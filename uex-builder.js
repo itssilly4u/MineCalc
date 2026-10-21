@@ -91,6 +91,37 @@ function processRefinery(rawRefinery) {
     return Object.values(refineryMap);
 }
 
+// --- SHARED LOCATION REGISTRY (ores + equipment) --------------------------------
+// Both price processors register every location they encounter here. After both
+// have run, finalizeLocations() sorts them alphabetically (system, then location)
+// and assigns each a stable index (locIdx = array position). Using one shared,
+// alphabetically-ordered registry is what keeps the generated `locations` array
+// byte-stable across builds — when only a price changes, the array itself does
+// not reshuffle, so GitHub diffs stop showing location strings jumping around.
+const locationRegistry = new Map(); // key -> { system, location }
+const locKey = (system, location) => `${system}\u0001${location}`;
+
+function registerLocation(system, location) {
+    const key = locKey(system, location);
+    if (!locationRegistry.has(key)) locationRegistry.set(key, { system, location });
+    return key;
+}
+
+function finalizeLocations() {
+    const arr = Array.from(locationRegistry.values());
+    arr.sort((a, b) => {
+        const s = a.system.localeCompare(b.system, 'en', { sensitivity: 'base' });
+        if (s !== 0) return s;
+        return a.location.localeCompare(b.location, 'en', { sensitivity: 'base' });
+    });
+    const keyToIdx = new Map();
+    arr.forEach((loc, i) => {
+        loc.locIdx = i; // keep the inline field consistent with the array index
+        keyToIdx.set(locKey(loc.system, loc.location), i);
+    });
+    return { locations: arr, keyToIdx };
+}
+
 function processPrices(rawPrices) {
     const priceMap = {};
     rawPrices.forEach(row => {
@@ -98,8 +129,10 @@ function processPrices(rawPrices) {
         if (!cleanName) return;
 
         let price = row.price_sell || 0;
+        if (price <= 0) return;
+
         let location = row.city_name || row.space_station_name || row.outpost_name || row.poi_name || "Unknown";
-        
+
         if (row.terminal_name) {
             if (row.terminal_name.includes("Trade and Development Division") || row.terminal_name.includes("TDD")) location += " - TDD";
             else if (row.terminal_name.includes("Admin")) location += " - Admin";
@@ -107,14 +140,9 @@ function processPrices(rawPrices) {
         }
         let system = row.star_system_name || "Unknown";
 
-        if (price > 0) {
-            if (!priceMap[cleanName]) priceMap[cleanName] = [];
-            priceMap[cleanName].push({ system, location, price });
-        }
-    });
-
-    Object.keys(priceMap).forEach(key => {
-        priceMap[key].sort((a, b) => b.price - a.price);
+        const key = registerLocation(system, location);
+        if (!priceMap[cleanName]) priceMap[cleanName] = [];
+        priceMap[cleanName].push({ locKey: key, price });
     });
 
     return priceMap;
@@ -122,9 +150,6 @@ function processPrices(rawPrices) {
 
 function processItemPrices(rawPrices) {
     const priceMap = {};
-    const uniqueLocations = [];
-    const locationLookup = {};
-
     rawPrices.forEach(row => {
         if (!row.item_name) return;
 
@@ -132,7 +157,7 @@ function processItemPrices(rawPrices) {
         if (price <= 0) return;
 
         let location = row.city_name || row.space_station_name || row.outpost_name || "Unknown";
-        
+
         if (row.terminal_name) {
             let parts = row.terminal_name.split(' - ').map(p => p.trim());
             let shopParts = parts.filter(p => {
@@ -148,31 +173,15 @@ function processItemPrices(rawPrices) {
                 location = location.replace("Green Imperial Housing Exchange", "GrimHEX");
             }
         }
-        
-        let system = row.star_system_name || "Unknown";
-        const locKey = `${system}|${location}`;
 
-        if (!locationLookup[locKey]) {
-            locationLookup[locKey] = {
-                system: system,
-                location: location,
-                locIdx: uniqueLocations.length
-            };
-            uniqueLocations.push(locationLookup[locKey]);
-        }
+        let system = row.star_system_name || "Unknown";
+        const key = registerLocation(system, location);
 
         if (!priceMap[row.item_name]) priceMap[row.item_name] = [];
-        priceMap[row.item_name].push({ 
-            locIdx: locationLookup[locKey].locIdx, 
-            price: price 
-        });
+        priceMap[row.item_name].push({ locKey: key, price: price });
     });
 
-    Object.keys(priceMap).forEach(key => {
-        priceMap[key].sort((a, b) => a.price - b.price);
-    });
-
-    return { priceMap, uniqueLocations };
+    return priceMap;
 }
 
 function safeFloat(v, d = 0) { if (!v) return d; let f = parseFloat(v.toString().replace(/[% ,]/g, '')); return isNaN(f) ? d : f; }
@@ -275,11 +284,7 @@ async function buildData() {
         const rawModulePrices = await fetchData(`/items_prices?id_category=30`);
         
         const allItemPrices = [...rawGadgetPrices, ...rawLaserPrices, ...rawModulePrices];
-        const { priceMap, uniqueLocations } = processItemPrices(allItemPrices);
-
-        const finalLasers = processLasers(rawLasers, priceMap);
-        const finalModules = processModules(rawModules, priceMap);
-        const finalGadgets = processGadgets(rawGadgets, priceMap);
+        const priceMap = processItemPrices(allItemPrices);
         const finalRefinery = processRefinery(rawRefinery);
 
         // Fetch Ore Prices
@@ -297,6 +302,29 @@ async function buildData() {
         }
         const finalPrices = processPrices(allPriceData);
 
+        // Both processors have now registered every location. Finalize the shared
+        // registry (alphabetical: system, then location) and resolve each price
+        // list to its stable locIdx. Equipment stays price-ascending (cheapest is
+        // the default shop + preserves saved selection indices); ores are ordered
+        // by locIdx so the list order is stable and diffs stay clean.
+        const { locations: finalLocations, keyToIdx } = finalizeLocations();
+        for (const item of Object.keys(priceMap)) {
+            priceMap[item] = priceMap[item]
+                .map(x => ({ locIdx: keyToIdx.get(x.locKey), price: x.price }))
+                .sort((a, b) => a.price - b.price);
+        }
+        for (const ore of Object.keys(finalPrices)) {
+            finalPrices[ore] = finalPrices[ore]
+                .map(x => ({ locIdx: keyToIdx.get(x.locKey), price: x.price }))
+                .sort((a, b) => a.locIdx - b.locIdx);
+        }
+
+        // Resolve the equipment price map first so these capture the final locIdx
+        // values when they copy `shops`.
+        const finalLasers = processLasers(rawLasers, priceMap);
+        const finalModules = processModules(rawModules, priceMap);
+        const finalGadgets = processGadgets(rawGadgets, priceMap);
+
         const sanitizedLasers = sanitizeObject(finalLasers);
         const sanitizedModules = sanitizeObject(finalModules);
         const sanitizedGadgets = sanitizeObject(finalGadgets);
@@ -305,7 +333,7 @@ async function buildData() {
 
         const fileContent = `
 // AUTO-GENERATED UEX DATA
-const locations = ${JSON.stringify(uniqueLocations, null, 2)};
+const locations = ${JSON.stringify(sanitizeObject(finalLocations), null, 2)};
 const lasers = ${JSON.stringify(sanitizedLasers, null, 2)};
 const modules = ${JSON.stringify(sanitizedModules, null, 2)};
 const gadgets = ${JSON.stringify(sanitizedGadgets, null, 2)};

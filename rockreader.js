@@ -177,7 +177,10 @@ function showPriceTip(oreName) {
         return;
     }
 
-    const prices = pricingData[oreName];
+    const prices = pricingData[oreName].map(p => {
+        const loc = locations[p.locIdx];
+        return { system: loc.system, location: loc.location, price: p.price };
+    });
     const bestPrices = {};
     prices.forEach(p => {
         if (!bestPrices[p.system] || p.price > bestPrices[p.system].price) {
@@ -224,7 +227,11 @@ function togglePriceRow(cell, oreName, showAll = false, btnEl = null) {
     }
 
     if (typeof pricingData === 'undefined' || !pricingData[oreName]) return;
-    const sortedPrices = [...pricingData[oreName]].sort((a, b) => b.price - a.price);
+    const resolvedPrices = pricingData[oreName].map(p => {
+        const loc = locations[p.locIdx];
+        return { system: loc.system, location: loc.location, price: p.price };
+    });
+    const sortedPrices = [...resolvedPrices].sort((a, b) => b.price - a.price);
     
     const displayPrices = showAll ? sortedPrices : sortedPrices.slice(0, 5);
     const hasMore = sortedPrices.length > 5;
@@ -335,7 +342,7 @@ function generateOreTable() {
 
         let priceCellHtml = `<td class="sys-unknown" style="text-align: center;">N/A</td>`;
         if (typeof pricingData !== 'undefined' && pricingData[ore.name] && pricingData[ore.name].length > 0) {
-            const bestPriceValue = pricingData[ore.name][0].price; 
+            const bestPriceValue = pricingData[ore.name].reduce((max, p) => Math.max(max, p.price), 0); 
             const formattedPrice = bestPriceValue.toLocaleString();
 
             priceCellHtml = `
