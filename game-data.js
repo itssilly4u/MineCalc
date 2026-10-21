@@ -1,174 +1,584 @@
 // AUTO-GENERATED UEX DATA
 const locations = [
   {
-    "system": "Stanton",
-    "location": "Area 18 - Dumper's Depot",
-    "locIdx": 0
-  },
-  {
-    "system": "Stanton",
-    "location": "New Babbage - Shubin Interstellar - Commons",
-    "locIdx": 1
-  },
-  {
-    "system": "Stanton",
-    "location": "Lorville - Tammany and Sons - Metro Center",
-    "locIdx": 2
-  },
-  {
-    "system": "Stanton",
-    "location": "ARC-L1 Wide Forest Station - Refinery Shop",
-    "locIdx": 3
-  },
-  {
-    "system": "Stanton",
-    "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
-    "locIdx": 4
-  },
-  {
-    "system": "Stanton",
-    "location": "ARC-L4 Faint Glen Station - Refinery Shop",
-    "locIdx": 5
-  },
-  {
-    "system": "Stanton",
-    "location": "MIC-L2 Long Forest Station - Refinery Shop",
-    "locIdx": 6
-  },
-  {
-    "system": "Stanton",
-    "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
-    "locIdx": 7
-  },
-  {
-    "system": "Stanton",
-    "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
-    "locIdx": 8
-  },
-  {
-    "system": "Stanton",
-    "location": "Terra Gateway (Stanton) - Refinery Shop",
-    "locIdx": 9
-  },
-  {
-    "system": "Stanton",
-    "location": "HUR-L1 Green Glade Station - Refinery Shop",
-    "locIdx": 10
-  },
-  {
-    "system": "Stanton",
-    "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
-    "locIdx": 11
-  },
-  {
-    "system": "Stanton",
-    "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
-    "locIdx": 12
-  },
-  {
-    "system": "Stanton",
-    "location": "Pyro Gateway (Stanton) - Refinery Shop",
-    "locIdx": 13
-  },
-  {
-    "system": "Stanton",
-    "location": "GrimHEX - Dumper's Depot",
-    "locIdx": 14
-  },
-  {
-    "system": "Stanton",
-    "location": "Nyx Gateway (Stanton) - Refinery Shop",
-    "locIdx": 15
-  },
-  {
-    "system": "Pyro",
-    "location": "Ruin Station - Refinery Shop",
-    "locIdx": 16
-  },
-  {
-    "system": "Pyro",
-    "location": "Checkmate Station - Refinery Shop",
-    "locIdx": 17
-  },
-  {
-    "system": "Pyro",
-    "location": "Orbituary - Refinery Shop",
-    "locIdx": 18
-  },
-  {
-    "system": "Pyro",
-    "location": "Yang's Place - Shop Terminal",
-    "locIdx": 19
-  },
-  {
-    "system": "Pyro",
-    "location": "Ostler's Claim - Shop Terminal",
-    "locIdx": 20
-  },
-  {
-    "system": "Pyro",
-    "location": "Bueno Ravine - Shop Terminal",
-    "locIdx": 21
-  },
-  {
-    "system": "Pyro",
-    "location": "Stanton Gateway (Pyro) - Refinery Shop",
-    "locIdx": 22
-  },
-  {
-    "system": "Pyro",
-    "location": "Carver's Ridge - Shop Terminal",
-    "locIdx": 23
-  },
-  {
-    "system": "Pyro",
-    "location": "Stag's Rut - Shop Terminal",
-    "locIdx": 24
-  },
-  {
     "system": "Nyx",
-    "location": "Levski - Tools & Supplies",
-    "locIdx": 25
+    "location": "Levski",
+    "locIdx": 0
   },
   {
     "system": "Nyx",
     "location": "Levski - Refinery Shop",
-    "locIdx": 26
+    "locIdx": 1
   },
   {
     "system": "Nyx",
-    "location": "Stanton Gateway (Nyx) - Refinery Shop",
-    "locIdx": 27
+    "location": "Levski - Tools & Supplies",
+    "locIdx": 2
   },
   {
     "system": "Nyx",
-    "location": "Pyro Gateway (Nyx) - Refinery Shop",
-    "locIdx": 28
-  },
-  {
-    "system": "Pyro",
-    "location": "Nyx Gateway (Pyro) - Refinery Shop",
-    "locIdx": 29
+    "location": "People's Service Station Alpha - Admin",
+    "locIdx": 3
   },
   {
     "system": "Nyx",
     "location": "People's Service Station Alpha - Tools & Supplies",
-    "locIdx": 30
+    "locIdx": 4
   },
   {
     "system": "Nyx",
-    "location": "People's Service Station Theta - Tools & Supplies",
-    "locIdx": 31
-  },
-  {
-    "system": "Nyx",
-    "location": "People's Service Station Lambda - Tools & Supplies",
-    "locIdx": 32
+    "location": "People's Service Station Delta - Admin",
+    "locIdx": 5
   },
   {
     "system": "Nyx",
     "location": "People's Service Station Delta - Tools & Supplies",
+    "locIdx": 6
+  },
+  {
+    "system": "Nyx",
+    "location": "People's Service Station Lambda - Admin",
+    "locIdx": 7
+  },
+  {
+    "system": "Nyx",
+    "location": "People's Service Station Lambda - Tools & Supplies",
+    "locIdx": 8
+  },
+  {
+    "system": "Nyx",
+    "location": "People's Service Station Theta - Admin",
+    "locIdx": 9
+  },
+  {
+    "system": "Nyx",
+    "location": "People's Service Station Theta - Tools & Supplies",
+    "locIdx": 10
+  },
+  {
+    "system": "Nyx",
+    "location": "Pyro Gateway (Nyx) - Admin",
+    "locIdx": 11
+  },
+  {
+    "system": "Nyx",
+    "location": "Pyro Gateway (Nyx) - Refinery Shop",
+    "locIdx": 12
+  },
+  {
+    "system": "Nyx",
+    "location": "Stanton Gateway (Nyx) - Admin",
+    "locIdx": 13
+  },
+  {
+    "system": "Nyx",
+    "location": "Stanton Gateway (Nyx) - Refinery Shop",
+    "locIdx": 14
+  },
+  {
+    "system": "Pyro",
+    "location": "Ashland",
+    "locIdx": 15
+  },
+  {
+    "system": "Pyro",
+    "location": "Bueno Ravine",
+    "locIdx": 16
+  },
+  {
+    "system": "Pyro",
+    "location": "Bueno Ravine - Shop Terminal",
+    "locIdx": 17
+  },
+  {
+    "system": "Pyro",
+    "location": "Canard View",
+    "locIdx": 18
+  },
+  {
+    "system": "Pyro",
+    "location": "Carver's Ridge - Shop Terminal",
+    "locIdx": 19
+  },
+  {
+    "system": "Pyro",
+    "location": "Chawla's Beach",
+    "locIdx": 20
+  },
+  {
+    "system": "Pyro",
+    "location": "Checkmate Station - Admin",
+    "locIdx": 21
+  },
+  {
+    "system": "Pyro",
+    "location": "Checkmate Station - Refinery Shop",
+    "locIdx": 22
+  },
+  {
+    "system": "Pyro",
+    "location": "Dudley & Daughters - Admin",
+    "locIdx": 23
+  },
+  {
+    "system": "Pyro",
+    "location": "Endgame - Admin",
+    "locIdx": 24
+  },
+  {
+    "system": "Pyro",
+    "location": "Fallow Field",
+    "locIdx": 25
+  },
+  {
+    "system": "Pyro",
+    "location": "Gaslight - Admin",
+    "locIdx": 26
+  },
+  {
+    "system": "Pyro",
+    "location": "Jackson's Swap",
+    "locIdx": 27
+  },
+  {
+    "system": "Pyro",
+    "location": "Last Landings",
+    "locIdx": 28
+  },
+  {
+    "system": "Pyro",
+    "location": "Megumi Refueling - Admin",
+    "locIdx": 29
+  },
+  {
+    "system": "Pyro",
+    "location": "Nyx Gateway (Pyro) - Admin",
+    "locIdx": 30
+  },
+  {
+    "system": "Pyro",
+    "location": "Nyx Gateway (Pyro) - Refinery Shop",
+    "locIdx": 31
+  },
+  {
+    "system": "Pyro",
+    "location": "Orbituary - Admin",
+    "locIdx": 32
+  },
+  {
+    "system": "Pyro",
+    "location": "Orbituary - Refinery Shop",
     "locIdx": 33
+  },
+  {
+    "system": "Pyro",
+    "location": "Ostler's Claim - Shop Terminal",
+    "locIdx": 34
+  },
+  {
+    "system": "Pyro",
+    "location": "Patch City - Admin",
+    "locIdx": 35
+  },
+  {
+    "system": "Pyro",
+    "location": "Rat's Nest - Admin",
+    "locIdx": 36
+  },
+  {
+    "system": "Pyro",
+    "location": "Rod's Fuel 'N Supplies - Admin",
+    "locIdx": 37
+  },
+  {
+    "system": "Pyro",
+    "location": "Ruin Station - Admin",
+    "locIdx": 38
+  },
+  {
+    "system": "Pyro",
+    "location": "Ruin Station - Refinery Shop",
+    "locIdx": 39
+  },
+  {
+    "system": "Pyro",
+    "location": "Rustville",
+    "locIdx": 40
+  },
+  {
+    "system": "Pyro",
+    "location": "Sacren's Plot",
+    "locIdx": 41
+  },
+  {
+    "system": "Pyro",
+    "location": "Seer's Canyon",
+    "locIdx": 42
+  },
+  {
+    "system": "Pyro",
+    "location": "Shepherd's Rest",
+    "locIdx": 43
+  },
+  {
+    "system": "Pyro",
+    "location": "Stag's Rut - Shop Terminal",
+    "locIdx": 44
+  },
+  {
+    "system": "Pyro",
+    "location": "Stanton Gateway (Pyro) - Admin",
+    "locIdx": 45
+  },
+  {
+    "system": "Pyro",
+    "location": "Stanton Gateway (Pyro) - Refinery Shop",
+    "locIdx": 46
+  },
+  {
+    "system": "Pyro",
+    "location": "Starlight Service Station - Admin",
+    "locIdx": 47
+  },
+  {
+    "system": "Pyro",
+    "location": "Sunset Mesa",
+    "locIdx": 48
+  },
+  {
+    "system": "Pyro",
+    "location": "The Golden Riviera",
+    "locIdx": 49
+  },
+  {
+    "system": "Pyro",
+    "location": "Yang's Place - Shop Terminal",
+    "locIdx": 50
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L1 Wide Forest Station - Admin",
+    "locIdx": 51
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L1 Wide Forest Station - Refinery Shop",
+    "locIdx": 52
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L2 Lively Pathway Station - Admin",
+    "locIdx": 53
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L2 Lively Pathway Station - Refinery Shop",
+    "locIdx": 54
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L3 Modern Express Station - Admin",
+    "locIdx": 55
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L4 Faint Glen Station - Admin",
+    "locIdx": 56
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L4 Faint Glen Station - Refinery Shop",
+    "locIdx": 57
+  },
+  {
+    "system": "Stanton",
+    "location": "ARC-L5 Yellow Core Station - Admin",
+    "locIdx": 58
+  },
+  {
+    "system": "Stanton",
+    "location": "ArcCorp Mining Area 141",
+    "locIdx": 59
+  },
+  {
+    "system": "Stanton",
+    "location": "ArcCorp Mining Area 157",
+    "locIdx": 60
+  },
+  {
+    "system": "Stanton",
+    "location": "Area 18 - Dumper's Depot",
+    "locIdx": 61
+  },
+  {
+    "system": "Stanton",
+    "location": "Area 18 - TDD",
+    "locIdx": 62
+  },
+  {
+    "system": "Stanton",
+    "location": "Baijini Point - Admin",
+    "locIdx": 63
+  },
+  {
+    "system": "Stanton",
+    "location": "Brio's Breaker Yard",
+    "locIdx": 64
+  },
+  {
+    "system": "Stanton",
+    "location": "CRU-L1 Ambitious Dream Station - Admin",
+    "locIdx": 65
+  },
+  {
+    "system": "Stanton",
+    "location": "CRU-L1 Ambitious Dream Station - Refinery Shop",
+    "locIdx": 66
+  },
+  {
+    "system": "Stanton",
+    "location": "CRU-L4 Shallow Fields Station",
+    "locIdx": 67
+  },
+  {
+    "system": "Stanton",
+    "location": "CRU-L4 Shallow Fields Station - Admin",
+    "locIdx": 68
+  },
+  {
+    "system": "Stanton",
+    "location": "CRU-L5 Beautiful Glen Station",
+    "locIdx": 69
+  },
+  {
+    "system": "Stanton",
+    "location": "CRU-L5 Beautiful Glen Station - Admin",
+    "locIdx": 70
+  },
+  {
+    "system": "Stanton",
+    "location": "Deakins Research",
+    "locIdx": 71
+  },
+  {
+    "system": "Stanton",
+    "location": "Devlin Scrap & Salvage",
+    "locIdx": 72
+  },
+  {
+    "system": "Stanton",
+    "location": "Dunboro",
+    "locIdx": 73
+  },
+  {
+    "system": "Stanton",
+    "location": "Everus Harbor - Admin",
+    "locIdx": 74
+  },
+  {
+    "system": "Stanton",
+    "location": "Green Imperial Housing Exchange - Admin",
+    "locIdx": 75
+  },
+  {
+    "system": "Stanton",
+    "location": "GrimHEX - Dumper's Depot",
+    "locIdx": 76
+  },
+  {
+    "system": "Stanton",
+    "location": "HDMS-Hahn",
+    "locIdx": 77
+  },
+  {
+    "system": "Stanton",
+    "location": "HDMS-Perlman",
+    "locIdx": 78
+  },
+  {
+    "system": "Stanton",
+    "location": "Hickes Research",
+    "locIdx": 79
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L1 Green Glade Station - Admin",
+    "locIdx": 80
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L1 Green Glade Station - Refinery Shop",
+    "locIdx": 81
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L2 Faithful Dream Station - Admin",
+    "locIdx": 82
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L2 Faithful Dream Station - Refinery Shop",
+    "locIdx": 83
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L3 Thundering Express Station - Admin",
+    "locIdx": 84
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L4 Melodic Fields Station - Admin",
+    "locIdx": 85
+  },
+  {
+    "system": "Stanton",
+    "location": "HUR-L5 High Course Station - Admin",
+    "locIdx": 86
+  },
+  {
+    "system": "Stanton",
+    "location": "Lorville - CBD",
+    "locIdx": 87
+  },
+  {
+    "system": "Stanton",
+    "location": "Lorville - Tammany and Sons - Metro Center",
+    "locIdx": 88
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L1 Shallow Frontier Station - Admin",
+    "locIdx": 89
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L1 Shallow Frontier Station - Refinery Shop",
+    "locIdx": 90
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L2 Long Forest Station - Refinery Shop",
+    "locIdx": 91
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L3 Endless Odyssey Station - Admin",
+    "locIdx": 92
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L4 Red Crossroads Station - Admin",
+    "locIdx": 93
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L5 Modern Icarus Station - Admin",
+    "locIdx": 94
+  },
+  {
+    "system": "Stanton",
+    "location": "MIC-L5 Modern Icarus Station - Refinery Shop",
+    "locIdx": 95
+  },
+  {
+    "system": "Stanton",
+    "location": "New Babbage - Shubin Interstellar - Commons",
+    "locIdx": 96
+  },
+  {
+    "system": "Stanton",
+    "location": "New Babbage - TDD",
+    "locIdx": 97
+  },
+  {
+    "system": "Stanton",
+    "location": "Nyx Gateway (Stanton) - Admin",
+    "locIdx": 98
+  },
+  {
+    "system": "Stanton",
+    "location": "Nyx Gateway (Stanton) - Refinery Shop",
+    "locIdx": 99
+  },
+  {
+    "system": "Stanton",
+    "location": "Orison - TDD",
+    "locIdx": 100
+  },
+  {
+    "system": "Stanton",
+    "location": "Picker's Field",
+    "locIdx": 101
+  },
+  {
+    "system": "Stanton",
+    "location": "Port Tressler - Admin",
+    "locIdx": 102
+  },
+  {
+    "system": "Stanton",
+    "location": "Pyro Gateway (Stanton) - Admin",
+    "locIdx": 103
+  },
+  {
+    "system": "Stanton",
+    "location": "Pyro Gateway (Stanton) - Refinery Shop",
+    "locIdx": 104
+  },
+  {
+    "system": "Stanton",
+    "location": "Rappel",
+    "locIdx": 105
+  },
+  {
+    "system": "Stanton",
+    "location": "Rayari Anvik Research Outpost",
+    "locIdx": 106
+  },
+  {
+    "system": "Stanton",
+    "location": "Rayari Cantwell Research Outpost",
+    "locIdx": 107
+  },
+  {
+    "system": "Stanton",
+    "location": "Rayari Kaltag Research Outpost",
+    "locIdx": 108
+  },
+  {
+    "system": "Stanton",
+    "location": "Rayari McGrath Research Outpost",
+    "locIdx": 109
+  },
+  {
+    "system": "Stanton",
+    "location": "Reclamation & Disposal Orinth",
+    "locIdx": 110
+  },
+  {
+    "system": "Stanton",
+    "location": "Samson & Son's Salvage Center",
+    "locIdx": 111
+  },
+  {
+    "system": "Stanton",
+    "location": "Seraphim Station - Admin",
+    "locIdx": 112
+  },
+  {
+    "system": "Stanton",
+    "location": "Terra Gateway (Stanton) - Admin",
+    "locIdx": 113
+  },
+  {
+    "system": "Stanton",
+    "location": "Terra Gateway (Stanton) - Refinery Shop",
+    "locIdx": 114
+  },
+  {
+    "system": "Stanton",
+    "location": "Terra Mills HydroFarm",
+    "locIdx": 115
   }
 ];
 const lasers = [
@@ -199,27 +609,27 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 10795
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 11363
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 11363
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 11363
       },
       {
-        "locIdx": 14,
+        "locIdx": 76,
         "price": 11363
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 11363
       }
     ]
@@ -242,23 +652,23 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 20378
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 21450
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 21450
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 21450
       },
       {
-        "locIdx": 14,
+        "locIdx": 76,
         "price": 21450
       }
     ]
@@ -281,15 +691,79 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 4893
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 4893
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
+        "price": 5150
+      },
+      {
+        "locIdx": 96,
+        "price": 5150
+      },
+      {
+        "locIdx": 76,
+        "price": 5150
+      },
+      {
+        "locIdx": 90,
+        "price": 5150
+      },
+      {
+        "locIdx": 91,
+        "price": 5150
+      },
+      {
+        "locIdx": 95,
+        "price": 5150
+      },
+      {
+        "locIdx": 54,
+        "price": 5150
+      },
+      {
+        "locIdx": 66,
+        "price": 5150
+      },
+      {
+        "locIdx": 52,
+        "price": 5150
+      },
+      {
+        "locIdx": 83,
+        "price": 5150
+      },
+      {
+        "locIdx": 33,
+        "price": 5150
+      },
+      {
+        "locIdx": 22,
+        "price": 5150
+      },
+      {
+        "locIdx": 81,
+        "price": 5150
+      },
+      {
+        "locIdx": 99,
+        "price": 5150
+      },
+      {
+        "locIdx": 57,
+        "price": 5150
+      },
+      {
+        "locIdx": 114,
+        "price": 5150
+      },
+      {
+        "locIdx": 46,
         "price": 5150
       },
       {
@@ -301,79 +775,15 @@ const lasers = [
         "price": 5150
       },
       {
-        "locIdx": 7,
-        "price": 5150
-      },
-      {
-        "locIdx": 6,
-        "price": 5150
-      },
-      {
-        "locIdx": 8,
-        "price": 5150
-      },
-      {
-        "locIdx": 4,
-        "price": 5150
-      },
-      {
-        "locIdx": 11,
-        "price": 5150
-      },
-      {
-        "locIdx": 3,
-        "price": 5150
-      },
-      {
         "locIdx": 12,
         "price": 5150
       },
       {
-        "locIdx": 18,
+        "locIdx": 31,
         "price": 5150
       },
       {
-        "locIdx": 17,
-        "price": 5150
-      },
-      {
-        "locIdx": 10,
-        "price": 5150
-      },
-      {
-        "locIdx": 15,
-        "price": 5150
-      },
-      {
-        "locIdx": 5,
-        "price": 5150
-      },
-      {
-        "locIdx": 9,
-        "price": 5150
-      },
-      {
-        "locIdx": 22,
-        "price": 5150
-      },
-      {
-        "locIdx": 26,
-        "price": 5150
-      },
-      {
-        "locIdx": 27,
-        "price": 5150
-      },
-      {
-        "locIdx": 28,
-        "price": 5150
-      },
-      {
-        "locIdx": 29,
-        "price": 5150
-      },
-      {
-        "locIdx": 16,
+        "locIdx": 39,
         "price": 5150
       }
     ]
@@ -396,59 +806,59 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 55100
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 55100
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 58000
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 58000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 58000
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 58000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 58000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
+        "price": 58000
+      },
+      {
+        "locIdx": 83,
+        "price": 58000
+      },
+      {
+        "locIdx": 76,
+        "price": 58000
+      },
+      {
+        "locIdx": 99,
+        "price": 58000
+      },
+      {
+        "locIdx": 66,
+        "price": 58000
+      },
+      {
+        "locIdx": 39,
         "price": 58000
       },
       {
         "locIdx": 12,
-        "price": 58000
-      },
-      {
-        "locIdx": 14,
-        "price": 58000
-      },
-      {
-        "locIdx": 15,
-        "price": 58000
-      },
-      {
-        "locIdx": 11,
-        "price": 58000
-      },
-      {
-        "locIdx": 16,
-        "price": 58000
-      },
-      {
-        "locIdx": 28,
         "price": 58000
       }
     ]
@@ -471,11 +881,43 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 102600
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
+        "price": 108000
+      },
+      {
+        "locIdx": 96,
+        "price": 108000
+      },
+      {
+        "locIdx": 91,
+        "price": 108000
+      },
+      {
+        "locIdx": 90,
+        "price": 108000
+      },
+      {
+        "locIdx": 95,
+        "price": 108000
+      },
+      {
+        "locIdx": 81,
+        "price": 108000
+      },
+      {
+        "locIdx": 66,
+        "price": 108000
+      },
+      {
+        "locIdx": 46,
+        "price": 108000
+      },
+      {
+        "locIdx": 33,
         "price": 108000
       },
       {
@@ -483,43 +925,11 @@ const lasers = [
         "price": 108000
       },
       {
-        "locIdx": 6,
+        "locIdx": 14,
         "price": 108000
       },
       {
-        "locIdx": 7,
-        "price": 108000
-      },
-      {
-        "locIdx": 8,
-        "price": 108000
-      },
-      {
-        "locIdx": 10,
-        "price": 108000
-      },
-      {
-        "locIdx": 11,
-        "price": 108000
-      },
-      {
-        "locIdx": 22,
-        "price": 108000
-      },
-      {
-        "locIdx": 18,
-        "price": 108000
-      },
-      {
-        "locIdx": 26,
-        "price": 108000
-      },
-      {
-        "locIdx": 27,
-        "price": 108000
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 108000
       }
     ]
@@ -542,11 +952,27 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 12113
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
+        "price": 12750
+      },
+      {
+        "locIdx": 96,
+        "price": 12750
+      },
+      {
+        "locIdx": 95,
+        "price": 12750
+      },
+      {
+        "locIdx": 81,
+        "price": 12750
+      },
+      {
+        "locIdx": 22,
         "price": 12750
       },
       {
@@ -554,27 +980,11 @@ const lasers = [
         "price": 12750
       },
       {
-        "locIdx": 8,
+        "locIdx": 14,
         "price": 12750
       },
       {
-        "locIdx": 10,
-        "price": 12750
-      },
-      {
-        "locIdx": 17,
-        "price": 12750
-      },
-      {
-        "locIdx": 26,
-        "price": 12750
-      },
-      {
-        "locIdx": 27,
-        "price": 12750
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 12750
       }
     ]
@@ -597,59 +1007,59 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 21613
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 21613
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 22750
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 22750
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 22750
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 22750
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 22750
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 22750
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
+        "price": 22750
+      },
+      {
+        "locIdx": 83,
+        "price": 22750
+      },
+      {
+        "locIdx": 76,
+        "price": 22750
+      },
+      {
+        "locIdx": 99,
+        "price": 22750
+      },
+      {
+        "locIdx": 39,
         "price": 22750
       },
       {
         "locIdx": 12,
-        "price": 22750
-      },
-      {
-        "locIdx": 14,
-        "price": 22750
-      },
-      {
-        "locIdx": 15,
-        "price": 22750
-      },
-      {
-        "locIdx": 16,
-        "price": 22750
-      },
-      {
-        "locIdx": 28,
         "price": 22750
       }
     ]
@@ -672,31 +1082,31 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 54863
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 57750
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 57750
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 57750
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 57750
       },
       {
-        "locIdx": 14,
+        "locIdx": 76,
         "price": 57750
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
         "price": 57750
       }
     ]
@@ -719,15 +1129,51 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 54863
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 54863
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
+        "price": 57750
+      },
+      {
+        "locIdx": 96,
+        "price": 57750
+      },
+      {
+        "locIdx": 54,
+        "price": 57750
+      },
+      {
+        "locIdx": 57,
+        "price": 57750
+      },
+      {
+        "locIdx": 114,
+        "price": 57750
+      },
+      {
+        "locIdx": 81,
+        "price": 57750
+      },
+      {
+        "locIdx": 83,
+        "price": 57750
+      },
+      {
+        "locIdx": 99,
+        "price": 57750
+      },
+      {
+        "locIdx": 66,
+        "price": 57750
+      },
+      {
+        "locIdx": 22,
         "price": 57750
       },
       {
@@ -735,47 +1181,11 @@ const lasers = [
         "price": 57750
       },
       {
-        "locIdx": 4,
-        "price": 57750
-      },
-      {
-        "locIdx": 5,
-        "price": 57750
-      },
-      {
-        "locIdx": 9,
-        "price": 57750
-      },
-      {
-        "locIdx": 10,
+        "locIdx": 14,
         "price": 57750
       },
       {
         "locIdx": 12,
-        "price": 57750
-      },
-      {
-        "locIdx": 15,
-        "price": 57750
-      },
-      {
-        "locIdx": 11,
-        "price": 57750
-      },
-      {
-        "locIdx": 17,
-        "price": 57750
-      },
-      {
-        "locIdx": 26,
-        "price": 57750
-      },
-      {
-        "locIdx": 27,
-        "price": 57750
-      },
-      {
-        "locIdx": 28,
         "price": 57750
       }
     ]
@@ -798,11 +1208,11 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 10150
       },
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 10150
       }
     ]
@@ -825,11 +1235,11 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 20150
       },
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 20150
       }
     ]
@@ -852,39 +1262,59 @@ const lasers = [
     "size": 1,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 22325
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 22325
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 23500
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 23500
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 23500
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 23500
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 23500
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 23500
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
+        "price": 23500
+      },
+      {
+        "locIdx": 83,
+        "price": 23500
+      },
+      {
+        "locIdx": 99,
+        "price": 23500
+      },
+      {
+        "locIdx": 66,
+        "price": 23500
+      },
+      {
+        "locIdx": 33,
+        "price": 23500
+      },
+      {
+        "locIdx": 46,
         "price": 23500
       },
       {
@@ -892,31 +1322,11 @@ const lasers = [
         "price": 23500
       },
       {
-        "locIdx": 15,
+        "locIdx": 31,
         "price": 23500
       },
       {
-        "locIdx": 11,
-        "price": 23500
-      },
-      {
-        "locIdx": 18,
-        "price": 23500
-      },
-      {
-        "locIdx": 22,
-        "price": 23500
-      },
-      {
-        "locIdx": 28,
-        "price": 23500
-      },
-      {
-        "locIdx": 29,
-        "price": 23500
-      },
-      {
-        "locIdx": 16,
+        "locIdx": 39,
         "price": 23500
       }
     ]
@@ -939,11 +1349,39 @@ const lasers = [
     "size": 2,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 89300
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
+        "price": 94000
+      },
+      {
+        "locIdx": 96,
+        "price": 94000
+      },
+      {
+        "locIdx": 90,
+        "price": 94000
+      },
+      {
+        "locIdx": 95,
+        "price": 94000
+      },
+      {
+        "locIdx": 81,
+        "price": 94000
+      },
+      {
+        "locIdx": 76,
+        "price": 94000
+      },
+      {
+        "locIdx": 33,
+        "price": 94000
+      },
+      {
+        "locIdx": 46,
         "price": 94000
       },
       {
@@ -951,39 +1389,11 @@ const lasers = [
         "price": 94000
       },
       {
-        "locIdx": 7,
-        "price": 94000
-      },
-      {
-        "locIdx": 8,
-        "price": 94000
-      },
-      {
-        "locIdx": 10,
-        "price": 94000
-      },
-      {
         "locIdx": 14,
         "price": 94000
       },
       {
-        "locIdx": 18,
-        "price": 94000
-      },
-      {
-        "locIdx": 22,
-        "price": 94000
-      },
-      {
-        "locIdx": 26,
-        "price": 94000
-      },
-      {
-        "locIdx": 27,
-        "price": 94000
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 94000
       }
     ]
@@ -1006,11 +1416,11 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 2950
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 4950
       }
     ]
@@ -1051,19 +1461,83 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 8075
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 8075
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 8500
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
+        "price": 8500
+      },
+      {
+        "locIdx": 96,
+        "price": 8500
+      },
+      {
+        "locIdx": 76,
+        "price": 8500
+      },
+      {
+        "locIdx": 90,
+        "price": 8500
+      },
+      {
+        "locIdx": 91,
+        "price": 8500
+      },
+      {
+        "locIdx": 95,
+        "price": 8500
+      },
+      {
+        "locIdx": 54,
+        "price": 8500
+      },
+      {
+        "locIdx": 66,
+        "price": 8500
+      },
+      {
+        "locIdx": 52,
+        "price": 8500
+      },
+      {
+        "locIdx": 83,
+        "price": 8500
+      },
+      {
+        "locIdx": 33,
+        "price": 8500
+      },
+      {
+        "locIdx": 22,
+        "price": 8500
+      },
+      {
+        "locIdx": 81,
+        "price": 8500
+      },
+      {
+        "locIdx": 99,
+        "price": 8500
+      },
+      {
+        "locIdx": 57,
+        "price": 8500
+      },
+      {
+        "locIdx": 114,
+        "price": 8500
+      },
+      {
+        "locIdx": 46,
         "price": 8500
       },
       {
@@ -1075,75 +1549,11 @@ const lasers = [
         "price": 8500
       },
       {
-        "locIdx": 7,
-        "price": 8500
-      },
-      {
-        "locIdx": 6,
-        "price": 8500
-      },
-      {
-        "locIdx": 8,
-        "price": 8500
-      },
-      {
-        "locIdx": 4,
-        "price": 8500
-      },
-      {
-        "locIdx": 11,
-        "price": 8500
-      },
-      {
-        "locIdx": 3,
-        "price": 8500
-      },
-      {
         "locIdx": 12,
         "price": 8500
       },
       {
-        "locIdx": 18,
-        "price": 8500
-      },
-      {
-        "locIdx": 17,
-        "price": 8500
-      },
-      {
-        "locIdx": 10,
-        "price": 8500
-      },
-      {
-        "locIdx": 15,
-        "price": 8500
-      },
-      {
-        "locIdx": 5,
-        "price": 8500
-      },
-      {
-        "locIdx": 9,
-        "price": 8500
-      },
-      {
-        "locIdx": 22,
-        "price": 8500
-      },
-      {
-        "locIdx": 26,
-        "price": 8500
-      },
-      {
-        "locIdx": 27,
-        "price": 8500
-      },
-      {
-        "locIdx": 28,
-        "price": 8500
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 8500
       }
     ]
@@ -1166,19 +1576,83 @@ const lasers = [
     "size": 0,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 5463
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 5463
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 5750
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
+        "price": 5750
+      },
+      {
+        "locIdx": 96,
+        "price": 5750
+      },
+      {
+        "locIdx": 76,
+        "price": 5750
+      },
+      {
+        "locIdx": 90,
+        "price": 5750
+      },
+      {
+        "locIdx": 91,
+        "price": 5750
+      },
+      {
+        "locIdx": 95,
+        "price": 5750
+      },
+      {
+        "locIdx": 54,
+        "price": 5750
+      },
+      {
+        "locIdx": 66,
+        "price": 5750
+      },
+      {
+        "locIdx": 52,
+        "price": 5750
+      },
+      {
+        "locIdx": 83,
+        "price": 5750
+      },
+      {
+        "locIdx": 33,
+        "price": 5750
+      },
+      {
+        "locIdx": 22,
+        "price": 5750
+      },
+      {
+        "locIdx": 81,
+        "price": 5750
+      },
+      {
+        "locIdx": 99,
+        "price": 5750
+      },
+      {
+        "locIdx": 57,
+        "price": 5750
+      },
+      {
+        "locIdx": 114,
+        "price": 5750
+      },
+      {
+        "locIdx": 46,
         "price": 5750
       },
       {
@@ -1190,75 +1664,11 @@ const lasers = [
         "price": 5750
       },
       {
-        "locIdx": 7,
-        "price": 5750
-      },
-      {
-        "locIdx": 6,
-        "price": 5750
-      },
-      {
-        "locIdx": 8,
-        "price": 5750
-      },
-      {
-        "locIdx": 4,
-        "price": 5750
-      },
-      {
-        "locIdx": 11,
-        "price": 5750
-      },
-      {
-        "locIdx": 3,
-        "price": 5750
-      },
-      {
         "locIdx": 12,
         "price": 5750
       },
       {
-        "locIdx": 18,
-        "price": 5750
-      },
-      {
-        "locIdx": 17,
-        "price": 5750
-      },
-      {
-        "locIdx": 10,
-        "price": 5750
-      },
-      {
-        "locIdx": 15,
-        "price": 5750
-      },
-      {
-        "locIdx": 5,
-        "price": 5750
-      },
-      {
-        "locIdx": 9,
-        "price": 5750
-      },
-      {
-        "locIdx": 22,
-        "price": 5750
-      },
-      {
-        "locIdx": 26,
-        "price": 5750
-      },
-      {
-        "locIdx": 27,
-        "price": 5750
-      },
-      {
-        "locIdx": 28,
-        "price": 5750
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 5750
       }
     ]
@@ -1286,31 +1696,23 @@ const modules = [
     "shatter": -30,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 2138
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 2250
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 2250
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 2250
       },
       {
-        "locIdx": 16,
-        "price": 2250
-      },
-      {
-        "locIdx": 17,
-        "price": 2250
-      },
-      {
-        "locIdx": 18,
+        "locIdx": 39,
         "price": 2250
       },
       {
@@ -1318,7 +1720,15 @@ const modules = [
         "price": 2250
       },
       {
-        "locIdx": 29,
+        "locIdx": 33,
+        "price": 2250
+      },
+      {
+        "locIdx": 46,
+        "price": 2250
+      },
+      {
+        "locIdx": 31,
         "price": 2250
       }
     ]
@@ -1337,55 +1747,55 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 5700
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 6000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 6000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 6000
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 6000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 6000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 6000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 6000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 6000
       },
       {
-        "locIdx": 15,
+        "locIdx": 99,
         "price": 6000
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
         "price": 6000
       },
       {
-        "locIdx": 17,
+        "locIdx": 22,
         "price": 6000
       },
       {
-        "locIdx": 28,
+        "locIdx": 12,
         "price": 6000
       }
     ]
@@ -1404,27 +1814,43 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 17100
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 18000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 18000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 18000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 18000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
+        "price": 18000
+      },
+      {
+        "locIdx": 83,
+        "price": 18000
+      },
+      {
+        "locIdx": 99,
+        "price": 18000
+      },
+      {
+        "locIdx": 33,
+        "price": 18000
+      },
+      {
+        "locIdx": 46,
         "price": 18000
       },
       {
@@ -1432,23 +1858,7 @@ const modules = [
         "price": 18000
       },
       {
-        "locIdx": 15,
-        "price": 18000
-      },
-      {
-        "locIdx": 18,
-        "price": 18000
-      },
-      {
-        "locIdx": 22,
-        "price": 18000
-      },
-      {
-        "locIdx": 28,
-        "price": 18000
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 18000
       }
     ]
@@ -1467,59 +1877,59 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 57000
+      },
+      {
+        "locIdx": 96,
+        "price": 60000
+      },
+      {
+        "locIdx": 52,
+        "price": 60000
+      },
+      {
+        "locIdx": 54,
+        "price": 60000
+      },
+      {
+        "locIdx": 57,
+        "price": 60000
+      },
+      {
+        "locIdx": 91,
+        "price": 60000
+      },
+      {
+        "locIdx": 90,
+        "price": 60000
+      },
+      {
+        "locIdx": 114,
+        "price": 60000
+      },
+      {
+        "locIdx": 81,
+        "price": 60000
+      },
+      {
+        "locIdx": 99,
+        "price": 60000
+      },
+      {
+        "locIdx": 39,
+        "price": 60000
       },
       {
         "locIdx": 1,
         "price": 60000
       },
       {
-        "locIdx": 3,
+        "locIdx": 14,
         "price": 60000
       },
       {
-        "locIdx": 4,
-        "price": 60000
-      },
-      {
-        "locIdx": 5,
-        "price": 60000
-      },
-      {
-        "locIdx": 6,
-        "price": 60000
-      },
-      {
-        "locIdx": 7,
-        "price": 60000
-      },
-      {
-        "locIdx": 9,
-        "price": 60000
-      },
-      {
-        "locIdx": 10,
-        "price": 60000
-      },
-      {
-        "locIdx": 15,
-        "price": 60000
-      },
-      {
-        "locIdx": 16,
-        "price": 60000
-      },
-      {
-        "locIdx": 26,
-        "price": 60000
-      },
-      {
-        "locIdx": 27,
-        "price": 60000
-      },
-      {
-        "locIdx": 28,
+        "locIdx": 12,
         "price": 60000
       }
     ]
@@ -1538,59 +1948,59 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 11400
+      },
+      {
+        "locIdx": 96,
+        "price": 12000
+      },
+      {
+        "locIdx": 52,
+        "price": 12000
+      },
+      {
+        "locIdx": 54,
+        "price": 12000
+      },
+      {
+        "locIdx": 57,
+        "price": 12000
+      },
+      {
+        "locIdx": 91,
+        "price": 12000
+      },
+      {
+        "locIdx": 114,
+        "price": 12000
+      },
+      {
+        "locIdx": 81,
+        "price": 12000
+      },
+      {
+        "locIdx": 66,
+        "price": 12000
+      },
+      {
+        "locIdx": 83,
+        "price": 12000
+      },
+      {
+        "locIdx": 99,
+        "price": 12000
       },
       {
         "locIdx": 1,
         "price": 12000
       },
       {
-        "locIdx": 3,
-        "price": 12000
-      },
-      {
-        "locIdx": 4,
-        "price": 12000
-      },
-      {
-        "locIdx": 5,
-        "price": 12000
-      },
-      {
-        "locIdx": 6,
-        "price": 12000
-      },
-      {
-        "locIdx": 9,
-        "price": 12000
-      },
-      {
-        "locIdx": 10,
-        "price": 12000
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 14,
         "price": 12000
       },
       {
         "locIdx": 12,
-        "price": 12000
-      },
-      {
-        "locIdx": 15,
-        "price": 12000
-      },
-      {
-        "locIdx": 26,
-        "price": 12000
-      },
-      {
-        "locIdx": 27,
-        "price": 12000
-      },
-      {
-        "locIdx": 28,
         "price": 12000
       }
     ]
@@ -1609,43 +2019,43 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
+        "locIdx": 96,
+        "price": 40000
+      },
+      {
+        "locIdx": 57,
+        "price": 40000
+      },
+      {
+        "locIdx": 91,
+        "price": 40000
+      },
+      {
+        "locIdx": 90,
+        "price": 40000
+      },
+      {
+        "locIdx": 95,
+        "price": 40000
+      },
+      {
+        "locIdx": 81,
+        "price": 40000
+      },
+      {
+        "locIdx": 66,
+        "price": 40000
+      },
+      {
+        "locIdx": 83,
+        "price": 40000
+      },
+      {
         "locIdx": 1,
         "price": 40000
       },
       {
-        "locIdx": 5,
-        "price": 40000
-      },
-      {
-        "locIdx": 6,
-        "price": 40000
-      },
-      {
-        "locIdx": 7,
-        "price": 40000
-      },
-      {
-        "locIdx": 8,
-        "price": 40000
-      },
-      {
-        "locIdx": 10,
-        "price": 40000
-      },
-      {
-        "locIdx": 11,
-        "price": 40000
-      },
-      {
-        "locIdx": 12,
-        "price": 40000
-      },
-      {
-        "locIdx": 26,
-        "price": 40000
-      },
-      {
-        "locIdx": 27,
+        "locIdx": 14,
         "price": 40000
       }
     ]
@@ -1664,47 +2074,67 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 3800
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 4000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 4000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 4000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 4000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 4000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 4000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 4000
       },
       {
-        "locIdx": 10,
+        "locIdx": 81,
         "price": 4000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 4000
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
+        "price": 4000
+      },
+      {
+        "locIdx": 76,
+        "price": 4000
+      },
+      {
+        "locIdx": 99,
+        "price": 4000
+      },
+      {
+        "locIdx": 33,
+        "price": 4000
+      },
+      {
+        "locIdx": 46,
+        "price": 4000
+      },
+      {
+        "locIdx": 1,
         "price": 4000
       },
       {
@@ -1712,31 +2142,11 @@ const modules = [
         "price": 4000
       },
       {
-        "locIdx": 15,
+        "locIdx": 12,
         "price": 4000
       },
       {
-        "locIdx": 18,
-        "price": 4000
-      },
-      {
-        "locIdx": 22,
-        "price": 4000
-      },
-      {
-        "locIdx": 26,
-        "price": 4000
-      },
-      {
-        "locIdx": 27,
-        "price": 4000
-      },
-      {
-        "locIdx": 28,
-        "price": 4000
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 4000
       }
     ]
@@ -1755,67 +2165,67 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 1853
+      },
+      {
+        "locIdx": 96,
+        "price": 1950
+      },
+      {
+        "locIdx": 52,
+        "price": 1950
+      },
+      {
+        "locIdx": 54,
+        "price": 1950
+      },
+      {
+        "locIdx": 57,
+        "price": 1950
+      },
+      {
+        "locIdx": 91,
+        "price": 1950
+      },
+      {
+        "locIdx": 90,
+        "price": 1950
+      },
+      {
+        "locIdx": 95,
+        "price": 1950
+      },
+      {
+        "locIdx": 114,
+        "price": 1950
+      },
+      {
+        "locIdx": 81,
+        "price": 1950
+      },
+      {
+        "locIdx": 66,
+        "price": 1950
+      },
+      {
+        "locIdx": 83,
+        "price": 1950
+      },
+      {
+        "locIdx": 99,
+        "price": 1950
       },
       {
         "locIdx": 1,
         "price": 1950
       },
       {
-        "locIdx": 3,
-        "price": 1950
-      },
-      {
-        "locIdx": 4,
-        "price": 1950
-      },
-      {
-        "locIdx": 5,
-        "price": 1950
-      },
-      {
-        "locIdx": 6,
-        "price": 1950
-      },
-      {
-        "locIdx": 7,
-        "price": 1950
-      },
-      {
-        "locIdx": 8,
-        "price": 1950
-      },
-      {
-        "locIdx": 9,
-        "price": 1950
-      },
-      {
-        "locIdx": 10,
-        "price": 1950
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 14,
         "price": 1950
       },
       {
         "locIdx": 12,
-        "price": 1950
-      },
-      {
-        "locIdx": 15,
-        "price": 1950
-      },
-      {
-        "locIdx": 26,
-        "price": 1950
-      },
-      {
-        "locIdx": 27,
-        "price": 1950
-      },
-      {
-        "locIdx": 28,
         "price": 1950
       }
     ]
@@ -1834,51 +2244,75 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 760
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 760
+      },
+      {
+        "locIdx": 96,
+        "price": 800
+      },
+      {
+        "locIdx": 52,
+        "price": 800
+      },
+      {
+        "locIdx": 54,
+        "price": 800
+      },
+      {
+        "locIdx": 57,
+        "price": 800
+      },
+      {
+        "locIdx": 91,
+        "price": 800
+      },
+      {
+        "locIdx": 90,
+        "price": 800
+      },
+      {
+        "locIdx": 95,
+        "price": 800
+      },
+      {
+        "locIdx": 114,
+        "price": 800
+      },
+      {
+        "locIdx": 81,
+        "price": 800
+      },
+      {
+        "locIdx": 66,
+        "price": 800
+      },
+      {
+        "locIdx": 83,
+        "price": 800
+      },
+      {
+        "locIdx": 99,
+        "price": 800
+      },
+      {
+        "locIdx": 33,
+        "price": 800
+      },
+      {
+        "locIdx": 46,
+        "price": 800
       },
       {
         "locIdx": 1,
         "price": 800
       },
       {
-        "locIdx": 3,
-        "price": 800
-      },
-      {
-        "locIdx": 4,
-        "price": 800
-      },
-      {
-        "locIdx": 5,
-        "price": 800
-      },
-      {
-        "locIdx": 6,
-        "price": 800
-      },
-      {
-        "locIdx": 7,
-        "price": 800
-      },
-      {
-        "locIdx": 8,
-        "price": 800
-      },
-      {
-        "locIdx": 9,
-        "price": 800
-      },
-      {
-        "locIdx": 10,
-        "price": 800
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 14,
         "price": 800
       },
       {
@@ -1886,31 +2320,7 @@ const modules = [
         "price": 800
       },
       {
-        "locIdx": 15,
-        "price": 800
-      },
-      {
-        "locIdx": 18,
-        "price": 800
-      },
-      {
-        "locIdx": 22,
-        "price": 800
-      },
-      {
-        "locIdx": 26,
-        "price": 800
-      },
-      {
-        "locIdx": 27,
-        "price": 800
-      },
-      {
-        "locIdx": 28,
-        "price": 800
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 800
       }
     ]
@@ -1929,35 +2339,35 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 3000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 3000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 3000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 3000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 3000
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
         "price": 3000
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
         "price": 3000
       },
       {
-        "locIdx": 17,
+        "locIdx": 22,
         "price": 3000
       }
     ]
@@ -1976,7 +2386,7 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 5700
       }
     ]
@@ -1995,7 +2405,7 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 17100
       }
     ]
@@ -2014,7 +2424,7 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 57000
       }
     ]
@@ -2033,47 +2443,75 @@ const modules = [
     "shatter": -10,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 1045
+      },
+      {
+        "locIdx": 96,
+        "price": 1100
+      },
+      {
+        "locIdx": 52,
+        "price": 1100
+      },
+      {
+        "locIdx": 54,
+        "price": 1100
+      },
+      {
+        "locIdx": 57,
+        "price": 1100
+      },
+      {
+        "locIdx": 91,
+        "price": 1100
+      },
+      {
+        "locIdx": 90,
+        "price": 1100
+      },
+      {
+        "locIdx": 95,
+        "price": 1100
+      },
+      {
+        "locIdx": 114,
+        "price": 1100
+      },
+      {
+        "locIdx": 81,
+        "price": 1100
+      },
+      {
+        "locIdx": 66,
+        "price": 1100
+      },
+      {
+        "locIdx": 83,
+        "price": 1100
+      },
+      {
+        "locIdx": 99,
+        "price": 1100
+      },
+      {
+        "locIdx": 39,
+        "price": 1100
+      },
+      {
+        "locIdx": 33,
+        "price": 1100
+      },
+      {
+        "locIdx": 46,
+        "price": 1100
       },
       {
         "locIdx": 1,
         "price": 1100
       },
       {
-        "locIdx": 3,
-        "price": 1100
-      },
-      {
-        "locIdx": 4,
-        "price": 1100
-      },
-      {
-        "locIdx": 5,
-        "price": 1100
-      },
-      {
-        "locIdx": 6,
-        "price": 1100
-      },
-      {
-        "locIdx": 7,
-        "price": 1100
-      },
-      {
-        "locIdx": 8,
-        "price": 1100
-      },
-      {
-        "locIdx": 9,
-        "price": 1100
-      },
-      {
-        "locIdx": 10,
-        "price": 1100
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 14,
         "price": 1100
       },
       {
@@ -2081,35 +2519,7 @@ const modules = [
         "price": 1100
       },
       {
-        "locIdx": 15,
-        "price": 1100
-      },
-      {
-        "locIdx": 16,
-        "price": 1100
-      },
-      {
-        "locIdx": 18,
-        "price": 1100
-      },
-      {
-        "locIdx": 22,
-        "price": 1100
-      },
-      {
-        "locIdx": 26,
-        "price": 1100
-      },
-      {
-        "locIdx": 27,
-        "price": 1100
-      },
-      {
-        "locIdx": 28,
-        "price": 1100
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 1100
       }
     ]
@@ -2128,71 +2538,71 @@ const modules = [
     "shatter": -10,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 1330
+      },
+      {
+        "locIdx": 96,
+        "price": 1400
+      },
+      {
+        "locIdx": 52,
+        "price": 1400
+      },
+      {
+        "locIdx": 54,
+        "price": 1400
+      },
+      {
+        "locIdx": 57,
+        "price": 1400
+      },
+      {
+        "locIdx": 91,
+        "price": 1400
+      },
+      {
+        "locIdx": 90,
+        "price": 1400
+      },
+      {
+        "locIdx": 95,
+        "price": 1400
+      },
+      {
+        "locIdx": 114,
+        "price": 1400
+      },
+      {
+        "locIdx": 81,
+        "price": 1400
+      },
+      {
+        "locIdx": 66,
+        "price": 1400
+      },
+      {
+        "locIdx": 83,
+        "price": 1400
+      },
+      {
+        "locIdx": 99,
+        "price": 1400
+      },
+      {
+        "locIdx": 39,
+        "price": 1400
       },
       {
         "locIdx": 1,
         "price": 1400
       },
       {
-        "locIdx": 3,
-        "price": 1400
-      },
-      {
-        "locIdx": 4,
-        "price": 1400
-      },
-      {
-        "locIdx": 5,
-        "price": 1400
-      },
-      {
-        "locIdx": 6,
-        "price": 1400
-      },
-      {
-        "locIdx": 7,
-        "price": 1400
-      },
-      {
-        "locIdx": 8,
-        "price": 1400
-      },
-      {
-        "locIdx": 9,
-        "price": 1400
-      },
-      {
-        "locIdx": 10,
-        "price": 1400
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 14,
         "price": 1400
       },
       {
         "locIdx": 12,
-        "price": 1400
-      },
-      {
-        "locIdx": 15,
-        "price": 1400
-      },
-      {
-        "locIdx": 16,
-        "price": 1400
-      },
-      {
-        "locIdx": 26,
-        "price": 1400
-      },
-      {
-        "locIdx": 27,
-        "price": 1400
-      },
-      {
-        "locIdx": 28,
         "price": 1400
       }
     ]
@@ -2211,7 +2621,7 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 1400
       }
     ]
@@ -2230,47 +2640,71 @@ const modules = [
     "shatter": 40,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 1853
+      },
+      {
+        "locIdx": 96,
+        "price": 1950
+      },
+      {
+        "locIdx": 52,
+        "price": 1950
+      },
+      {
+        "locIdx": 54,
+        "price": 1950
+      },
+      {
+        "locIdx": 57,
+        "price": 1950
+      },
+      {
+        "locIdx": 91,
+        "price": 1950
+      },
+      {
+        "locIdx": 90,
+        "price": 1950
+      },
+      {
+        "locIdx": 95,
+        "price": 1950
+      },
+      {
+        "locIdx": 114,
+        "price": 1950
+      },
+      {
+        "locIdx": 81,
+        "price": 1950
+      },
+      {
+        "locIdx": 66,
+        "price": 1950
+      },
+      {
+        "locIdx": 83,
+        "price": 1950
+      },
+      {
+        "locIdx": 99,
+        "price": 1950
+      },
+      {
+        "locIdx": 33,
+        "price": 1950
+      },
+      {
+        "locIdx": 46,
+        "price": 1950
       },
       {
         "locIdx": 1,
         "price": 1950
       },
       {
-        "locIdx": 3,
-        "price": 1950
-      },
-      {
-        "locIdx": 4,
-        "price": 1950
-      },
-      {
-        "locIdx": 5,
-        "price": 1950
-      },
-      {
-        "locIdx": 6,
-        "price": 1950
-      },
-      {
-        "locIdx": 7,
-        "price": 1950
-      },
-      {
-        "locIdx": 8,
-        "price": 1950
-      },
-      {
-        "locIdx": 9,
-        "price": 1950
-      },
-      {
-        "locIdx": 10,
-        "price": 1950
-      },
-      {
-        "locIdx": 11,
+        "locIdx": 14,
         "price": 1950
       },
       {
@@ -2278,31 +2712,7 @@ const modules = [
         "price": 1950
       },
       {
-        "locIdx": 15,
-        "price": 1950
-      },
-      {
-        "locIdx": 18,
-        "price": 1950
-      },
-      {
-        "locIdx": 22,
-        "price": 1950
-      },
-      {
-        "locIdx": 26,
-        "price": 1950
-      },
-      {
-        "locIdx": 27,
-        "price": 1950
-      },
-      {
-        "locIdx": 28,
-        "price": 1950
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 1950
       }
     ]
@@ -2321,59 +2731,59 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 11400
       },
       {
+        "locIdx": 96,
+        "price": 12000
+      },
+      {
+        "locIdx": 52,
+        "price": 12000
+      },
+      {
+        "locIdx": 54,
+        "price": 12000
+      },
+      {
+        "locIdx": 91,
+        "price": 12000
+      },
+      {
+        "locIdx": 90,
+        "price": 12000
+      },
+      {
+        "locIdx": 95,
+        "price": 12000
+      },
+      {
+        "locIdx": 114,
+        "price": 12000
+      },
+      {
+        "locIdx": 81,
+        "price": 12000
+      },
+      {
+        "locIdx": 66,
+        "price": 12000
+      },
+      {
+        "locIdx": 99,
+        "price": 12000
+      },
+      {
+        "locIdx": 14,
+        "price": 12000
+      },
+      {
+        "locIdx": 12,
+        "price": 12000
+      },
+      {
         "locIdx": 1,
-        "price": 12000
-      },
-      {
-        "locIdx": 3,
-        "price": 12000
-      },
-      {
-        "locIdx": 4,
-        "price": 12000
-      },
-      {
-        "locIdx": 6,
-        "price": 12000
-      },
-      {
-        "locIdx": 7,
-        "price": 12000
-      },
-      {
-        "locIdx": 8,
-        "price": 12000
-      },
-      {
-        "locIdx": 9,
-        "price": 12000
-      },
-      {
-        "locIdx": 10,
-        "price": 12000
-      },
-      {
-        "locIdx": 11,
-        "price": 12000
-      },
-      {
-        "locIdx": 15,
-        "price": 12000
-      },
-      {
-        "locIdx": 27,
-        "price": 12000
-      },
-      {
-        "locIdx": 28,
-        "price": 12000
-      },
-      {
-        "locIdx": 26,
         "price": 15000
       }
     ]
@@ -2392,55 +2802,55 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 38000
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 40000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 40000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 40000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 40000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 40000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 40000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 40000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
+        "price": 40000
+      },
+      {
+        "locIdx": 83,
+        "price": 40000
+      },
+      {
+        "locIdx": 99,
+        "price": 40000
+      },
+      {
+        "locIdx": 22,
         "price": 40000
       },
       {
         "locIdx": 12,
-        "price": 40000
-      },
-      {
-        "locIdx": 15,
-        "price": 40000
-      },
-      {
-        "locIdx": 17,
-        "price": 40000
-      },
-      {
-        "locIdx": 28,
         "price": 40000
       }
     ]
@@ -2459,43 +2869,43 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 4000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 4000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 4000
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 4000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 4000
       },
       {
-        "locIdx": 10,
+        "locIdx": 81,
         "price": 4000
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
         "price": 4000
       },
       {
-        "locIdx": 17,
+        "locIdx": 22,
         "price": 4000
       },
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 4000
       },
       {
-        "locIdx": 27,
+        "locIdx": 14,
         "price": 4000
       }
     ]
@@ -2514,43 +2924,67 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 1900
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 2000
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 2000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 2000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 2000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 2000
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 2000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 2000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 2000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
+        "price": 2000
+      },
+      {
+        "locIdx": 83,
+        "price": 2000
+      },
+      {
+        "locIdx": 76,
+        "price": 2000
+      },
+      {
+        "locIdx": 99,
+        "price": 2000
+      },
+      {
+        "locIdx": 39,
+        "price": 2000
+      },
+      {
+        "locIdx": 33,
+        "price": 2000
+      },
+      {
+        "locIdx": 46,
         "price": 2000
       },
       {
@@ -2558,31 +2992,7 @@ const modules = [
         "price": 2000
       },
       {
-        "locIdx": 14,
-        "price": 2000
-      },
-      {
-        "locIdx": 15,
-        "price": 2000
-      },
-      {
-        "locIdx": 16,
-        "price": 2000
-      },
-      {
-        "locIdx": 18,
-        "price": 2000
-      },
-      {
-        "locIdx": 22,
-        "price": 2000
-      },
-      {
-        "locIdx": 28,
-        "price": 2000
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 2000
       }
     ]
@@ -2601,39 +3011,59 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 5700
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 6000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 6000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 6000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 6000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 6000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 6000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 6000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
+        "price": 6000
+      },
+      {
+        "locIdx": 76,
+        "price": 6000
+      },
+      {
+        "locIdx": 99,
+        "price": 6000
+      },
+      {
+        "locIdx": 81,
+        "price": 6000
+      },
+      {
+        "locIdx": 22,
+        "price": 6000
+      },
+      {
+        "locIdx": 1,
         "price": 6000
       },
       {
@@ -2641,27 +3071,7 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 15,
-        "price": 6000
-      },
-      {
-        "locIdx": 10,
-        "price": 6000
-      },
-      {
-        "locIdx": 17,
-        "price": 6000
-      },
-      {
-        "locIdx": 26,
-        "price": 6000
-      },
-      {
-        "locIdx": 27,
-        "price": 6000
-      },
-      {
-        "locIdx": 28,
+        "locIdx": 12,
         "price": 6000
       }
     ]
@@ -2680,39 +3090,39 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 20000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 20000
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 20000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 20000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 20000
       },
       {
-        "locIdx": 10,
+        "locIdx": 81,
         "price": 20000
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
         "price": 20000
       },
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 20000
       },
       {
-        "locIdx": 27,
+        "locIdx": 14,
         "price": 20000
       }
     ]
@@ -2731,11 +3141,51 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 1900
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
+        "price": 2000
+      },
+      {
+        "locIdx": 96,
+        "price": 2000
+      },
+      {
+        "locIdx": 54,
+        "price": 2000
+      },
+      {
+        "locIdx": 90,
+        "price": 2000
+      },
+      {
+        "locIdx": 95,
+        "price": 2000
+      },
+      {
+        "locIdx": 114,
+        "price": 2000
+      },
+      {
+        "locIdx": 81,
+        "price": 2000
+      },
+      {
+        "locIdx": 66,
+        "price": 2000
+      },
+      {
+        "locIdx": 83,
+        "price": 2000
+      },
+      {
+        "locIdx": 76,
+        "price": 2000
+      },
+      {
+        "locIdx": 99,
         "price": 2000
       },
       {
@@ -2743,51 +3193,11 @@ const modules = [
         "price": 2000
       },
       {
-        "locIdx": 4,
-        "price": 2000
-      },
-      {
-        "locIdx": 7,
-        "price": 2000
-      },
-      {
-        "locIdx": 8,
-        "price": 2000
-      },
-      {
-        "locIdx": 9,
-        "price": 2000
-      },
-      {
-        "locIdx": 10,
-        "price": 2000
-      },
-      {
-        "locIdx": 11,
-        "price": 2000
-      },
-      {
-        "locIdx": 12,
-        "price": 2000
-      },
-      {
         "locIdx": 14,
         "price": 2000
       },
       {
-        "locIdx": 15,
-        "price": 2000
-      },
-      {
-        "locIdx": 26,
-        "price": 2000
-      },
-      {
-        "locIdx": 27,
-        "price": 2000
-      },
-      {
-        "locIdx": 28,
+        "locIdx": 12,
         "price": 2000
       }
     ]
@@ -2806,43 +3216,59 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 5700
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 6000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 6000
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 6000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 6000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 6000
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 6000
       },
       {
-        "locIdx": 10,
+        "locIdx": 81,
         "price": 6000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 6000
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
+        "price": 6000
+      },
+      {
+        "locIdx": 76,
+        "price": 6000
+      },
+      {
+        "locIdx": 99,
+        "price": 6000
+      },
+      {
+        "locIdx": 39,
+        "price": 6000
+      },
+      {
+        "locIdx": 1,
         "price": 6000
       },
       {
@@ -2850,23 +3276,7 @@ const modules = [
         "price": 6000
       },
       {
-        "locIdx": 15,
-        "price": 6000
-      },
-      {
-        "locIdx": 16,
-        "price": 6000
-      },
-      {
-        "locIdx": 26,
-        "price": 6000
-      },
-      {
-        "locIdx": 27,
-        "price": 6000
-      },
-      {
-        "locIdx": 28,
+        "locIdx": 12,
         "price": 6000
       }
     ]
@@ -2885,51 +3295,51 @@ const modules = [
     "shatter": 0,
     "shops": [
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 20000
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 20000
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 20000
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 20000
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 20000
       },
       {
-        "locIdx": 10,
+        "locIdx": 81,
         "price": 20000
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 20000
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
+        "price": 20000
+      },
+      {
+        "locIdx": 76,
+        "price": 20000
+      },
+      {
+        "locIdx": 39,
+        "price": 20000
+      },
+      {
+        "locIdx": 1,
         "price": 20000
       },
       {
         "locIdx": 14,
-        "price": 20000
-      },
-      {
-        "locIdx": 16,
-        "price": 20000
-      },
-      {
-        "locIdx": 26,
-        "price": 20000
-      },
-      {
-        "locIdx": 27,
         "price": 20000
       }
     ]
@@ -2952,27 +3362,27 @@ const gadgets = [
     "cluster": 30,
     "shops": [
       {
-        "locIdx": 25,
+        "locIdx": 2,
         "price": 12750
       },
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 12750
       },
       {
-        "locIdx": 30,
+        "locIdx": 4,
         "price": 12750
       },
       {
-        "locIdx": 31,
+        "locIdx": 10,
         "price": 12750
       },
       {
-        "locIdx": 32,
+        "locIdx": 8,
         "price": 12750
       },
       {
-        "locIdx": 33,
+        "locIdx": 6,
         "price": 12750
       }
     ]
@@ -2989,63 +3399,63 @@ const gadgets = [
     "cluster": -20,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 22088
+      },
+      {
+        "locIdx": 96,
+        "price": 23250
+      },
+      {
+        "locIdx": 52,
+        "price": 23250
+      },
+      {
+        "locIdx": 54,
+        "price": 23250
+      },
+      {
+        "locIdx": 91,
+        "price": 23250
+      },
+      {
+        "locIdx": 90,
+        "price": 23250
+      },
+      {
+        "locIdx": 114,
+        "price": 23250
+      },
+      {
+        "locIdx": 81,
+        "price": 23250
+      },
+      {
+        "locIdx": 99,
+        "price": 23250
+      },
+      {
+        "locIdx": 33,
+        "price": 23250
+      },
+      {
+        "locIdx": 46,
+        "price": 23250
       },
       {
         "locIdx": 1,
         "price": 23250
       },
       {
-        "locIdx": 3,
+        "locIdx": 14,
         "price": 23250
       },
       {
-        "locIdx": 4,
+        "locIdx": 12,
         "price": 23250
       },
       {
-        "locIdx": 6,
-        "price": 23250
-      },
-      {
-        "locIdx": 7,
-        "price": 23250
-      },
-      {
-        "locIdx": 9,
-        "price": 23250
-      },
-      {
-        "locIdx": 10,
-        "price": 23250
-      },
-      {
-        "locIdx": 15,
-        "price": 23250
-      },
-      {
-        "locIdx": 18,
-        "price": 23250
-      },
-      {
-        "locIdx": 22,
-        "price": 23250
-      },
-      {
-        "locIdx": 26,
-        "price": 23250
-      },
-      {
-        "locIdx": 27,
-        "price": 23250
-      },
-      {
-        "locIdx": 28,
-        "price": 23250
-      },
-      {
-        "locIdx": 29,
+        "locIdx": 31,
         "price": 23250
       }
     ]
@@ -3062,27 +3472,47 @@ const gadgets = [
     "cluster": 60,
     "shops": [
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 26244
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 27265
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 27625
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 27625
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 27625
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
+        "price": 27625
+      },
+      {
+        "locIdx": 83,
+        "price": 27625
+      },
+      {
+        "locIdx": 99,
+        "price": 27625
+      },
+      {
+        "locIdx": 39,
+        "price": 27625
+      },
+      {
+        "locIdx": 22,
+        "price": 27625
+      },
+      {
+        "locIdx": 2,
         "price": 27625
       },
       {
@@ -3090,39 +3520,19 @@ const gadgets = [
         "price": 27625
       },
       {
-        "locIdx": 15,
+        "locIdx": 4,
         "price": 27625
       },
       {
-        "locIdx": 16,
+        "locIdx": 10,
         "price": 27625
       },
       {
-        "locIdx": 17,
+        "locIdx": 8,
         "price": 27625
       },
       {
-        "locIdx": 25,
-        "price": 27625
-      },
-      {
-        "locIdx": 28,
-        "price": 27625
-      },
-      {
-        "locIdx": 30,
-        "price": 27625
-      },
-      {
-        "locIdx": 31,
-        "price": 27625
-      },
-      {
-        "locIdx": 32,
-        "price": 27625
-      },
-      {
-        "locIdx": 33,
+        "locIdx": 6,
         "price": 27625
       }
     ]
@@ -3139,75 +3549,91 @@ const gadgets = [
     "cluster": 0,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 13125
       },
       {
-        "locIdx": 13,
+        "locIdx": 104,
         "price": 13125
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 13815
       },
       {
-        "locIdx": 1,
+        "locIdx": 96,
         "price": 13815
       },
       {
-        "locIdx": 3,
+        "locIdx": 52,
         "price": 13815
       },
       {
-        "locIdx": 4,
+        "locIdx": 54,
         "price": 13815
       },
       {
-        "locIdx": 5,
+        "locIdx": 57,
         "price": 13815
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 13815
       },
       {
-        "locIdx": 7,
+        "locIdx": 90,
         "price": 13815
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 13815
       },
       {
-        "locIdx": 9,
+        "locIdx": 114,
         "price": 13815
       },
       {
-        "locIdx": 10,
+        "locIdx": 81,
         "price": 13815
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 13815
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
         "price": 13815
       },
       {
-        "locIdx": 14,
+        "locIdx": 76,
         "price": 13815
       },
       {
-        "locIdx": 15,
+        "locIdx": 99,
         "price": 13815
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
         "price": 13815
       },
       {
-        "locIdx": 18,
+        "locIdx": 33,
+        "price": 13815
+      },
+      {
+        "locIdx": 50,
+        "price": 13815
+      },
+      {
+        "locIdx": 34,
+        "price": 13815
+      },
+      {
+        "locIdx": 17,
+        "price": 13815
+      },
+      {
+        "locIdx": 46,
         "price": 13815
       },
       {
@@ -3215,47 +3641,23 @@ const gadgets = [
         "price": 13815
       },
       {
-        "locIdx": 20,
+        "locIdx": 44,
         "price": 13815
       },
       {
-        "locIdx": 21,
+        "locIdx": 2,
         "price": 13815
       },
       {
-        "locIdx": 22,
+        "locIdx": 1,
         "price": 13815
       },
       {
-        "locIdx": 23,
+        "locIdx": 14,
         "price": 13815
       },
       {
-        "locIdx": 24,
-        "price": 13815
-      },
-      {
-        "locIdx": 25,
-        "price": 13815
-      },
-      {
-        "locIdx": 26,
-        "price": 13815
-      },
-      {
-        "locIdx": 27,
-        "price": 13815
-      },
-      {
-        "locIdx": 28,
-        "price": 13815
-      },
-      {
-        "locIdx": 29,
-        "price": 13815
-      },
-      {
-        "locIdx": 30,
+        "locIdx": 12,
         "price": 13815
       },
       {
@@ -3263,11 +3665,19 @@ const gadgets = [
         "price": 13815
       },
       {
-        "locIdx": 32,
+        "locIdx": 4,
         "price": 13815
       },
       {
-        "locIdx": 33,
+        "locIdx": 10,
+        "price": 13815
+      },
+      {
+        "locIdx": 8,
+        "price": 13815
+      },
+      {
+        "locIdx": 6,
         "price": 13815
       }
     ]
@@ -3284,7 +3694,7 @@ const gadgets = [
     "cluster": 30,
     "shops": [
       {
-        "locIdx": 26,
+        "locIdx": 1,
         "price": 20190
       }
     ]
@@ -3301,35 +3711,47 @@ const gadgets = [
     "cluster": 0,
     "shops": [
       {
-        "locIdx": 2,
+        "locIdx": 88,
         "price": 18169
       },
       {
-        "locIdx": 0,
+        "locIdx": 61,
         "price": 19125
       },
       {
-        "locIdx": 6,
+        "locIdx": 91,
         "price": 19125
       },
       {
-        "locIdx": 8,
+        "locIdx": 95,
         "price": 19125
       },
       {
-        "locIdx": 11,
+        "locIdx": 66,
         "price": 19125
       },
       {
-        "locIdx": 12,
+        "locIdx": 83,
         "price": 19125
       },
       {
-        "locIdx": 14,
+        "locIdx": 76,
         "price": 19125
       },
       {
-        "locIdx": 16,
+        "locIdx": 39,
+        "price": 19125
+      },
+      {
+        "locIdx": 22,
+        "price": 19125
+      },
+      {
+        "locIdx": 50,
+        "price": 19125
+      },
+      {
+        "locIdx": 34,
         "price": 19125
       },
       {
@@ -3341,19 +3763,7 @@ const gadgets = [
         "price": 19125
       },
       {
-        "locIdx": 20,
-        "price": 19125
-      },
-      {
-        "locIdx": 21,
-        "price": 19125
-      },
-      {
-        "locIdx": 23,
-        "price": 19125
-      },
-      {
-        "locIdx": 24,
+        "locIdx": 44,
         "price": 19125
       }
     ]
@@ -3658,2654 +4068,2135 @@ const refineryData = [
 const pricingData = {
   "Quantanium": [
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 170000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 141",
-      "price": 170000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 170000
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 170000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 160000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 160000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 150000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 150000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 150000
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 150000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
+      "locIdx": 0,
       "price": 140000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 13,
+      "price": 150000
+    },
+    {
+      "locIdx": 15,
+      "price": 160000
+    },
+    {
+      "locIdx": 18,
+      "price": 170000
+    },
+    {
+      "locIdx": 25,
+      "price": 170000
+    },
+    {
+      "locIdx": 38,
+      "price": 130000
+    },
+    {
+      "locIdx": 49,
+      "price": 160000
+    },
+    {
+      "locIdx": 59,
+      "price": 170000
+    },
+    {
+      "locIdx": 62,
+      "price": 150000
+    },
+    {
+      "locIdx": 69,
       "price": 140000
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 75,
       "price": 130000
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 130000
+      "locIdx": 87,
+      "price": 150000
+    },
+    {
+      "locIdx": 97,
+      "price": 150000
+    },
+    {
+      "locIdx": 100,
+      "price": 170000
     }
   ],
   "Stileron": [
     {
-      "system": "Pyro",
-      "location": "Nyx Gateway (Pyro) - Admin",
+      "locIdx": 0,
+      "price": 140000
+    },
+    {
+      "locIdx": 15,
+      "price": 130000
+    },
+    {
+      "locIdx": 18,
+      "price": 130000
+    },
+    {
+      "locIdx": 25,
+      "price": 130000
+    },
+    {
+      "locIdx": 27,
+      "price": 130000
+    },
+    {
+      "locIdx": 30,
       "price": 170000
     },
     {
-      "system": "Stanton",
-      "location": "Deakins Research",
+      "locIdx": 38,
+      "price": 110000
+    },
+    {
+      "locIdx": 41,
+      "price": 130000
+    },
+    {
+      "locIdx": 49,
+      "price": 130000
+    },
+    {
+      "locIdx": 59,
+      "price": 140000
+    },
+    {
+      "locIdx": 60,
+      "price": 140000
+    },
+    {
+      "locIdx": 62,
+      "price": 140000
+    },
+    {
+      "locIdx": 71,
       "price": 150000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari Kaltag Research Outpost",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Mills HydroFarm",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "Hickes Research",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 141",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 157",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari Anvik Research Outpost",
-      "price": 140000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 140000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 140000
-    },
-    {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 130000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 75,
       "price": 110000
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 110000
+      "locIdx": 79,
+      "price": 140000
+    },
+    {
+      "locIdx": 87,
+      "price": 140000
+    },
+    {
+      "locIdx": 97,
+      "price": 140000
+    },
+    {
+      "locIdx": 100,
+      "price": 140000
+    },
+    {
+      "locIdx": 106,
+      "price": 140000
+    },
+    {
+      "locIdx": 108,
+      "price": 140000
+    },
+    {
+      "locIdx": 115,
+      "price": 140000
     }
   ],
   "Savrilium": [
     {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
+      "locIdx": 0,
+      "price": 110000
+    },
+    {
+      "locIdx": 5,
+      "price": 110000
+    },
+    {
+      "locIdx": 16,
+      "price": 130000
+    },
+    {
+      "locIdx": 38,
+      "price": 110000
+    },
+    {
+      "locIdx": 41,
+      "price": 130000
+    },
+    {
+      "locIdx": 49,
       "price": 140000
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
+      "locIdx": 100,
       "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 130000
-    },
-    {
-      "system": "Pyro",
-      "location": "Bueno Ravine",
-      "price": 130000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 110000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 110000
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Delta - Admin",
-      "price": 110000
     }
   ],
   "Riccite": [
     {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 141",
-      "price": 91000
-    },
-    {
-      "system": "Stanton",
-      "location": "ArcCorp Mining Area 157",
-      "price": 91000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 84000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 77000
     },
     {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 74000
+      "locIdx": 15,
+      "price": 84000
     },
     {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 74000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
+      "locIdx": 18,
       "price": 67000
     },
     {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
+      "locIdx": 23,
       "price": 67000
     },
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
+      "locIdx": 24,
       "price": 67000
     },
     {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
+      "locIdx": 26,
       "price": 67000
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
+      "locIdx": 35,
       "price": 67000
     },
     {
-      "system": "Pyro",
-      "location": "Canard View",
+      "locIdx": 37,
       "price": 67000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 66000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 66000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 66000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 66000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 38,
       "price": 59000
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 41,
+      "price": 74000
+    },
+    {
+      "locIdx": 49,
+      "price": 74000
+    },
+    {
+      "locIdx": 59,
+      "price": 91000
+    },
+    {
+      "locIdx": 60,
+      "price": 91000
+    },
+    {
+      "locIdx": 62,
+      "price": 66000
+    },
+    {
+      "locIdx": 75,
       "price": 59000
+    },
+    {
+      "locIdx": 87,
+      "price": 66000
+    },
+    {
+      "locIdx": 97,
+      "price": 66000
+    },
+    {
+      "locIdx": 100,
+      "price": 66000
     }
   ],
   "Ouratite": [
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 46000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 46000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 46000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 46000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 45000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 45000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 44000
+    },
+    {
+      "locIdx": 38,
+      "price": 46000
+    },
+    {
+      "locIdx": 62,
+      "price": 45000
+    },
+    {
+      "locIdx": 75,
+      "price": 46000
+    },
+    {
+      "locIdx": 87,
+      "price": 46000
+    },
+    {
+      "locIdx": 97,
+      "price": 46000
+    },
+    {
+      "locIdx": 100,
+      "price": 45000
     }
   ],
   "Lindinium": [
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 51000
+      "locIdx": 0,
+      "price": 43000
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 51000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 51000
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
+      "locIdx": 29,
       "price": 46000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 38,
       "price": 43000
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 43000
+      "locIdx": 62,
+      "price": 51000
+    },
+    {
+      "locIdx": 97,
+      "price": 51000
+    },
+    {
+      "locIdx": 100,
+      "price": 51000
     }
   ],
   "Taranite": [
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
+      "locIdx": 0,
       "price": 28000
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 28000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 13,
       "price": 27000
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
+      "locIdx": 15,
+      "price": 25000
+    },
+    {
+      "locIdx": 18,
+      "price": 25000
+    },
+    {
+      "locIdx": 25,
+      "price": 28000
+    },
+    {
+      "locIdx": 27,
+      "price": 25000
+    },
+    {
+      "locIdx": 35,
+      "price": 25000
+    },
+    {
+      "locIdx": 37,
+      "price": 25000
+    },
+    {
+      "locIdx": 38,
+      "price": 22000
+    },
+    {
+      "locIdx": 41,
+      "price": 25000
+    },
+    {
+      "locIdx": 49,
+      "price": 25000
+    },
+    {
+      "locIdx": 62,
       "price": 27000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
+      "locIdx": 67,
+      "price": 22000
+    },
+    {
+      "locIdx": 75,
+      "price": 22000
+    },
+    {
+      "locIdx": 87,
       "price": 26000
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 25000
+      "locIdx": 97,
+      "price": 28000
     },
     {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 25000
-    },
-    {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 25000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 25000
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 25000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 25000
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 25000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
-      "price": 22000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 22000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 22000
+      "locIdx": 100,
+      "price": 28000
     }
   ],
   "Gold": [
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 0,
+      "price": 26000
+    },
+    {
+      "locIdx": 11,
       "price": 31000
     },
     {
-      "system": "Nyx",
-      "location": "Pyro Gateway (Nyx) - Admin",
-      "price": 31000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 29000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
+      "locIdx": 15,
       "price": 27000
     },
     {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
+      "locIdx": 18,
       "price": 26000
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 25,
       "price": 26000
     },
     {
-      "system": "Pyro",
-      "location": "Canard View",
+      "locIdx": 27,
       "price": 26000
     },
     {
-      "system": "Pyro",
-      "location": "Fallow Field",
+      "locIdx": 36,
+      "price": 29000
+    },
+    {
+      "locIdx": 41,
       "price": 26000
     },
     {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 26000
+      "locIdx": 49,
+      "price": 28000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 26000
+      "locIdx": 51,
+      "price": 30000
     },
     {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
+      "locIdx": 62,
+      "price": 31000
+    },
+    {
+      "locIdx": 67,
       "price": 23000
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
+      "locIdx": 75,
+      "price": 26000
+    },
+    {
+      "locIdx": 87,
+      "price": 30000
+    },
+    {
+      "locIdx": 97,
+      "price": 30000
+    },
+    {
+      "locIdx": 100,
+      "price": 30000
+    },
+    {
+      "locIdx": 111,
       "price": 23000
     }
   ],
   "Golden Medmon": [
     {
-      "system": "Pyro",
-      "location": "Fallow Field",
+      "locIdx": 0,
+      "price": 54000
+    },
+    {
+      "locIdx": 15,
+      "price": 62000
+    },
+    {
+      "locIdx": 25,
       "price": 69000
     },
     {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
+      "locIdx": 27,
       "price": 64000
     },
     {
-      "system": "Stanton",
-      "location": "Seraphim Station - Admin",
+      "locIdx": 38,
+      "price": 54000
+    },
+    {
+      "locIdx": 49,
+      "price": 62000
+    },
+    {
+      "locIdx": 62,
+      "price": 54000
+    },
+    {
+      "locIdx": 75,
+      "price": 54000
+    },
+    {
+      "locIdx": 87,
+      "price": 54000
+    },
+    {
+      "locIdx": 97,
+      "price": 54000
+    },
+    {
+      "locIdx": 100,
+      "price": 54000
+    },
+    {
+      "locIdx": 112,
       "price": 63000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 62000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 62000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 54000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 54000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 54000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 54000
     }
   ],
   "Borase": [
     {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 33000
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L1 Shallow Frontier Station - Admin",
-      "price": 31000
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L3 Endless Odyssey Station - Admin",
-      "price": 31000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L5 Yellow Core Station - Admin",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
-      "price": 28000
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 27000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 25000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 25000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 25000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 24000
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
+      "locIdx": 9,
+      "price": 14000
+    },
+    {
+      "locIdx": 13,
+      "price": 28000
+    },
+    {
+      "locIdx": 21,
+      "price": 27000
+    },
+    {
+      "locIdx": 23,
+      "price": 27000
+    },
+    {
+      "locIdx": 24,
+      "price": 27000
+    },
+    {
+      "locIdx": 26,
+      "price": 33000
+    },
+    {
+      "locIdx": 29,
+      "price": 27000
+    },
+    {
+      "locIdx": 32,
+      "price": 27000
+    },
+    {
+      "locIdx": 35,
+      "price": 27000
+    },
+    {
+      "locIdx": 36,
+      "price": 27000
+    },
+    {
+      "locIdx": 37,
+      "price": 30000
+    },
+    {
+      "locIdx": 38,
+      "price": 25000
+    },
+    {
+      "locIdx": 47,
+      "price": 27000
+    },
+    {
+      "locIdx": 58,
+      "price": 28000
+    },
+    {
+      "locIdx": 62,
+      "price": 28000
+    },
+    {
+      "locIdx": 64,
+      "price": 18000
+    },
+    {
+      "locIdx": 69,
       "price": 22000
     },
     {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
+      "locIdx": 72,
+      "price": 18000
+    },
+    {
+      "locIdx": 75,
+      "price": 25000
+    },
+    {
+      "locIdx": 84,
+      "price": 28000
+    },
+    {
+      "locIdx": 87,
+      "price": 28000
+    },
+    {
+      "locIdx": 89,
+      "price": 31000
+    },
+    {
+      "locIdx": 92,
+      "price": 31000
+    },
+    {
+      "locIdx": 97,
+      "price": 28000
+    },
+    {
+      "locIdx": 100,
+      "price": 25000
+    },
+    {
+      "locIdx": 110,
       "price": 21000
     },
     {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
+      "locIdx": 111,
       "price": 18000
-    },
-    {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
-      "price": 18000
-    },
-    {
-      "system": "Stanton",
-      "location": "Devlin Scrap & Salvage",
-      "price": 18000
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Theta - Admin",
-      "price": 14000
     }
   ],
   "Beryl": [
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 24000
+      "locIdx": 9,
+      "price": 20000
     },
     {
-      "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
-      "price": 23000
+      "locIdx": 21,
+      "price": 19000
     },
     {
-      "system": "Stanton",
-      "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 22000
+      "locIdx": 23,
+      "price": 19000
     },
     {
-      "system": "Stanton",
-      "location": "HUR-L4 Melodic Fields Station - Admin",
-      "price": 22000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L5 High Course Station - Admin",
-      "price": 22000
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
+      "locIdx": 24,
       "price": 21000
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 26,
+      "price": 19000
+    },
+    {
+      "locIdx": 29,
+      "price": 19000
+    },
+    {
+      "locIdx": 32,
+      "price": 19000
+    },
+    {
+      "locIdx": 35,
+      "price": 19000
+    },
+    {
+      "locIdx": 36,
+      "price": 19000
+    },
+    {
+      "locIdx": 37,
+      "price": 24000
+    },
+    {
+      "locIdx": 38,
+      "price": 19000
+    },
+    {
+      "locIdx": 47,
+      "price": 19000
+    },
+    {
+      "locIdx": 62,
       "price": 20000
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 20000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 20000
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 20000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station - Admin",
-      "price": 20000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 20000
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Theta - Admin",
-      "price": 20000
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 19000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 16000
-    },
-    {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
+      "locIdx": 69,
       "price": 15000
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
+      "locIdx": 70,
+      "price": 20000
+    },
+    {
+      "locIdx": 75,
+      "price": 16000
+    },
+    {
+      "locIdx": 80,
+      "price": 22000
+    },
+    {
+      "locIdx": 84,
+      "price": 23000
+    },
+    {
+      "locIdx": 85,
+      "price": 22000
+    },
+    {
+      "locIdx": 86,
+      "price": 22000
+    },
+    {
+      "locIdx": 87,
+      "price": 20000
+    },
+    {
+      "locIdx": 94,
+      "price": 20000
+    },
+    {
+      "locIdx": 97,
+      "price": 20000
+    },
+    {
+      "locIdx": 100,
+      "price": 20000
+    },
+    {
+      "locIdx": 110,
       "price": 15000
     }
   ],
   "Bexalite": [
     {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 34000
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 34000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 30000
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 30000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 29000
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 29000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 28000
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 28000
-    },
-    {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
+      "locIdx": 0,
       "price": 27000
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 13,
+      "price": 29000
+    },
+    {
+      "locIdx": 18,
+      "price": 30000
+    },
+    {
+      "locIdx": 23,
+      "price": 30000
+    },
+    {
+      "locIdx": 24,
+      "price": 30000
+    },
+    {
+      "locIdx": 27,
+      "price": 30000
+    },
+    {
+      "locIdx": 35,
+      "price": 30000
+    },
+    {
+      "locIdx": 36,
+      "price": 34000
+    },
+    {
+      "locIdx": 37,
+      "price": 30000
+    },
+    {
+      "locIdx": 41,
+      "price": 34000
+    },
+    {
+      "locIdx": 49,
+      "price": 28000
+    },
+    {
+      "locIdx": 62,
+      "price": 28000
+    },
+    {
+      "locIdx": 64,
       "price": 27000
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 69,
+      "price": 24000
+    },
+    {
+      "locIdx": 75,
       "price": 26000
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 24000
+      "locIdx": 87,
+      "price": 29000
+    },
+    {
+      "locIdx": 97,
+      "price": 28000
+    },
+    {
+      "locIdx": 100,
+      "price": 29000
     }
   ],
   "Tungsten": [
     {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 12000
-    },
-    {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 11000
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 10000
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Lambda - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 9900
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 9900
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 9700
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 9200
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 7,
+      "price": 10000
+    },
+    {
+      "locIdx": 13,
+      "price": 10000
+    },
+    {
+      "locIdx": 29,
+      "price": 12000
+    },
+    {
+      "locIdx": 38,
+      "price": 9700
+    },
+    {
+      "locIdx": 45,
+      "price": 11000
+    },
+    {
+      "locIdx": 62,
+      "price": 10000
+    },
+    {
+      "locIdx": 67,
+      "price": 8200
+    },
+    {
+      "locIdx": 75,
       "price": 8700
     },
     {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
+      "locIdx": 87,
+      "price": 10000
+    },
+    {
+      "locIdx": 97,
+      "price": 10000
+    },
+    {
+      "locIdx": 98,
+      "price": 11000
+    },
+    {
+      "locIdx": 100,
+      "price": 10000
+    },
+    {
+      "locIdx": 103,
+      "price": 9900
+    },
+    {
+      "locIdx": 111,
       "price": 8200
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
-      "price": 8200
+      "locIdx": 113,
+      "price": 9900
     }
   ],
   "Torite": [
     {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 8500
+      "locIdx": 0,
+      "price": 6600
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 7700
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 7700
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 7700
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 38,
       "price": 6900
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 6600
+      "locIdx": 62,
+      "price": 7700
+    },
+    {
+      "locIdx": 97,
+      "price": 7700
+    },
+    {
+      "locIdx": 100,
+      "price": 7700
+    },
+    {
+      "locIdx": 102,
+      "price": 8500
     }
   ],
   "Titanium": [
     {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 9100
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8300
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 8300
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L5 Yellow Core Station - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 8300
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 8100
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 7700
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
-      "price": 7700
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 7400
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 13,
+      "price": 8300
+    },
+    {
+      "locIdx": 21,
+      "price": 8300
+    },
+    {
+      "locIdx": 23,
+      "price": 8300
+    },
+    {
+      "locIdx": 24,
+      "price": 8300
+    },
+    {
+      "locIdx": 26,
+      "price": 8300
+    },
+    {
+      "locIdx": 29,
+      "price": 7700
+    },
+    {
+      "locIdx": 32,
+      "price": 8300
+    },
+    {
+      "locIdx": 35,
+      "price": 8300
+    },
+    {
+      "locIdx": 36,
+      "price": 8300
+    },
+    {
+      "locIdx": 37,
+      "price": 8300
+    },
+    {
+      "locIdx": 38,
+      "price": 8100
+    },
+    {
+      "locIdx": 47,
+      "price": 9100
+    },
+    {
+      "locIdx": 55,
+      "price": 7700
+    },
+    {
+      "locIdx": 58,
+      "price": 8300
+    },
+    {
+      "locIdx": 62,
+      "price": 8300
+    },
+    {
+      "locIdx": 64,
+      "price": 6200
+    },
+    {
+      "locIdx": 72,
+      "price": 6200
+    },
+    {
+      "locIdx": 75,
       "price": 7000
     },
     {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
-      "price": 6200
+      "locIdx": 87,
+      "price": 8300
     },
     {
-      "system": "Stanton",
-      "location": "Devlin Scrap & Salvage",
-      "price": 6200
+      "locIdx": 97,
+      "price": 8300
     },
     {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
+      "locIdx": 100,
+      "price": 8300
+    },
+    {
+      "locIdx": 110,
       "price": 6200
     }
   ],
   "Laranite": [
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 9700
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 8900
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 8700
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 8600
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 8600
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L1 Green Glade Station - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L2 Faithful Dream Station - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 8500
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 8500
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 8100
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 7800
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 13,
+      "price": 8600
+    },
+    {
+      "locIdx": 23,
+      "price": 9700
+    },
+    {
+      "locIdx": 24,
+      "price": 8700
+    },
+    {
+      "locIdx": 26,
+      "price": 8700
+    },
+    {
+      "locIdx": 32,
+      "price": 8500
+    },
+    {
+      "locIdx": 35,
+      "price": 8700
+    },
+    {
+      "locIdx": 36,
+      "price": 8700
+    },
+    {
+      "locIdx": 37,
+      "price": 8100
+    },
+    {
+      "locIdx": 38,
+      "price": 8700
+    },
+    {
+      "locIdx": 47,
+      "price": 8700
+    },
+    {
+      "locIdx": 62,
+      "price": 8500
+    },
+    {
+      "locIdx": 65,
+      "price": 8500
+    },
+    {
+      "locIdx": 69,
+      "price": 6500
+    },
+    {
+      "locIdx": 75,
       "price": 7400
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 6500
+      "locIdx": 80,
+      "price": 8500
+    },
+    {
+      "locIdx": 82,
+      "price": 8500
+    },
+    {
+      "locIdx": 87,
+      "price": 8600
+    },
+    {
+      "locIdx": 97,
+      "price": 8900
+    },
+    {
+      "locIdx": 100,
+      "price": 8500
     }
   ],
   "Aslarite": [
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 0,
       "price": 5100
     },
     {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 38,
       "price": 5100
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 62,
       "price": 5100
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
+      "locIdx": 75,
       "price": 5100
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
+      "locIdx": 87,
       "price": 5100
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 97,
       "price": 5100
     },
     {
-      "system": "Stanton",
-      "location": "Orison - TDD",
+      "locIdx": 100,
       "price": 5100
     }
   ],
   "Agricium": [
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 10000
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L4 Melodic Fields Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L5 High Course Station - Admin",
-      "price": 10000
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L3 Thundering Express Station - Admin",
+      "locIdx": 3,
       "price": 9800
     },
     {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
+      "locIdx": 13,
       "price": 9800
     },
     {
-      "system": "Nyx",
-      "location": "People's Service Station Alpha - Admin",
-      "price": 9800
+      "locIdx": 21,
+      "price": 9200
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L3 Modern Express Station - Admin",
+      "locIdx": 23,
+      "price": 9200
+    },
+    {
+      "locIdx": 29,
+      "price": 9200
+    },
+    {
+      "locIdx": 32,
+      "price": 9200
+    },
+    {
+      "locIdx": 35,
+      "price": 9200
+    },
+    {
+      "locIdx": 36,
+      "price": 9200
+    },
+    {
+      "locIdx": 37,
+      "price": 10000
+    },
+    {
+      "locIdx": 38,
+      "price": 9200
+    },
+    {
+      "locIdx": 47,
+      "price": 9200
+    },
+    {
+      "locIdx": 55,
       "price": 9600
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
+      "locIdx": 56,
       "price": 9400
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 9200
+      "locIdx": 62,
+      "price": 10000
     },
     {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 9200
+      "locIdx": 64,
+      "price": 7200
     },
     {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 9200
+      "locIdx": 65,
+      "price": 10000
     },
     {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 9200
+      "locIdx": 68,
+      "price": 10000
     },
     {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 9200
+      "locIdx": 70,
+      "price": 10000
     },
     {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 9200
+      "locIdx": 72,
+      "price": 7200
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 9200
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 9200
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 75,
       "price": 8200
     },
     {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
-      "price": 7200
+      "locIdx": 84,
+      "price": 9800
     },
     {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
-      "price": 7200
+      "locIdx": 85,
+      "price": 10000
     },
     {
-      "system": "Stanton",
-      "location": "Devlin Scrap & Salvage",
+      "locIdx": 86,
+      "price": 10000
+    },
+    {
+      "locIdx": 87,
+      "price": 10000
+    },
+    {
+      "locIdx": 97,
+      "price": 10000
+    },
+    {
+      "locIdx": 100,
+      "price": 10000
+    },
+    {
+      "locIdx": 111,
       "price": 7200
     }
   ],
   "Aluminium": [
     {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4400
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4200
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3900
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 3800
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 3800
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3800
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 3800
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 3200
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 13,
+      "price": 3800
+    },
+    {
+      "locIdx": 23,
+      "price": 3900
+    },
+    {
+      "locIdx": 24,
+      "price": 3600
+    },
+    {
+      "locIdx": 26,
+      "price": 3600
+    },
+    {
+      "locIdx": 32,
+      "price": 3600
+    },
+    {
+      "locIdx": 36,
+      "price": 3600
+    },
+    {
+      "locIdx": 38,
+      "price": 3600
+    },
+    {
+      "locIdx": 47,
+      "price": 3600
+    },
+    {
+      "locIdx": 62,
+      "price": 3800
+    },
+    {
+      "locIdx": 67,
+      "price": 2900
+    },
+    {
+      "locIdx": 69,
+      "price": 2900
+    },
+    {
+      "locIdx": 74,
+      "price": 4200
+    },
+    {
+      "locIdx": 75,
       "price": 3100
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
-      "price": 2900
+      "locIdx": 87,
+      "price": 3800
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 2900
+      "locIdx": 97,
+      "price": 3800
+    },
+    {
+      "locIdx": 100,
+      "price": 3800
+    },
+    {
+      "locIdx": 102,
+      "price": 4400
+    },
+    {
+      "locIdx": 113,
+      "price": 3900
     }
   ],
   "Copper": [
     {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 4400
+      "locIdx": 0,
+      "price": 3400
     },
     {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
+      "locIdx": 13,
+      "price": 3700
+    },
+    {
+      "locIdx": 35,
+      "price": 3700
+    },
+    {
+      "locIdx": 36,
       "price": 4200
     },
     {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
+      "locIdx": 37,
+      "price": 3600
+    },
+    {
+      "locIdx": 38,
+      "price": 3400
+    },
+    {
+      "locIdx": 45,
+      "price": 4400
+    },
+    {
+      "locIdx": 47,
+      "price": 3700
+    },
+    {
+      "locIdx": 62,
+      "price": 3700
+    },
+    {
+      "locIdx": 63,
       "price": 3900
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3700
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 3700
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 3400
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
-      "price": 3000
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 3000
-    },
-    {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
-      "price": 2800
-    },
-    {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
+      "locIdx": 64,
       "price": 2400
     },
     {
-      "system": "Stanton",
-      "location": "Rappel",
+      "locIdx": 67,
+      "price": 3000
+    },
+    {
+      "locIdx": 69,
+      "price": 3000
+    },
+    {
+      "locIdx": 73,
       "price": 1200
     },
     {
-      "system": "Stanton",
-      "location": "Picker's Field",
+      "locIdx": 75,
+      "price": 3200
+    },
+    {
+      "locIdx": 87,
+      "price": 3700
+    },
+    {
+      "locIdx": 97,
+      "price": 3700
+    },
+    {
+      "locIdx": 100,
+      "price": 3700
+    },
+    {
+      "locIdx": 101,
       "price": 1200
     },
     {
-      "system": "Stanton",
-      "location": "Dunboro",
+      "locIdx": 103,
+      "price": 3600
+    },
+    {
+      "locIdx": 105,
       "price": 1200
+    },
+    {
+      "locIdx": 110,
+      "price": 2800
+    },
+    {
+      "locIdx": 113,
+      "price": 3600
     }
   ],
   "Corundum": [
     {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
+      "locIdx": 13,
+      "price": 3700
+    },
+    {
+      "locIdx": 21,
+      "price": 3500
+    },
+    {
+      "locIdx": 23,
+      "price": 3500
+    },
+    {
+      "locIdx": 24,
+      "price": 3500
+    },
+    {
+      "locIdx": 26,
+      "price": 3500
+    },
+    {
+      "locIdx": 32,
       "price": 4400
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
+      "locIdx": 36,
+      "price": 3500
+    },
+    {
+      "locIdx": 37,
       "price": 3900
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 38,
+      "price": 3500
+    },
+    {
+      "locIdx": 47,
+      "price": 3500
+    },
+    {
+      "locIdx": 62,
       "price": 3700
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 3700
+      "locIdx": 69,
+      "price": 2100
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 3700
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3600
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 74,
       "price": 3500
     },
     {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 75,
       "price": 3000
     },
     {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
+      "locIdx": 87,
+      "price": 3700
+    },
+    {
+      "locIdx": 97,
+      "price": 3700
+    },
+    {
+      "locIdx": 100,
+      "price": 3700
+    },
+    {
+      "locIdx": 110,
       "price": 2600
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 2100
+      "locIdx": 113,
+      "price": 3600
     }
   ],
   "Hephaestanite": [
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 5200
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L4 Faint Glen Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "ARC-L5 Yellow Core Station - Admin",
-      "price": 4800
-    },
-    {
-      "system": "Stanton",
-      "location": "HUR-L5 High Course Station - Admin",
-      "price": 4700
-    },
-    {
-      "system": "Stanton",
-      "location": "Everus Harbor - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L5 Modern Icarus Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
-      "location": "MIC-L4 Red Crossroads Station - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 4100
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 3900
+      "locIdx": 21,
+      "price": 4600
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L4 Shallow Fields Station",
+      "locIdx": 23,
+      "price": 4600
+    },
+    {
+      "locIdx": 24,
+      "price": 4600
+    },
+    {
+      "locIdx": 26,
+      "price": 4600
+    },
+    {
+      "locIdx": 29,
+      "price": 4600
+    },
+    {
+      "locIdx": 32,
+      "price": 4600
+    },
+    {
+      "locIdx": 35,
+      "price": 4600
+    },
+    {
+      "locIdx": 36,
+      "price": 4600
+    },
+    {
+      "locIdx": 38,
+      "price": 4600
+    },
+    {
+      "locIdx": 47,
+      "price": 4600
+    },
+    {
+      "locIdx": 56,
+      "price": 4800
+    },
+    {
+      "locIdx": 58,
+      "price": 4800
+    },
+    {
+      "locIdx": 62,
+      "price": 4800
+    },
+    {
+      "locIdx": 65,
+      "price": 4800
+    },
+    {
+      "locIdx": 67,
       "price": 3400
     },
     {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
+      "locIdx": 68,
+      "price": 4500
+    },
+    {
+      "locIdx": 70,
+      "price": 4800
+    },
+    {
+      "locIdx": 74,
+      "price": 4600
+    },
+    {
+      "locIdx": 75,
+      "price": 3900
+    },
+    {
+      "locIdx": 86,
+      "price": 4700
+    },
+    {
+      "locIdx": 87,
+      "price": 4800
+    },
+    {
+      "locIdx": 93,
+      "price": 4500
+    },
+    {
+      "locIdx": 94,
+      "price": 4500
+    },
+    {
+      "locIdx": 97,
+      "price": 5200
+    },
+    {
+      "locIdx": 100,
+      "price": 4800
+    },
+    {
+      "locIdx": 111,
       "price": 3000
     }
   ],
   "Ice": [
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 5700
-    },
-    {
-      "system": "Pyro",
-      "location": "Jackson's Swap",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Chawla's Beach",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Seer's Canyon",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Ashland",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Last Landings",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Rustville",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Canard View",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Fallow Field",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Sunset Mesa",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "The Golden Riviera",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Sacren's Plot",
-      "price": 5500
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Bueno Ravine",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Shepherd's Rest",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 5200
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 5100
-    },
-    {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 5000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
+      "locIdx": 0,
       "price": 4600
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 15,
+      "price": 5500
+    },
+    {
+      "locIdx": 16,
+      "price": 5200
+    },
+    {
+      "locIdx": 18,
+      "price": 5500
+    },
+    {
+      "locIdx": 20,
+      "price": 5500
+    },
+    {
+      "locIdx": 21,
+      "price": 5200
+    },
+    {
+      "locIdx": 23,
+      "price": 5200
+    },
+    {
+      "locIdx": 24,
+      "price": 5700
+    },
+    {
+      "locIdx": 25,
+      "price": 5500
+    },
+    {
+      "locIdx": 27,
+      "price": 5500
+    },
+    {
+      "locIdx": 28,
+      "price": 5500
+    },
+    {
+      "locIdx": 29,
+      "price": 5200
+    },
+    {
+      "locIdx": 32,
+      "price": 5200
+    },
+    {
+      "locIdx": 35,
+      "price": 5200
+    },
+    {
+      "locIdx": 36,
+      "price": 5200
+    },
+    {
+      "locIdx": 37,
+      "price": 5200
+    },
+    {
+      "locIdx": 40,
+      "price": 5500
+    },
+    {
+      "locIdx": 41,
+      "price": 5500
+    },
+    {
+      "locIdx": 42,
+      "price": 5500
+    },
+    {
+      "locIdx": 43,
+      "price": 5200
+    },
+    {
+      "locIdx": 47,
+      "price": 5200
+    },
+    {
+      "locIdx": 48,
+      "price": 5500
+    },
+    {
+      "locIdx": 49,
+      "price": 5500
+    },
+    {
+      "locIdx": 62,
+      "price": 5100
+    },
+    {
+      "locIdx": 63,
+      "price": 5000
+    },
+    {
+      "locIdx": 75,
       "price": 4400
+    },
+    {
+      "locIdx": 87,
+      "price": 5100
+    },
+    {
+      "locIdx": 97,
+      "price": 5100
+    },
+    {
+      "locIdx": 100,
+      "price": 5100
     }
   ],
   "Iron": [
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 4000
+      "locIdx": 3,
+      "price": 3500
     },
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
+      "locIdx": 5,
+      "price": 3500
+    },
+    {
+      "locIdx": 7,
+      "price": 3500
+    },
+    {
+      "locIdx": 9,
+      "price": 3500
+    },
+    {
+      "locIdx": 13,
+      "price": 3400
+    },
+    {
+      "locIdx": 23,
+      "price": 3600
+    },
+    {
+      "locIdx": 24,
       "price": 3900
     },
     {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
+      "locIdx": 26,
       "price": 3900
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
+      "locIdx": 29,
       "price": 3600
     },
     {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
+      "locIdx": 35,
+      "price": 3200
+    },
+    {
+      "locIdx": 36,
+      "price": 3200
+    },
+    {
+      "locIdx": 37,
       "price": 3600
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 3600
+      "locIdx": 38,
+      "price": 3200
     },
     {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
-      "price": 3500
+      "locIdx": 47,
+      "price": 3200
     },
     {
-      "system": "Nyx",
-      "location": "People's Service Station Alpha - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Delta - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Theta - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "People's Service Station Lambda - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
+      "locIdx": 62,
       "price": 3400
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 3400
+      "locIdx": 73,
+      "price": 1000
     },
     {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 3400
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
-      "price": 3400
-    },
-    {
-      "system": "Stanton",
-      "location": "HDMS-Hahn",
-      "price": 3200
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 3200
-    },
-    {
-      "system": "Stanton",
-      "location": "HDMS-Perlman",
-      "price": 3200
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 75,
       "price": 2700
     },
     {
-      "system": "Stanton",
-      "location": "Rappel",
+      "locIdx": 77,
+      "price": 3200
+    },
+    {
+      "locIdx": 78,
+      "price": 3200
+    },
+    {
+      "locIdx": 87,
+      "price": 3400
+    },
+    {
+      "locIdx": 97,
+      "price": 3400
+    },
+    {
+      "locIdx": 98,
+      "price": 3500
+    },
+    {
+      "locIdx": 100,
+      "price": 3400
+    },
+    {
+      "locIdx": 101,
       "price": 1000
     },
     {
-      "system": "Stanton",
-      "location": "Dunboro",
+      "locIdx": 105,
       "price": 1000
     },
     {
-      "system": "Stanton",
-      "location": "Picker's Field",
-      "price": 1000
+      "locIdx": 113,
+      "price": 4000
     }
   ],
   "Quartz": [
     {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 5500
+      "locIdx": 0,
+      "price": 3500
     },
     {
-      "system": "Stanton",
-      "location": "Seraphim Station - Admin",
-      "price": 4700
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 4400
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 4400
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 4400
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 4400
-    },
-    {
-      "system": "Nyx",
-      "location": "Stanton Gateway (Nyx) - Admin",
+      "locIdx": 13,
       "price": 4300
     },
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 21,
       "price": 4200
     },
     {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
+      "locIdx": 23,
       "price": 4200
     },
     {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
+      "locIdx": 24,
       "price": 4200
     },
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
+      "locIdx": 26,
       "price": 4200
     },
     {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
+      "locIdx": 32,
       "price": 4200
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
+      "locIdx": 35,
+      "price": 4600
+    },
+    {
+      "locIdx": 37,
       "price": 4200
     },
     {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
+      "locIdx": 38,
       "price": 4200
     },
     {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 4200
+      "locIdx": 45,
+      "price": 5500
     },
     {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
+      "locIdx": 62,
+      "price": 4400
+    },
+    {
+      "locIdx": 71,
+      "price": 4000
+    },
+    {
+      "locIdx": 75,
+      "price": 3500
+    },
+    {
+      "locIdx": 79,
+      "price": 4000
+    },
+    {
+      "locIdx": 87,
+      "price": 4400
+    },
+    {
+      "locIdx": 97,
+      "price": 4400
+    },
+    {
+      "locIdx": 98,
       "price": 4100
     },
     {
-      "system": "Stanton",
-      "location": "Hickes Research",
+      "locIdx": 100,
+      "price": 4400
+    },
+    {
+      "locIdx": 103,
+      "price": 4200
+    },
+    {
+      "locIdx": 106,
       "price": 4000
     },
     {
-      "system": "Stanton",
-      "location": "Deakins Research",
+      "locIdx": 108,
       "price": 4000
     },
     {
-      "system": "Stanton",
-      "location": "Rayari Kaltag Research Outpost",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari Anvik Research Outpost",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
+      "locIdx": 110,
       "price": 3100
+    },
+    {
+      "locIdx": 112,
+      "price": 4700
     }
   ],
   "Silicon": [
     {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
+      "locIdx": 0,
+      "price": 2400
+    },
+    {
+      "locIdx": 23,
+      "price": 2300
+    },
+    {
+      "locIdx": 24,
+      "price": 2300
+    },
+    {
+      "locIdx": 26,
+      "price": 2600
+    },
+    {
+      "locIdx": 35,
       "price": 2900
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 2700
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
+      "locIdx": 36,
       "price": 2600
     },
     {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 2600
-    },
-    {
-      "system": "Stanton",
-      "location": "Seraphim Station - Admin",
-      "price": 2400
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 2400
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
-      "price": 2400
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 2400
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 2400
-    },
-    {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 2400
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 2400
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
+      "locIdx": 37,
       "price": 2300
     },
     {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
+      "locIdx": 47,
       "price": 2300
     },
     {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 2300
+      "locIdx": 62,
+      "price": 2400
     },
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 2300
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 75,
       "price": 2000
+    },
+    {
+      "locIdx": 87,
+      "price": 2400
+    },
+    {
+      "locIdx": 97,
+      "price": 2400
+    },
+    {
+      "locIdx": 100,
+      "price": 2400
+    },
+    {
+      "locIdx": 102,
+      "price": 2400
+    },
+    {
+      "locIdx": 112,
+      "price": 2400
+    },
+    {
+      "locIdx": 113,
+      "price": 2700
     }
   ],
   "Astatine": [
     {
-      "system": "Stanton",
-      "location": "ARC-L1 Wide Forest Station - Admin",
+      "locIdx": 0,
+      "price": 3500
+    },
+    {
+      "locIdx": 45,
+      "price": 3700
+    },
+    {
+      "locIdx": 51,
       "price": 3900
     },
     {
-      "system": "Stanton",
-      "location": "ARC-L2 Lively Pathway Station - Admin",
+      "locIdx": 53,
       "price": 3900
     },
     {
-      "system": "Stanton",
-      "location": "Terra Gateway (Stanton) - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Pyro Gateway (Stanton) - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Pyro",
-      "location": "Stanton Gateway (Pyro) - Admin",
-      "price": 3700
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari Anvik Research Outpost",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Deakins Research",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari Kaltag Research Outpost",
-      "price": 3600
-    },
-    {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 62,
       "price": 3500
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 3500
+      "locIdx": 64,
+      "price": 2500
     },
     {
-      "system": "Stanton",
-      "location": "Rayari McGrath Research Outpost",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Rayari Cantwell Research Outpost",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 3500
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 3500
-    },
-    {
-      "system": "Stanton",
-      "location": "Nyx Gateway (Stanton) - Admin",
+      "locIdx": 65,
       "price": 3400
     },
     {
-      "system": "Stanton",
-      "location": "CRU-L1 Ambitious Dream Station - Admin",
-      "price": 3400
+      "locIdx": 71,
+      "price": 3600
     },
     {
-      "system": "Stanton",
-      "location": "Seraphim Station - Admin",
-      "price": 3300
+      "locIdx": 72,
+      "price": 2500
     },
     {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
+      "locIdx": 75,
       "price": 2800
     },
     {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
+      "locIdx": 87,
+      "price": 3500
+    },
+    {
+      "locIdx": 97,
+      "price": 3500
+    },
+    {
+      "locIdx": 98,
+      "price": 3400
+    },
+    {
+      "locIdx": 100,
+      "price": 3500
+    },
+    {
+      "locIdx": 103,
+      "price": 3700
+    },
+    {
+      "locIdx": 106,
+      "price": 3600
+    },
+    {
+      "locIdx": 107,
+      "price": 3500
+    },
+    {
+      "locIdx": 108,
+      "price": 3600
+    },
+    {
+      "locIdx": 109,
+      "price": 3500
+    },
+    {
+      "locIdx": 111,
       "price": 2500
     },
     {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
-      "price": 2500
+      "locIdx": 112,
+      "price": 3300
     },
     {
-      "system": "Stanton",
-      "location": "Devlin Scrap & Salvage",
-      "price": 2500
+      "locIdx": 113,
+      "price": 3700
     }
   ],
   "Tin": [
     {
-      "system": "Pyro",
-      "location": "Dudley & Daughters - Admin",
-      "price": 4600
-    },
-    {
-      "system": "Stanton",
-      "location": "Baijini Point - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Stanton",
-      "location": "Port Tressler - Admin",
-      "price": 4500
-    },
-    {
-      "system": "Pyro",
-      "location": "Megumi Refueling - Admin",
-      "price": 4300
-    },
-    {
-      "system": "Pyro",
-      "location": "Gaslight - Admin",
-      "price": 4300
-    },
-    {
-      "system": "Stanton",
-      "location": "Lorville - CBD",
+      "locIdx": 0,
       "price": 4000
     },
     {
-      "system": "Stanton",
-      "location": "Area 18 - TDD",
+      "locIdx": 11,
       "price": 4000
     },
     {
-      "system": "Stanton",
-      "location": "New Babbage - TDD",
-      "price": 4000
-    },
-    {
-      "system": "Stanton",
-      "location": "Orison - TDD",
-      "price": 4000
-    },
-    {
-      "system": "Nyx",
-      "location": "Levski",
-      "price": 4000
-    },
-    {
-      "system": "Nyx",
-      "location": "Pyro Gateway (Nyx) - Admin",
-      "price": 4000
-    },
-    {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Rod's Fuel 'N Supplies - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Patch City - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Starlight Service Station - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Endgame - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Rat's Nest - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Pyro",
-      "location": "Orbituary - Admin",
-      "price": 3800
-    },
-    {
-      "system": "Stanton",
-      "location": "Green Imperial Housing Exchange - Admin",
-      "price": 3300
-    },
-    {
-      "system": "Pyro",
-      "location": "Checkmate Station - Admin",
+      "locIdx": 21,
       "price": 3000
     },
     {
-      "system": "Stanton",
-      "location": "Reclamation & Disposal Orinth",
+      "locIdx": 23,
+      "price": 4600
+    },
+    {
+      "locIdx": 24,
+      "price": 3800
+    },
+    {
+      "locIdx": 26,
+      "price": 4300
+    },
+    {
+      "locIdx": 29,
+      "price": 4300
+    },
+    {
+      "locIdx": 32,
+      "price": 3800
+    },
+    {
+      "locIdx": 35,
+      "price": 3800
+    },
+    {
+      "locIdx": 36,
+      "price": 3800
+    },
+    {
+      "locIdx": 37,
+      "price": 3800
+    },
+    {
+      "locIdx": 38,
+      "price": 3800
+    },
+    {
+      "locIdx": 47,
+      "price": 3800
+    },
+    {
+      "locIdx": 62,
+      "price": 4000
+    },
+    {
+      "locIdx": 63,
+      "price": 4500
+    },
+    {
+      "locIdx": 64,
+      "price": 2500
+    },
+    {
+      "locIdx": 69,
+      "price": 2500
+    },
+    {
+      "locIdx": 75,
+      "price": 3300
+    },
+    {
+      "locIdx": 87,
+      "price": 4000
+    },
+    {
+      "locIdx": 97,
+      "price": 4000
+    },
+    {
+      "locIdx": 100,
+      "price": 4000
+    },
+    {
+      "locIdx": 102,
+      "price": 4500
+    },
+    {
+      "locIdx": 110,
       "price": 2900
     },
     {
-      "system": "Stanton",
-      "location": "Brio's Breaker Yard",
-      "price": 2500
-    },
-    {
-      "system": "Stanton",
-      "location": "CRU-L5 Beautiful Glen Station",
-      "price": 2500
-    },
-    {
-      "system": "Stanton",
-      "location": "Samson & Son's Salvage Center",
+      "locIdx": 111,
       "price": 2500
     }
   ],
   "HexaPolyMesh Coating": [
     {
-      "system": "Pyro",
-      "location": "Ruin Station - Admin",
+      "locIdx": 38,
       "price": 1
     }
   ]
