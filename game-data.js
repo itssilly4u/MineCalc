@@ -1694,6 +1694,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": -30,
+    "duration": 60,
     "shops": [
       {
         "locIdx": 22,
@@ -1745,6 +1746,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 12,
@@ -1812,6 +1814,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 12,
@@ -1875,6 +1878,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -1946,6 +1950,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2017,6 +2022,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2072,6 +2078,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2163,6 +2170,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": -60,
     "shatter": 0,
+    "duration": 60,
     "shops": [
       {
         "locIdx": 1,
@@ -2242,6 +2250,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 60,
     "shatter": 0,
+    "duration": 15,
     "shops": [
       {
         "locIdx": 1,
@@ -2337,6 +2346,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": -80,
     "shatter": 0,
+    "duration": 60,
     "shops": [
       {
         "locIdx": 22,
@@ -2384,6 +2394,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2403,6 +2414,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2422,6 +2434,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2441,6 +2454,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": -10,
+    "duration": 20,
     "shops": [
       {
         "locIdx": 1,
@@ -2536,6 +2550,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": -10,
+    "duration": 30,
     "shops": [
       {
         "locIdx": 1,
@@ -2619,6 +2634,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 15,
     "shops": [
       {
         "locIdx": 1,
@@ -2635,9 +2651,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": 0,
-    "optCharge": 0,
+    "optCharge": 60,
     "overcharge": -60,
     "shatter": 40,
+    "duration": 60,
     "shops": [
       {
         "locIdx": 1,
@@ -2726,9 +2743,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": -3,
-    "optCharge": 0,
+    "optCharge": 35,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2797,9 +2815,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": -1,
-    "optCharge": 0,
+    "optCharge": 40,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 12,
@@ -2864,9 +2883,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": -10,
-    "optCharge": 0,
+    "optCharge": 30,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -2919,9 +2939,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": 0,
-    "optCharge": 0,
+    "optCharge": -20,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 12,
@@ -3006,9 +3027,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": 0,
-    "optCharge": 0,
+    "optCharge": -15,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -3085,9 +3107,10 @@ const modules = [
     "resistance": 0,
     "instability": 0,
     "optimalWin": 0,
-    "optCharge": 0,
+    "optCharge": -5,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -3139,6 +3162,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -3214,6 +3238,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -3293,6 +3318,7 @@ const modules = [
     "optCharge": 0,
     "overcharge": 0,
     "shatter": 0,
+    "duration": 0,
     "shops": [
       {
         "locIdx": 1,
@@ -4243,7 +4269,7 @@ const pricingData = {
   "Riccite": [
     {
       "locIdx": 0,
-      "price": 77000
+      "price": 76000
     },
     {
       "locIdx": 15,
@@ -4317,7 +4343,7 @@ const pricingData = {
   "Ouratite": [
     {
       "locIdx": 0,
-      "price": 44000
+      "price": 45000
     },
     {
       "locIdx": 38,
@@ -4557,7 +4583,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 63000
+      "price": 64000
     }
   ],
   "Borase": [
@@ -4815,7 +4841,7 @@ const pricingData = {
     },
     {
       "locIdx": 41,
-      "price": 34000
+      "price": 32000
     },
     {
       "locIdx": 49,
@@ -5099,7 +5125,7 @@ const pricingData = {
     },
     {
       "locIdx": 80,
-      "price": 10000
+      "price": 8500
     },
     {
       "locIdx": 82,
@@ -5329,7 +5355,7 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 4400
+      "price": 3500
     },
     {
       "locIdx": 113,
@@ -5481,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5717,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5000
+      "price": 6200
     },
     {
       "locIdx": 75,
@@ -5811,7 +5837,7 @@ const pricingData = {
     },
     {
       "locIdx": 78,
-      "price": 3200
+      "price": 3000
     },
     {
       "locIdx": 87,
@@ -5959,7 +5985,7 @@ const pricingData = {
     },
     {
       "locIdx": 35,
-      "price": 2900
+      "price": 2800
     },
     {
       "locIdx": 36,
@@ -6089,7 +6115,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 3300
+      "price": 3400
     },
     {
       "locIdx": 113,

@@ -213,7 +213,7 @@ function processLasers(rawAttributes, priceMap) {
             resistance: safeFloat(l['Resistance']), 
             instability: safeFloat(l['Laser Instability'] || l.Instability), 
             optimalWin: safeFloat(l['Optimal Charge Window Size']), 
-            optCharge: safeFloat(l['Optimal Charge Window Rate']), 
+            optCharge: safeFloat(l['Optimal Charge Rate'] ?? l['Optimal Charge Window Rate']), 
             overcharge: safeFloat(l['Catastrophic Charge Rate']), 
             shatter: safeFloat(l['Shatter Damage']), 
             optRange: safeFloat(l['Optimal Range']), 
@@ -240,9 +240,10 @@ function processModules(rawAttributes, priceMap) {
             resistance: safeFloat(m['Resistance']), 
             instability: safeFloat(m['Laser Instability']), 
             optimalWin: safeFloat(m['Optimal Charge Window Size']), 
-            optCharge: safeFloat(m['Optimal Charge Window Rate']), 
+            optCharge: safeFloat(m['Optimal Charge Rate'] ?? m['Optimal Charge Window Rate']), 
             overcharge: safeFloat(m['Catastrophic Charge Rate']), 
             shatter: safeFloat(m['Shatter Damage']),
+            duration: safeFloat(m['Duration']),
             shops: priceMap[m.Item] || [] 
         });
     });
@@ -260,7 +261,7 @@ function processGadgets(rawAttributes, priceMap) {
             resistance: safeFloat(g['Resistance']), 
             instability: safeFloat(g['Laser Instability'] || g.Instability), 
             optimalWin: safeFloat(g['Optimal Charge Window Size']), 
-            optCharge: safeFloat(g['Optimal Charge Window Rate']), 
+            optCharge: safeFloat(g['Optimal Charge Rate'] ?? g['Optimal Charge Window Rate']), 
             overcharge: safeFloat(g['Catastrophic Charge Rate']), 
             shatter: safeFloat(g['Shatter Damage']), 
             cluster: safeFloat(g['Cluster Modifier']),
