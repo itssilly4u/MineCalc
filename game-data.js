@@ -4147,7 +4147,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 170000
+      "price": 150000
     }
   ],
   "Stileron": [
@@ -4213,7 +4213,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 140000
+      "price": 130000
     },
     {
       "locIdx": 97,
@@ -4221,7 +4221,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 140000
+      "price": 130000
     },
     {
       "locIdx": 106,
@@ -4243,7 +4243,7 @@ const pricingData = {
     },
     {
       "locIdx": 5,
-      "price": 110000
+      "price": 130000
     },
     {
       "locIdx": 16,
@@ -4337,7 +4337,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 66000
+      "price": 65000
     }
   ],
   "Ouratite": [
@@ -4367,7 +4367,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 45000
+      "price": 44000
     }
   ],
   "Lindinium": [
@@ -4455,7 +4455,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 26000
+      "price": 27000
     },
     {
       "locIdx": 97,
@@ -4463,13 +4463,13 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 29000
+      "price": 27000
     }
   ],
   "Gold": [
     {
       "locIdx": 0,
-      "price": 26000
+      "price": 27000
     },
     {
       "locIdx": 11,
@@ -4865,7 +4865,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 29000
+      "price": 27000
     },
     {
       "locIdx": 97,
@@ -5069,7 +5069,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 8600
+      "price": 9200
     },
     {
       "locIdx": 23,
@@ -5133,7 +5133,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 8600
+      "price": 8800
     },
     {
       "locIdx": 97,
@@ -5141,7 +5141,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 8500
+      "price": 8900
     }
   ],
   "Aslarite": [
@@ -5181,7 +5181,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 9800
+      "price": 10000
     },
     {
       "locIdx": 21,
@@ -5287,7 +5287,7 @@ const pricingData = {
   "Aluminium": [
     {
       "locIdx": 0,
-      "price": 3200
+      "price": 3000
     },
     {
       "locIdx": 13,
@@ -5609,7 +5609,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4500
+      "price": 4600
     },
     {
       "locIdx": 75,
@@ -5875,7 +5875,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 4300
+      "price": 4400
     },
     {
       "locIdx": 21,
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3800
+      "price": 3300
     },
     {
       "locIdx": 71,
