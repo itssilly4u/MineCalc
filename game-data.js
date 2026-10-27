@@ -4147,7 +4147,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 150000
+      "price": 160000
     }
   ],
   "Stileron": [
@@ -4221,7 +4221,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 130000
+      "price": 140000
     },
     {
       "locIdx": 106,
@@ -4329,7 +4329,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 65000
+      "price": 66000
     },
     {
       "locIdx": 97,
@@ -4337,7 +4337,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 65000
+      "price": 66000
     }
   ],
   "Ouratite": [
@@ -4367,7 +4367,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 44000
+      "price": 45000
     }
   ],
   "Lindinium": [
@@ -4463,7 +4463,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 27000
+      "price": 29000
     }
   ],
   "Gold": [
@@ -4547,7 +4547,7 @@ const pricingData = {
     },
     {
       "locIdx": 25,
-      "price": 65000
+      "price": 71000
     },
     {
       "locIdx": 27,
@@ -4849,7 +4849,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 28000
+      "price": 29000
     },
     {
       "locIdx": 64,
@@ -4865,7 +4865,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 28000
+      "price": 29000
     },
     {
       "locIdx": 97,
@@ -5109,11 +5109,11 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 8900
+      "price": 8600
     },
     {
       "locIdx": 65,
-      "price": 8500
+      "price": 9000
     },
     {
       "locIdx": 69,
@@ -5125,15 +5125,15 @@ const pricingData = {
     },
     {
       "locIdx": 80,
-      "price": 9200
+      "price": 8500
     },
     {
       "locIdx": 82,
-      "price": 10000
+      "price": 9300
     },
     {
       "locIdx": 87,
-      "price": 9100
+      "price": 8700
     },
     {
       "locIdx": 97,
@@ -5141,7 +5141,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 8900
+      "price": 9100
     }
   ],
   "Aslarite": [
@@ -5257,7 +5257,7 @@ const pricingData = {
     },
     {
       "locIdx": 84,
-      "price": 10000
+      "price": 9700
     },
     {
       "locIdx": 85,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 3700
     },
     {
       "locIdx": 75,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5601,7 +5601,7 @@ const pricingData = {
     },
     {
       "locIdx": 68,
-      "price": 5600
+      "price": 4500
     },
     {
       "locIdx": 70,
@@ -5625,7 +5625,7 @@ const pricingData = {
     },
     {
       "locIdx": 93,
-      "price": 4500
+      "price": 5200
     },
     {
       "locIdx": 94,
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3300
+      "price": 3900
     },
     {
       "locIdx": 71,
