@@ -4939,7 +4939,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 11000
+      "price": 10000
     }
   ],
   "Torite": [
@@ -5125,7 +5125,7 @@ const pricingData = {
     },
     {
       "locIdx": 80,
-      "price": 8500
+      "price": 11000
     },
     {
       "locIdx": 82,
@@ -5177,7 +5177,7 @@ const pricingData = {
   "Agricium": [
     {
       "locIdx": 3,
-      "price": 9800
+      "price": 10000
     },
     {
       "locIdx": 13,
@@ -5225,7 +5225,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 9400
+      "price": 12000
     },
     {
       "locIdx": 62,
@@ -5287,7 +5287,7 @@ const pricingData = {
   "Aluminium": [
     {
       "locIdx": 0,
-      "price": 3200
+      "price": 3000
     },
     {
       "locIdx": 13,
@@ -5355,11 +5355,11 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 3500
+      "price": 4600
     },
     {
       "locIdx": 113,
-      "price": 4500
+      "price": 4200
     }
   ],
   "Copper": [
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 4700
     }
   ],
   "Corundum": [
@@ -5629,7 +5629,7 @@ const pricingData = {
     },
     {
       "locIdx": 94,
-      "price": 4500
+      "price": 6000
     },
     {
       "locIdx": 97,
@@ -5743,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5000
+      "price": 6800
     },
     {
       "locIdx": 75,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 4000
+      "price": 5400
     },
     {
       "locIdx": 100,
@@ -6029,7 +6029,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 2900
+      "price": 2300
     }
   ],
   "Astatine": [
@@ -6043,7 +6043,7 @@ const pricingData = {
     },
     {
       "locIdx": 51,
-      "price": 3900
+      "price": 3600
     },
     {
       "locIdx": 53,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3400
+      "price": 4300
     },
     {
       "locIdx": 100,
