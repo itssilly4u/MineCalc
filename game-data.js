@@ -4173,7 +4173,7 @@ const pricingData = {
     },
     {
       "locIdx": 30,
-      "price": 170000
+      "price": 140000
     },
     {
       "locIdx": 38,
@@ -4313,7 +4313,7 @@ const pricingData = {
     },
     {
       "locIdx": 59,
-      "price": 91000
+      "price": 83000
     },
     {
       "locIdx": 60,
@@ -4621,7 +4621,7 @@ const pricingData = {
     },
     {
       "locIdx": 32,
-      "price": 27000
+      "price": 25000
     },
     {
       "locIdx": 35,
@@ -4939,7 +4939,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 10000
+      "price": 11000
     }
   ],
   "Torite": [
@@ -4999,7 +4999,7 @@ const pricingData = {
     },
     {
       "locIdx": 32,
-      "price": 8300
+      "price": 8200
     },
     {
       "locIdx": 35,
@@ -5359,7 +5359,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 4200
+      "price": 3600
     }
   ],
   "Copper": [
@@ -5389,7 +5389,7 @@ const pricingData = {
     },
     {
       "locIdx": 45,
-      "price": 4400
+      "price": 3700
     },
     {
       "locIdx": 47,
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 4700
+      "price": 3700
     }
   ],
   "Corundum": [
@@ -5911,7 +5911,7 @@ const pricingData = {
     },
     {
       "locIdx": 45,
-      "price": 5300
+      "price": 5500
     },
     {
       "locIdx": 62,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 5300
+      "price": 4600
     },
     {
       "locIdx": 100,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3400
+      "price": 3700
     },
     {
       "locIdx": 100,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 3400
     }
   ],
   "Tin": [
