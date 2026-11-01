@@ -5019,7 +5019,7 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 9200
+      "price": 8700
     },
     {
       "locIdx": 55,
@@ -5035,7 +5035,7 @@ const pricingData = {
     },
     {
       "locIdx": 64,
-      "price": 5200
+      "price": 6200
     },
     {
       "locIdx": 72,
@@ -5069,7 +5069,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 9200
+      "price": 8500
     },
     {
       "locIdx": 23,
@@ -5105,7 +5105,7 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 8700
+      "price": 8600
     },
     {
       "locIdx": 62,
@@ -5113,7 +5113,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 9600
+      "price": 8500
     },
     {
       "locIdx": 69,
@@ -5225,7 +5225,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 12000
+      "price": 9400
     },
     {
       "locIdx": 62,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3700
+      "price": 4200
     },
     {
       "locIdx": 75,
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 4000
     }
   ],
   "Corundum": [
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3900
+      "price": 4000
     },
     {
       "locIdx": 75,
@@ -5581,7 +5581,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 4600
+      "price": 4800
     },
     {
       "locIdx": 58,
@@ -5629,7 +5629,7 @@ const pricingData = {
     },
     {
       "locIdx": 94,
-      "price": 4500
+      "price": 5100
     },
     {
       "locIdx": 97,
@@ -6043,7 +6043,7 @@ const pricingData = {
     },
     {
       "locIdx": 51,
-      "price": 3700
+      "price": 3800
     },
     {
       "locIdx": 53,
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3900
+      "price": 3300
     },
     {
       "locIdx": 71,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3400
+      "price": 3700
     }
   ],
   "Tin": [
