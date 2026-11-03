@@ -594,8 +594,8 @@ const lasers = [
   {
     "name": "Arbor MH1 Mining Laser (S1)",
     "slots": 1,
-    "powerMin": 189,
-    "powerMax": 1890,
+    "powerMin": 117,
+    "powerMax": 2340,
     "extraction": 1850,
     "inert": -30,
     "resistance": 25,
@@ -637,8 +637,8 @@ const lasers = [
   {
     "name": "Arbor MH2 Mining Laser (S2)",
     "slots": 2,
-    "powerMin": 480,
-    "powerMax": 2400,
+    "powerMin": 870,
+    "powerMax": 4350,
     "extraction": 2590,
     "inert": -40,
     "resistance": 25,
@@ -791,8 +791,8 @@ const lasers = [
   {
     "name": "Helix I Mining Laser (S1)",
     "slots": 2,
-    "powerMin": 630,
-    "powerMax": 3150,
+    "powerMin": 780,
+    "powerMax": 3900,
     "extraction": 1850,
     "inert": -30,
     "resistance": -30,
@@ -866,8 +866,8 @@ const lasers = [
   {
     "name": "Helix II Mining Laser (S2)",
     "slots": 3,
-    "powerMin": 1020,
-    "powerMax": 4080,
+    "powerMin": 1479,
+    "powerMax": 4930,
     "extraction": 2590,
     "inert": -40,
     "resistance": -30,
@@ -937,8 +937,8 @@ const lasers = [
   {
     "name": "Hofstede-S1 Mining Laser (S1)",
     "slots": 1,
-    "powerMin": 105,
-    "powerMax": 2100,
+    "powerMin": 130,
+    "powerMax": 2600,
     "extraction": 1295,
     "inert": -30,
     "resistance": -30,
@@ -992,8 +992,8 @@ const lasers = [
   {
     "name": "Hofstede-S2 Mining Laser (S2)",
     "slots": 2,
-    "powerMin": 336,
-    "powerMax": 3360,
+    "powerMin": 406,
+    "powerMax": 4060,
     "extraction": 1295,
     "inert": -40,
     "resistance": -30,
@@ -1067,8 +1067,8 @@ const lasers = [
   {
     "name": "Impact I Mining Laser (S1)",
     "slots": 2,
-    "powerMin": 420,
-    "powerMax": 2100,
+    "powerMin": 520,
+    "powerMax": 2600,
     "extraction": 2775,
     "inert": -30,
     "resistance": 10,
@@ -1114,8 +1114,8 @@ const lasers = [
   {
     "name": "Impact II Mining Laser (S2)",
     "slots": 3,
-    "powerMin": 840,
-    "powerMax": 3360,
+    "powerMin": 1218,
+    "powerMax": 4060,
     "extraction": 3145,
     "inert": -40,
     "resistance": 10,
@@ -1193,8 +1193,8 @@ const lasers = [
   {
     "name": "Klein-S1 Mining Laser (S1)",
     "slots": 0,
-    "powerMin": 378,
-    "powerMax": 2220,
+    "powerMin": 468,
+    "powerMax": 3120,
     "extraction": 2220,
     "inert": -30,
     "resistance": -45,
@@ -1220,8 +1220,8 @@ const lasers = [
   {
     "name": "Klein-S2 Mining Laser (S2)",
     "slots": 1,
-    "powerMin": 720,
-    "powerMax": 3600,
+    "powerMin": 870,
+    "powerMax": 4350,
     "extraction": 2775,
     "inert": -40,
     "resistance": -45,
@@ -1247,8 +1247,8 @@ const lasers = [
   {
     "name": "Lancet MH1 Mining Laser (S1)",
     "slots": 1,
-    "powerMin": 504,
-    "powerMax": 2520,
+    "powerMin": 468,
+    "powerMax": 3120,
     "extraction": 1850,
     "inert": -30,
     "resistance": 0,
@@ -1334,8 +1334,8 @@ const lasers = [
   {
     "name": "Lancet MH2 Mining Laser (S2)",
     "slots": 2,
-    "powerMin": 900,
-    "powerMax": 3600,
+    "powerMin": 1305,
+    "powerMax": 4350,
     "extraction": 2590,
     "inert": -40,
     "resistance": 0,
@@ -1428,8 +1428,8 @@ const lasers = [
   {
     "name": "Pitman Mining Laser (S1)",
     "slots": 2,
-    "powerMin": 630,
-    "powerMax": 3150,
+    "powerMin": 780,
+    "powerMax": 3900,
     "extraction": 1295,
     "inert": -40,
     "resistance": 25,
@@ -4213,7 +4213,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 130000
+      "price": 140000
     },
     {
       "locIdx": 97,
@@ -4837,7 +4837,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 28000
+      "price": 30000
     },
     {
       "locIdx": 41,
@@ -5023,7 +5023,7 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 7700
+      "price": 8900
     },
     {
       "locIdx": 58,
@@ -5047,7 +5047,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 8300
+      "price": 8200
     },
     {
       "locIdx": 97,
@@ -5097,7 +5097,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 8100
+      "price": 8600
     },
     {
       "locIdx": 38,
@@ -5133,7 +5133,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 8700
+      "price": 8500
     },
     {
       "locIdx": 97,
@@ -5209,7 +5209,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 9000
+      "price": 9200
     },
     {
       "locIdx": 38,
@@ -5225,7 +5225,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 9400
+      "price": 12000
     },
     {
       "locIdx": 62,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3600
+      "price": 4200
     },
     {
       "locIdx": 75,
@@ -5359,7 +5359,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3500
+      "price": 4300
     }
   ],
   "Copper": [
@@ -5381,7 +5381,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 4300
+      "price": 4200
     },
     {
       "locIdx": 38,
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3900
+      "price": 3700
     }
   ],
   "Corundum": [
@@ -5487,7 +5487,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 4300
+      "price": 4400
     },
     {
       "locIdx": 38,
@@ -5581,7 +5581,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 4800
+      "price": 4600
     },
     {
       "locIdx": 58,
@@ -5601,7 +5601,7 @@ const pricingData = {
     },
     {
       "locIdx": 68,
-      "price": 4500
+      "price": 6000
     },
     {
       "locIdx": 70,
@@ -5629,7 +5629,7 @@ const pricingData = {
     },
     {
       "locIdx": 94,
-      "price": 5400
+      "price": 5500
     },
     {
       "locIdx": 97,
@@ -5667,7 +5667,7 @@ const pricingData = {
     },
     {
       "locIdx": 21,
-      "price": 5100
+      "price": 5200
     },
     {
       "locIdx": 23,
@@ -5675,7 +5675,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 4800
+      "price": 5300
     },
     {
       "locIdx": 25,
@@ -5743,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5000
+      "price": 5700
     },
     {
       "locIdx": 75,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 5400
+      "price": 4300
     },
     {
       "locIdx": 100,
@@ -6029,7 +6029,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3100
+      "price": 2300
     }
   ],
   "Astatine": [
@@ -6043,7 +6043,7 @@ const pricingData = {
     },
     {
       "locIdx": 51,
-      "price": 3300
+      "price": 3900
     },
     {
       "locIdx": 53,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3800
+      "price": 3500
     },
     {
       "locIdx": 100,
@@ -6107,7 +6107,7 @@ const pricingData = {
     },
     {
       "locIdx": 109,
-      "price": 3100
+      "price": 3500
     },
     {
       "locIdx": 111,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3300
+      "price": 3400
     }
   ],
   "Tin": [
