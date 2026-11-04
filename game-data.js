@@ -4317,7 +4317,7 @@ const pricingData = {
     },
     {
       "locIdx": 60,
-      "price": 69000
+      "price": 91000
     },
     {
       "locIdx": 62,
@@ -4329,7 +4329,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 66000
+      "price": 65000
     },
     {
       "locIdx": 97,
@@ -4359,7 +4359,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 46000
+      "price": 45000
     },
     {
       "locIdx": 97,
@@ -4865,7 +4865,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 28000
+      "price": 29000
     },
     {
       "locIdx": 97,
@@ -4931,7 +4931,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 10000
+      "price": 11000
     },
     {
       "locIdx": 111,
@@ -5047,7 +5047,7 @@ const pricingData = {
     },
     {
       "locIdx": 87,
-      "price": 8200
+      "price": 8300
     },
     {
       "locIdx": 97,
@@ -5257,7 +5257,7 @@ const pricingData = {
     },
     {
       "locIdx": 84,
-      "price": 10000
+      "price": 9700
     },
     {
       "locIdx": 85,
@@ -5355,11 +5355,11 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 3500
+      "price": 4600
     },
     {
       "locIdx": 113,
-      "price": 4300
+      "price": 4600
     }
   ],
   "Copper": [
@@ -5441,7 +5441,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3600
+      "price": 4100
     },
     {
       "locIdx": 105,
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 4400
     }
   ],
   "Corundum": [
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4000
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5743,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5700
+      "price": 5000
     },
     {
       "locIdx": 75,
@@ -5947,7 +5947,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 4500
+      "price": 5000
     },
     {
       "locIdx": 106,
@@ -6029,7 +6029,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 2300
+      "price": 2400
     }
   ],
   "Astatine": [
@@ -6091,7 +6091,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3700
+      "price": 3500
     },
     {
       "locIdx": 106,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3400
+      "price": 3700
     }
   ],
   "Tin": [
