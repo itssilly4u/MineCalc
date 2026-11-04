@@ -4221,7 +4221,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 130000
+      "price": 140000
     },
     {
       "locIdx": 106,
@@ -4367,7 +4367,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 46000
+      "price": 42000
     }
   ],
   "Lindinium": [
@@ -4463,7 +4463,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 29000
+      "price": 28000
     }
   ],
   "Gold": [
@@ -4583,7 +4583,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 64000
+      "price": 54000
     }
   ],
   "Borase": [
@@ -4833,7 +4833,7 @@ const pricingData = {
     },
     {
       "locIdx": 36,
-      "price": 33000
+      "price": 29000
     },
     {
       "locIdx": 37,
@@ -5113,7 +5113,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 9900
+      "price": 8500
     },
     {
       "locIdx": 69,
@@ -5225,7 +5225,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 12000
+      "price": 9400
     },
     {
       "locIdx": 62,
@@ -5593,7 +5593,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 4700
+      "price": 4800
     },
     {
       "locIdx": 67,
@@ -5601,7 +5601,7 @@ const pricingData = {
     },
     {
       "locIdx": 68,
-      "price": 6000
+      "price": 4500
     },
     {
       "locIdx": 70,
@@ -6043,7 +6043,7 @@ const pricingData = {
     },
     {
       "locIdx": 51,
-      "price": 3900
+      "price": 3500
     },
     {
       "locIdx": 53,
