@@ -5023,11 +5023,11 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 9100
+      "price": 7700
     },
     {
       "locIdx": 58,
-      "price": 8300
+      "price": 8100
     },
     {
       "locIdx": 62,
@@ -5221,7 +5221,7 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 9600
+      "price": 10000
     },
     {
       "locIdx": 56,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4100
+      "price": 4200
     },
     {
       "locIdx": 75,
@@ -5479,7 +5479,7 @@ const pricingData = {
     },
     {
       "locIdx": 32,
-      "price": 4300
+      "price": 4400
     },
     {
       "locIdx": 36,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3700
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5561,7 +5561,7 @@ const pricingData = {
     },
     {
       "locIdx": 32,
-      "price": 4600
+      "price": 4400
     },
     {
       "locIdx": 35,
@@ -5609,7 +5609,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4500
+      "price": 4600
     },
     {
       "locIdx": 75,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 5400
+      "price": 5200
     },
     {
       "locIdx": 100,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 3100
     }
   ],
   "Tin": [
