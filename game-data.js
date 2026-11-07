@@ -4147,7 +4147,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 170000
+      "price": 160000
     }
   ],
   "Stileron": [
@@ -4367,7 +4367,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 42000
+      "price": 45000
     }
   ],
   "Lindinium": [
@@ -4551,7 +4551,7 @@ const pricingData = {
     },
     {
       "locIdx": 27,
-      "price": 59000
+      "price": 63000
     },
     {
       "locIdx": 38,
@@ -4583,7 +4583,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 64000
+      "price": 61000
     }
   ],
   "Borase": [
@@ -4821,7 +4821,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 30000
+      "price": 29000
     },
     {
       "locIdx": 27,
@@ -4873,7 +4873,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 29000
+      "price": 28000
     }
   ],
   "Tungsten": [
@@ -5141,7 +5141,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 8500
+      "price": 9100
     }
   ],
   "Aslarite": [
@@ -5359,7 +5359,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3600
+      "price": 3500
     }
   ],
   "Copper": [
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4100
+      "price": 3700
     },
     {
       "locIdx": 75,
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3600
+      "price": 4100
     }
   ],
   "Hephaestanite": [
@@ -5549,7 +5549,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 4600
+      "price": 4400
     },
     {
       "locIdx": 26,
@@ -5675,7 +5675,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 5700
+      "price": 4900
     },
     {
       "locIdx": 25,
@@ -6029,7 +6029,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 2400
+      "price": 2300
     }
   ],
   "Astatine": [
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3100
+      "price": 3700
     }
   ],
   "Tin": [
