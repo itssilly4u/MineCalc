@@ -66,13 +66,17 @@ function computeSeat(card) {
         seat.modules.push(mod);
     });
 
-    let pMod = qualBonus, eModPos = qualBonus, eModNeg = 0;
+    // In-game, laser power bonuses stack MULTIPLICATIVELY (e.g. 2x Rieger-C3 = x1.25 x1.25 = x1.5625).
+    // Crafting quality scales laser power only (blueprint quality effects: Laser Power + Integrity,
+    // NOT extraction power), so it multiplies power and does not touch extraction.
+    let powerMult = 1 + (qualBonus || 0) / 100;
+    let extMult = 1;
     const opInert = [l.inert || 0];
     let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
 
     seat.modules.forEach(mod => {
-        pMod += mod.power || 0;
-        if (mod.extraction) { if (mod.extraction > 0) eModPos += mod.extraction; else eModNeg += Math.abs(mod.extraction); }
+        powerMult *= 1 + (mod.power || 0) / 100;
+        extMult *= 1 + (mod.extraction || 0) / 100;
         opInert.push(mod.inert || 0);
         if (mod.optimalWin) seatWin += mod.optimalWin;
         if (mod.optCharge) seatChg += mod.optCharge;
@@ -81,9 +85,9 @@ function computeSeat(card) {
         if (mod.cluster) seatClust += mod.cluster;
     });
 
-    seat.powerMin = (l.powerMin || 0) * (1 + pMod/100);
-    seat.powerMax = (l.powerMax || 0) * (1 + pMod/100);
-    seat.finalExt = Math.max(0, (l.extraction || 0) * (1 + eModPos/100) * (1 - eModNeg/100));
+    seat.powerMin = (l.powerMin || 0) * powerMult;
+    seat.powerMax = (l.powerMax || 0) * powerMult;
+    seat.finalExt = Math.max(0, (l.extraction || 0) * extMult);
     seat.finalInert = calcMulti(opInert);
     seat.optRange = l.optRange || 0;
     seat.maxRange = l.maxRange || 0;
