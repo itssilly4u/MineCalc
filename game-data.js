@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 4700
+      "price": 5400
     },
     {
       "locIdx": 100,
@@ -5985,7 +5985,7 @@ const pricingData = {
     },
     {
       "locIdx": 35,
-      "price": 2900
+      "price": 2700
     },
     {
       "locIdx": 36,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3400
+      "price": 3700
     },
     {
       "locIdx": 100,
