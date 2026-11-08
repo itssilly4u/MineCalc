@@ -39,6 +39,8 @@ Built with **Zero-Framework Vanilla JS**, it delivers desktop-grade performance 
 
 Market pricing, trade locations, and equipment statistics (mining lasers, modules, and gadgets) are graciously provided by the **[UEX Corp API](https://uexcorp.space/)**. Their community-driven data ensures your fleet is always outfitted with the most up-to-date hardware and commodity values.
 
+A special thanks to **Starjump fleetviewer** for providing the ship icons used in the calculator.
+
 ## 🐛 Feedback & Bug Reports
 
 MineCalc is an actively maintained passion project, but the Star Citizen universe changes rapidly! 

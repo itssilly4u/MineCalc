@@ -225,7 +225,7 @@ function calculate() {
             } else if (tMin > requiredPower) {
                 pStatus.innerText = "Too Much Power (Min)";
                 pStatus.style.backgroundColor = "var(--overpower)";
-                pStatus.style.color = "white";
+                pStatus.style.color = "black";
             } else if (tMax < requiredPower * 1.1 || tMax > requiredPower * 2.5) {
                 pStatus.innerText = "Difficult";
                 pStatus.style.backgroundColor = "var(--difficult)";

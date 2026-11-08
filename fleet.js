@@ -105,7 +105,7 @@ function addShip(type, loadConfig = null, customName = null) {
     else if (type === 'PROSPECTOR') { shipDiv.style.order = '2'; } 
     else if (type === 'GOLEM') { shipDiv.style.order = '3'; }
 
-    let headerIcon = type === 'MOLE' ? '🟧' : (type === 'PROSPECTOR' ? '🟦' : '🟨');
+    let headerIcon = type === 'MOLE' ? 'assets/images/MOLE.webp' : (type === 'PROSPECTOR' ? 'assets/images/PROSPECTOR.webp' : 'assets/images/GOLEM.webp');
     let displayName = customName ? escapeHTML(customName) : type;
     
     let operatorsHtml = "";
@@ -131,7 +131,7 @@ function addShip(type, loadConfig = null, customName = null) {
     shipDiv.innerHTML = `
         <div class="ship-header">
             <div class="ship-title-container">
-                <h2>${headerIcon}</h2>
+                <h2><img class="ship-icon" src="${headerIcon}" alt="" draggable="false" onerror="this.style.display='none'"></h2>
                 <span class="ship-title-text" id="title-text-${shipId}" onclick="editShipName('${shipId}')">${displayName}</span>
                 <span class="edit-icon" id="edit-icon-${shipId}" onclick="editShipName('${shipId}')">✏️</span>
                 <input type="text" class="ship-name-input" id="title-input-${shipId}" value="${displayName}" maxlength="50" onblur="saveShipName('${shipId}')" onkeydown="if(event.key === 'Enter') saveShipName('${shipId}')">

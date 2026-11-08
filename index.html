@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MineCalc | Star Citizen Mining Calculator</title>
     <meta name="description" content="Optimize Star Citizen mining with MineCalc. Advanced rock-cracking, MOLE/Prospector/Golem loadouts, and accurate ore data in Stanton, Pyro & Nyx.">
-    <link rel="icon" type="image/svg+xml" href="MineCalc.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/MineCalc.svg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://minecalc.itssilly.xyz/minecalc/">
     <meta property="og:title" content="MineCalc | Star Citizen Mining Calculator">
     <meta property="og:description" content="A Star Citizen calculator for mining loadouts, rock breakability, and fleet output.">
-    <meta property="og:image" content="https://minecalc.itssilly.xyz/minecalc.png">
+    <meta property="og:image" content="assets/images/minecalc.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="app-content" class="container">
     <div class="main-title-container">
-        <img src="MineCalc.svg" alt="MineCalc Logo" class="site-logo">
-        <h1>MineCalc <span style="font-size: 0.5em; color: var(--text-muted);">| Mining Loadout Calculator (4.10.2)</span></h1>
+        <div class="title-text">
+            <div class="title-sub">Mining Loadout Calculator</div>
+            <h1>MineCalc <span class="title-version">4.10.2</span></h1>
+        </div>
     </div>
     
     <div class="fleet-controls global-card">
         <div class="control-group">
-            <span class="control-label">Add Ship:</span>
-            <button class="btn" onclick="addShip('MOLE')">+ MOLE</button>
-            <button class="btn" onclick="addShip('PROSPECTOR')">+ Prospector</button>
-            <button class="btn" onclick="addShip('GOLEM')">+ Golem</button>
+            <span class="control-label">Add Ships:</span>
+            <button class="btn" onclick="addShip('MOLE')"><img class="btn-ship-icon" src="assets/images/MOLE.webp" alt="" draggable="false"> MOLE</button>
+            <button class="btn" onclick="addShip('PROSPECTOR')"><img class="btn-ship-icon" src="assets/images/PROSPECTOR.webp" alt="" draggable="false"> PROSPECTOR</button>
+            <button class="btn" onclick="addShip('GOLEM')"><img class="btn-ship-icon" src="assets/images/GOLEM.webp" alt="" draggable="false"> GOLEM</button>
         </div>
         <div class="control-group" style="border-left: 2px solid var(--border); padding-left: 15px;">
-            <span class="control-label">Data:</span>
-            <button class="btn btn-export" onclick="exportFleet()">💾 Export Fleet</button>
-            <button class="btn btn-import" onclick="triggerImport()">📂 Import Ship / Fleet</button>
-            <button class="btn btn-remove" onclick="clearFleet()" style="margin-left: 10px;">🗑️ Clear</button>
+            <div style="display: flex; gap: 10px; margin-top: 5px;">
+                <button class="btn btn-export" onclick="exportFleet()">💾 Export Fleet</button>
+                <button class="btn btn-import" onclick="triggerImport()">📂 Import Ship / Fleet</button>
+                <button class="btn btn-remove" onclick="clearFleet()" style="margin-left: 10px;">🗑️ Clear</button>
+            </div>
             <input type="file" id="import-file" accept=".json" style="display: none;" onchange="handleImport(event)">
         </div>
     </div>
@@ -162,7 +168,7 @@
 
 <footer>
     <div class="footer-content">
-        <img src="MadeByTheCommunity_Black.webp" alt="Made By The Community Logo">
+        <img src="assets/images/MadeByTheCommunity_Black.webp" alt="Made By The Community Logo">
         <span style="margin-right: 15px;">MADE BY ITSS_ILLY</span> | <span style="margin-left: 15px;"><a href="https://github.com/itssilly4u/MineCalc" target="_blank" class="github-link">GITHUB</a></span>
     </div>
 </footer>
