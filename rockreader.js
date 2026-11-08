@@ -275,6 +275,28 @@ function togglePriceRow(cell, oreName, showAll = false, btnEl = null) {
 const OrePinSystem = {
     pinnedItems: new Set(),
     storageKey: 'minecalc_pinned_ores',
+    HOLD_MS: 1000,
+    holdTimer: null,
+    holdCell: null,
+
+    startHold(cell, name) {
+        this.cancelHold();
+        this.holdCell = cell;
+        if (cell) cell.classList.add('pin-holding');
+        this.holdTimer = setTimeout(() => {
+            this.holdTimer = null;
+            const c = this.holdCell;
+            if (c) c.classList.remove('pin-holding');
+            this.holdCell = null;
+            this.togglePin(name);
+        }, this.HOLD_MS);
+    },
+
+    cancelHold() {
+        if (this.holdTimer) { clearTimeout(this.holdTimer); this.holdTimer = null; }
+        if (this.holdCell) { this.holdCell.classList.remove('pin-holding'); this.holdCell = null; }
+    },
+
     load() {
         try {
             const saved = JSON.parse(localStorage.getItem(this.storageKey) || '[]');
@@ -317,7 +339,16 @@ function generateOreTable() {
 
     const pinCellProps = (oreName) => {
         const pinned = OrePinSystem.isPinned(oreName);
-        return `ore-name-cell pin-clickable${pinned ? ' pinned' : ''}" onclick="OrePinSystem.togglePin('${oreName.replace(/'/g, "\\'")}')" title="${pinned ? 'Click to unpin' : 'Click to pin to top'}"`;
+        const safeName = oreName.replace(/'/g, "\\'");
+        return `ore-name-cell pin-clickable${pinned ? ' pinned' : ''}"
+            onmousedown="OrePinSystem.startHold(this, '${safeName}')"
+            onmouseup="OrePinSystem.cancelHold()"
+            onmouseleave="OrePinSystem.cancelHold()"
+            ontouchstart="OrePinSystem.startHold(this, '${safeName}')"
+            ontouchend="OrePinSystem.cancelHold()"
+            ontouchmove="OrePinSystem.cancelHold()"
+            ontouchcancel="OrePinSystem.cancelHold()"
+            title="${pinned ? 'Hold to unpin' : 'Hold for 1s to pin to top'}"`;
     };
 
     ores.forEach(ore => {

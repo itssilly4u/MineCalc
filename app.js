@@ -261,7 +261,7 @@ const CartSystem = {
         this.loadCartState();
 
         const cartHtml = `
-            <button id="mc-cart-btn" onclick="CartSystem.toggle()">🛒 Loadout Cart</button>
+            <button id="mc-cart-btn" onclick="CartSystem.toggle()"><span class="mc-cart-ico">🛒</span> Loadout Cart</button>
             <div id="mc-cart-panel">
                 <div class="mc-cart-header">
                     <h3>Shopping Cart</h3>

@@ -16,7 +16,9 @@
 
     /* Status Colors */
     --good-stat: #4ade80; 
+    --good-stat-rgb: 74, 222, 128;
     --bad-stat: #f87171;
+    --bad-stat-rgb: 248, 113, 113;
     --impossible: #ef4444;
     --difficult: #fbbf24;
     --crackable: #22c55e;
@@ -25,7 +27,9 @@
 
     /* Action Buttons */
     --btn-export: #38bdf8;
+    --btn-export-rgb: 56, 189, 248;
     --btn-import: #a78bfa;
+    --btn-import-rgb: 167, 139, 250;
 
     /* Ore Rarities (Ones that don't match statuses) */
     --rarity-epic: #a855f7;
@@ -69,6 +73,11 @@ body {
     display: flex; 
     flex-direction: column;
     min-height: 100vh;
+}
+
+/* Browsers (esp. Chrome) override fonts on form controls — force the site font */
+button, input, select, textarea {
+    font-family: inherit;
 }
 
 h1, 
@@ -154,24 +163,32 @@ h3 {
     padding: 2px 8px; 
     border: 1px solid transparent; 
     border-radius: 5px; 
-    transition: color .2s, background-color .2s, border-color .2s; 
+    transition: color .2s, background-color .2s, border-color .2s, box-shadow .2s; 
     white-space: nowrap; 
 }
 
 .status-badge.active { 
     color: var(--good-stat); 
-    background-color: rgba(74, 222, 128, 0.12); 
-    border-color: var(--good-stat); 
+    background-color: rgba(var(--good-stat-rgb), 0.08); 
+    border-color: rgba(var(--good-stat-rgb), 0.5); 
 }
 
 .status-badge.inactive { 
     color: var(--bad-stat); 
-    background-color: rgba(248, 113, 113, 0.12); 
-    border-color: var(--bad-stat); 
+    background-color: rgba(var(--bad-stat-rgb), 0.08); 
+    border-color: rgba(var(--bad-stat-rgb), 0.5); 
 }
 
-.status-badge:hover { 
-    filter: brightness(1.2); 
+.status-badge.active:hover { 
+    border-color: var(--good-stat); 
+    background-color: rgba(var(--good-stat-rgb), 0.18); 
+    box-shadow: 0 0 10px rgba(var(--good-stat-rgb), 0.3); 
+}
+
+.status-badge.inactive:hover { 
+    border-color: var(--bad-stat); 
+    background-color: rgba(var(--bad-stat-rgb), 0.18); 
+    box-shadow: 0 0 10px rgba(var(--bad-stat-rgb), 0.3); 
 }
 
 /* Toggle Switch (mobiGlas-style) */
@@ -381,29 +398,55 @@ h3 {
 }
 
 .btn { 
-    background: var(--bg-color); 
+    background: rgba(var(--accent-rgb), 0.08); 
     border: 1px solid var(--border); 
     color: var(--text-main); 
-    padding: 8px 15px; 
-    border-radius: 4px; 
+    padding: 8px 14px; 
+    border-radius: 2px; 
     cursor: pointer; 
-    font-weight: bold; 
+    font-family: inherit; 
+    font-size: 0.8em; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
     transition: all 0.2s; 
 }
 
 .btn:hover { 
     border-color: var(--accent); 
     color: var(--accent); 
+    background: rgba(var(--accent-rgb), 0.15); 
+    box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.25); 
+}
+
+.btn:active { 
+    transform: translateY(1px); 
 }
 
 .btn-add { 
     color: var(--good-stat); 
+    border-color: rgba(var(--good-stat-rgb), 0.5); 
+    background: rgba(var(--good-stat-rgb), 0.08); 
+}
+
+.btn-add:hover { 
+    color: var(--good-stat); 
     border-color: var(--good-stat); 
+    background: rgba(var(--good-stat-rgb), 0.18); 
+    box-shadow: 0 0 10px rgba(var(--good-stat-rgb), 0.3); 
 }
 
 .btn-remove { 
     color: var(--bad-stat); 
+    border-color: rgba(var(--bad-stat-rgb), 0.5); 
+    background: rgba(var(--bad-stat-rgb), 0.08); 
+}
+
+.btn-remove:hover { 
+    color: var(--bad-stat); 
     border-color: var(--bad-stat); 
+    background: rgba(var(--bad-stat-rgb), 0.18); 
+    box-shadow: 0 0 10px rgba(var(--bad-stat-rgb), 0.3); 
 }
 
 .results-panel { 
@@ -686,12 +729,28 @@ footer {
 
 .btn-export { 
     color: var(--btn-export); 
+    border-color: rgba(var(--btn-export-rgb), 0.5); 
+    background: rgba(var(--btn-export-rgb), 0.08); 
+}
+
+.btn-export:hover { 
+    color: var(--btn-export); 
     border-color: var(--btn-export); 
+    background: rgba(var(--btn-export-rgb), 0.18); 
+    box-shadow: 0 0 10px rgba(var(--btn-export-rgb), 0.3); 
 }
 
 .btn-import { 
     color: var(--btn-import); 
+    border-color: rgba(var(--btn-import-rgb), 0.5); 
+    background: rgba(var(--btn-import-rgb), 0.08); 
+}
+
+.btn-import:hover { 
+    color: var(--btn-import); 
     border-color: var(--btn-import); 
+    background: rgba(var(--btn-import-rgb), 0.18); 
+    box-shadow: 0 0 10px rgba(var(--btn-import-rgb), 0.3); 
 }
 
 #fleet-container { 
@@ -882,9 +941,45 @@ footer {
     position: relative;
 }
 
+/* Table cells are not selectable; expanded detail rows keep selectable text */
+#rock-reader-table {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#rock-reader-table tr.loc-details-row,
+#rock-reader-table tr.sig-details-row,
+#rock-reader-table tr.price-details-row {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
 #rock-reader-table td.pin-clickable {
     cursor: pointer;
     transition: background-color 0.15s;
+}
+
+/* Hold-to-pin progress sweep */
+#rock-reader-table td.pin-clickable::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: rgba(var(--accent-rgb), 0.18);
+    pointer-events: none;
+}
+
+#rock-reader-table td.pin-clickable.pin-holding::before {
+    width: 100%;
+    transition: width 1s linear;
+}
+
+#rock-reader-table td.pin-clickable.pin-holding::after {
+    content: '[HOLD...]';
+    color: var(--accent);
+    opacity: 1;
 }
 
 #rock-reader-table td.pin-clickable:hover {
@@ -1109,25 +1204,44 @@ footer {
 }
 
 /* --- SHOPPING CART UI --- */
+/* Binder-tab style: vertical tab flush against the right edge */
 #mc-cart-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 90px;
+    right: 0;
     z-index: 999;
-    background: var(--accent);
-    color: var(--bg-color);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-weight: bold;
+    writing-mode: vertical-rl;
+    background: rgba(var(--accent-rgb), 0.08);
+    color: var(--accent);
+    border: 1px solid rgba(var(--accent-rgb), 0.5);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 18px 9px;
+    font-family: inherit;
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.25);
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.1s, right .3s ease;
 }
 #mc-cart-btn:hover {
-    transform: scale(1.05);
-    background-color: #85c8ff;
+    border-color: var(--accent);
+    background: rgba(var(--accent-rgb), 0.18);
+    box-shadow: 0 0 14px rgba(var(--accent-rgb), 0.45);
+}
+#mc-cart-btn:active {
+    transform: translateX(2px);
+}
+/* Rotate the cart emoji to match the vertical text */
+#mc-cart-btn .mc-cart-ico {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+/* Panel open: the tab rides along the panel's left edge, like a drawer pull */
+body:has(#mc-cart-panel.open) #mc-cart-btn {
+    right: 380px;
 }
 #mc-cart-panel {
     position: fixed;
@@ -1362,8 +1476,8 @@ footer {
 .price-unit { font-size: 0.7em; color: var(--text-main); }
 .price-loc { color: var(--text-main); font-size: 0.85em; font-weight: bold; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-.action-badge { color: var(--accent); font-weight: bold; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); display: inline-block; transition: background 0.2s; cursor: pointer; text-align: center; }
-.action-badge:hover { background: rgba(255,255,255,0.1); }
+.action-badge { color: var(--accent); font-weight: 600; font-size: 0.8em; letter-spacing: 1px; text-transform: uppercase; background: rgba(var(--accent-rgb), 0.08); padding: 4px 8px; border-radius: 2px; border: 1px solid rgba(var(--accent-rgb), 0.4); display: inline-block; transition: background 0.2s, box-shadow 0.2s; cursor: pointer; text-align: center; }
+.action-badge:hover { background: rgba(var(--accent-rgb), 0.18); box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.3); }
 
 .sys-stanton { color: var(--text-stanton); }
 .sys-nyx { color: var(--text-nyx); }
