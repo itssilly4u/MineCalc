@@ -66,23 +66,15 @@ function computeSeat(card) {
         seat.modules.push(mod);
     });
 
-    // In-game, laser power bonuses stack MULTIPLICATIVELY (e.g. 2x Rieger-C3 = x1.25 x1.25 = x1.5625).
-    // Crafting quality scales laser power only (blueprint quality effects: Laser Power + Integrity,
-    // NOT extraction power), so it multiplies power and does not touch extraction.
+    // In-game, laser power bonuses stack MULTIPLICATIVELY 
     let powerMult = 1 + (qualBonus || 0) / 100;
     let extMult = 1;
     const opInert = [l.inert || 0];
-    let seatWin = 0, seatChg = 0, seatOver = 0, seatShat = 0, seatClust = 0;
 
     seat.modules.forEach(mod => {
         powerMult *= 1 + (mod.power || 0) / 100;
         extMult *= 1 + (mod.extraction || 0) / 100;
         opInert.push(mod.inert || 0);
-        if (mod.optimalWin) seatWin += mod.optimalWin;
-        if (mod.optCharge) seatChg += mod.optCharge;
-        if (mod.overcharge) seatOver += mod.overcharge;
-        if (mod.shatter) seatShat += mod.shatter;
-        if (mod.cluster) seatClust += mod.cluster;
     });
 
     seat.powerMin = (l.powerMin || 0) * powerMult;
@@ -91,11 +83,12 @@ function computeSeat(card) {
     seat.finalInert = calcMulti(opInert);
     seat.optRange = l.optRange || 0;
     seat.maxRange = l.maxRange || 0;
-    seat.finalWin = (((1 + (l.optimalWin || 0)/100) * (1 + seatWin/100)) - 1) * 100;
-    seat.finalChg = (((1 + (l.optCharge || 0)/100) * (1 + seatChg/100)) - 1) * 100;
-    seat.finalOver = (((1 + (l.overcharge || 0)/100) * (1 + seatOver/100)) - 1) * 100;
-    seat.finalShat = (((1 + (l.shatter || 0)/100) * (1 + seatShat/100)) - 1) * 100;
-    seat.finalClust = (((1 + (l.cluster || 0)/100) * (1 + seatClust/100)) - 1) * 100;
+    // Same multiplicative stacking as laser power 
+    seat.finalWin = calcMulti([l.optimalWin || 0, ...seat.modules.map(m => m.optimalWin || 0)]);
+    seat.finalChg = calcMulti([l.optCharge || 0, ...seat.modules.map(m => m.optCharge || 0)]);
+    seat.finalOver = calcMulti([l.overcharge || 0, ...seat.modules.map(m => m.overcharge || 0)]);
+    seat.finalShat = calcMulti([l.shatter || 0, ...seat.modules.map(m => m.shatter || 0)]);
+    seat.finalClust = calcMulti([l.cluster || 0, ...seat.modules.map(m => m.cluster || 0)]);
 
     // Seat's own Resistance/Instability contribution (laser + its modules), same calcMulti math as the fleet
     seat.finalRes = calcMulti([l.resistance || 0, ...seat.modules.map(m => m.resistance || 0)]);
