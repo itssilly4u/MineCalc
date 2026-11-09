@@ -637,8 +637,8 @@ const lasers = [
   {
     "name": "Arbor MH2 Mining Laser (S2)",
     "slots": 2,
-    "powerMin": 870,
-    "powerMax": 4350,
+    "powerMin": 145,
+    "powerMax": 2900,
     "extraction": 2590,
     "inert": -40,
     "resistance": 25,
@@ -1247,7 +1247,7 @@ const lasers = [
   {
     "name": "Lancet MH1 Mining Laser (S1)",
     "slots": 1,
-    "powerMin": 468,
+    "powerMin": 624,
     "powerMax": 3120,
     "extraction": 1850,
     "inert": -30,
@@ -4147,7 +4147,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 170000
+      "price": 160000
     }
   ],
   "Stileron": [
@@ -4367,7 +4367,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 46000
+      "price": 44000
     }
   ],
   "Lindinium": [
@@ -4459,11 +4459,11 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 27000
+      "price": 28000
     },
     {
       "locIdx": 100,
-      "price": 29000
+      "price": 27000
     }
   ],
   "Gold": [
@@ -4583,7 +4583,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 61000
+      "price": 64000
     }
   ],
   "Borase": [
@@ -4621,7 +4621,7 @@ const pricingData = {
     },
     {
       "locIdx": 32,
-      "price": 27000
+      "price": 26000
     },
     {
       "locIdx": 35,
@@ -4887,7 +4887,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 11000
+      "price": 10000
     },
     {
       "locIdx": 29,
@@ -5019,7 +5019,7 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 7900
+      "price": 9000
     },
     {
       "locIdx": 55,
@@ -5069,7 +5069,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 9200
+      "price": 8500
     },
     {
       "locIdx": 23,
@@ -5113,7 +5113,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 10000
+      "price": 8500
     },
     {
       "locIdx": 69,
@@ -5141,7 +5141,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 8600
+      "price": 8500
     }
   ],
   "Aslarite": [
@@ -5237,7 +5237,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 10000
+      "price": 9900
     },
     {
       "locIdx": 68,
@@ -5355,11 +5355,11 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 4200
+      "price": 3800
     },
     {
       "locIdx": 113,
-      "price": 4000
+      "price": 4600
     }
   ],
   "Copper": [
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3600
+      "price": 4400
     }
   ],
   "Corundum": [
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 4000
+      "price": 3800
     }
   ],
   "Hephaestanite": [
@@ -5593,7 +5593,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 4700
+      "price": 4800
     },
     {
       "locIdx": 67,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 5400
+      "price": 4500
     },
     {
       "locIdx": 100,
@@ -5743,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5800
+      "price": 5000
     },
     {
       "locIdx": 75,
@@ -5875,7 +5875,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 5200
+      "price": 4400
     },
     {
       "locIdx": 21,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 5400
+      "price": 4900
     },
     {
       "locIdx": 100,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3700
+      "price": 3500
     },
     {
       "locIdx": 100,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3400
+      "price": 3200
     }
   ],
   "Tin": [
