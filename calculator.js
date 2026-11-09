@@ -239,9 +239,24 @@ function calculate() {
 
         // Evaluate Instability
         let instModToApply = scannedWithGadgets ? calcMulti(fleetInst) : totalInstMod;
-        let finalInst = Math.max(0, inputInst * (1 + instModToApply / 100));
 
-        iFinalDisplay.innerText = "Final Instability: " + Math.round(finalInst).toLocaleString();
+        // Multi-ship penalty: instability doubles per additional powered ship (2^(ships-1))
+        let poweredShips = 0;
+        document.querySelectorAll('.ship-container').forEach(ship => {
+            let hasPower = false;
+            ship.querySelectorAll('.setup-card:not(.off)').forEach(card => {
+                const laserEl = document.getElementById(`cs-laser-${card.dataset.opid}`);
+                const l = laserEl ? lasers[laserEl.dataset.value] : null;
+                if (l && l.name !== 'None') hasPower = true;
+            });
+            if (hasPower) poweredShips++;
+        });
+        const shipPenalty = Math.pow(2, Math.max(0, poweredShips - 1));
+
+        let finalInst = Math.max(0, inputInst * (1 + instModToApply / 100) * shipPenalty);
+
+        iFinalDisplay.innerText = "Final Instability: " + Math.round(finalInst).toLocaleString()
+            + (poweredShips > 1 ? ` (×${shipPenalty} for ${poweredShips} ships)` : '');
 
         if (finalInst < 101) {
             iStatus.innerText = "Stable";
