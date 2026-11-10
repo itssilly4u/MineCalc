@@ -4153,7 +4153,7 @@ const pricingData = {
   "Stileron": [
     {
       "locIdx": 0,
-      "price": 140000
+      "price": 160000
     },
     {
       "locIdx": 15,
@@ -4269,7 +4269,7 @@ const pricingData = {
   "Riccite": [
     {
       "locIdx": 0,
-      "price": 77000
+      "price": 72000
     },
     {
       "locIdx": 15,
@@ -4469,7 +4469,7 @@ const pricingData = {
   "Gold": [
     {
       "locIdx": 0,
-      "price": 27000
+      "price": 26000
     },
     {
       "locIdx": 11,
@@ -5287,7 +5287,7 @@ const pricingData = {
   "Aluminium": [
     {
       "locIdx": 0,
-      "price": 3000
+      "price": 3300
     },
     {
       "locIdx": 13,
@@ -5355,7 +5355,7 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 4600
+      "price": 3500
     },
     {
       "locIdx": 113,
@@ -5389,7 +5389,7 @@ const pricingData = {
     },
     {
       "locIdx": 45,
-      "price": 4200
+      "price": 4400
     },
     {
       "locIdx": 47,
@@ -5871,7 +5871,7 @@ const pricingData = {
   "Quartz": [
     {
       "locIdx": 0,
-      "price": 3500
+      "price": 3700
     },
     {
       "locIdx": 13,
@@ -5911,7 +5911,7 @@ const pricingData = {
     },
     {
       "locIdx": 45,
-      "price": 5200
+      "price": 5300
     },
     {
       "locIdx": 62,
