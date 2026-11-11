@@ -4841,7 +4841,7 @@ const pricingData = {
     },
     {
       "locIdx": 41,
-      "price": 34000
+      "price": 27000
     },
     {
       "locIdx": 49,
@@ -4995,7 +4995,7 @@ const pricingData = {
     },
     {
       "locIdx": 29,
-      "price": 10000
+      "price": 7700
     },
     {
       "locIdx": 32,
@@ -5019,7 +5019,7 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 9200
+      "price": 7700
     },
     {
       "locIdx": 55,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4200
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5355,7 +5355,7 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 3500
+      "price": 3900
     },
     {
       "locIdx": 113,
@@ -5389,7 +5389,7 @@ const pricingData = {
     },
     {
       "locIdx": 45,
-      "price": 4400
+      "price": 3600
     },
     {
       "locIdx": 47,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4000
+      "price": 3500
     },
     {
       "locIdx": 75,
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3500
+      "price": 3700
     }
   ],
   "Hephaestanite": [
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3500
+      "price": 3600
     }
   ],
   "Tin": [
