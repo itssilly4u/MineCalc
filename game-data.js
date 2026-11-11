@@ -4197,7 +4197,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 130000
+      "price": 140000
     },
     {
       "locIdx": 71,
@@ -4849,7 +4849,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 29000
+      "price": 27000
     },
     {
       "locIdx": 64,
@@ -4995,7 +4995,7 @@ const pricingData = {
     },
     {
       "locIdx": 29,
-      "price": 7700
+      "price": 6100
     },
     {
       "locIdx": 32,
@@ -5031,7 +5031,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 8200
+      "price": 8300
     },
     {
       "locIdx": 64,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4100
+      "price": 3500
     },
     {
       "locIdx": 75,
@@ -5441,7 +5441,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 4300
+      "price": 3600
     },
     {
       "locIdx": 105,
@@ -5601,7 +5601,7 @@ const pricingData = {
     },
     {
       "locIdx": 68,
-      "price": 6000
+      "price": 4500
     },
     {
       "locIdx": 70,
@@ -5947,7 +5947,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 4900
+      "price": 5200
     },
     {
       "locIdx": 106,
@@ -5963,7 +5963,7 @@ const pricingData = {
     },
     {
       "locIdx": 112,
-      "price": 4700
+      "price": 4600
     }
   ],
   "Silicon": [
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3400
+      "price": 3500
     },
     {
       "locIdx": 100,
