@@ -4153,7 +4153,7 @@ const pricingData = {
   "Stileron": [
     {
       "locIdx": 0,
-      "price": 150000
+      "price": 140000
     },
     {
       "locIdx": 15,
@@ -5019,7 +5019,7 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 7700
+      "price": 9000
     },
     {
       "locIdx": 55,
@@ -5097,7 +5097,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 8100
+      "price": 8900
     },
     {
       "locIdx": 38,
@@ -5319,7 +5319,7 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 3600
+      "price": 3500
     },
     {
       "locIdx": 62,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4000
     },
     {
       "locIdx": 75,
@@ -5381,7 +5381,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 4000
+      "price": 4700
     },
     {
       "locIdx": 38,
@@ -5441,7 +5441,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3600
+      "price": 4200
     },
     {
       "locIdx": 105,
@@ -5487,7 +5487,7 @@ const pricingData = {
     },
     {
       "locIdx": 37,
-      "price": 4400
+      "price": 4300
     },
     {
       "locIdx": 38,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5581,7 +5581,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 4800
+      "price": 4600
     },
     {
       "locIdx": 58,
@@ -5609,7 +5609,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4600
+      "price": 4500
     },
     {
       "locIdx": 75,
@@ -5947,7 +5947,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 5200
+      "price": 4000
     },
     {
       "locIdx": 106,
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3900
+      "price": 3300
     },
     {
       "locIdx": 71,
@@ -6091,7 +6091,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3700
+      "price": 3300
     },
     {
       "locIdx": 106,
