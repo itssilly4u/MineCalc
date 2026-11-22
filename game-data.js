@@ -4221,7 +4221,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 140000
+      "price": 130000
     },
     {
       "locIdx": 106,
@@ -4869,7 +4869,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 28000
+      "price": 29000
     },
     {
       "locIdx": 100,
@@ -5023,7 +5023,7 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 7700
+      "price": 7900
     },
     {
       "locIdx": 58,
@@ -5141,7 +5141,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 8500
+      "price": 8600
     }
   ],
   "Aslarite": [
@@ -5355,7 +5355,7 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 3600
+      "price": 4500
     },
     {
       "locIdx": 113,
@@ -5441,7 +5441,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 4000
+      "price": 3700
     },
     {
       "locIdx": 105,
@@ -5593,7 +5593,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 4800
+      "price": 4700
     },
     {
       "locIdx": 67,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 4800
+      "price": 5400
     },
     {
       "locIdx": 100,
@@ -6043,7 +6043,7 @@ const pricingData = {
     },
     {
       "locIdx": 51,
-      "price": 3900
+      "price": 3300
     },
     {
       "locIdx": 53,
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3500
+      "price": 3600
     },
     {
       "locIdx": 71,
@@ -6091,7 +6091,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3400
+      "price": 3700
     },
     {
       "locIdx": 106,
