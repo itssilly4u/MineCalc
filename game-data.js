@@ -4217,7 +4217,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 140000
+      "price": 130000
     },
     {
       "locIdx": 100,
@@ -4517,7 +4517,7 @@ const pricingData = {
     },
     {
       "locIdx": 75,
-      "price": 25000
+      "price": 26000
     },
     {
       "locIdx": 87,
@@ -5023,7 +5023,7 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 7900
+      "price": 8400
     },
     {
       "locIdx": 58,
@@ -5137,7 +5137,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 8500
+      "price": 8900
     },
     {
       "locIdx": 100,
@@ -5221,7 +5221,7 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 9600
+      "price": 11000
     },
     {
       "locIdx": 56,
@@ -5355,11 +5355,11 @@ const pricingData = {
     },
     {
       "locIdx": 102,
-      "price": 4500
+      "price": 3500
     },
     {
       "locIdx": 113,
-      "price": 3600
+      "price": 4200
     }
   ],
   "Copper": [
@@ -5441,7 +5441,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3700
+      "price": 4200
     },
     {
       "locIdx": 105,
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 4000
+      "price": 3600
     }
   ],
   "Corundum": [
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3900
+      "price": 3800
     }
   ],
   "Hephaestanite": [
@@ -5541,7 +5541,7 @@ const pricingData = {
     },
     {
       "locIdx": 21,
-      "price": 4300
+      "price": 4500
     },
     {
       "locIdx": 23,
@@ -5593,7 +5593,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 4700
+      "price": 4800
     },
     {
       "locIdx": 67,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 5400
+      "price": 4500
     },
     {
       "locIdx": 100,
@@ -5793,7 +5793,7 @@ const pricingData = {
     },
     {
       "locIdx": 26,
-      "price": 3900
+      "price": 3600
     },
     {
       "locIdx": 29,
@@ -5865,7 +5865,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3100
+      "price": 3300
     }
   ],
   "Quartz": [
@@ -5947,7 +5947,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 4200
+      "price": 5200
     },
     {
       "locIdx": 106,
@@ -6091,7 +6091,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3700
+      "price": 3100
     },
     {
       "locIdx": 106,
@@ -6107,7 +6107,7 @@ const pricingData = {
     },
     {
       "locIdx": 109,
-      "price": 3100
+      "price": 3500
     },
     {
       "locIdx": 111,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 3600
     }
   ],
   "Tin": [
