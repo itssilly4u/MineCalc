@@ -4217,7 +4217,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 130000
+      "price": 140000
     },
     {
       "locIdx": 100,
@@ -4269,7 +4269,7 @@ const pricingData = {
   "Riccite": [
     {
       "locIdx": 0,
-      "price": 74000
+      "price": 71000
     },
     {
       "locIdx": 15,
@@ -4281,7 +4281,7 @@ const pricingData = {
     },
     {
       "locIdx": 23,
-      "price": 67000
+      "price": 66000
     },
     {
       "locIdx": 24,
@@ -4333,7 +4333,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 66000
+      "price": 64000
     },
     {
       "locIdx": 100,
@@ -4351,7 +4351,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 45000
+      "price": 44000
     },
     {
       "locIdx": 75,
@@ -4363,7 +4363,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 46000
+      "price": 45000
     },
     {
       "locIdx": 100,
@@ -4715,7 +4715,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 19000
+      "price": 21000
     },
     {
       "locIdx": 26,
@@ -4767,7 +4767,7 @@ const pricingData = {
     },
     {
       "locIdx": 80,
-      "price": 22000
+      "price": 19000
     },
     {
       "locIdx": 84,
@@ -4775,7 +4775,7 @@ const pricingData = {
     },
     {
       "locIdx": 85,
-      "price": 22000
+      "price": 18000
     },
     {
       "locIdx": 86,
@@ -4995,7 +4995,7 @@ const pricingData = {
     },
     {
       "locIdx": 29,
-      "price": 9400
+      "price": 7700
     },
     {
       "locIdx": 32,
@@ -5019,15 +5019,15 @@ const pricingData = {
     },
     {
       "locIdx": 47,
-      "price": 9200
+      "price": 8000
     },
     {
       "locIdx": 55,
-      "price": 8400
+      "price": 7700
     },
     {
       "locIdx": 58,
-      "price": 7900
+      "price": 8200
     },
     {
       "locIdx": 62,
@@ -5073,7 +5073,7 @@ const pricingData = {
     },
     {
       "locIdx": 23,
-      "price": 8200
+      "price": 8400
     },
     {
       "locIdx": 24,
@@ -5109,7 +5109,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 9000
+      "price": 8500
     },
     {
       "locIdx": 65,
@@ -5137,7 +5137,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 8900
+      "price": 8500
     },
     {
       "locIdx": 100,
@@ -5295,7 +5295,7 @@ const pricingData = {
     },
     {
       "locIdx": 23,
-      "price": 3700
+      "price": 3600
     },
     {
       "locIdx": 24,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4200
+      "price": 3700
     },
     {
       "locIdx": 75,
@@ -5359,7 +5359,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 4200
+      "price": 3500
     }
   ],
   "Copper": [
@@ -5453,7 +5453,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3600
+      "price": 4600
     }
   ],
   "Corundum": [
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4100
+      "price": 4000
     },
     {
       "locIdx": 75,
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3800
+      "price": 3900
     }
   ],
   "Hephaestanite": [
@@ -5549,7 +5549,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 4600
+      "price": 4500
     },
     {
       "locIdx": 26,
@@ -5557,7 +5557,7 @@ const pricingData = {
     },
     {
       "locIdx": 29,
-      "price": 4400
+      "price": 4600
     },
     {
       "locIdx": 32,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 4500
+      "price": 4800
     },
     {
       "locIdx": 100,
@@ -5675,7 +5675,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 4800
+      "price": 5700
     },
     {
       "locIdx": 25,
@@ -5691,7 +5691,7 @@ const pricingData = {
     },
     {
       "locIdx": 29,
-      "price": 5000
+      "price": 5200
     },
     {
       "locIdx": 32,
@@ -5743,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5000
+      "price": 5700
     },
     {
       "locIdx": 75,
@@ -5789,7 +5789,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 3000
+      "price": 3700
     },
     {
       "locIdx": 26,
@@ -5797,7 +5797,7 @@ const pricingData = {
     },
     {
       "locIdx": 29,
-      "price": 3600
+      "price": 3500
     },
     {
       "locIdx": 35,
@@ -5865,7 +5865,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3300
+      "price": 3400
     }
   ],
   "Quartz": [
@@ -6047,7 +6047,7 @@ const pricingData = {
     },
     {
       "locIdx": 53,
-      "price": 3800
+      "price": 3300
     },
     {
       "locIdx": 62,
