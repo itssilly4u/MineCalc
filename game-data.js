@@ -4197,7 +4197,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 130000
+      "price": 140000
     },
     {
       "locIdx": 71,
@@ -4321,7 +4321,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 66000
+      "price": 65000
     },
     {
       "locIdx": 75,
@@ -5027,7 +5027,7 @@ const pricingData = {
     },
     {
       "locIdx": 58,
-      "price": 8200
+      "price": 8100
     },
     {
       "locIdx": 62,
@@ -5109,7 +5109,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 8600
+      "price": 8900
     },
     {
       "locIdx": 65,
@@ -5181,7 +5181,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 9800
+      "price": 10000
     },
     {
       "locIdx": 21,
@@ -5369,7 +5369,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 3700
+      "price": 3500
     },
     {
       "locIdx": 35,
@@ -5441,7 +5441,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 4200
+      "price": 3600
     },
     {
       "locIdx": 105,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4000
     },
     {
       "locIdx": 75,
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3800
+      "price": 3500
     }
   ],
   "Hephaestanite": [
@@ -5609,7 +5609,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4600
+      "price": 4300
     },
     {
       "locIdx": 75,
@@ -5625,7 +5625,7 @@ const pricingData = {
     },
     {
       "locIdx": 93,
-      "price": 5200
+      "price": 4500
     },
     {
       "locIdx": 94,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 5400
+      "price": 5100
     },
     {
       "locIdx": 100,
@@ -5743,7 +5743,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 5100
+      "price": 5200
     },
     {
       "locIdx": 75,
@@ -5781,7 +5781,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 3200
+      "price": 3400
     },
     {
       "locIdx": 23,
@@ -5793,7 +5793,7 @@ const pricingData = {
     },
     {
       "locIdx": 26,
-      "price": 3600
+      "price": 3800
     },
     {
       "locIdx": 29,
@@ -5849,7 +5849,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3300
+      "price": 3500
     },
     {
       "locIdx": 100,
@@ -5947,7 +5947,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 5200
+      "price": 4000
     },
     {
       "locIdx": 106,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3600
+      "price": 3400
     },
     {
       "locIdx": 100,
@@ -6091,7 +6091,7 @@ const pricingData = {
     },
     {
       "locIdx": 103,
-      "price": 3100
+      "price": 3700
     },
     {
       "locIdx": 106,
