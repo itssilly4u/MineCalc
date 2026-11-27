@@ -4269,7 +4269,7 @@ const pricingData = {
   "Riccite": [
     {
       "locIdx": 0,
-      "price": 76000
+      "price": 73000
     },
     {
       "locIdx": 15,
@@ -4363,7 +4363,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 46000
+      "price": 45000
     },
     {
       "locIdx": 100,
@@ -4463,7 +4463,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 29000
+      "price": 27000
     }
   ],
   "Gold": [
@@ -4601,7 +4601,7 @@ const pricingData = {
     },
     {
       "locIdx": 21,
-      "price": 27000
+      "price": 25000
     },
     {
       "locIdx": 23,
@@ -5023,7 +5023,7 @@ const pricingData = {
     },
     {
       "locIdx": 55,
-      "price": 9000
+      "price": 7900
     },
     {
       "locIdx": 58,
@@ -5065,7 +5065,7 @@ const pricingData = {
   "Laranite": [
     {
       "locIdx": 0,
-      "price": 7600
+      "price": 7800
     },
     {
       "locIdx": 13,
@@ -5225,7 +5225,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 9400
+      "price": 10000
     },
     {
       "locIdx": 62,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3800
+      "price": 3600
     },
     {
       "locIdx": 75,
@@ -5789,7 +5789,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 3000
+      "price": 3900
     },
     {
       "locIdx": 26,
@@ -5849,7 +5849,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3500
+      "price": 3300
     },
     {
       "locIdx": 100,
@@ -5911,7 +5911,7 @@ const pricingData = {
     },
     {
       "locIdx": 45,
-      "price": 4300
+      "price": 5500
     },
     {
       "locIdx": 62,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 5400
+      "price": 4000
     },
     {
       "locIdx": 100,
@@ -6047,7 +6047,7 @@ const pricingData = {
     },
     {
       "locIdx": 53,
-      "price": 3300
+      "price": 3900
     },
     {
       "locIdx": 62,
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3900
+      "price": 3300
     },
     {
       "locIdx": 71,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3400
+      "price": 3500
     },
     {
       "locIdx": 100,
