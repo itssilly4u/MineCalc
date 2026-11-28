@@ -4269,7 +4269,7 @@ const pricingData = {
   "Riccite": [
     {
       "locIdx": 0,
-      "price": 73000
+      "price": 71000
     },
     {
       "locIdx": 15,
@@ -4343,7 +4343,7 @@ const pricingData = {
   "Ouratite": [
     {
       "locIdx": 0,
-      "price": 46000
+      "price": 45000
     },
     {
       "locIdx": 38,
@@ -4351,7 +4351,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 42000
+      "price": 43000
     },
     {
       "locIdx": 75,
@@ -4469,7 +4469,7 @@ const pricingData = {
   "Gold": [
     {
       "locIdx": 0,
-      "price": 27000
+      "price": 26000
     },
     {
       "locIdx": 11,
@@ -4775,7 +4775,7 @@ const pricingData = {
     },
     {
       "locIdx": 85,
-      "price": 18000
+      "price": 22000
     },
     {
       "locIdx": 86,
@@ -4849,7 +4849,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 29000
+      "price": 28000
     },
     {
       "locIdx": 64,
@@ -4869,11 +4869,11 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 29000
+      "price": 28000
     },
     {
       "locIdx": 100,
-      "price": 29000
+      "price": 28000
     }
   ],
   "Tungsten": [
@@ -5027,7 +5027,7 @@ const pricingData = {
     },
     {
       "locIdx": 58,
-      "price": 8100
+      "price": 8200
     },
     {
       "locIdx": 62,
@@ -5069,7 +5069,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 8500
+      "price": 9200
     },
     {
       "locIdx": 23,
@@ -5109,7 +5109,7 @@ const pricingData = {
     },
     {
       "locIdx": 62,
-      "price": 8900
+      "price": 8600
     },
     {
       "locIdx": 65,
@@ -5141,7 +5141,7 @@ const pricingData = {
     },
     {
       "locIdx": 100,
-      "price": 8700
+      "price": 8500
     }
   ],
   "Aslarite": [
@@ -5225,7 +5225,7 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 10000
+      "price": 12000
     },
     {
       "locIdx": 62,
@@ -5241,7 +5241,7 @@ const pricingData = {
     },
     {
       "locIdx": 68,
-      "price": 9800
+      "price": 10000
     },
     {
       "locIdx": 70,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4000
+      "price": 3600
     },
     {
       "locIdx": 75,
@@ -5401,7 +5401,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 3800
+      "price": 3900
     },
     {
       "locIdx": 64,
@@ -5453,13 +5453,13 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3600
+      "price": 3700
     }
   ],
   "Corundum": [
     {
       "locIdx": 13,
-      "price": 3700
+      "price": 3600
     },
     {
       "locIdx": 21,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3600
+      "price": 3500
     },
     {
       "locIdx": 75,
@@ -5531,7 +5531,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3500
+      "price": 4000
     }
   ],
   "Hephaestanite": [
@@ -5581,11 +5581,11 @@ const pricingData = {
     },
     {
       "locIdx": 56,
-      "price": 4800
+      "price": 4700
     },
     {
       "locIdx": 58,
-      "price": 4800
+      "price": 4500
     },
     {
       "locIdx": 62,
@@ -5609,7 +5609,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4600
+      "price": 4300
     },
     {
       "locIdx": 75,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 4800
+      "price": 5400
     },
     {
       "locIdx": 100,
@@ -5781,7 +5781,7 @@ const pricingData = {
     },
     {
       "locIdx": 13,
-      "price": 3100
+      "price": 3400
     },
     {
       "locIdx": 23,
@@ -5865,7 +5865,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3100
+      "price": 3400
     }
   ],
   "Quartz": [
@@ -6059,7 +6059,7 @@ const pricingData = {
     },
     {
       "locIdx": 65,
-      "price": 3300
+      "price": 3900
     },
     {
       "locIdx": 71,
@@ -6119,7 +6119,7 @@ const pricingData = {
     },
     {
       "locIdx": 113,
-      "price": 3700
+      "price": 3300
     }
   ],
   "Tin": [
@@ -6181,7 +6181,7 @@ const pricingData = {
     },
     {
       "locIdx": 63,
-      "price": 4400
+      "price": 4500
     },
     {
       "locIdx": 64,
