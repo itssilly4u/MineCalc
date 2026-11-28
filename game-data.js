@@ -4821,7 +4821,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 30000
+      "price": 29000
     },
     {
       "locIdx": 27,
@@ -4869,7 +4869,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 28000
+      "price": 29000
     },
     {
       "locIdx": 100,
@@ -5335,7 +5335,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3600
+      "price": 4000
     },
     {
       "locIdx": 75,
@@ -5507,7 +5507,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 3500
+      "price": 4100
     },
     {
       "locIdx": 75,
@@ -5609,7 +5609,7 @@ const pricingData = {
     },
     {
       "locIdx": 74,
-      "price": 4300
+      "price": 4600
     },
     {
       "locIdx": 75,
@@ -5633,7 +5633,7 @@ const pricingData = {
     },
     {
       "locIdx": 97,
-      "price": 5400
+      "price": 4500
     },
     {
       "locIdx": 100,
@@ -5675,7 +5675,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 4800
+      "price": 5700
     },
     {
       "locIdx": 25,
@@ -5789,7 +5789,7 @@ const pricingData = {
     },
     {
       "locIdx": 24,
-      "price": 3900
+      "price": 3500
     },
     {
       "locIdx": 26,
@@ -5849,7 +5849,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3300
+      "price": 3500
     },
     {
       "locIdx": 100,
@@ -5939,7 +5939,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 4000
+      "price": 4400
     },
     {
       "locIdx": 100,
@@ -6047,7 +6047,7 @@ const pricingData = {
     },
     {
       "locIdx": 53,
-      "price": 3900
+      "price": 3600
     },
     {
       "locIdx": 62,
@@ -6083,7 +6083,7 @@ const pricingData = {
     },
     {
       "locIdx": 98,
-      "price": 3500
+      "price": 4200
     },
     {
       "locIdx": 100,
